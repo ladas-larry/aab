@@ -21,7 +21,7 @@ In English, it's called...
 - Social insurance number
 - Social security number
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## What the Sozialversicherungsnummer looks like
 

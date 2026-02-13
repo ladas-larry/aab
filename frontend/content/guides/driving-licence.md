@@ -7,7 +7,7 @@ Date_created: 2017-10-23
 
 This guide explains how to get a car or motorcycle licence in Berlin.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Cost and timeline
 

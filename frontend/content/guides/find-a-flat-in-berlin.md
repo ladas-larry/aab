@@ -14,7 +14,7 @@ This guide helps you rent an apartment or a room when you [move to Berlin](/guid
 
 ![Berlin apartments with different architecture](/illustrations/berlin-apartment-different-architecture.png)
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Is it hard to find an apartment?
 

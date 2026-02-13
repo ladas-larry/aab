@@ -36,7 +36,7 @@ Related_places:
 
 This is how you can find an English-speaking doctor or GP.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## List of doctors and GPs
 

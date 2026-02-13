@@ -15,7 +15,7 @@ Related_places:
 
 Want a nice place to play board games with your friends, and perhaps make some new ones? The following board game meetups happen every week in Berlin, and are always friendly to newcomers.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Board game meetups
 

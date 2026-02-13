@@ -9,7 +9,7 @@ German jobs have a notice period (*Kündigungsfrist*). If you [lose your job or 
 
 This guide explains how that notice period works, and how to get a shorter notice period.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## If you quit your job
 

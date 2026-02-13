@@ -59,7 +59,7 @@ Tax advisors (*Steuerberater*) help you with your personal and business taxes. A
 
 Tax advisors are legally liable for the advice they give. If they make a mistake, they pay for it.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## List of English-speaking tax advisors
 

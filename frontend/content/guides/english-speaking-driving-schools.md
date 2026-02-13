@@ -24,7 +24,7 @@ To [get a German driving licence](/guides/driving-licence), you must take drivin
 
 **[How to get a driving licence ➞](/guides/driving-licence)**
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## List of English-speaking driving schools
 

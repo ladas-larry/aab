@@ -9,7 +9,7 @@ This guide explains how to use trains, trams, buses and ride sharing in Berlin.
 
 ![Yellow BVG class HK train](/illustrations/bvg-class-hk-train.png)
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## 1. Buy a ticket
 

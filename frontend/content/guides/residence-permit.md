@@ -17,7 +17,7 @@ With a residence permit, you can...
 - Become a [permanent resident](/glossary/Niederlassungserlaubnis) after 21 to 60 months
 - Become a citizen after 5 years
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Who needs a residence permit?
 

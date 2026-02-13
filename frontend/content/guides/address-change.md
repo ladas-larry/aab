@@ -7,7 +7,7 @@ Date_created: 2022-09-24
 
 This guide helps you update your address after you [move into a new apartment](/guides/moving-in). It's not automatic.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Put your name on your mailbox
 

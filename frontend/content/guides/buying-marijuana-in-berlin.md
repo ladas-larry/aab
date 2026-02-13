@@ -9,7 +9,7 @@ This guide explains how people usually buy weed in Berlin. Weed [is legal in Ger
 
 ![Rolling paper and a grinder](/illustrations/rolling-paper-grinder-weed-berlin-s.png)
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Is weed legal in Germany?
 

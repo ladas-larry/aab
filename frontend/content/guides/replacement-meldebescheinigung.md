@@ -14,7 +14,7 @@ You can get a *Meldebescheinigung* to...
 
 This guide explains how to get a copy of an existing registration certificate. If you don't have a registration certificate yet, you must [register your address](/guides/anmeldung-in-english-berlin) to get one.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## How to get an Anmeldebestätigung
 

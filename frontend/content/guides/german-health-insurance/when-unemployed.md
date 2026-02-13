@@ -10,7 +10,7 @@ All German residents need health insurance, even when unemployed. This guide exp
 
 **[Losing your job in Germany ➞](/guides/losing-your-job)**
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## If you lost your job
 

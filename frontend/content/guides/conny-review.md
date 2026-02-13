@@ -11,7 +11,7 @@ Berlin has [rent control laws](/glossary/Mietpreisbremse). If your rent is too h
 
 In this guide, I explain how Conny works, why I think it's too expensive, and other ways to lower your rent.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## How does Conny work?
 

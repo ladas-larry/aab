@@ -22,7 +22,7 @@ With a Blue Card, you can...
 
 This guide explains how to apply for a [[Blue Card]] in Berlin or in your home country.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Who needs a Blue Card?
 

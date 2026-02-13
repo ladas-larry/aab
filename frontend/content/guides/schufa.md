@@ -7,7 +7,7 @@ Date_created: 2017-09-01
 
 If you [apply for an apartment](/guides/find-a-flat-in-berlin), you might need a *Schufa* report. Most landlords require it.[^7] This is how you get one.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## What is a Schufa?
 

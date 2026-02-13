@@ -19,7 +19,7 @@ If you change jobs, use the [official form](/out/auslanderbehorde-job-change) to
 
 ## Letter template
 
-{% include "_letters/auslaenderbehoerdeJobChangeStatic.html" %}
+{% letter "auslaenderbehoerdeJobChange", static=True %}
 
 ## How to send this letter
 

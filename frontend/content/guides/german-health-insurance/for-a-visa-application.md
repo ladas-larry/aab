@@ -10,7 +10,7 @@ Related_reviews:
 
 This guide explains which health insurance you need to apply for a [[National Visa]] or [residence permit](/glossary/Aufenthaltstitel).
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## For a specific visa
 
@@ -109,7 +109,7 @@ Do not choose health insurance yourself. You can make expensive mistakes. Choosi
 
 [Ask my health insurance expert](/guides/german-health-insurance#need-help) to help you choose. His help is free. It's the best way to choose health insurance.
 
-{% include "_forms/healthInsuranceQuestionStatic.html" %}
+{% form "healthInsuranceQuestion", static=True %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 

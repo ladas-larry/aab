@@ -7,7 +7,7 @@ Date_created: 2017-10-10
 
 The TV tax (*Rundfunkbeitrag*) is a public broadcasting tax in Germany. It costs €{{RUNDFUNKBEITRAG_FEE|cur}} per household per month.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## What is the TV tax?
 

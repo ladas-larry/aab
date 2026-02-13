@@ -7,7 +7,7 @@ Date_created: 2017-10-06
 
 This guide shows you how to get biometric pictures or passport photos in Berlin. You need biometric pictures to apply for a [residence permit](/glossary/Aufenthaltstitel), a driving licence, a German passport or a *[[Personalausweis]]*.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Biometric picture requirements
 

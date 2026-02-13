@@ -14,7 +14,7 @@ This calculator shows how much you pay for unemployment insurance (*[[Arbeitslos
 
 ## Unemployment insurance calculator
 
-{% include "_calculators/unemploymentInsuranceStatic.html" %}
+{% calculator "unemploymentInsurance", static=True %}
 
 ## What is Arbeitslosenversicherung?
 

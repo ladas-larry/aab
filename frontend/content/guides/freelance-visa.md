@@ -25,7 +25,7 @@ This guide explains how to apply for a freelance visa in Berlin or in your home 
 
 The **[artist visa](/glossary/Artist%20visa)** and the **language teacher visa** are the same thing as the freelance visa.[^8] The application process is the same.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Who needs a freelance visa?
 

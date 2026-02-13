@@ -25,7 +25,7 @@ This guide explains:
 
 **[Go to the list of psychiatrists ➞](#list-of-english-speaking-psychiatrists)**
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 
 ## List of English-speaking psychiatrists

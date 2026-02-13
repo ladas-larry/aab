@@ -25,7 +25,7 @@ Related_places:
 
 This guide helps you find cinemas that play movies in English in Berlin.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## OmU? OV? OmeU?
 

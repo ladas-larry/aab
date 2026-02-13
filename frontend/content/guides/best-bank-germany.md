@@ -11,7 +11,7 @@ Before you start, learn [how banking works in Germany](/guides/banking). It help
 
 ![Cash coins cards german banks](/illustrations/cash-coins-cards-german-banks.png)
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## German banks for expats
 

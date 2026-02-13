@@ -11,7 +11,7 @@ Related_places:
 
 Introduction paragraph followed by a table of contents.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Headings
 

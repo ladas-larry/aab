@@ -15,7 +15,7 @@ This bot helps you find an appointment to [register your address](/glossary/Anme
 
 ## Appointment finder
 
-{% include "_blocks/appointmentFinderStatic.html" %}
+{% calculator "anmeldungAppointment", static=True %}
 
 ## Other appointment types
 

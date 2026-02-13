@@ -11,7 +11,7 @@ Berlin is better on a bicycle. The city is very flat, and it has a big network o
 
 In this guide, I explain how to buy a bike, rules for cyclists, and how to deal with bicycle theft.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Where to buy a bicycle in Berlin
 

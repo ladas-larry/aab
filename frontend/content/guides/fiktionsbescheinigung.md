@@ -9,7 +9,7 @@ Related_reviews:
 
 This guide explains how the *Fiktionsbescheinigung* works, how to apply for a *Fiktionsbescheinigung*, and how to travel with an expired [residence permit](/glossary/Aufenthaltstitel).
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## What is a Fiktionsbescheinigung?
 

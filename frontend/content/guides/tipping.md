@@ -7,7 +7,7 @@ Date_created: 2023-03-14
 
 In Germany, **tipping is optional**. There are no rules and everyone tips differently. This guide explains how people *usually* tip.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 {% include "_blocks/tipJar.html"%}
 
