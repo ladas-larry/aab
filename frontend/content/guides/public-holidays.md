@@ -5,7 +5,7 @@ Description: This is a list of the official holidays in Berlin.
 Date_created: 2022-05-30
 ---
 
-These are the {{ now.year }} public holidays in Berlin. On public holidays, most businesses are closed, and employees get a paid day off.
+These are the {{ now.year }} public holidays in Berlin. On public holidays, most businesses are closed, and employees get a paid day off.{{ fail_on('2026-12-31') }}
 
 {% tableOfContents %}
 
