@@ -5,15 +5,15 @@ Description: See how long it takes to get German citizenship in Berlin.
 Date_created: 2025-09-13
 ---
 
-{% include "_blocks/feedbackCitizenship/summary.html"%}
+{% tool "citizenshipFeedback/summary" %}
 
 ## Share your experience
 
-{% include "_blocks/feedbackCitizenship/form.html"%}
+{% tool "citizenshipFeedback/form" %}
 
 ## Feedback from other people
 
-{% include "_blocks/feedbackCitizenship/list.html"%}
+{% tool "citizenshipFeedback/list" %}
 
 ## Need help?
 

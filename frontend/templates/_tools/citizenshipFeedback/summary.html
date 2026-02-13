@@ -3,7 +3,7 @@
 	The average wait time is <span v-text="totalWaitAverage">unknown</span>.
 	Based on <a href="#feedback-from-other-people">feedback from <span v-text="feedbackCount">many</span> people</a>.
 </p>
-{% include "_blocks/feedbackCitizenship/filters.html"%}
+{% tool "citizenshipFeedback/filters" %}
 {% raw %}
 <div class="citizenship-feedback-summary feedback-summary">
 	<div class="steps">

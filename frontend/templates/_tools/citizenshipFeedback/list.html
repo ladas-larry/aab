@@ -1,4 +1,4 @@
-{% include "_blocks/feedbackCitizenship/filters.html"%}{% raw %}
+{% tool "citizenshipFeedback/filters" %}{% raw %}
 
 <div class="loading" v-if="isLoading">Loading feedback...</div>
 <ul class="feedback-list" v-show="!isLoading">
