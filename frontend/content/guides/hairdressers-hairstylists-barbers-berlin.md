@@ -55,4 +55,4 @@ When you get a haircut, it's easier if the barber understands you. This is a lis
 
 To add someone, [fill this form](/suggest-business).
 
-{% include "_blocks/relatedPlaces.html" %}
+{% tool "placesMap" %}

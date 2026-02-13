@@ -29,7 +29,7 @@ In Berlin, most gynaecologists are booked for months. Male gynaecologists are so
 
 ## List of gynaecologists and obstetricians
 
-{% include "_blocks/relatedPlaces.html" %}
+{% tool "placesMap" %}
 
 To suggest a gynaecologist, [fill this form](/suggest-business).
 

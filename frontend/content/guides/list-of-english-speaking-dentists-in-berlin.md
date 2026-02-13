@@ -54,6 +54,6 @@ This is a list of English-speaking dentists in Berlin. You can also find a denti
 
 ## List of dentists
 
-{% include "_blocks/relatedPlaces.html" %}
+{% tool "placesMap" %}
 
 To suggest a dentist, [fill this form](/suggest-business).
