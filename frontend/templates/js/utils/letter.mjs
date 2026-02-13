@@ -1,5 +1,4 @@
-{% js %}
-function formatName(gender, firstName, lastName, language='en', alwaysIncludeFirstName=true){
+export function formatName(gender, firstName, lastName, language='en', alwaysIncludeFirstName=true){
 	let displayGender = {
 		man: { en: 'Mr', de: 'Herr' },
 		woman: { en: 'Mrs', de: 'Frau' },
@@ -17,7 +16,7 @@ function formatName(gender, firstName, lastName, language='en', alwaysIncludeFir
 	return [displayGender, firstName, lastName].filter(Boolean).join(' ');
 }
 
-function formatSalutations(gender, firstName, lastName, language='en', comma=true){
+export function formatSalutations(gender, firstName, lastName, language='en', comma=true){
 	if(!lastName || (gender === 'other' && !firstName)) {
 		return {
 			en: 'Dear Sir or Madam',
@@ -40,8 +39,6 @@ function formatSalutations(gender, firstName, lastName, language='en', comma=tru
 	}[gender][language] + (comma ? ',' : '');
 }
 
-function mergeFields(fields){
+export function mergeFields(fields){
 	return fields.filter(Boolean).join(', ')
 }
-
-{% endjs %}

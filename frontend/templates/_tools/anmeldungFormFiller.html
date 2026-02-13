@@ -345,7 +345,6 @@
 {% include "_js/utils/countries.js" %}
 {% include "_js/utils/countriesInGerman.js" %}
 {% include "_js/utils/date.js" %}
-{% include "_js/utils/letter.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/checkbox.js" %}
 {% include "_js/vue/components/city-input.js" %}
@@ -364,6 +363,8 @@
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
+	import { mergeFields } from '/js/utils/letter.mjs';
+
 	document.querySelectorAll('.anmeldung-form').forEach(
 		el => new Vue({
 			el: el,

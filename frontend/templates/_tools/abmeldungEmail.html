@@ -1,4 +1,3 @@
-{% include "_js/utils/letter.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/address-input.js" %}
 {% include "_js/vue/components/blank.js" %}
@@ -9,6 +8,7 @@
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
+	import { formatSalutations } from '/js/utils/letter.mjs';
 	document.querySelectorAll('.abmeldung-email').forEach(
 		el => new Vue({
 			el: el,
@@ -40,7 +40,6 @@
 				},
 			},
 			methods: {
-				formatName,
 				formatSalutations,
 			}
 		})

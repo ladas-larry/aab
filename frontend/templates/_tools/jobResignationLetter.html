@@ -1,5 +1,4 @@
 {% include "_js/utils/date.js" %}
-{% include "_js/utils/letter.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/address-input.js" %}
 {% include "_js/vue/components/blank.js" %}
@@ -15,6 +14,7 @@
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
+	import { formatName, formatSalutations } from '/js/utils/letter.mjs';
 	document.querySelectorAll('.job-resignation-letter').forEach(
 		el => new Vue({
 			el: el,
