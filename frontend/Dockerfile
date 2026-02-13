@@ -27,4 +27,4 @@ CMD python3 /var/project/frontend/build-for-prod.py
 FROM base AS dev
 
 # Build properly once, rebuild quickly on file changes
-CMD ursus && ursus --fast --watch
+CMD ursus; ursus --fast --watch
