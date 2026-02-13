@@ -84,12 +84,12 @@ Vue.component('health-insurance-options', {
 		},
 		selfEmployedClarification(){
 			const output = {};
-			const public = this.results.public.eligible;
-			const private = this.results.private.eligible;
-			const expat = this.results.expat.eligible;
+			const publicHI = this.results.public.eligible;
+			const privateHI = this.results.private.eligible;
+			const expatHI = this.results.expat.eligible;
 			const avoidExpat = "Avoid this option if you can. The coverage is too limited, and you can't use it to renew your freelance visa.";
 
-			if(public && private){
+			if(publicHI && privateHI){
 				if(this.minCostByOption.public > this.minCostByOption.private){
 					output.private = "This is a great option because you are young and you have a good income. You can get better coverage <em>and</em> pay less.";
 					output.public = "This is a safer option because the cost matches your income. Choose this if you have an unstable income.";
@@ -99,15 +99,15 @@ Vue.component('health-insurance-options', {
 				}
 				output.expat = avoidExpat;
 			}
-			else if(public && expat && !private){
+			else if(publicHI && expatHI && !privateHI){
 				output.public = "This is the best long-term option. It's more expensive, but you get much better coverage.";
 				output.expat = "Avoid this option if you can. Public health insurance is much better. If you choose this option, you can't switch to public later.";
 			}
-			else if(private && expat && !public){
+			else if(privateHI && expatHI && !publicHI){
 				output.private = "This is the best long-term option."
 				output.expat = avoidExpat;
 			}
-			else if(expat && !private && !public){
+			else if(expatHI && !privateHI && !publicHI){
 				output.expat = "This is not a great option, but you have no other choice. Switch to public or private health insurance when you can.";
 			}
 			return output;

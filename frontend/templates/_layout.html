@@ -93,6 +93,9 @@
 	{% include "_js/utils/currency.js" %}
 	{% include "_blocks/tooltip.html" %}
 	<script defer>
+		{% include "_js/libs/lunr.js" %}
+	</script>
+	<script type="module">
 		{% alljs %}
 	</script>
 	<script type="application/ld+json">
