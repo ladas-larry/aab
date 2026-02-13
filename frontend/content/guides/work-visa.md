@@ -182,7 +182,7 @@ Go to your second *[[Ausländerbehörde]]* appointment and pick up your work vis
 
 **[How to pick up your work visa ➞](/guides/residence-permit#pick-up-your-residence-card)**
 
-{% include "_blocks/feedbackResidencePermit/workVisa.html" %}
+{% tool "feedbackResidencePermit/form", residence_permit='WORK_VISA' %}
 
 ### 8. Start working in Germany
 
@@ -252,7 +252,7 @@ When you [go to to your appointment](#go-to-your-appointment), print everything.
 
 Tell me how long it took to get your work visa. Your feedback helps thousands of people plan their application.
 
-{% include "_blocks/feedbackResidencePermit/workVisa.html" %}
+{% tool "feedbackResidencePermit/form", residence_permit='WORK_VISA' %}
 
 **[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
 

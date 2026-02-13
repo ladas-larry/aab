@@ -178,7 +178,7 @@ Go to your second *[[Ausländerbehörde]]* appointment and pick up your freelanc
 
 **[How to pick up your freelance visa ➞](/guides/residence-permit#pick-up-your-residence-card)**
 
-{% include "_blocks/feedbackResidencePermit/freelanceVisa.html" %}
+{% tool "feedbackResidencePermit/form", residence_permit='FREELANCE_VISA' %}
 
 ### 7. Start your business
 
@@ -321,7 +321,7 @@ These documents are not required, but some *Ausländerbehörde* employees ask fo
 
 Tell me how long it took to get your freelance visa. Your feedback helps thousands of people plan their application.
 
-{% include "_blocks/feedbackResidencePermit/freelanceVisa.html" %}
+{% tool "feedbackResidencePermit/form", residence_permit='FREELANCE_VISA' %}
 
 **[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
 

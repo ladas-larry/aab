@@ -4,4 +4,7 @@
 	document.querySelectorAll('feedback-residence-permit').forEach(el => new Vue({ el }));
 {% endjs %}
 
-<feedback-residence-permit data-type="{{ residencePermitType|default }}" {% if open|default %}open{% endif %}></feedback-residence-permit>
+<feedback-residence-permit
+	{% if residence_permit|default %}data-type="{{ residence_permit }}"{% endif %}
+	{% if open|default %}open{% endif %}
+></feedback-residence-permit>
