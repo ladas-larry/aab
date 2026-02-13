@@ -56,7 +56,7 @@ You can book a single appointment for multiple services:
 
 To [register your address](/glossary/Anmeldung), use my [*Anmeldung* appointment finder](/tools/appointment-finder).
 
-{% calculator "anmeldungAppointment" %}
+{% tool "anmeldungAppointmentFinder" %}
 
 ### Call 115
 

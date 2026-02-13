@@ -9,7 +9,7 @@
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
-	document.querySelectorAll('.alg-i-vorlaeufige-bewilligung').forEach(
+	document.querySelectorAll('.abmeldung-email').forEach(
 		el => new Vue({
 			el: el,
 			mixins: [userDefaultsMixin, uniqueIdsMixin],
@@ -47,7 +47,7 @@
 	);
 {% endjs %}
 
-<letter-generator :printable="false" aria-label="Letter generator to deregister your address" class="alg-i-vorlaeufige-bewilligung" track-as="ALG I vorläufige Bewilligung" static>
+<letter-generator :printable="false" aria-label="Letter generator to deregister your address" class="abmeldung-email" track-as="Abmeldung email" static>
 {% raw %}
 	<template v-slot:header>Abmeldung – Deregister your address</template>
 

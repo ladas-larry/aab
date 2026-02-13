@@ -1,4 +1,4 @@
 {% extends "tests/component/index.html.jinja" %}
 {% block component %}
-	{% with occupation = 'unemployed' %}{% calculator "healthInsurance", static=True %}{% endwith %}
+	{% tool "healthInsuranceCalculator", occupation="unemployed", static=True %}
 {% endblock %}
