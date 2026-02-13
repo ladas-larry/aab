@@ -20,7 +20,7 @@ You need health insurance to apply for a [[National Visa]] or a [residence permi
 
 There is [public](/glossary/gesetzliche%20Krankenversicherung), [private](/glossary/private%20Krankenversicherung) and [expat](/glossary/Expat%20health%20insurance) health insurance. The best option depends on your situation.
 
-{% calculator "healthInsurance", static=True %}
+{% tool "healthInsuranceCalculator", static=True %}
 
 ## Public health insurance
 
@@ -182,7 +182,7 @@ There is no best private health insurance. There are thousands of options. The b
 
 **Do not choose private health insurance yourself.** It's a really bad idea. [Ask a health insurance broker](#need-help) to compare all options and help you choose. Their help is free.
 
-{% form "healthInsuranceQuestion" %}
+{% tool "healthInsuranceQuestion" %}
 
 [Ottonova](/out/ottonova) sells their own private health insurance. It's rarely the best option.[^77] Don't choose Ottonova directly; [ask our expert](#need-help) first. If Ottonova is the best option for you, they will tell you.[^76]
 
@@ -368,11 +368,11 @@ Choose travel health insurance if...
 
 Use my [recommendation tool](#your-options) to know your options. There are 3 types of health insurance and hundreds of options. The best option depends on your situation. If you apply for a [[National Visa]], you might need a combination of insurances.
 
-{% calculator "healthInsurance", static=True %}
+{% tool "healthInsuranceCalculator", static=True %}
 
 ### 2. Ask our expert
 
-{% form "healthInsuranceQuestion" %}
+{% tool "healthInsuranceQuestion" %}
 
 **If you choose [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**, you can't go wrong. All options are similar. Their cost and coverage are almost the same. [TK](/out/feather-tk) and [Barmer](/out/barmer) are good English-speaking options. You can change your mind and switch to private health insurance later.
 
@@ -442,7 +442,7 @@ When you are self-employed, the cost of public health insurance is based on your
 
 Our insurance expert answers your questions and helps you choose health insurance. It's a free service.
 
-{% form "healthInsuranceQuestion", static=True %}
+{% tool "healthInsuranceQuestion", static=True %}
 
 Choose a broker who works with immigrants. Your needs are different, and your broker must know how to help you.
 

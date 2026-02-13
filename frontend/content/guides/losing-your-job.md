@@ -115,7 +115,7 @@ If you have a [residence permit](/glossary/Aufenthaltstitel), always tell the *[
 
 **If you lose your job**, use my letter generator to write the message. Use the [*Ausländerbehörde*'s contact form](/guides/immigration-office#use-the-contact-form) to send it to the [correct department](/guides/immigration-office#departments). Attach your [resignation letter](/glossary/Kündigungsschreiben) or termination notice. If you have a new job, also attach your new work contract.{{ fail_on('2026-03-01') }}
 
-{% letter "auslaenderbehoerdeJobChange" %}
+{% tool "auslaenderbehoerdeJobChangeLetter" %}
 
 The *Ausländerbehörde* will reply by email. It can take a few weeks. They might not reply at all.[^46]
 
@@ -197,7 +197,7 @@ At the end of the year, make a tax declaration (*[[Steuererklärung]]*). Your jo
 
 When you work in Germany, you pay {{RV_EMPLOYEE_CONTRIBUTION}}% of your salary for [pension insurance](/glossary/gesetzliche%20Rentenversicherung). If you [leave Germany](/guides/leaving-germany), you can get that money back.
 
-{% calculator "pensionRefund" %}
+{% tool "pensionRefundCalculator" %}
 
 **[How to get a pension payments refund ➞](/guides/pension-payments-refund)**
 

@@ -40,7 +40,7 @@ Do not use this form if...
 
 ## Fill the form online
 
-{% form "taxIdRequest", static=True %}
+{% tool "taxIdRequestFormFiller", static=True %}
 
 ## Download the form
 

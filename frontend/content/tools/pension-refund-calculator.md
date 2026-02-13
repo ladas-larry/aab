@@ -14,7 +14,7 @@ When you work in Germany, {{RV_EMPLOYEE_CONTRIBUTION}}% of your income goes into
 
 ## Pension refund calculator
 
-{% calculator "pensionRefund", static=True %}
+{% tool "pensionRefundCalculator", static=True %}
 
 ## How to get a pension refund
 
@@ -24,6 +24,6 @@ You can request a pension refund yourself, or pay someone to do it for you. [Pen
 
 ## Need help?
 
-{% form "pensionRefundQuestion" %}
+{% tool "pensionRefundQuestion" %}
 
 **[Other ways to get help ➞](/guides/pension-payments-refund#get-help-from-someone)**

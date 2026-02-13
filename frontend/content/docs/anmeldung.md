@@ -20,7 +20,7 @@ This is the English translation of the official *[[Anmeldung]]* form. Fill this 
 
 ## Fill the Anmeldung form online
 
-{% form "anmeldung", static=True %}
+{% tool "anmeldungFormFiller", static=True %}
 
 ## Download the Anmeldung form
 
