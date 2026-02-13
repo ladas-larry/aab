@@ -1,13 +1,15 @@
-{% js %}
-function isPublicHoliday(date) {
-	return {{ PUBLIC_HOLIDAYS_BY_DATE_JSON|safe }}.map(dateFromString).some(holiday =>
+import { publicHolidaysByDate } from '/js/utils/publicHolidays.mjs';
+import { dateFromString } from '/js/utils/date.mjs';
+
+export function isPublicHoliday(date) {
+	return publicHolidaysByDate.map(dateFromString).some(holiday =>
 		holiday.getFullYear() === date.getFullYear() &&
 		holiday.getMonth() === date.getMonth() &&
 		holiday.getDate() === date.getDate()
 	);
 }
 
-function getNthWorkingDay(year, zeroBasedMonth, n){
+export function getNthWorkingDay(year, zeroBasedMonth, n){
 	const date = new Date(year, zeroBasedMonth, 1);
 	let workingDaysFound = 0;
 	while(workingDaysFound < n){
@@ -21,7 +23,7 @@ function getNthWorkingDay(year, zeroBasedMonth, n){
 	return date;
 }
 
-function getMoveOutDate(noticeDate) {
+export function getMoveOutDate(noticeDate) {
 	// Termination notice is due on 3rd working day, so it must arrive before the 4th working day
 	const fourthWorkingDay = getNthWorkingDay(noticeDate.getFullYear(), noticeDate.getMonth(), 4);
 	const monthsToAdd = noticeDate <= fourthWorkingDay ? 3 : 4;
@@ -32,8 +34,8 @@ function getMoveOutDate(noticeDate) {
 	return moveOutDate;
 }
 
-function getLatestNoticeDate(moveOutDate) {
-	noticeDate = new Date(moveOutDate);
+export function getLatestNoticeDate(moveOutDate) {
+	const noticeDate = new Date(moveOutDate);
 	noticeDate.setHours(0, 0, 0, 0);  // Start of the day
 	noticeDate.setDate(1); // First day of the month.
 	noticeDate.setMonth(noticeDate.getMonth() - 2); // Go back 2 months, not 3
@@ -41,5 +43,3 @@ function getLatestNoticeDate(moveOutDate) {
 	// Termination notice is due on 3rd working day
 	return getNthWorkingDay(noticeDate.getFullYear(), noticeDate.getMonth(), 3);
 }
-
-{% endjs %}
