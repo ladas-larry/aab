@@ -5,6 +5,7 @@ from markdown.extensions.smarty import SubstituteTextPattern
 from markdown.preprocessors import Preprocessor
 from markdown.treeprocessors import InlineProcessor, Treeprocessor
 from typing import Callable
+from ursus.config import config
 from xml.etree import ElementTree
 import re
 
@@ -43,6 +44,7 @@ class HyphenatedTitleExtension(Extension):
 
 class ArrowLinkIconProcessor(Treeprocessor):
     def run(self, root):
+        arrow_link_marker = "➞"
         sections_before_this_link = set()
         for el in root.iter():
             if el.tag in ("h1", "h2", "h3") and (section_id := el.attrib.get("id")):
@@ -50,13 +52,14 @@ class ArrowLinkIconProcessor(Treeprocessor):
             elif el.tag == "a":
                 text = el.text or ""
 
-                if text.strip().endswith("➞"):
-                    el.text = el.text.rstrip("➞").rstrip()
+                if text.strip().endswith(arrow_link_marker):
+                    el.text = el.text.rstrip(arrow_link_marker).rstrip()
+                    url = el.attrib["href"].removeprefix(config.site_url)
 
                     link_class = "internal-link"
-                    if el.attrib["href"].startswith(("http://", "https://", "/out/")):
+                    if url.startswith(("http://", "https://", "/out/")):
                         link_class = "external-link"
-                    elif el.attrib["href"].startswith("#"):
+                    elif url.startswith("#"):
                         el.attrib["title"] = "Scroll to this section"
                         if el.attrib["href"] in sections_before_this_link:
                             link_class = "section-link before"
