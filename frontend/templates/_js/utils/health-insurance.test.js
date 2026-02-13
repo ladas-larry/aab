@@ -1,7 +1,7 @@
-{% include '_js/libs/chai.js' %}
-{% include '_js/libs/mocha.js' %}
-{% include '_js/utils/health-insurance.js' %}
-{% include '_js/utils/test.js' %}
+{% include "_js/libs/chai.js" %}
+{% include "_js/libs/mocha.js" %}
+{% include "_js/utils/health-insurance.js" %}
+{% include "_js/utils/test.js" %}
 {% js %}
 
 // TODO: Test custom zusatzbeitrag

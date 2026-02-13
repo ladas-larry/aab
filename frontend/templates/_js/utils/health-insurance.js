@@ -1,5 +1,5 @@
-{% include '_js/utils/constants.js' %}
-{% include '_js/utils/currency.js' %}
+{% include "_js/utils/constants.js" %}
+{% include "_js/utils/currency.js" %}
 {% js %}
 
 function getAdjustedMonthlyIncome(tariff, monthlyIncome){

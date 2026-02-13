@@ -1,5 +1,5 @@
-{% include '_js/vue.js' %}
-{% include '_js/utils/date.js' %}
+{% include "_js/vue.js" %}
+{% include "_js/utils/date.js" %}
 {% js %}{% raw %}
 Vue.component('comment', {
 	props: ['comment'],

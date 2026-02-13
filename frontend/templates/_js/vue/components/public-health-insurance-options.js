@@ -1,12 +1,12 @@
 {% include "_js/utils/constants.js" %}
 {% include "_js/utils/currency.js" %}
-{% include '_js/utils/health-insurance.js' %}
-{% include '_js/utils/percent.js' %}
-{% include '_js/vue.js' %}
-{% include '_js/vue/components/eur.js' %}
-{% include '_js/vue/components/glossary.js' %}
-{% include '_js/vue/components/price.js' %}
-{% include '_js/vue/mixins/healthInsuranceOptionsMixin.js' %}
+{% include "_js/utils/health-insurance.js" %}
+{% include "_js/utils/percent.js" %}
+{% include "_js/vue.js" %}
+{% include "_js/vue/components/eur.js" %}
+{% include "_js/vue/components/glossary.js" %}
+{% include "_js/vue/components/price.js" %}
+{% include "_js/vue/mixins/healthInsuranceOptionsMixin.js" %}
 
 {% js %}{% raw %}
 Vue.component('public-health-insurance-options', {

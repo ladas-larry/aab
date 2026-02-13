@@ -1,6 +1,6 @@
-{% include '_js/vue.js' %}
-{% include '_js/vue/components/price.js' %}
-{% include '_js/vue/mixins/healthInsuranceOptionsMixin.js' %}
+{% include "_js/vue.js" %}
+{% include "_js/vue/components/price.js" %}
+{% include "_js/vue/mixins/healthInsuranceOptionsMixin.js" %}
 
 {% js %}{% raw %}
 Vue.component('expat-health-insurance-options', {

@@ -120,7 +120,7 @@ If you can't wait for your *Arbeitsbescheinigung*, ask the *Agentur für Arbeit*
 
 Your employer can also put false information in your *Arbeitsbescheinigung*. This can affect how much *[[ALG I]]* you get.[^28]
 
-{% include "_blocks/algIVorlaeufigeBewilligung.html" %}
+{% include "_letters/algIVorlaeufigeBewilligung.html" %}
 
 ## Receiving unemployment benefits
 

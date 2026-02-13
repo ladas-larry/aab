@@ -30,7 +30,7 @@ This guide explains:
 
 ## List of English-speaking psychiatrists
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include "_blocks/relatedPlaces.html" %}
 
 To suggest a psychiatrist, [fill this form](/suggest-therapist).
 

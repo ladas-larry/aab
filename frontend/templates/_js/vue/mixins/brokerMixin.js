@@ -1,4 +1,4 @@
-{% include '_js/utils/constants.js' %}
+{% include "_js/utils/constants.js" %}
 {% js %}
 const brokerMixin = {
 	computed: {

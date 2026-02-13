@@ -4,7 +4,7 @@
 
 {% block postHead %}
 	{{ super() }}
-	{% include '_js/utils/currency.js' %}
+	{% include "_js/utils/currency.js" %}
 	{% js %}
 		function highlightPlz(map, feature){
 			map.fitBounds(getFeatureBounds(feature), {

@@ -1,11 +1,11 @@
-{% include '_js/vue.js' %}
-{% include '_js/vue/components/collapsible.js' %}
-{% include '_js/vue/components/date-input.js' %}
-{% include '_js/vue/components/email-input.js' %}
-{% include '_js/vue/mixins/multiStageMixin.js' %}
-{% include '_js/vue/mixins/trackedStagesMixin.js' %}
-{% include '_js/vue/mixins/uniqueIdsMixin.js' %}
-{% include '_js/vue/mixins/userDefaultsMixin.js' %}
+{% include "_js/vue.js" %}
+{% include "_js/vue/components/collapsible.js" %}
+{% include "_js/vue/components/date-input.js" %}
+{% include "_js/vue/components/email-input.js" %}
+{% include "_js/vue/mixins/multiStageMixin.js" %}
+{% include "_js/vue/mixins/trackedStagesMixin.js" %}
+{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
+{% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}{% raw %}
 Vue.component('feedback-citizenship', {
 	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],

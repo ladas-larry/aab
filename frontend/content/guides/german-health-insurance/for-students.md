@@ -12,7 +12,7 @@ This guide helps you choose the best student health insurance. You need health i
 
 Use my [health insurance picker](/tools/health-insurance-calculator) to see your options.
 
-{% with occupation = 'studentUnemployed' %}{% include '_blocks/healthInsuranceCalculatorStatic.html' %}{% endwith %}
+{% with occupation = 'studentUnemployed' %}{% include "_calculators/healthInsuranceStatic.html" %}{% endwith %}
 
 ## Health insurance for a student visa
 

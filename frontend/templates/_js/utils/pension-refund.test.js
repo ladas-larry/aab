@@ -1,7 +1,7 @@
-{% include '_js/libs/chai.js' %}
-{% include '_js/libs/mocha.js' %}
-{% include '_js/utils/pension-refund.js' %}
-{% include '_js/utils/test.js' %}
+{% include "_js/libs/chai.js" %}
+{% include "_js/libs/mocha.js" %}
+{% include "_js/utils/pension-refund.js" %}
+{% include "_js/utils/test.js" %}
 {% js %}
 
 describe('calculatePensionRefund', () => {

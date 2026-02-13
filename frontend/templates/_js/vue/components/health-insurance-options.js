@@ -1,13 +1,13 @@
-{% include '_js/utils/constants.js' %}
-{% include '_js/utils/health-insurance.js' %}
-{% include '_js/vue.js' %}
-{% include '_js/vue/components/eur.js' %}
-{% include '_js/vue/components/glossary.js' %}
-{% include '_js/vue/components/price.js' %}
-{% include '_js/vue/components/public-health-insurance-options.js' %}
-{% include '_js/vue/mixins/brokerMixin.js' %}
-{% include '_js/vue/mixins/healthInsuranceOptionsMixin.js' %}
-{% include '_js/vue/mixins/uniqueIdsMixin.js' %}
+{% include "_js/utils/constants.js" %}
+{% include "_js/utils/health-insurance.js" %}
+{% include "_js/vue.js" %}
+{% include "_js/vue/components/eur.js" %}
+{% include "_js/vue/components/glossary.js" %}
+{% include "_js/vue/components/price.js" %}
+{% include "_js/vue/components/public-health-insurance-options.js" %}
+{% include "_js/vue/mixins/brokerMixin.js" %}
+{% include "_js/vue/mixins/healthInsuranceOptionsMixin.js" %}
+{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 
 {% js %}{% raw %}
 Vue.component('health-insurance-options', {

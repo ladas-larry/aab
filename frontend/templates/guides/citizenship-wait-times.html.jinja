@@ -5,9 +5,9 @@
 	<link rel="preload" as="fetch" href="/api/forms/citizenship-feedback.json?page=1" crossorigin>
 {% endblock %}
 
-{% include '_js/vue.js' %}
+{% include "_js/vue.js" %}
 {% include "_js/utils/date.js" %}
-{% include '_js/vue/components/pagination.js' %}
+{% include "_js/vue/components/pagination.js" %}
 {% js %}
 	document.querySelectorAll('main .article-body').forEach(
 		el => new Vue({

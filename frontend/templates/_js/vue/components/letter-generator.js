@@ -1,7 +1,7 @@
-{% include '_js/vue.js' %}
-{% include '_js/vue/components/tabs.js' %}
-{% include '_js/vue/mixins/trackedStagesMixin.js' %}
-{% include '_js/vue/mixins/uniqueIdsMixin.js' %}
+{% include "_js/vue.js" %}
+{% include "_js/vue/components/tabs.js" %}
+{% include "_js/vue/mixins/trackedStagesMixin.js" %}
+{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% js %}{% raw %}
 Vue.component('letter-generator', {
 	mixins: [trackedStagesMixin, uniqueIdsMixin],

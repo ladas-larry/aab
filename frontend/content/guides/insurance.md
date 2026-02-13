@@ -71,7 +71,7 @@ If you don't speak German, [Feather](/out/feather-hausrat) and [Getsafe](/out/ge
 
 All German residents need health insurance (*[[Krankenversicherung]]*). It pays for your healthcare when you are sick.
 
-{% include '_blocks/healthInsuranceCalculator.html' %}
+{% include "_calculators/healthInsurance.html" %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 

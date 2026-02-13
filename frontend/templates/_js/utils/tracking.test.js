@@ -1,6 +1,6 @@
-{% include '_js/libs/chai.js' %}
-{% include '_js/libs/mocha.js' %}
-{% include '_js/tracking.js' %}
+{% include "_js/libs/chai.js" %}
+{% include "_js/libs/mocha.js" %}
+{% include "_js/tracking.js" %}
 {% js %}
 describe('shouldTrackUrl', () => {
 	it('Should track /out links', function() {

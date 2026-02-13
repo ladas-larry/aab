@@ -1,4 +1,4 @@
-{% include '_js/utils/date.js' %}
+{% include "_js/utils/date.js" %}
 {% js %}{% raw %}
 Vue.component('date-picker', {
 	// Mimics the date-input behaviour: The value is always a valid date or an

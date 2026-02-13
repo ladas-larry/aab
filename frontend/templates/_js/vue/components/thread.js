@@ -1,5 +1,5 @@
-{% include '_js/vue.js' %}
-{% include '_js/vue/components/comment.js' %}
+{% include "_js/vue.js" %}
+{% include "_js/vue/components/comment.js" %}
 {% js %}{% raw %}
 Vue.component('thread', {
 	props: ['id'],

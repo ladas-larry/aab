@@ -100,7 +100,7 @@ This guide explains:
 
 ## List of therapists
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include "_blocks/relatedPlaces.html" %}
 
 To add a therapist, [fill this form](/suggest-therapist).
 

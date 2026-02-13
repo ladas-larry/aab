@@ -40,7 +40,7 @@ Do not use this form if...
 
 ## Fill the form online
 
-{% include "_blocks/taxIdRequestStatic.html" %}
+{% include "_forms/taxIdRequestStatic.html" %}
 
 ## Download the form
 

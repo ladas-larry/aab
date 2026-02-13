@@ -1,4 +1,4 @@
-{% include '_js/vue.js' %}
+{% include "_js/vue.js" %}
 {% js %}{% raw %}
 Vue.component('age-input', {
 	props: ['value'],

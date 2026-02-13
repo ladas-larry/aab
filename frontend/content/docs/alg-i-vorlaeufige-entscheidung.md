@@ -15,7 +15,7 @@ If your employer refuses to send your *[[Arbeitsbescheinigung]]*, fill this temp
 
 ## Letter template
 
-{% include "_blocks/algIVorlaeufigeBewilligungStatic.html" %}
+{% include "_letters/algIVorlaeufigeBewilligungStatic.html" %}
 
 This letter is based on templates by [Rechtsanwalt Köper](https://www.rechtsanwalt-koeper.de/) and [Rotwang Law](https://rotwang-law.de/en/).
 

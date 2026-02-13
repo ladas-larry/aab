@@ -20,7 +20,7 @@ This tool helps you choose the best German health insurance. It explains your op
 
 ## Health insurance picker
 
-{% include '_blocks/healthInsuranceCalculatorStatic.html' %}
+{% include "_calculators/healthInsuranceStatic.html" %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
@@ -40,5 +40,5 @@ Read my [health insurance guide](/guides/german-health-insurance), and [ask my i
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
-{% include '_blocks/healthInsuranceQuestion.html' %}
+{% include "_forms/healthInsuranceQuestion.html" %}
 

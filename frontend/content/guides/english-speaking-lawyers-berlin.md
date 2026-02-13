@@ -67,7 +67,7 @@ This is a list of lawyers who speak English in Berlin.
 
 ## List of lawyers
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include "_blocks/relatedPlaces.html" %}
 
 To add a lawyer, [fill this form](/suggest-business).
 
