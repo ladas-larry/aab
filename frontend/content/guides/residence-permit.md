@@ -374,7 +374,7 @@ To convert your National Visa into a residence permit:
 
 Tell me how long it took to get your residence permit. Your feedback helps thousands of people plan their application.
 
-{% tool "feedbackResidencePermit/form" %}
+{% tool "residencePermitFeedback/form" %}
 
 **[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
 

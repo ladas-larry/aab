@@ -179,7 +179,7 @@ Go to your second *[[Ausländerbehörde]]* appointment and pick up your Blue Car
 
 **[How to pick up your Blue Card ➞](/guides/residence-permit#pick-up-your-residence-card)**
 
-{% tool "feedbackResidencePermit/form", residence_permit='BLUE_CARD' %}
+{% tool "residencePermitFeedback/form", residence_permit='BLUE_CARD' %}
 
 ### 8. Start working in Germany
 
@@ -244,7 +244,7 @@ These are the required documents **in Berlin**.[^2] If you apply elsewhere, they
 
 Tell me how long it took to get your Blue Card. Your feedback helps thousands of people plan their application.
 
-{% tool "feedbackResidencePermit/form", residence_permit='BLUE_CARD' %}
+{% tool "residencePermitFeedback/form", residence_permit='BLUE_CARD' %}
 
 **[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
 

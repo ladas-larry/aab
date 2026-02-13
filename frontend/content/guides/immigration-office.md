@@ -115,7 +115,7 @@ You don't need a residence permit to start studying. You can start studying as s
 
 **[How to apply in your country ➞](/guides/residence-permit#how-to-apply-in-your-country)**
 
-{% tool "feedbackResidencePermit/form" %}
+{% tool "residencePermitFeedback/form" %}
 
 ## Payment methods
 
