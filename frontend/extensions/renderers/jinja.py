@@ -17,7 +17,7 @@ class ToolExtension(InclusionTag, StandaloneTag):
         return f"_tools/{tool_name}.html"
 
     def get_context(self, *args, **kwargs):
-        return {"static": kwargs.get("static", False)}
+        return kwargs
 
 
 class TableOfContentsExtension(InclusionTag, StandaloneTag):

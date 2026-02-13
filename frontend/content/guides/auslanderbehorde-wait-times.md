@@ -7,15 +7,15 @@ Date_created: 2024-11-27
 
 ## Residence permit wait times
 
-{% include "_blocks/feedbackResidencePermit/summary.html"%}
+{% tool "feedbackResidencePermit/summary"%}
 
 ## Share your experience
 
-{% include "_blocks/feedbackResidencePermit/form.html"%}
+{% tool "feedbackResidencePermit/form", open=True %}
 
 ## Feedback from other people
 
-{% include "_blocks/feedbackResidencePermit/list.html"%}
+{% tool "feedbackResidencePermit/list" %}
 
 ## Need help?
 
