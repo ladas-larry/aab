@@ -9,7 +9,7 @@ This is a guide for the *Landesamt für Einwanderung*, the immigration office in
 
 **[How to apply for a residence permit ➞](/guides/residence-permit)**
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## How to contact the Ausländerbehörde
 

@@ -7,7 +7,7 @@ Date_created: 2017-09-27
 
 If I can't answer your questions, these resources can help.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## General questions
 
@@ -128,7 +128,7 @@ Don't be afraid to use a lawyer. Your employer can't fire you or blacklist you b
 
 ### Health insurance questions
 
-{% include "_forms/healthInsuranceQuestionStatic.html" %}
+{% form "healthInsuranceQuestion", static=True %}
 
 ## Business questions
 

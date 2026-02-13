@@ -16,7 +16,7 @@ This tool calculates your German [net income](/glossary/Netto%20income) in 2026,
 
 ## Tax calculator
 
-{% include "_calculators/taxStatic.html" %}
+{% calculator "tax", static=True %}
 
 ## Need help?
 

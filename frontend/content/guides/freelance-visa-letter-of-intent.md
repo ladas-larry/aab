@@ -17,7 +17,7 @@ To apply for a [freelance visa](/glossary/Freelance%20visa), you need [letters o
 
 A letter of intent says "I want to hire this person to do this job, for this price". It's not a contract. The person does not have to hire you. It just shows interest for your services.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Why you need letters of intent
 

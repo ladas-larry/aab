@@ -20,7 +20,7 @@ This is a list of foreign cooking ingredients, and where to find them in Berlin.
 
 If you can't find something, ask [Found in... Berlin](https://www.facebook.com/groups/530673463736983/).
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## List of ingredients
 

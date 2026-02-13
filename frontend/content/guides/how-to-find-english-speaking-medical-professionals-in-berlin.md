@@ -7,7 +7,7 @@ Date_created: 2017-08-31
 
 This guide helps you find a doctor that speaks English.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## English-speaking doctors
 

@@ -7,7 +7,7 @@ Date_created: 2017-12-04
 
 This guide shows you how to write a German address and send letters to Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## How to write German addresses
 

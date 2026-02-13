@@ -9,7 +9,7 @@ Degiro is an online broker with low fees. You can buy and sell stocks, and their
 
 I use Degiro since 2018. My [2019 review](/documents/degiro-review-2019.pdf) was negative, but Degiro has improved a lot since then. In 2025, I prefer buying stocks and ETFs through [my bank](/out/n26), because it's cheaper and easier. I still hold a big part of my investments in Degiro.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Using Degiro
 

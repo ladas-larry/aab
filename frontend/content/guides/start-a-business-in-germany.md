@@ -11,7 +11,7 @@ This guide explains how to start a business or become a freelancer in Germany.
 
 It explains how to form a single proprietorship (*Einzelunternehmen*), not a corporation or a limited liability company (*UG* or *GmbH*).
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## What to expect
 
@@ -144,13 +144,13 @@ Sometimes, they freeze your account by mistake. It happened to me, and to other 
 
 In Germany, you *must* have [health insurance](/glossary/Krankenversicherung). It's a big part of your [cost of living](/guides/cost-of-living).
 
-{% with occupation = 'selfEmployed' %}{% include "_calculators/healthInsurance.html" %}{% endwith %}
+{% calculator "healthInsurance", occupation="selfEmployed", static=True %}
 
 As a freelancer, **never choose health insurance yourself**. It's a terrible idea. Freelancers often get stuck with bad or expensive health insurance. [Freelance visa](/glossary/Freelance%20visa) applications are often rejected because of invalid health insurance.
 
 Ask my health insurance broker for advice. He will help you choose the best insurance. His help is free.
 
-{% include "_forms/healthInsuranceQuestion.html" %}
+{% form "healthInsuranceQuestion" %}
 
 **Join the [[Künstlersozialkasse]]** if you can. They pay half of your health insurance. It's a really good deal. You can do this later.
 
@@ -251,7 +251,7 @@ If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherun
 
 [Private health insurance](/glossary/private%20Krankenversicherung) could be a lot cheaper for you. I save around €600 per month. Use my [health insurance calculator](/tools/health-insurance-calculator) to compare costs, and [ask my insurance expert](/guides/german-health-insurance#ask-our-expert) to find the best option for you.
 
-{% with occupation = 'selfEmployed' %}{% include "_calculators/healthInsuranceStatic.html" %}{% endwith %}
+{% calculator "healthInsurance", occupation="selfEmployed", static=True %}
 
 **[Health insurance for freelancers ➞](/guides/german-health-insurance/for-freelancers)**
 

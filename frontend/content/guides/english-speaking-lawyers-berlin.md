@@ -63,7 +63,7 @@ Related_places:
 
 This is a list of lawyers who speak English in Berlin.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## List of lawyers
 

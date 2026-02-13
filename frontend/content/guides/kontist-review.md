@@ -11,7 +11,7 @@ This is my review of Kontist in May 2025. I used Kontist for my business from Ja
 
 In my opinion, **there is no good reason to choose Kontist**. Use one of the [Kontist alternatives](#kontist-alternatives).
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ![Kontist mobile app and card](/images/kontist-review-proof-of-membership.jpg "Confirmed customer")
 

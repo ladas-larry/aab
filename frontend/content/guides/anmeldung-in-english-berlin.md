@@ -11,7 +11,7 @@ After you [move to Berlin](/guides/moving-to-berlin), [find a place to live](/gu
 
 This guide explains why it's important, and how to do it.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Why you must register your address
 
@@ -68,7 +68,7 @@ If this is your first *Anmeldung*, or if you are not an EU citizen, you must [do
 
 If you can't do your *Anmeldung* online, you must do it **in person at the [[Bürgeramt]]**. You can go to any *[[Bürgeramt]]* in Berlin. **You need an appointment**. It must be after your move-in date.[^1] You have 14 days to register, but in Berlin nobody cares. You can do it months later.[^20]
 
-{% include "_blocks/appointmentFinder.html" %}
+{% calculator "anmeldungAppointment" %}
 
 **[Other ways to get an appointment ➞](/guides/berlin-burgeramt-appointment)**
 

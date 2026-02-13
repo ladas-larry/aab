@@ -7,7 +7,7 @@ Date_created: 2017-09-18
 
 This guide explains how to get an appointment at the [[Bürgeramt]] in Berlin.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 **You might not need an appointment.** For example, you can [register](/glossary/Anmeldung) and [deregister](/glossary/Abmeldung) your address online. You don't need to go to the Bürgeramt.
 
@@ -56,7 +56,7 @@ You can book a single appointment for multiple services:
 
 To [register your address](/glossary/Anmeldung), use my [*Anmeldung* appointment finder](/tools/appointment-finder).
 
-{% include "_blocks/appointmentFinder.html" %}
+{% calculator "anmeldungAppointment" %}
 
 ### Call 115
 

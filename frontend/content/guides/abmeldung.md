@@ -12,7 +12,7 @@ When you [move out of your apartment](/guides/moving-out) and [leave Germany](/g
 
 This guide explains why it's important, and how to do it.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Who must deregister
 
@@ -93,7 +93,7 @@ Each *Bürgeramt* does things differently. They rarely email your *[[Abmeldebesc
 
 To deregister by email, send this message to [any *Bürgeramt* in Berlin](https://service.berlin.de/standorte/buergeraemter/):
 
-{% include "_letters/abmeldungEmail.html"%}
+{% letter "abmeldungEmail" %}
 
 Attach this to your email:
 

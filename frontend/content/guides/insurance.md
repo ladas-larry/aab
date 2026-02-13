@@ -10,7 +10,7 @@ Related_reviews:
 
 This is an overview of the common types of insurance in Germany, and why they are important.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Liability insurance
 
@@ -71,7 +71,7 @@ If you don't speak German, [Feather](/out/feather-hausrat) and [Getsafe](/out/ge
 
 All German residents need health insurance (*[[Krankenversicherung]]*). It pays for your healthcare when you are sick.
 
-{% include "_calculators/healthInsurance.html" %}
+{% calculator "healthInsurance" %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 

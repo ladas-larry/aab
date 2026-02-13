@@ -7,7 +7,7 @@ Date_created: 2024-11-02
 
 This guide explains how to make a copy of your apartment keys in Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Who pays for the keys?
 

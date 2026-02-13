@@ -30,7 +30,7 @@ A relocation agency can help you...
 - Fill and translate documents
 - Go to the *[[Ausländerbehörde]]* with you
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Relocation agency or immigration lawyer?
 

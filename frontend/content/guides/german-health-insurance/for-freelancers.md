@@ -8,11 +8,11 @@ Call_to_action: askOurInsuranceExpert
 
 This guide helps you choose the best German health insurance for self-employment, and to [apply for a freelance visa](/guides/freelance-visa).
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Your options
 
-{% with occupation = 'selfEmployed' %}{% include "_calculators/healthInsuranceStatic.html" %}{% endwith %}
+{% calculator "healthInsurance", occupation="selfEmployed", static=True %}
 
 There are 3 long-term health insurance options:
 
@@ -80,7 +80,7 @@ The best option depends on your citizenship, your income, your health, and your 
 
 If you are self-employed, **never choose health insurance yourself**. Always [ask an expert](/guides/german-health-insurance#need-help) to help you. It's a complex decision, and freelancers often make expensive mistakes. Choosing the wrong health insurance can delay your [freelance visa](/glossary/Freelance%20visa) application.
 
-{% include "_forms/healthInsuranceQuestionStatic.html" %}
+{% form "healthInsuranceQuestion", static=True %}
 
 ## What to do next
 

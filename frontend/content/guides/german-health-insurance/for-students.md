@@ -8,11 +8,11 @@ Call_to_action: askOurInsuranceExpert
 
 This guide helps you choose the best student health insurance. You need health insurance to apply for a [student visa](/glossary/Student%20visa), and to study at a German university.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 Use my [health insurance picker](/tools/health-insurance-calculator) to see your options.
 
-{% with occupation = 'studentUnemployed' %}{% include "_calculators/healthInsuranceStatic.html" %}{% endwith %}
+{% calculator "healthInsurance", occupation="studentUnemployed", static=True %}
 
 ## Health insurance for a student visa
 

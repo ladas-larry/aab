@@ -1,4 +1,4 @@
 {% extends "tests/component/index.html.jinja" %}
 {% block component %}
-	{% with occupation = 'studentUnemployed' %}{% include "_calculators/healthInsuranceStatic.html" %}{% endwith %}
+	{% with occupation = 'studentUnemployed' %}{% calculator "healthInsurance", static=True %}{% endwith %}
 {% endblock %}

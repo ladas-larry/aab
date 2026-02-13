@@ -13,7 +13,7 @@ I am an N26 customer since 2016. It's my main bank account. This is my experienc
 
 ![N26 credit cards](/images/n26-credit-card-allaboutberlin.jpg)
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## What are the benefits of N26?
 
@@ -222,7 +222,7 @@ Is N26 the best bank for you? It depends. There are [many other options](/guides
 
 [^0]: [docs.n26.com](https://docs.n26.com/legal/01+DE/01+Account/en/13account-pricelist-en.pdf)
 [^1]: [Facebook](https://www.facebook.com/deutschepost/posts/1727000207317159), [deutscheskonto.org](https://www.deutscheskonto.org/de/postident-problem/), [migazin.de](https://www.migazin.de/2011/11/17/wie-der-ehemalige-staatsbetrieb-auslander-diskriminiert/)
+[^2]: [docs.n26.com](https://docs.n26.com/cs/Support%20Center/id-docs/de/iddocs-de-en.pdf?s_id=173058848)
 [^3]: [n26.com](https://n26.com/en-de/security)
 [^4]: [support.n26.com](https://support.n26.com/en-de/payments-transfers-and-withdrawals/withdrawals/how-often-can-i-withdraw-cash-for-free)
 [^5]: [Wikipedia](https://de.wikipedia.org/wiki/N26_\(Direktbank\))
-[^2]: [docs.n26.com](https://docs.n26.com/cs/Support%20Center/id-docs/de/iddocs-de-en.pdf?s_id=173058848)

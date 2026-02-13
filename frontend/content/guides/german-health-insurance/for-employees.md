@@ -8,13 +8,13 @@ Call_to_action: askOurInsuranceExpert
 
 If you [work in Germany](/guides/find-a-job-in-berlin), you must have health insurance. This guide helps you choose the best health insurance for employees.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Your options
 
 Employees must get [public](/glossary/gesetzliche%20Krankenversicherung) or [private health insurance](/glossary/private%20Krankenversicherung). Use my [health insurance picker](/tools/health-insurance-calculator) to find the best option.
 
-{% with occupation = 'employee' %}{% include "_calculators/healthInsuranceStatic.html" %}{% endwith %}
+{% calculator "healthInsurance", occupation="employee", static=True %}
 
 Your options depend on your income:
 

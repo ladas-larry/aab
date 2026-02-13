@@ -1,4 +1,4 @@
 {% extends "tests/component/index.html.jinja" %}
 {% block component %}
-	{% include "_forms/taxIdRequestStatic.html" %}
+	{% form "taxIdRequest", static=True %}
 {% endblock %}

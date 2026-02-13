@@ -13,7 +13,7 @@ Summary:
 - It's a monthly subscription. You can't buy it from a ticket machine.
 - Tourists should buy it from [mo.pla](https://en.mopla.solutions/en/tickets/deutschlandticket) or Hamburg's [hvv Switch app](https://www.hvv-switch.de/en/).
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## How to buy the Deutschland Ticket
 

@@ -17,7 +17,7 @@ As a permanent resident, you can...
 
 This guide explains how to apply for permanent residence in Berlin.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Why become a permanent resident
 

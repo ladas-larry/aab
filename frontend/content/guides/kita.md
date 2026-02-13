@@ -13,7 +13,7 @@ In Germany, most children go to *[[Kita]]* until around 6 years old. It's a free
 
 This guide explains how to send your child to *Kita*.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Daycare costs
 

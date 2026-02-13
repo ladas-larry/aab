@@ -475,6 +475,12 @@ config.jinja_filters = {
     "cur": to_currency,
     "percent": to_percent,
 }
+config.jinja_extensions.extend(
+    [
+        "extensions.renderers.jinja.ToolExtension",
+        "extensions.renderers.jinja.TableOfContentsExtension",
+    ]
+)
 
 config.context_processors.extend(
     [

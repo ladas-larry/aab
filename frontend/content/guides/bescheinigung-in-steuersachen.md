@@ -11,7 +11,7 @@ Date_created: 2024-07-30
 
 When you [apply for a freelance visa](/guides/freelance-visa) or for [permanent residence](/guides/permanent-residence), you might need a certificate of tax matters (*Bescheinigung in Steuersachen* or *steuerliche Unbedenklichkeitsbescheinigung*). This document confirms that you paid your taxes on time, and that you don't owe the *[[Finanzamt]]* money.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## How to get this document
 
@@ -49,7 +49,7 @@ Fill this application form, print it and sign it. You must know your [tax ID](/g
 
 If you apply online, use this email template, and attach the application form.
 
-{% include "_letters/bescheinigungInSteuersachenStatic.html" %}
+{% letter "bescheinigungInSteuersachen", static=True %}
 
 [^1]: [Berlin.de](https://service.berlin.de/dienstleistung/324713/en/) (June 2024)
 [^2]: [Reddit](https://old.reddit.com/r/germany/comments/1bc8lkk/how_long_does_it_take_to_receive_a_bescheinigung/) (March 2024), Finanzamt call (June 2024), [Berlin.de](https://service.berlin.de/dienstleistung/324713/en/) (June 2024), [Reddit](https://old.reddit.com/r/germany/comments/1bc8lkk/how_long_does_it_take_to_receive_a_bescheinigung/) (March 2024), [Red Tape Translation](https://redtapetranslation.com/bescheinigung-in-steuersachen/#:~:text=how%20long%20does%20it%20take%3F) (2024)

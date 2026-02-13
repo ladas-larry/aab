@@ -9,7 +9,7 @@ Related_reviews:
 
 This checklist helps you move from Germany to another country.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Before you leave Germany
 

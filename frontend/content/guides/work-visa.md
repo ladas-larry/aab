@@ -20,7 +20,7 @@ With a work visa, you can...
 
 This guide explains how to apply for a [work visa](/glossary/Work%20Visa) in Berlin or in your home country.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Who needs a work visa?
 

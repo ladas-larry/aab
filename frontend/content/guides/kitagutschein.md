@@ -10,7 +10,7 @@ Related_reviews:
 
 To [send your child to the *Kita*](/guides/kita), you need a *[[Kitagutschein]]*. It's a voucher for free childcare.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Who can get a Kitagutschein?
 

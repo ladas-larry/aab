@@ -9,7 +9,7 @@ This guide lists software that can help you file a tax declaration in Germany. I
 
 Tax and bookkeeping software costs are [tax-deductible](/glossary/steuerlich%20absetzbar).[^0]
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Tax software for employees
 

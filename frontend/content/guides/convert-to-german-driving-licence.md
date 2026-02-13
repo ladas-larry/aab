@@ -7,7 +7,7 @@ Date_created: 2018-02-28
 
 If you have a foreign driving licence, you can exchange it for a German driving licence. This guide shows you how.
 
-{% include "_blocks/tableOfContents.html" %}
+{% tableOfContents %}
 
 ## Can you already drive in Germany?
 
