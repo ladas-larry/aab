@@ -43,7 +43,7 @@ You can also get the document if you go to the *Finanzamt* in person. It might n
 
 Fill this application form, print it and sign it. You must know your [tax ID](/glossary/Steueridentifikationsnummer) or *[[Steuernummer]]*.
 
-{% include "_blocks/downloadDocuments.html" %}
+{% tool "documentDownloads" %}
 
 ### Email template
 

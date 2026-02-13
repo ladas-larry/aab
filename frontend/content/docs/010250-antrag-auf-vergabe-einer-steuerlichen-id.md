@@ -46,7 +46,7 @@ Do not use this form if...
 
 You can also download the original form and fill it yourself. If you need a tax ID for multiple people, fill the form multiple times.
 
-{% include "_blocks/downloadDocuments.html"%}
+{% tool "documentDownloads" %}
 
 ## How to fill this form
 
