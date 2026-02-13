@@ -95,7 +95,7 @@ Vue.component('public-health-insurance-options', {
 			<ul class="buttons list">
 				<li>
 					<a class="recommended" title="Sign up with Techniker Krankenkasse" :href="technikerKrankenkasseUrl" target="_blank">
-						{% endraw %}{% include "_css/icons/health-insurance/logo-tk.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/health-insurance/logo-tk.svg" %}{% raw %}
 						<div>
 							<h3 v-text="option('tk').name"></h3>
 							<p>The biggest public health insurer. They speak English.</p>
@@ -105,7 +105,7 @@ Vue.component('public-health-insurance-options', {
 				</li>
 				<li>
 					<a title="Sign up with BARMER" href="/out/feather-barmer-signup" target="_blank">
-						{% endraw %}{% include "_css/icons/health-insurance/logo-barmer.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/health-insurance/logo-barmer.svg" %}{% raw %}
 						<div>
 							<h3 v-text="option('barmer').name"></h3>
 							<p>The second biggest insurer. They also speak English.</p>

@@ -372,42 +372,42 @@ Vue.component('health-insurance-calculator', {
 				<hr>
 				<ul class="benefits">
 					<li v-if="initialOccupation !== 'employee'">
-						{% endraw %}{% include "_css/icons/liability.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/liability.svg" %}{% raw %}
 						<div>
 							<strong>Low price, great coverage</strong>
 							<br>Find affordable health insurance that works when you need it.
 						</div>
 					</li>
 					<li v-if="initialOccupation === 'employee'">
-						{% endraw %}{% include "_css/icons/family.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/family.svg" %}{% raw %}
 						<div>
 							<strong>For you and your family</strong>
 							<br>Find health insurance that covers your spouse and your children.
 						</div>
 					</li>
 					<li v-if="initialOccupation === 'employee'">
-						{% endraw %}{% include "_css/icons/job.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/job.svg" %}{% raw %}
 						<div>
 							<strong>Perfect for your visa <span class="no-mobile">application</span></strong>
 							<br>Get the right insurance for your work visa, Blue Card or Chancenkarte.
 						</div>
 					</li>
 					<li v-if="initialOccupation === 'studentUnemployed'">
-						{% endraw %}{% include "_css/icons/moving.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/moving.svg" %}{% raw %}
 						<div>
 							<strong>Perfect for a student visa</strong>
 							<br>Get the right insurance for your National Visa application.
 						</div>
 					</li>
 					<li v-if="initialOccupation === 'selfEmployed'">
-						{% endraw %}{% include "_css/icons/moving.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/moving.svg" %}{% raw %}
 						<div>
 							<strong>Perfect for your <span class="no-mobile">freelance</span> visa</strong>
 							<br>Get insurance that's accepted by the immigration office.
 						</div>
 					</li>
 					<li>
-						{% endraw %}{% include "_css/icons/helper.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/helper.svg" %}{% raw %}
 						<div>
 							<strong>Free expert advice</strong>
 							<br>Ask our insurance expert anything on WhatsApp.
@@ -429,37 +429,37 @@ Vue.component('health-insurance-calculator', {
 				<ul class="buttons grid" aria-label="Occupations">
 					<li>
 						<button data-occupation="employee" @click="selectOccupation('employee')">
-							{% endraw %}{% include "_css/icons/job.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/job.svg" %}{% raw %}
 							Employee
 						</button>
 					</li>
 					<li>
 						<button data-occupation="studentUnemployed" @click="selectOccupation('studentUnemployed')">
-							{% endraw %}{% include "_css/icons/student.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/student.svg" %}{% raw %}
 							Student
 						</button>
 					</li>
 					<li>
 						<button data-occupation="selfEmployed" @click="selectOccupation('selfEmployed')">
-							{% endraw %}{% include "_css/icons/business.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/business.svg" %}{% raw %}
 							Self-employed
 						</button>
 					</li>
 					<li>
 						<button data-occupation="azubi" @click="selectOccupation('azubi')">
-							{% endraw %}{% include "_css/icons/helper.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/helper.svg" %}{% raw %}
 							Apprentice
 						</button>
 					</li>
 					<li>
 						<button data-occupation="unemployed" @click="selectOccupation('unemployed')">
-							{% endraw %}{% include "_css/icons/visiting.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/visiting.svg" %}{% raw %}
 							Unemployed
 						</button>
 					</li>
 					<li>
 						<button data-occupation="other" @click="selectOccupation('other')">
-							{% endraw %}{% include "_css/icons/family.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/family.svg" %}{% raw %}
 							It's complicated
 						</button>
 					</li>
@@ -594,7 +594,7 @@ Vue.component('health-insurance-calculator', {
 							Ask {{ broker.name }}
 						</button>
 						<a v-if="contactMethod === 'WHATSAPP'" :href="whatsappUrl" @click="createCase" class="button whatsapp" :disabled="isLoading" target="_blank">
-							{% endraw %}{% include "_css/icons/whatsapp.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/whatsapp.svg" %}{% raw %}
 							<span class="only-mobile">Start chat</span>
 							<span class="no-mobile">Chat with {{ broker.name }}</span>
 						</a>
@@ -613,7 +613,7 @@ Vue.component('health-insurance-calculator', {
 				<ul class="buttons list">
 					<li>
 						<button class="recommended" @click="selectOption('askABroker')" :aria-labelledby="uid('h-askOurExpert')">
-							{% endraw %}{% include "_css/icons/help.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/help.svg" %}{% raw %}
 							<div>
 								<h3 :id="uid('h-askOurExpert')">Ask our expert</h3>
 								<p>Let {{ broker.name }} find the best health insurance for you. It's 100% free.</p>
@@ -622,7 +622,7 @@ Vue.component('health-insurance-calculator', {
 					</li>
 					<li v-if="showGuideLink" :aria-labelledby="uid('h-readGuide')">
 						<a href="/guides/german-health-insurance" @click="selectOption('guide')" target="_blank">
-							{% endraw %}{% include "_css/icons/student.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/student.svg" %}{% raw %}
 							<div>
 								<h3 :id="uid('h-readGuide')">Learn how to choose</h3>
 								<p>Read my health insurance guide and make an informed decision.</p>
@@ -705,7 +705,7 @@ Vue.component('health-insurance-calculator', {
 							Ask {{ broker.name }}
 						</button>
 						<a v-if="mode === 'calculator' && contactMethod === 'WHATSAPP'" :href="whatsappUrl" @click="createCase" class="button whatsapp" :disabled="isLoading" target="_blank">
-							{% endraw %}{% include "_css/icons/whatsapp.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/whatsapp.svg" %}{% raw %}
 							<span class="only-mobile">Start chat</span>
 							<span class="no-mobile">Chat with {{ broker.name }}</span>
 						</a>
@@ -731,7 +731,7 @@ Vue.component('health-insurance-calculator', {
 						<i class="icon left" aria-hidden="true"></i> <span class="no-mobile">Go back</span>
 					</button>
 					<a :href="whatsappUrl" class="button whatsapp" target="_blank">
-						{% endraw %}{% include "_css/icons/whatsapp.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/whatsapp.svg" %}{% raw %}
 						Open WhatsApp
 					</a>
 				</div>
