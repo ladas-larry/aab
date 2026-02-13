@@ -111,7 +111,7 @@ window.addEventListener("DOMContentLoaded", function() {
 			aria-autocomplete="list"
 			aria-controls="search-results-{{ random_id() }}"
 			{% if autofocus|default %}class="autofocus"{% endif %}>
-		{% include "_css/icons/search.svg" %}
+		{% include "_icons/search.svg" %}
 	</label>
 	<div id="search-results-{{ random_id() }}" role="listbox" class="search-results"></div>
 </div>

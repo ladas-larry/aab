@@ -23,7 +23,7 @@ Vue.component('expat-health-insurance-options', {
 			<ul class="buttons list">
 				<li>
 					<a href="/out/feather-expats" target="_blank" class="recommended">
-						{% endraw %}{% include "_css/icons/health-insurance/logo-feather.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/health-insurance/logo-feather.svg" %}{% raw %}
 						<div>
 							<h3>Feather</h3>
 							<p>An English-speaking insurer from Berlin.</p>
@@ -33,7 +33,7 @@ Vue.component('expat-health-insurance-options', {
 				</li>
 				<li>
 					<a href="/out/hansemerkur-expats" target="_blank">
-						{% endraw %}{% include "_css/icons/health-insurance/logo-hansemerkur.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/health-insurance/logo-hansemerkur.svg" %}{% raw %}
 						<div>
 							<h3>HanseMerkur</h3>
 							<p>A reliable German health insurer.</p>

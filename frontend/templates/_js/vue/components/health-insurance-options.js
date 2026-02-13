@@ -230,7 +230,7 @@ Vue.component('health-insurance-options', {
 				<ul class="buttons list">
 					<li v-for="subOption in results.other.options" :key="subOption.id">
 						<a v-if="subOption.id === 'familienversicherung'" @click="selectOption(subOption.id)" title="Learn more about family health insurance" href="/guides/german-health-insurance#free-health-insurance" target="_blank">
-							{% endraw %}{% include "_css/icons/family.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/family.svg" %}{% raw %}
 							<div>
 								<h3>Family health insurance</h3>
 								<p v-text="familienversicherungText"></p>
@@ -238,7 +238,7 @@ Vue.component('health-insurance-options', {
 							<price :amount="0" per-month></price>
 						</a>
 						<a v-if="subOption.id === 'social-benefits'" @click="selectOption(subOption.id)" title="Learn more about state-sponsored health insurance" href="/guides/german-health-insurance#free-health-insurance" target="_blank">
-							{% endraw %}{% include "_css/icons/bank.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/bank.svg" %}{% raw %}
 							<div>
 								<h3>Social benefits</h3>
 								<p>If you get <glossary term="ALG I">unemployment benefits</glossary>, <glossary>Bürgergeld</glossary> or <glossary>Elterngeld</glossary>, you get free public health insurance.</p>
@@ -246,7 +246,7 @@ Vue.component('health-insurance-options', {
 							<price :amount="0" per-month></price>
 						</a>
 						<a v-if="subOption.id === 'ehic'" @click="selectOption(subOption.id)" title="Learn more about the EHIC" href="/guides/german-health-insurance#insurance-from-other-eu-countries" target="_blank">
-							{% endraw %}{% include "_css/icons/passport.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/passport.svg" %}{% raw %}
 							<div>
 								<h3>European Health Insurance Card</h3>
 								<p>Your insurance from another EU country might cover you in Germany.</p>
@@ -254,7 +254,7 @@ Vue.component('health-insurance-options', {
 							<price :amount="0" per-month></price>
 						</a>
 						<a v-if="subOption.id === 'ksk'" @click="selectOption(subOption.id)" title="Learn more about the KSK" href="/guides/ksk-kuenstlersozialkasse" target="_blank">
-							{% endraw %}{% include "_css/icons/liability.svg" %}{% raw %}
+							{% endraw %}{% include "_icons/liability.svg" %}{% raw %}
 							<div>
 								<h3>Join the <glossary>Künstlersozialkasse</glossary></h3>
 								<p>If you are an artist, the KSK can pay half of your public health insurance. This is a really good deal.</p>

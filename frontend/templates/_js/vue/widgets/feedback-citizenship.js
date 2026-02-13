@@ -197,7 +197,7 @@ Vue.component('feedback-citizenship', {
 				<template v-if="!showRestOfForm">
 					<hr>
 					<div class="icon-paragraph">
-						{% endraw %}{% include "_css/icons/helper.svg" %}{% raw %}
+						{% endraw %}{% include "_icons/helper.svg" %}{% raw %}
 						<div>
 							<p>
 								Your feedback helps others plan their citizenship application.
