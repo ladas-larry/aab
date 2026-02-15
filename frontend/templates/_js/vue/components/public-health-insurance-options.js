@@ -1,4 +1,3 @@
-{% include "_js/utils/percent.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/eur.js" %}
 {% include "_js/vue/components/glossary.js" %}
@@ -10,6 +9,7 @@
 import { healthInsurance, occupations, pflegeversicherung } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
 import { isWerkstudent } from '/js/utils/healthInsurance.mjs';
+import { formatPercent } from '/js/utils/number.mjs';
 
 Vue.component('public-health-insurance-options', {
 	mixins: [healthInsuranceOptionsMixin],
