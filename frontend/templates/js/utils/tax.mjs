@@ -209,7 +209,7 @@ export function calculateTax(yearlyIncome, {
 	return result;
 }
 
-function calculateIncomeTax(taxableIncome, isSplittingTarif=false) {  // Einkommensteuer
+export function calculateIncomeTax(taxableIncome, isSplittingTarif=false) {  // Einkommensteuer
 	// The Splittingtarif for married couple combines the couple's income, and taxes each half equally.
 	// A couple that earns 75k + 25k pays 2x income tax on 50k.
 	if(isSplittingTarif) {
@@ -278,7 +278,7 @@ function calculateIncomeTaxClass56(taxableIncome) { // [MST5-6] - § 39b Abs. 2 
 }
 
 // Arbeitslosenversicherung, yearly
-function calculateUnemploymentInsurance(yearlyIncome, occupation='employee', isInEastGermany=false) {
+export function calculateUnemploymentInsurance(yearlyIncome, occupation='employee', isInEastGermany=false) {
 	const flags = new Set();
 	let unemploymentInsurance = 0;
 
@@ -312,7 +312,7 @@ function calculateUnemploymentInsurance(yearlyIncome, occupation='employee', isI
 }
 
 // TODO: Test for tax class 3 [MSOLZSTS]
-function calculateSolidarityTax(incomeTax, isSplittingTarif=false) {
+export function calculateSolidarityTax(incomeTax, isSplittingTarif=false) {
 	let flags = new Set();
 
 	if(isSplittingTarif) {
@@ -346,7 +346,7 @@ function calculateSolidarityTax(incomeTax, isSplittingTarif=false) {
 	}
 }
 
-function calculateChurchTax(incomeTax, germanStateAbbr) {
+export function calculateChurchTax(incomeTax, germanStateAbbr) {
 	const churchTaxRate = taxes.church[germanStateAbbr] || taxes.church.default;
 	return {
 		churchTax: incomeTax * churchTaxRate,

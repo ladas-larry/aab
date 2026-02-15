@@ -1,10 +1,10 @@
 {% include "_js/libs/chai.js" %}
 {% include "_js/libs/mocha.js" %}
-{% include "_js/utils/tax.js" %}
 {% include "_js/utils/test.js" %}
 {% js %}
 
 import { taxes } from '/js/utils/constants.mjs';
+import { calculateIncomeTax, calculateChurchTax, calculateSolidarityTax, calculateUnemploymentInsurance } from '/js/utils/tax.mjs';
 
 describe('calculateUnemploymentInsurance', () => {
 	const testCases = [

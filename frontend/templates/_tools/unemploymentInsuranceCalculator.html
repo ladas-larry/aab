@@ -1,4 +1,3 @@
-{% include "_js/utils/tax.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/collapsible.js" %}
 {% include "_js/vue/components/eur.js" %}
@@ -12,6 +11,7 @@
 {% js %}
 	import { occupations, taxes } from '/js/utils/constants.mjs';
 	import { isEastGerman } from '/js/utils/germanStates.mjs';
+	import { calculateUnemploymentInsurance } from '/js/utils/tax.mjs';
 
 	document.querySelectorAll('collapsible.unemployment-insurance-calculator').forEach(
 		el => new Vue({
