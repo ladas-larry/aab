@@ -1,5 +1,15 @@
-{% include "_js/utils/newsletter.js" %}
 {% js %}
+
+function addNewsletterSubscriber(email) {
+	return fetch('/api/forms/newsletter', {
+		method: "POST",
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify({email}),
+	});
+}
+
 window.addEventListener("DOMContentLoaded", function() {
 	Array.from(document.querySelectorAll('.newsletter-form')).forEach(form => {
 		const emailInput = form.querySelector('input[type="email"]');
