@@ -1,6 +1,5 @@
 {% include "_js/libs/chai.js" %}
 {% include "_js/libs/mocha.js" %}
-{% include "_js/utils/health-insurance.js" %}
 {% include "_js/utils/test.js" %}
 {% js %}
 
@@ -8,6 +7,7 @@
 
 import { roundCurrency } from '/js/utils/currency.mjs';
 import { bafog, healthInsurance, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
+import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
 
 const round = roundCurrency;
 const equal = assert.equal;

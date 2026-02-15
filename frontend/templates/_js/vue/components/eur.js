@@ -2,7 +2,7 @@
 {% js %}{% raw %}
 
 import { formatCurrency } from '/js/utils/currency.mjs';
-import { getCurrencyTooltipText } from '/js/utils/exchangeRates.mjs';
+//import { getCurrencyTooltipText } from '/js/utils/exchangeRates.mjs';
 
 Vue.component('eur', {
 	props: {

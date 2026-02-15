@@ -18,6 +18,7 @@
 	import { healthInsurance, pensions, occupations, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
 	import { roundCurrency } from '/js/utils/currency.mjs';
 	import { germanStateNames, isEastGerman } from '/js/utils/germanStates.mjs';
+	import { pkvOptions } from '/js/utils/healthInsurance.mjs';
 
 	document.querySelectorAll('collapsible.income-tax-calculator').forEach(
 		el => new Vue({

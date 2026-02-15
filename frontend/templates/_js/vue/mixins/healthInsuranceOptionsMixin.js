@@ -1,4 +1,6 @@
 {% js %}
+import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
+
 const healthInsuranceOptionsMixin = {
 	props: {
 		age: Number,

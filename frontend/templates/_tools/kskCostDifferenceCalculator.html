@@ -9,6 +9,7 @@
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
 	import { healthInsurance, taxes } from '/js/utils/constants.mjs';
+	import { kskOption, gkvOptions } from '/js/utils/healthInsurance.mjs';
 
 	document.querySelectorAll('collapsible.ksk-cost-difference-calculator').forEach(
 		el => new Vue({

@@ -216,7 +216,7 @@ function gkvZusatzbeitrag(zusatzbeitragRate, tariff, monthlyIncome){
 	};
 }
 
-function kskOption(monthlyIncome, age, childrenCount){
+export function kskOption(monthlyIncome, age, childrenCount){
 	const baseContribution = gkvBaseContribution('ksk', monthlyIncome);
 	const pflegeversicherung = gkvPflegeversicherung('ksk', monthlyIncome, age, childrenCount);
 	const zusatzbeitrag = gkvZusatzbeitrag(healthInsurance.averageZusatzbeitrag, 'ksk', monthlyIncome);
@@ -238,7 +238,7 @@ function kskOption(monthlyIncome, age, childrenCount){
 	};
 }
 
-function gkvOptions({occupation, monthlyIncome, hoursWorkedPerWeek, age, childrenCount, customZusatzbeitrag}){
+export function gkvOptions({occupation, monthlyIncome, hoursWorkedPerWeek, age, childrenCount, customZusatzbeitrag}){
 	const tariff = gkvTariff(age, occupation, monthlyIncome, hoursWorkedPerWeek);
 
 	const baseContribution = gkvBaseContribution(tariff, monthlyIncome);
@@ -276,7 +276,7 @@ function gkvOptions({occupation, monthlyIncome, hoursWorkedPerWeek, age, childre
 	});
 }
 
-function pkvOptions({occupation, monthlyIncome, hoursWorkedPerWeek, age, childrenCount}) {
+export function pkvOptions({occupation, monthlyIncome, hoursWorkedPerWeek, age, childrenCount}) {
 	if(!age){
 		return [];
 	}
@@ -530,7 +530,7 @@ function isWerkstudent(occupation, monthlyIncome, hoursWorkedPerWeek){
 	);
 }
 
-function getHealthInsuranceOptions({
+export function getHealthInsuranceOptions({
 	age,
 	childrenCount,
 	hasEUPublicHealthInsurance,

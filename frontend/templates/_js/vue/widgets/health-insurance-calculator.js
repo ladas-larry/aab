@@ -23,6 +23,7 @@
 
 import { healthInsurance, occupations, pflegeversicherung } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
+import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
 
 Vue.component('health-insurance-calculator', {
 	mixins: [brokerMixin, multiStageMixin, uniqueIdsMixin, trackedStagesMixin],

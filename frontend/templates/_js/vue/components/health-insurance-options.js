@@ -1,4 +1,3 @@
-{% include "_js/utils/health-insurance.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/eur.js" %}
 {% include "_js/vue/components/glossary.js" %}
