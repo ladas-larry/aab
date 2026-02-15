@@ -1,5 +1,4 @@
 {% include "_js/libs/qrcode.js" %}
-{% include "_js/utils/currency.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/age-input.js" %}
 {% include "_js/vue/components/checkbox.js" %}
@@ -23,6 +22,7 @@
 {% js %}{% raw %}
 
 import { healthInsurance, occupations, pflegeversicherung } from '/js/utils/constants.mjs';
+import { formatCurrency } from '/js/utils/currency.mjs';
 
 Vue.component('health-insurance-calculator', {
 	mixins: [brokerMixin, multiStageMixin, uniqueIdsMixin, trackedStagesMixin],

@@ -11,6 +11,7 @@
 {% js %}{% raw %}
 
 import { occupations } from '/js/utils/constants.mjs';
+import { formatCurrency } from '/js/utils/currency.mjs';
 
 Vue.component('health-insurance-options', {
 	mixins: [brokerMixin, uniqueIdsMixin, healthInsuranceOptionsMixin],

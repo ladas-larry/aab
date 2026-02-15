@@ -1,6 +1,9 @@
 {% include "_js/vue.js" %}
-{% include "_js/utils/currency.js" %}
 {% js %}{% raw %}
+
+import { formatCurrency } from '/js/utils/currency.mjs';
+import { getCurrencyTooltipText } from '/js/utils/exchangeRates.mjs';
+
 Vue.component('eur', {
 	props: {
 		amount: Number,
@@ -8,16 +11,31 @@ Vue.component('eur', {
 		noSymbol: Boolean,
 		locale: String,
 	},
+	data(){
+		return {
+			tooltipText: null,
+		}
+	},
+	created(){
+		this.updateTooltipText();
+	},
 	computed: {
-		value() {
+		formattedAmount(){
 			return formatCurrency(this.amount, this.cents, false, false, this.locale);
-		},
-		tooltipText() {
-			return (this.value === '0' ? null : getCurrencyTooltipText(this.value));
-		},
+		}
+	},
+	methods: {
+		async updateTooltipText(){
+			this.tooltipText = (await getCurrencyTooltipText(this.amount ?? '')) || null;
+		}
+	},
+	watch: {
+		amount(){
+			this.updateTooltipText();
+		}
 	},
 	template: `
-		<span>{{ noSymbol ? '' : '€'}}<span class="currency" :data-currencies="tooltipText">{{ value }}</span></span>
+		<span>{{ noSymbol ? '' : '€'}}<span class="currency" :data-currencies="tooltipText">{{ formattedAmount }}</span></span>
 	`,
 });
 {% endraw %}{% endjs %}

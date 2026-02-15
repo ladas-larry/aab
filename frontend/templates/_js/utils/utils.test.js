@@ -1,7 +1,8 @@
 {% include "_js/libs/chai.js" %}
 {% include "_js/libs/mocha.js" %}
-{% include "_js/utils/currency.js" %}
 {% js %}
+import { formatCurrency } from '/js/utils/currency.mjs';
+
 describe('formatCurrency', () => {
 	const testCases = [
 		{

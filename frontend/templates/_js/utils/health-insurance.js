@@ -1,6 +1,6 @@
-{% include "_js/utils/currency.js" %}
 {% js %}
 
+import { roundCurrency } from '/js/utils/currency.mjs';
 import { healthInsurance, occupations, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
 
 function getAdjustedMonthlyIncome(tariff, monthlyIncome){

@@ -1,8 +1,8 @@
-{% include "_js/utils/constants.js" %}
-{% include "_js/utils/germanStates.js" %}
 {% include "_js/utils/health-insurance.js" %}
 {% include "_js/utils/pension-refund.js" %}
 {% js %}
+import { roundCurrency } from '/js/utils/currency.mjs';
+import { isEastGerman } from '/js/utils/germanStates.mjs';
 
 function calculateTax(yearlyIncome, {
 	age,  // Number

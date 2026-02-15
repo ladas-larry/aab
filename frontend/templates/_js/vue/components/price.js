@@ -1,6 +1,7 @@
 {% include "_js/vue.js" %}
-{% include "_js/utils/currency.js" %}
 {% js %}{% raw %}
+import { formatCurrency } from '/js/utils/currency.mjs';
+
 Vue.component('price', {
 	props: {
 		from: Number,
@@ -10,25 +11,46 @@ Vue.component('price', {
 		perMonth: Boolean,
 		locale: String,
 	},
+	data(){
+		return {
+			fromTooltipText: '',
+			toTooltipText: '',
+		}
+	},
+	created(){
+		this.updateTooltipTexts();
+	},
 	computed: {
 		showFrom(){
 			return this.from != null && !this.to;
 		},
 		showRange(){
-			return this.to != null && this.value(this.from ?? this.amount) !== this.value(this.to)
-		}
+			return this.to != null && this.formattedAmount(this.from ?? this.amount) !== this.formattedAmount(this.to)
+		},
 	},
 	methods: {
-		value(amount) {
+		formattedAmount(amount) {
 			return formatCurrency(amount, this.cents, false, false, this.locale);
 		},
-		tooltipText(amount) {
-			return (this.value(amount) === '0' ? null : getCurrencyTooltipText(this.value(amount)));
+		async updateTooltipTexts(){
+			this.fromTooltipText = await getCurrencyTooltipText(this.from ?? this.amount ?? '');
+			this.toTooltipText = await getCurrencyTooltipText(this.to ?? '');
+		}
+	},
+	watch: {
+		amount(){
+			this.updateTooltipTexts();
+		},
+		from(){
+			this.updateTooltipTexts();
+		},
+		to(){
+			this.updateTooltipTexts();
 		},
 	},
 	template: `
 		<span class="price">
-			<small v-if="showFrom">From&nbsp;</small>€<span class="currency" :data-currencies="tooltipText(from ?? amount)">{{ value(from ?? amount) }}</span><template v-if="showRange">&ndash;<span class="currency" :data-currencies="tooltipText(to)">{{ value(to) }}</span></template><small v-if="perMonth">&nbsp;/&nbsp;month</small>
+			<small v-if="showFrom">From&nbsp;</small>€<span class="currency" :data-currencies="fromTooltipText">{{ formattedAmount(from ?? amount) }}</span><template v-if="showRange">&ndash;<span class="currency" :data-currencies="toTooltipText">{{ formattedAmount(to) }}</span></template><small v-if="perMonth">&nbsp;/&nbsp;month</small>
 		</span>
 	`,
 });

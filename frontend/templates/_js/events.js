@@ -1,4 +1,6 @@
 {% js %}
+import { getCurrencyTooltipText } from '/js/utils/exchangeRates.mjs';
+
 function validateForm(formElement) {
 	let formIsValid = true;
 
@@ -19,9 +21,19 @@ function validateForm(formElement) {
 
 window.addEventListener("DOMContentLoaded", function() {
 	/* Fixes align-items: baseline bug in Safari */
+	// TODO: Remove
 	document.querySelectorAll('input, textarea').forEach((input) => {
 		input.placeholder = input.placeholder || ' ';
 	});
+
+	/* Currency conversion tooltips */
+	document.querySelectorAll('.currency').forEach(element => {
+		getCurrencyTooltipText(element.textContent).then(text => {
+			if(text) {
+				element.dataset.currencies = text;
+			};
+		});
+	})
 
 	/* Reviewers */
 	document.querySelectorAll('.post-reviewers a').forEach(link => {

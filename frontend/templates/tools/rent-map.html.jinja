@@ -4,8 +4,9 @@
 
 {% block postHead %}
 	{{ super() }}
-	{% include "_js/utils/currency.js" %}
 	{% js %}
+		import { formatCurrency } from '/js/utils/currency.mjs';
+
 		function highlightPlz(map, feature){
 			map.fitBounds(getFeatureBounds(feature), {
 				padding: 20,

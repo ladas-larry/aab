@@ -6,6 +6,7 @@
 
 // TODO: Test custom zusatzbeitrag
 
+import { roundCurrency } from '/js/utils/currency.mjs';
 import { bafog, healthInsurance, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
 
 const round = roundCurrency;

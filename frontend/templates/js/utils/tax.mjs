@@ -1,6 +1,7 @@
 {% include "_js/utils/health-insurance.js" %}
 {% include "_js/utils/pension-refund.js" %}
 
+import { roundCurrency } from '/js/utils/currency.mjs';
 import { healthInsurance, occupations, pensions, taxes } from '/js/utils/constants.mjs';
 import { isEastGerman } from '/js/utils/germanStates.mjs';
 
