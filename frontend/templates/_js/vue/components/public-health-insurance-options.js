@@ -1,4 +1,3 @@
-{% include "_js/utils/constants.js" %}
 {% include "_js/utils/currency.js" %}
 {% include "_js/utils/health-insurance.js" %}
 {% include "_js/utils/percent.js" %}
@@ -9,6 +8,9 @@
 {% include "_js/vue/mixins/healthInsuranceOptionsMixin.js" %}
 
 {% js %}{% raw %}
+
+import { healthInsurance, occupations, pflegeversicherung } from '/js/utils/constants.mjs';
+
 Vue.component('public-health-insurance-options', {
 	mixins: [healthInsuranceOptionsMixin],
 	data(){

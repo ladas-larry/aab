@@ -3,6 +3,9 @@
 {% include "_js/utils/tax.js" %}
 {% include "_js/utils/test.js" %}
 {% js %}
+
+import { taxes } from '/js/utils/constants.mjs';
+
 describe('calculateUnemploymentInsurance', () => {
 	const testCases = [
 		{

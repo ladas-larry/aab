@@ -1,6 +1,7 @@
-{% include "_js/utils/constants.js" %}
 {% include "_js/utils/currency.js" %}
 {% js %}
+
+import { healthInsurance, occupations, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
 
 function getAdjustedMonthlyIncome(tariff, monthlyIncome){
 	// Returns the income used to calculate the cost of public health insurance contributions.

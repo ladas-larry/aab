@@ -1,7 +1,8 @@
-{% js %}
-const bafogBedarfssatz = {{ BAFOG_BEDARFSSATZ }};
+export const bafog = {
+	bedarfssatz: {{ BAFOG_BEDARFSSATZ }};
+}
 
-const healthInsurance = {
+export const healthInsurance = {
 	defaultRate: {{ GKV_BASE_RATE_EMPLOYEE }}/100,
 	selfPayRate: {{ GKV_BASE_RATE_SELF_PAY }}/100,  // Rate without Krankengeld
 	studentRate: {{ GKV_BASE_RATE_STUDENT }}/100,
@@ -471,7 +472,7 @@ const healthInsurance = {
 	},
 }
 
-const pflegeversicherung = {
+export const pflegeversicherung = {
 	defaultRate: {{ PFLEGEVERSICHERUNG_BASE_RATE }}/100,
 	surchargeRate: {{ PFLEGEVERSICHERUNG_MAX_RATE }}/100,
 	discountPerChild: {{ PFLEGEVERSICHERUNG_DISCOUNT_PER_CHILD }}/100,
@@ -481,7 +482,7 @@ const pflegeversicherung = {
 	defaultRateMaxAge: {{ PFLEGEVERSICHERUNG_BASE_RATE_MAX_AGE }}, // Above this age, if you don't have kids, you pay the surchargeRate
 };
 
-const taxes = {
+export const taxes = {
 	church: {
 		default: {{ CHURCH_TAX_RATE }} / 100,
 		bw: {{ CHURCH_TAX_RATE_BW_BY }} / 100,
@@ -569,7 +570,7 @@ const taxes = {
 	sonderausgabenPauschbetrag: {{ SONDERAUSGABEN_PAUSCHBETRAG }}, // Fixed yearly income tax deduction
 };
 
-const pensions = {
+export const pensions = {
 	contractingCountries: new Set(['AL', 'AU', 'BR', 'CA', 'CL', 'IN', 'IL', 'JP', 'KR', 'MA', 'ME', 'PH', 'TN', 'TR', 'UY', 'US']),
 	balkanBlockCountries: new Set(['BA', 'MK', 'RS', 'XK', 'ME']),
 	disqualifyingCountries: new Set(['BA', 'MK', 'RS', 'XK', 'ME', 'TR']),
@@ -608,7 +609,7 @@ const pensions = {
 
 // Full list: azubi, employee, selfEmployed, studentEmployee, studentSelfEmployed, studentUnemployed, unemployed
 // TODO: Move to another file
-const occupations = {
+export const occupations = {
 	salaryOrIncome: (occupation) => (['employee', 'azubi'].includes(occupation) ? 'salary' : 'income'),
 	isEmployed: (occupation) => ['employee', 'azubi', 'studentEmployee'].includes(occupation),
 	isSelfEmployed: (occupation) => ['selfEmployed', 'studentSelfEmployed'].includes(occupation),
@@ -625,4 +626,3 @@ const occupations = {
 		);
 	},
 };
-{% endjs %}

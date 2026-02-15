@@ -1,4 +1,3 @@
-{% include "_js/utils/constants.js" %}
 {% include "_js/utils/health-insurance.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/eur.js" %}
@@ -10,6 +9,9 @@
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 
 {% js %}{% raw %}
+
+import { occupations } from '/js/utils/constants.mjs';
+
 Vue.component('health-insurance-options', {
 	mixins: [brokerMixin, uniqueIdsMixin, healthInsuranceOptionsMixin],
 	computed: {

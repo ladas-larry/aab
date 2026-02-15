@@ -1,4 +1,3 @@
-{% include "_js/utils/constants.js" %}
 {% include "_js/utils/percent.js" %}
 {% include "_js/utils/tax.js" %}
 {% include "_js/vue.js" %}
@@ -16,6 +15,7 @@
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
+	import { healthInsurance, pensions, occupations, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
 	import { germanStateNames, isEastGerman } from '/js/utils/germanStates.mjs';
 
 	document.querySelectorAll('collapsible.income-tax-calculator').forEach(

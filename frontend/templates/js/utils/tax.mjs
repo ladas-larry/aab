@@ -1,10 +1,10 @@
-{% include "_js/utils/constants.js" %}
-{% include "_js/utils/germanStates.js" %}
 {% include "_js/utils/health-insurance.js" %}
 {% include "_js/utils/pension-refund.js" %}
-{% js %}
 
-function calculateTax(yearlyIncome, {
+import { healthInsurance, occupations, pensions, taxes } from '/js/utils/constants.mjs';
+import { isEastGerman } from '/js/utils/germanStates.mjs';
+
+export function calculateTax(yearlyIncome, {
 	age,  // Number
 	childrenCount,  // Number
 	fixedHealthInsuranceCost,  // Monthly cost of private health insurance, or null/undefined
@@ -21,7 +21,7 @@ function calculateTax(yearlyIncome, {
 	const monthlyIncome = yearlyIncome / 12;
 
 	const year = (new Date()).getFullYear();
-	const isInEastGermany = germanStates.isEastGerman(germanState);
+	const isInEastGermany = isEastGerman(germanState);
 	const hasChildren = childrenCount > 0;
 
 	const result = { flags: new Set() };
@@ -389,4 +389,3 @@ OTHER
 - Altersentlastungsfreibetrag
 
 */
-{% endjs %}

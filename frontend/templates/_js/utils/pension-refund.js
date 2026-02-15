@@ -1,6 +1,6 @@
-{% include "_js/utils/constants.js" %}
 {% js %}
 
+import { pensions, taxes } from '/js/utils/constants.mjs';
 import { euCountries, eeaCountries } from '/js/utils/countries.mjs';
 
 function monthsBetween(dateA, dateB) {

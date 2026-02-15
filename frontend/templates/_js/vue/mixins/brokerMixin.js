@@ -1,5 +1,7 @@
-{% include "_js/utils/constants.js" %}
 {% js %}
+
+import { healthInsurance } from '/js/utils/constants.mjs';
+
 const brokerMixin = {
 	computed: {
 		broker() {

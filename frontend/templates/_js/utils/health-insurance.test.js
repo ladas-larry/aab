@@ -6,6 +6,8 @@
 
 // TODO: Test custom zusatzbeitrag
 
+import { bafog, healthInsurance, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
+
 const round = roundCurrency;
 const equal = assert.equal;
 const defaultInsurer = Object.values(healthInsurance.companies)[0];
@@ -1144,31 +1146,31 @@ function hasStudentTariff(output) {
 
 		assert.deepEqual(o.baseContribution, {
 			totalRate: healthInsurance.studentRate,
-			totalContribution: round(bafogBedarfssatz * healthInsurance.studentRate),
+			totalContribution: round(bafog.bedarfssatz * healthInsurance.studentRate),
 			employerRate: 0,
 			employerContribution: 0,
 			personalRate: healthInsurance.studentRate,
-			personalContribution: round(bafogBedarfssatz * healthInsurance.studentRate),
+			personalContribution: round(bafog.bedarfssatz * healthInsurance.studentRate),
 		});
 
 		assert.deepEqual(o.zusatzbeitrag, {
 			totalRate: defaultInsurer.zusatzbeitrag,
-			totalContribution: round(bafogBedarfssatz * defaultInsurer.zusatzbeitrag),
+			totalContribution: round(bafog.bedarfssatz * defaultInsurer.zusatzbeitrag),
 			employerRate: 0,
 			employerContribution: 0,
 			personalRate: defaultInsurer.zusatzbeitrag,
-			personalContribution: round(bafogBedarfssatz * defaultInsurer.zusatzbeitrag),
+			personalContribution: round(bafog.bedarfssatz * defaultInsurer.zusatzbeitrag),
 		});
 
 		const pflegeversicherungRate = pflegeversicherung.defaultRate;
 
 		assert.deepEqual(o.pflegeversicherung, {
 			totalRate: pflegeversicherungRate,
-			totalContribution: round(bafogBedarfssatz * pflegeversicherungRate),
+			totalContribution: round(bafog.bedarfssatz * pflegeversicherungRate),
 			employerRate: 0,
 			employerContribution: 0,
 			personalRate: pflegeversicherungRate,
-			personalContribution: round(bafogBedarfssatz * pflegeversicherungRate),
+			personalContribution: round(bafog.bedarfssatz * pflegeversicherungRate),
 		});
 	});
 }
