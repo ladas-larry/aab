@@ -1,5 +1,4 @@
-{% js %}
-const preloadPDFMixin = {
+export default {
 	// Preloads PDF generation code when the user starts filling the HTML form
 	data: function () {
 		return {
@@ -16,4 +15,3 @@ const preloadPDFMixin = {
 		},
 	}
 }
-{% endjs %}

@@ -1,6 +1,4 @@
-{% js %}
-
-const userDefaults = {  // Percentages are stored as full amounts, unlike elsewhere
+export const userDefaults = {  // Percentages are stored as full amounts, unlike elsewhere
 	age: 25,
 	childrenCount: 0,
 	church: 'other',
@@ -18,7 +16,7 @@ const userDefaults = {  // Percentages are stored as full amounts, unlike elsewh
 	empty: null, // Just to highlight that this field saves/loads user input, but is null by default
 };
 
-const userDefaultsMixin = {
+export const userDefaultsMixin = {
 	mounted(){
 		const availableKeys = new Set(Object.keys(this.$data));
 		const desiredStringKeys = new Set([
@@ -124,4 +122,3 @@ const userDefaultsMixin = {
 		},
 	}
 }
-{% endjs %}

@@ -14,13 +14,13 @@
 {% include "_js/vue/components/income-input.js" %}
 {% include "_js/vue/components/radio.js" %}
 {% include "_js/vue/components/tabs.js" %}
-{% include "_js/vue/mixins/brokerMixin.js" %}
-{% include "_js/vue/mixins/multiStageMixin.js" %}
-{% include "_js/vue/mixins/trackedStagesMixin.js" %}
-{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 
 {% js %}{% raw %}
 
+import brokerMixin from '/js/vue/mixins/broker.mjs';
+import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
+import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
+import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { healthInsurance, occupations, pflegeversicherung } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
 import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';

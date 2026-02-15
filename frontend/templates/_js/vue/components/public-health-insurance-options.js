@@ -2,10 +2,10 @@
 {% include "_js/vue/components/eur.js" %}
 {% include "_js/vue/components/glossary.js" %}
 {% include "_js/vue/components/price.js" %}
-{% include "_js/vue/mixins/healthInsuranceOptionsMixin.js" %}
 
 {% js %}{% raw %}
 
+import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.mjs';
 import { healthInsurance, occupations, pflegeversicherung } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
 import { isWerkstudent } from '/js/utils/healthInsurance.mjs';

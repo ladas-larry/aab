@@ -4,11 +4,11 @@
 {% include "_js/vue/components/full-name-input.js" %}
 {% include "_js/vue/components/letter-generator.js" %}
 {% include "_js/vue/components/glossary.js" %}
-{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
-{% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
 	import AddressInput from '/js/vue/components/address-input.mjs';
 	import { formatSalutations } from '/js/utils/letter.mjs';
+	import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+	import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
 	document.querySelectorAll('.abmeldung-email').forEach(
 		el => new Vue({

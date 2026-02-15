@@ -1,5 +1,4 @@
-{% js %}
-const residencePermitFeedbackMixin = {
+export default {
 	data: function () {
 		return {
 			department: null,
@@ -118,4 +117,3 @@ const residencePermitFeedbackMixin = {
 		}
 	}
 }
-{% endjs %}

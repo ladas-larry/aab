@@ -3,11 +3,11 @@
 {% include "_js/vue/components/date-input.js" %}
 {% include "_js/vue/components/email-input.js" %}
 {% include "_js/vue/components/full-name-input.js" %}
-{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
-{% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
 	import CountryInput from '/js/vue/components/country-input.mjs';
 	import { calculatePensionRefund } from '/js/utils/pensionRefunds.mjs';
+	import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+	import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
 	document.querySelectorAll('collapsible.pension-refund-question').forEach(
 		el => new Vue({

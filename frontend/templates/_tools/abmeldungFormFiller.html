@@ -268,25 +268,25 @@
 {% include "_js/vue/components/date-input.js" %}
 {% include "_js/vue/components/eur.js" %}
 {% include "_js/vue/components/glossary.js" %}
-{% include "_js/vue/mixins/multiStageMixin.js" %}
 {% include "_js/vue/components/postalcode-input.js" %}
 {% include "_js/vue/components/first-name-input.js" %}
 {% include "_js/vue/components/last-name-input.js" %}
 {% include "_js/vue/components/tabs.js" %}
-{% include "_js/vue/mixins/preloadPDFMixin.js" %}
-{% include "_js/vue/mixins/trackedStagesMixin.js" %}
-{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
-{% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
 	import CountryInput from '/js/vue/components/country-input.mjs';
+	import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
+	import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
+	import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+	import preloadPdfMixin from '/js/vue/mixins/preloadPdf.mjs';
 	import { mergeFields } from '/js/utils/letter.mjs';
 	import { countriesInGerman } from '/js/utils/countries.mjs';
 	import { formatDate } from '/js/utils/date.mjs';
+	import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
 	document.querySelectorAll('.abmeldung-form').forEach(
 		el => new Vue({
 			el: el,
-			mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin, preloadPDFMixin],
+			mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin, preloadPdfMixin],
 			components: {
 				CountryInput,
 			},

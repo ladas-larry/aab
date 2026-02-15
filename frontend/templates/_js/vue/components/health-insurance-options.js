@@ -3,14 +3,14 @@
 {% include "_js/vue/components/glossary.js" %}
 {% include "_js/vue/components/price.js" %}
 {% include "_js/vue/components/public-health-insurance-options.js" %}
-{% include "_js/vue/mixins/brokerMixin.js" %}
-{% include "_js/vue/mixins/healthInsuranceOptionsMixin.js" %}
-{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 
 {% js %}{% raw %}
 
+import brokerMixin from '/js/vue/mixins/broker.mjs';
+import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { occupations } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
+import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.mjs';
 
 Vue.component('health-insurance-options', {
 	mixins: [brokerMixin, uniqueIdsMixin, healthInsuranceOptionsMixin],

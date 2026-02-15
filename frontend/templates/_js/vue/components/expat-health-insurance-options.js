@@ -1,8 +1,9 @@
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/price.js" %}
-{% include "_js/vue/mixins/healthInsuranceOptionsMixin.js" %}
 
 {% js %}{% raw %}
+import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.mjs';
+
 Vue.component('expat-health-insurance-options', {
 	mixins: [healthInsuranceOptionsMixin],
 	computed: {

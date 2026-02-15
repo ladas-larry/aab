@@ -1,5 +1,4 @@
-{% js %}
-const uniqueIdsMixin = {
+export default {
 	data: function () {
 		return {
 			uniqueId: Math.floor(Math.random() * 10000),
@@ -11,4 +10,3 @@ const uniqueIdsMixin = {
 		},
 	}
 }
-{% endjs %}

@@ -5,13 +5,13 @@
 {% include "_js/vue/components/letter-generator.js" %}
 {% include "_js/vue/components/radio.js" %}
 {% include "_js/vue/components/tabs.js" %}
-{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
-{% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
 	import AddressInput from '/js/vue/components/address-input.mjs';
 	import CountryInput from '/js/vue/components/country-input.mjs';
 	import { countriesInEnglish, countriesInGerman } from '/js/utils/countries.mjs';
 	import { dateFromString, formatDate } from '/js/utils/date.mjs';
+	import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+	import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
 	document.querySelectorAll('.auslaenderbehoerde-job-change').forEach(
 		el => new Vue({

@@ -1,8 +1,6 @@
-{% js %}
-
 import { healthInsurance } from '/js/utils/constants.mjs';
 
-const brokerMixin = {
+export default {
 	computed: {
 		broker() {
 			const brokers = [
@@ -45,5 +43,4 @@ const brokerMixin = {
 			return word.charAt(0).toUpperCase() + word.slice(1);
 		},
 	}
-};
-{% endjs %}
+}

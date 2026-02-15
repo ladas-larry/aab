@@ -10,8 +10,6 @@
 {% include "_js/vue/components/radio.js" %}
 {% include "_js/vue/components/state-input.js" %}
 {% include "_js/vue/components/tabs.js" %}
-{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
-{% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
 	import { healthInsurance, pensions, occupations, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
 	import { roundCurrency } from '/js/utils/currency.mjs';
@@ -19,6 +17,8 @@
 	import { pkvOptions } from '/js/utils/healthInsurance.mjs';
 	import { formatPercent } from '/js/utils/number.mjs';
 	import { calculateTax } from '/js/utils/tax.mjs';
+	import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+	import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
 	document.querySelectorAll('collapsible.income-tax-calculator').forEach(
 		el => new Vue({

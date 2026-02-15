@@ -1,5 +1,4 @@
-{% js %}
-const trackedStagesMixin = {
+export default {
 	data: function () {
 		return {
 			trackedStages: new Set(),
@@ -26,4 +25,3 @@ const trackedStagesMixin = {
 		},
 	}
 }
-{% endjs %}

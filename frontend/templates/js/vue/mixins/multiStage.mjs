@@ -1,5 +1,4 @@
-{% js %}
-const multiStageMixin = {
+export default {
 	data: function () {
 		return {
 			stages: [],
@@ -43,4 +42,3 @@ const multiStageMixin = {
 		},
 	}
 }
-{% endjs %}

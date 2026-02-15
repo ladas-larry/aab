@@ -9,9 +9,10 @@
 {% include "_js/vue/components/checkbox.js" %}
 {% include "_js/vue/components/pagination.js" %}
 {% include "_js/vue/widgets/feedback-residence-permit.js" %}
-{% include "_js/vue/mixins/residencePermitFeedbackMixin.js" %}
 {% js %}
+	import residencePermitFeedbackMixin from '/js/vue/mixins/residencePermitFeedback.mjs';
 	import { formatLongDate } from '/js/utils/date.mjs';
+
 	document.querySelectorAll('main .article-body').forEach(
 		el => new Vue({
 			el: el,

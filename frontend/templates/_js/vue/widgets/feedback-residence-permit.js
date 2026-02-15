@@ -3,12 +3,14 @@
 {% include "_js/vue/components/age-input.js" %}
 {% include "_js/vue/components/date-input.js" %}
 {% include "_js/vue/components/email-input.js" %}
-{% include "_js/vue/mixins/multiStageMixin.js" %}
-{% include "_js/vue/mixins/residencePermitFeedbackMixin.js" %}
-{% include "_js/vue/mixins/trackedStagesMixin.js" %}
-{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
-{% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}{% raw %}
+
+import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
+import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
+import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+import residencePermitFeedbackMixin from '/js/vue/mixins/residencePermitFeedback.mjs';
+import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
+
 Vue.component('feedback-residence-permit', {
 	props: {
 		residencePermitType: {

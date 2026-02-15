@@ -4,14 +4,14 @@
 {% include "_js/vue/components/price.js" %}
 {% include "_js/vue/components/glossary.js" %}
 {% include "_js/vue/components/income-input.js" %}
-{% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% include "_js/vue/components/occupation-input.js" %}
 {% include "_js/vue/components/state-input.js" %}
-{% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% js %}
 	import { occupations, taxes } from '/js/utils/constants.mjs';
 	import { isEastGerman } from '/js/utils/germanStates.mjs';
 	import { calculateUnemploymentInsurance } from '/js/utils/tax.mjs';
+	import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+	import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
 	document.querySelectorAll('collapsible.unemployment-insurance-calculator').forEach(
 		el => new Vue({

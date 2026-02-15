@@ -1,7 +1,6 @@
-{% js %}
 import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
 
-const healthInsuranceOptionsMixin = {
+export default {
 	props: {
 		age: Number,
 		childrenCount: Number,
@@ -31,5 +30,4 @@ const healthInsuranceOptionsMixin = {
 			return this.results[type].options.find(o => o.id === id).total.personalContribution;
 		},
 	},
-};
-{% endjs %}
+}
