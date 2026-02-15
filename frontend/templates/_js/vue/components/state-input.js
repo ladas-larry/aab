@@ -1,6 +1,7 @@
-{% include "_js/utils/germanStates.js" %}
 {% include "_js/vue.js" %}
 {% js %}{% raw %}
+import { germanStateNames, isEastGerman } from '/js/utils/germanStates.mjs';
+
 Vue.component('state-input', {
 	props: {
 		value: {
@@ -22,7 +23,7 @@ Vue.component('state-input', {
 	},
 	computed: {
 		states(){
-			return Object.entries(germanStates.names)
+			return Object.entries(germanStateNames)
 				.filter(
 					([key]) => (this.eastWestBerlin ? (key !== 'be') : !key.startsWith('be-'))
 				)
@@ -34,7 +35,7 @@ Vue.component('state-input', {
 			this.$emit('input', event.target.value);
 		},
 		optionValue(abbr){
-			const stateName = germanStates.names[abbr];
+			const stateName = germanStateNames[abbr];
 			return {
 				abbr: abbr,
 				germanName: stateName.de,

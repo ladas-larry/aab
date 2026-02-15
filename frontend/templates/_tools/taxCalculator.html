@@ -1,5 +1,4 @@
 {% include "_js/utils/constants.js" %}
-{% include "_js/utils/germanStates.js" %}
 {% include "_js/utils/percent.js" %}
 {% include "_js/utils/tax.js" %}
 {% include "_js/vue.js" %}
@@ -17,6 +16,8 @@
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
+	import { germanStateNames, isEastGerman } from '/js/utils/germanStates.mjs';
+
 	document.querySelectorAll('collapsible.income-tax-calculator').forEach(
 		el => new Vue({
 			el: el,
@@ -53,7 +54,7 @@
 						totalDeductions: '#CD683D',
 					},
 					formatPercent,
-					germanStates,
+					germanStateNames,
 					occupations,
 					pensions,
 					pflegeversicherung,
@@ -127,7 +128,7 @@
 				},
 
 				beitragsbemessungsgrenze() {
-					return taxes.beitragsbemessungsgrenze.currentYear[germanStates.isEastGerman(this.germanState) ? 'east' : 'west'];
+					return taxes.beitragsbemessungsgrenze.currentYear[isEastGerman(this.germanState) ? 'east' : 'west'];
 				},
 
 				monthlyIncome() {
@@ -673,7 +674,7 @@
 					Church tax
 					<price :amount="result.churchTax"></price>
 				</summary>
-				<p>Your church collects a <glossary term="Kirchensteuer">church tax</glossary>. In {{ germanStates.names[germanState].en }}, the church tax is {{ formatPercent(result.churchTaxRate * 100) }} of your <glossary term="Einkommensteuer">income tax</glossary>.</p>
+				<p>Your church collects a <glossary term="Kirchensteuer">church tax</glossary>. In {{ germanStateNames[germanState].en }}, the church tax is {{ formatPercent(result.churchTaxRate * 100) }} of your <glossary term="Einkommensteuer">income tax</glossary>.</p>
 				<p v-if="result.churchTax === 0 && result.incomeTax === 0">Your income is too low to pay income tax, so you don't pay church tax.</p>
 			</details>
 			<details class="total">

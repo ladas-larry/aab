@@ -1,5 +1,4 @@
 {% include "_js/utils/constants.js" %}
-{% include "_js/utils/germanStates.js" %}
 {% include "_js/utils/tax.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/collapsible.js" %}
@@ -12,6 +11,8 @@
 {% include "_js/vue/components/state-input.js" %}
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% js %}
+	import { isEastGerman } from '/js/utils/germanStates.mjs';
+
 	document.querySelectorAll('collapsible.unemployment-insurance-calculator').forEach(
 		el => new Vue({
 			el: el,
@@ -38,10 +39,10 @@
 					return this.yearlyIncome >= taxes.beitragsbemessungsgrenze.currentYear.east && this.occupation !== 'unemployed';
 				},
 				results() {
-					return calculateUnemploymentInsurance(this.yearlyIncome, this.occupation, germanStates.isEastGerman(this.germanState));
+					return calculateUnemploymentInsurance(this.yearlyIncome, this.occupation, isEastGerman(this.germanState));
 				},
 				monthlyBeitragsbemessungsgrenze() {
-					return taxes.beitragsbemessungsgrenze.currentYear[germanStates.isEastGerman(this.germanState) ? 'east' : 'west'];
+					return taxes.beitragsbemessungsgrenze.currentYear[isEastGerman(this.germanState) ? 'east' : 'west'];
 				},
 			},
 		})

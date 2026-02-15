@@ -284,7 +284,6 @@
 {% endraw %}
 </collapsible>
 {% include "_js/libs/pdf.js" %}
-{% include "_js/utils/germanStates.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/checkbox.js" %}
 {% include "_js/vue/components/city-input.js" %}
@@ -307,6 +306,7 @@
 	import CountryInput from '/js/vue/components/country-input.mjs';
 	import { mergeFields } from '/js/utils/letter.mjs';
 	import { countriesInGerman } from '/js/utils/countries.mjs';
+	import { germanStateNames } from '/js/utils/germanStates.mjs';
 
 	document.querySelectorAll('.tax-id-form').forEach(
 		el => new Vue({
@@ -443,7 +443,7 @@
 						textFields.germanAddress1 = [this.address, beiAddress].join(' ');
 						textFields.germanAddress2 = mergeFields([
 							[this.germanPostCode, this.germanCity].join(' '),
-							germanStates.names[this.germanState].de
+							germanStateNames[this.germanState].de
 						]);
 						textFields.foreignAddress1 = 'Nicht zutreffend';
 						textFields.foreignAddress2 = 'Nicht zutreffend';
