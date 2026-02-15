@@ -1,7 +1,6 @@
-{% include "_js/vue.js" %}
-{% include "_js/utils/countries.js" %}
-{% js %}{% raw %}
-Vue.component('country-input', {
+import { countriesInEnglish } from '/js/utils/countries.mjs';
+
+export default {
 	props: {
 		value: String,
 		placeholder: {
@@ -19,7 +18,7 @@ Vue.component('country-input', {
 	},
 	data() {
 		return {
-			sortedCountries: countries.getSortedList().filter(c => c[0] !== 'DE' || !this.excludeGermany),
+			sortedCountries: Object.entries(countriesInEnglish).sort((a, b) => a[1].localeCompare(b[1])).filter(c => c[0] !== 'DE' || !this.excludeGermany),
 		}
 	},
 	computed: {
@@ -28,11 +27,11 @@ Vue.component('country-input', {
 				(navigator.languages || [])
 					.map(lang => lang.substring(3).toUpperCase())
 					.filter(countryCode => countryCode !== 'DE')
-					.map(countryCode => countryCode in countries.all ? [countryCode, countries.all[countryCode]] : null)
+					.map(countryCode => countryCode in countriesInEnglish ? [countryCode, countriesInEnglish[countryCode]] : null)
 					.filter(Boolean)
 			);
 			if(!this.excludeGermany){
-				recommendations.add(["DE", countries.all['DE']]);
+				recommendations.add(["DE", countriesInEnglish.DE]);
 			}
 			return recommendations;
 		},
@@ -51,5 +50,4 @@ Vue.component('country-input', {
 				:key="code">{{ name }}</option>
 		</select>
 	`,
-});
-{% endraw %}{% endjs %}
+};

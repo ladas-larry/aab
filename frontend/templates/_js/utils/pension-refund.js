@@ -1,6 +1,8 @@
 {% include "_js/utils/constants.js" %}
-{% include "_js/utils/countries.js" %}
 {% js %}
+
+import { euCountries, eeaCountries } from '/js/utils/countries.mjs';
+
 function monthsBetween(dateA, dateB) {
 	const startDate = new Date(dateA);
 	const endDate = new Date(dateB);
@@ -52,18 +54,18 @@ function calculatePensionRefund(nationality, countryOfResidence, entryDate, exit
 	let refundAmount = null;
 
 	// EU resident
-	if(countries.eu.has(countryOfResidence) && !countries.eea.has(nationality)){
+	if(euCountries.has(countryOfResidence) && !eeaCountries.has(nationality)){
 		flags.add('not-eligible');
 		flags.add('eu-resident');
 	}
 
 	// EU
-	if (countries.eu.has(nationality)){
+	if (euCountries.has(nationality)){
 		flags.add('not-eligible');
 		flags.add('eu-national');
 	}
 	// EEA
-	else if (countries.eea.has(nationality)){
+	else if (eeaCountries.has(nationality)){
 		flags.add('not-eligible');
 		flags.add('eea-national');
 	}

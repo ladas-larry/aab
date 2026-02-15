@@ -1,10 +1,6 @@
-{% include "_js/utils/countries.js" %}
-{% include "_js/utils/countriesInGerman.js" %}
 {% include "_js/utils/date.js" %}
 {% include "_js/vue.js" %}
-{% include "_js/vue/components/address-input.js" %}
 {% include "_js/vue/components/blank.js" %}
-{% include "_js/vue/components/country-input.js" %}
 {% include "_js/vue/components/date-input.js" %}
 {% include "_js/vue/components/full-name-input.js" %}
 {% include "_js/vue/components/letter-generator.js" %}
@@ -13,9 +9,17 @@
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
+	import AddressInput from '/js/vue/components/address-input.mjs';
+	import CountryInput from '/js/vue/components/country-input.mjs';
+	import { countriesInEnglish, countriesInGerman } from '/js/utils/countries.mjs';
+
 	document.querySelectorAll('.auslaenderbehoerde-job-change').forEach(
 		el => new Vue({
 			el: el,
+			components: {
+				AddressInput,
+				CountryInput,
+			},
 			mixins: [userDefaultsMixin, uniqueIdsMixin],
 			data() {
 				return {
@@ -30,7 +34,7 @@
 					currentDate: new Date(),
 					lastDayOfWork: '',
 
-					countries,
+					countriesInEnglish,
 					countriesInGerman,
 				};
 			},
@@ -99,7 +103,7 @@
 				Dear Sir or Madam,
 			</p>
 			<p>
-				My name is <blank :key="uid('fullNameBlankEn')" placeholder="Name">{{ fullName }}</blank>. I am a citizen of <blank :key="uid('nationalityBlankEn')" placeholder="Country">{{ countries.all[nationality] }}</blank>. I was born on <blank :key="uid('dateOfBirthBlankEn')" placeholder="Date of birth">{{ formatDate(dateOfBirth, 'en-US') }}</blank> in <blank :key="uid('placeOfBirthBlankEn')" placeholder="Birthplace">{{ placeOfBirth }}</blank>.
+				My name is <blank :key="uid('fullNameBlankEn')" placeholder="Name">{{ fullName }}</blank>. I am a citizen of <blank :key="uid('nationalityBlankEn')" placeholder="Country">{{ countriesInEnglish[nationality] }}</blank>. I was born on <blank :key="uid('dateOfBirthBlankEn')" placeholder="Date of birth">{{ formatDate(dateOfBirth, 'en-US') }}</blank> in <blank :key="uid('placeOfBirthBlankEn')" placeholder="Birthplace">{{ placeOfBirth }}</blank>.
 			</p>
 			<p v-if="letterType === 'resignation'">
 				I am writing to inform the Ausländerbehörde that I have quit my job.
@@ -133,7 +137,7 @@
 				Sehr geehrte Damen und Herren,
 			</p>
 			<p>
-				Mein Name ist <blank :key="uid('fullNameBlankDe')" placeholder="Name">{{ fullName }}</blank>. Ich bin Staatsangehöriger von <blank :key="uid('nationalityBlankDe')" placeholder="Land">{{ countriesInGerman.all[nationality] }}</blank>. Ich wurde am <blank :key="uid('dateOfBirthBlankDe')" placeholder="Geburtsdatum">{{ formatDate(dateOfBirth, 'de-DE') }}</blank> in <blank :key="uid('placeOfBirthBlankDe')" placeholder="Geburtsort">{{ placeOfBirth }}</blank> geboren.
+				Mein Name ist <blank :key="uid('fullNameBlankDe')" placeholder="Name">{{ fullName }}</blank>. Ich bin Staatsangehöriger von <blank :key="uid('nationalityBlankDe')" placeholder="Land">{{ countriesInGerman[nationality] }}</blank>. Ich wurde am <blank :key="uid('dateOfBirthBlankDe')" placeholder="Geburtsdatum">{{ formatDate(dateOfBirth, 'de-DE') }}</blank> in <blank :key="uid('placeOfBirthBlankDe')" placeholder="Geburtsort">{{ placeOfBirth }}</blank> geboren.
 			</p>
 			<p v-if="letterType === 'resignation'">
 				Ich schreibe, um die Ausländerbehörde darüber zu informieren, dass ich meinen Job gekündigt habe.

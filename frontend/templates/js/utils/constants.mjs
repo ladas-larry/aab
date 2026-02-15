@@ -40,7 +40,7 @@ const healthInsurance = {
 		},
 	},
 	private: {
-		{{ fail_on('2026-02-15') }}
+		{{ fail_on('2026-02-25') }}
 		pflegeversicherung: [  // Ages 0-99
 			45.82,
 			45.82,
@@ -569,7 +569,6 @@ const taxes = {
 	sonderausgabenPauschbetrag: {{ SONDERAUSGABEN_PAUSCHBETRAG }}, // Fixed yearly income tax deduction
 };
 
-// https://github.com/mledoze/countries/blob/master/dist/countries.json
 const pensions = {
 	contractingCountries: new Set(['AL', 'AU', 'BR', 'CA', 'CL', 'IN', 'IL', 'JP', 'KR', 'MA', 'ME', 'PH', 'TN', 'TR', 'UY', 'US']),
 	balkanBlockCountries: new Set(['BA', 'MK', 'RS', 'XK', 'ME']),

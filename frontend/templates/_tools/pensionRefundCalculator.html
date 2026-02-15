@@ -2,7 +2,6 @@
 {% include "_js/utils/pension-refund.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/collapsible.js" %}
-{% include "_js/vue/components/country-input.js" %}
 {% include "_js/vue/components/date-input.js" %}
 {% include "_js/vue/components/email-input.js" %}
 {% include "_js/vue/components/eur.js" %}
@@ -18,9 +17,14 @@
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
 
 {% js %}
+	import CountryInput from '/js/vue/components/country-input.mjs';
+
 	document.querySelectorAll('collapsible.pension-refund-calculator').forEach(
 		el => new Vue({
 			el: el,
+			components: {
+				CountryInput,
+			},
 			mixins: [userDefaultsMixin, uniqueIdsMixin, trackedStagesMixin],
 			data() {
 				return {

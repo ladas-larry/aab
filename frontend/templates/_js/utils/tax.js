@@ -231,7 +231,7 @@ function calculateIncomeTax(taxableIncome, isSplittingTarif=false) {  // Einkomm
 		);
 
 		incomeTaxFlags.add(`income-tax-bracket-${taxBracketNumber}`);
-		incomeTax = taxBracket.formula(x, y, z);
+		let incomeTax = taxBracket.formula(x, y, z);
 		incomeTax = Math.floor(incomeTax);
 
 		return {

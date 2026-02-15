@@ -1,5 +1,4 @@
 {% include "_js/vue.js" %}
-{% include "_js/vue/components/address-input.js" %}
 {% include "_js/vue/components/first-name-input.js" %}
 {% include "_js/vue/components/full-name-input.js" %}
 {% include "_js/vue/components/gender-input.js" %}
@@ -8,11 +7,16 @@
 {% include "_js/vue/components/letter-generator.js" %}
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
-{% js %}
+{% js %}	
+	import AddressInput from '/js/vue/components/address-input.mjs';
 	import { formatName, formatSalutations } from '/js/utils/letter.mjs';
+
 	document.querySelectorAll('.alg-i-vorlaeufige-bewilligung').forEach(
 		el => new Vue({
 			el: el,
+			components: {
+				AddressInput,
+			},
 			mixins: [userDefaultsMixin, uniqueIdsMixin],
 			data() {
 				return {

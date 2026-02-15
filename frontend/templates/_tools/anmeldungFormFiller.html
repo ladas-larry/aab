@@ -342,14 +342,11 @@
 {% endraw %}
 </collapsible>
 {% include "_js/libs/pdf.js" %}
-{% include "_js/utils/countries.js" %}
-{% include "_js/utils/countriesInGerman.js" %}
 {% include "_js/utils/date.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/checkbox.js" %}
 {% include "_js/vue/components/city-input.js" %}
 {% include "_js/vue/components/collapsible.js" %}
-{% include "_js/vue/components/country-input.js" %}
 {% include "_js/vue/components/date-input.js" %}
 {% include "_js/vue/components/first-name-input.js" %}
 {% include "_js/vue/components/glossary.js" %}
@@ -363,11 +360,16 @@
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
+	import CountryInput from '/js/vue/components/country-input.mjs';
 	import { mergeFields } from '/js/utils/letter.mjs';
+	import { countriesInGerman } from '/js/utils/countries.mjs';
 
 	document.querySelectorAll('.anmeldung-form').forEach(
 		el => new Vue({
 			el: el,
+			components: {
+				CountryInput,
+			},
 			mixins: [uniqueIdsMixin, multiStageMixin, trackedStagesMixin, preloadPDFMixin],
 			data() {
 				return {
@@ -466,7 +468,7 @@
 							this.oldCity,
 							this.oldState.toUpperCase() // Just the abbreviation
 						]),
-						'Bei Zuzug aus dem Ausland StaatRow1': this.oldCountry === 'DE' ? '' : countriesInGerman.all[this.oldCountry],
+						'Bei Zuzug aus dem Ausland StaatRow1': this.oldCountry === 'DE' ? '' : countriesInGerman[this.oldCountry],
 					};
 					const checkboxFields = {
 						'alleinige': true,
@@ -488,7 +490,7 @@
 							person1.birthPlace
 						]);
 						textFields['Religionsgesellschaft'] = person1.religion;
-						textFields['Staatsangehörigkeiten'] = countriesInGerman.all[person1.nationality];
+						textFields['Staatsangehörigkeiten'] = countriesInGerman[person1.nationality];
 						textFields['OrdensKünstlername'] = person1.artistName;
 
 						textFields['ArtRow1'] = person1.documentType;
@@ -515,7 +517,7 @@
 							person2.birthPlace
 						]);
 						textFields['Familienmitglied istReligionsgesellschaft'] = person2.religion;
-						textFields['Familienmitglied istStaatsangehörigkeiten'] = countriesInGerman.all[person2.nationality];
+						textFields['Familienmitglied istStaatsangehörigkeiten'] = countriesInGerman[person2.nationality];
 						textFields['Familienmitglied istOrdensKünstlername'] = person2.artistName;
 
 						textFields['ArtRow1_2'] = person2.documentType;

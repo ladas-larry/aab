@@ -1,10 +1,8 @@
 {% extends "tests/component/index.html.jinja" %}
 {% include "_js/vue/components/age-input.js" %}
-{% include "_js/vue/components/address-input.js" %}
 {% include "_js/vue/components/checkbox.js" %}
 {% include "_js/vue/components/children-input.js" %}
 {% include "_js/vue/components/city-input.js" %}
-{% include "_js/vue/components/country-input.js" %}
 {% include "_js/vue/components/date-input.js" %}
 {% include "_js/vue/components/date-picker.js" %}
 {% include "_js/vue/components/email-input.js" %}
@@ -17,8 +15,15 @@
 {% include "_js/vue/components/state-input.js" %}
 
 {% js %}
+	import AddressInput from '/js/vue/components/address-input.mjs';
+	import CountryInput from '/js/vue/components/country-input.mjs';
+
 	new Vue({
 		el: document.querySelector('main .article-body'),
+		components: {
+			CountryInput,
+			AddressInput,
+		},
 		data() {
 			return {
 				radioValue: 'one',

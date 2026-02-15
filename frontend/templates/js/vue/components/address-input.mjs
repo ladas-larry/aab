@@ -1,6 +1,4 @@
-{% include "_js/vue.js" %}
-{% js %}{% raw %}
-Vue.component('address-input', {
+export default {
 	props: {
 		value: String,
 		home: Boolean,
@@ -47,5 +45,4 @@ Vue.component('address-input', {
 			@input="$emit('input', $event.target.value)"
 			required></textarea>
 	`,
-});
-{% endraw %}{% endjs %}
+};
