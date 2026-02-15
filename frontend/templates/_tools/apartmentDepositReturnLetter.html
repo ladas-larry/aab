@@ -1,4 +1,3 @@
-{% include "_js/utils/date.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/blank.js" %}
 {% include "_js/vue/components/checkbox.js" %}
@@ -16,6 +15,7 @@
 {% include "_js/vue/mixins/userDefaultsMixin.js" %}
 {% js %}
 	import AddressInput from '/js/vue/components/address-input.mjs';
+	import { formatDate } from '/js/utils/date.mjs';
 	import { formatName, formatSalutations } from '/js/utils/letter.mjs';
 
 	document.querySelectorAll('.deposit-return').forEach(

@@ -6,9 +6,10 @@
 {% endblock %}
 
 {% include "_js/vue.js" %}
-{% include "_js/utils/date.js" %}
 {% include "_js/vue/components/pagination.js" %}
 {% js %}
+	import { formatLongDate } from '/js/utils/date.mjs';
+
 	document.querySelectorAll('main .article-body').forEach(
 		el => new Vue({
 			el: el,

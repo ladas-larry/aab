@@ -1,6 +1,7 @@
 {% include "_js/vue.js" %}
-{% include "_js/utils/date.js" %}
 {% js %}{% raw %}
+import { formatLongDate } from '/js/utils/date.mjs';
+
 Vue.component('comment', {
 	props: ['comment'],
 	computed: {

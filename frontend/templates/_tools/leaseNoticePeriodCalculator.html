@@ -3,9 +3,9 @@
 {% include "_js/vue/components/date-picker.js" %}
 {% include "_js/vue/components/glossary.js" %}
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
-{% include "_js/utils/date.js" %}
 {% js %}
-	import {getMoveOutDate, getLatestNoticeDate} from '/js/utils/lease.mjs';
+	import { dateFromString, formatLongDate, isoDay } from '/js/utils/date.mjs';
+	import { getMoveOutDate, getLatestNoticeDate } from '/js/utils/lease.mjs';
 
 	document.querySelectorAll('collapsible.lease-notice-period-calculator').forEach(
 		el => new Vue({

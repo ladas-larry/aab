@@ -262,7 +262,6 @@
 	</div>
 {% endraw %}
 </collapsible>
-{% include "_js/utils/date.js" %}
 {% include "_js/libs/pdf.js" %}
 {% include "_js/vue.js" %}
 {% include "_js/vue/components/collapsible.js" %}
@@ -282,6 +281,7 @@
 	import CountryInput from '/js/vue/components/country-input.mjs';
 	import { mergeFields } from '/js/utils/letter.mjs';
 	import { countriesInGerman } from '/js/utils/countries.mjs';
+	import { formatDate } from '/js/utils/date.mjs';
 
 	document.querySelectorAll('.abmeldung-form').forEach(
 		el => new Vue({

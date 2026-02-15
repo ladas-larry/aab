@@ -1,5 +1,7 @@
-{% include "_js/utils/date.js" %}
 {% js %}{% raw %}
+
+import { dateFromString, isoDay } from '/js/utils/date.mjs';
+
 Vue.component('date-picker', {
 	// Mimics the date-input behaviour: The value is always a valid date or an
 	// empty string
