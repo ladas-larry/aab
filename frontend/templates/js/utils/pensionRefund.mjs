@@ -1,7 +1,5 @@
-{% js %}
-
 import { pensions, taxes } from '/js/utils/constants.mjs';
-import { euCountries, eeaCountries } from '/js/utils/countries.mjs';
+import { eeaCountries, euCountries } from '/js/utils/countries.mjs';
 
 function monthsBetween(dateA, dateB) {
 	const startDate = new Date(dateA);
@@ -11,13 +9,13 @@ function monthsBetween(dateA, dateB) {
 	return yearDiff * 12 + monthDiff;
 }
 
-function estimateMonthlyPensionContributions(year, monthlyIncome, isInEastGermany){
+export function estimateMonthlyPensionContributions(year, monthlyIncome, isInEastGermany){
 	const maxMonthlyIncome = taxes.beitragsbemessungsgrenze[year][isInEastGermany ? 'east' : 'west'] / 12;
 	const taxedIncome = Math.min(maxMonthlyIncome, monthlyIncome);
 	return taxedIncome * pensions.contributionRates[year] / 2 / 100;
 }
 
-function estimateYearlyPensionContributions(year, yearlyIncome, isInEastGermany, monthsWorked = 12){
+export function estimateYearlyPensionContributions(year, yearlyIncome, isInEastGermany, monthsWorked = 12){
 	return estimateMonthlyPensionContributions(year, yearlyIncome / 12, isInEastGermany) * monthsWorked;
 }
 
@@ -47,7 +45,7 @@ function estimatePensionContributions(startDate, endDate, yearlyIncome, isInEast
 	}
 }
 
-function calculatePensionRefund(nationality, countryOfResidence, entryDate, exitDate, yearlyIncome, isInEastGermany){
+export function calculatePensionRefund(nationality, countryOfResidence, entryDate, exitDate, yearlyIncome, isInEastGermany){
 	const monthsContributed = monthsBetween(entryDate, exitDate);
 	const monthsSinceLastContribution = monthsBetween(exitDate, new Date());
 	const flags = new Set();
@@ -167,4 +165,3 @@ function calculatePensionRefund(nationality, countryOfResidence, entryDate, exit
 
 	return { flags, refundAmount };
 }
-{% endjs %}
