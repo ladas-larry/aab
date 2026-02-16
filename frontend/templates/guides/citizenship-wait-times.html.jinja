@@ -5,14 +5,18 @@
 	<link rel="preload" as="fetch" href="/api/forms/citizenship-feedback.json?page=1" crossorigin>
 {% endblock %}
 
-{% include "_js/vue.js" %}
-{% include "_js/vue/components/pagination.js" %}
 {% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import Pagination from '/js/vue/components/pagination.mjs';
+
 	import { formatLongDate } from '/js/utils/date.mjs';
 
 	document.querySelectorAll('main .article-body').forEach(
 		el => new Vue({
-			el: el,
+			el,
+			components: {
+				Pagination,
+			},
 			data() {
 				return {
 					department: null,

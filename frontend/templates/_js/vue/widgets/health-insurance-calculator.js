@@ -1,21 +1,22 @@
 {% include "_js/libs/qrcode.js" %}
-{% include "_js/vue.js" %}
-{% include "_js/vue/components/age-input.js" %}
-{% include "_js/vue/components/checkbox.js" %}
-{% include "_js/vue/components/children-input.js" %}
-{% include "_js/vue/components/collapsible.js" %}
-{% include "_js/vue/components/email-input.js" %}
-{% include "_js/vue/components/full-name-input.js" %}
-{% include "_js/vue/components/glossary.js" %}
-{% include "_js/vue/components/health-insurance-options.js" %}
-{% include "_js/vue/components/public-health-insurance-options.js" %}
-{% include "_js/vue/components/private-health-insurance-options.js" %}
-{% include "_js/vue/components/expat-health-insurance-options.js" %}
-{% include "_js/vue/components/income-input.js" %}
-{% include "_js/vue/components/radio.js" %}
-{% include "_js/vue/components/tabs.js" %}
 
 {% js %}{% raw %}
+
+import Vue from '/js/vue/vue.mjs';
+import AgeInput from '/js/vue/components/age-input.mjs';
+import Checkbox from '/js/vue/components/checkbox.mjs';
+import ChildrenInput from '/js/vue/components/children-input.mjs';
+import Collapsible from '/js/vue/components/collapsible.mjs';
+import ExpatHealthInsuranceOptions from '/js/vue/components/expat-health-insurance-options.mjs';
+import EmailInput from '/js/vue/components/email-input.mjs';
+import FullNameInput from '/js/vue/components/full-name-input.mjs';
+import Glossary from '/js/vue/components/glossary.mjs';
+import HealthInsuranceOptions from '/js/vue/components/health-insurance-options.mjs';
+import IncomeInput from '/js/vue/components/income-input.mjs';
+import PublicHealthInsuranceOptions from '/js/vue/components/public-health-insurance-options.mjs';
+import PrivateHealthInsuranceOptions from '/js/vue/components/private-health-insurance-options.mjs';
+import Radio from '/js/vue/components/radio.mjs';
+import Tabs from '/js/vue/components/tabs.mjs';
 
 import brokerMixin from '/js/vue/mixins/broker.mjs';
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
@@ -24,8 +25,25 @@ import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { healthInsurance, occupations, pflegeversicherung } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
 import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
+import { validateForm } from '/js/utils/forms.mjs';
 
 Vue.component('health-insurance-calculator', {
+	components: {
+		AgeInput,
+		Checkbox,
+		ChildrenInput,
+		Collapsible,
+		ExpatHealthInsuranceOptions,
+		EmailInput,
+		FullNameInput,
+		Glossary,
+		HealthInsuranceOptions,
+		IncomeInput,
+		PublicHealthInsuranceOptions,
+		PrivateHealthInsuranceOptions,
+		Radio,
+		Tabs,
+	},
 	mixins: [brokerMixin, multiStageMixin, uniqueIdsMixin, trackedStagesMixin],
 	props: {
 		static: {

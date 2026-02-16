@@ -344,17 +344,15 @@ export function pkvOptions({occupation, monthlyIncome, hoursWorkedPerWeek, age, 
 }
 
 function expatOptions(childrenCount){
-	return [
-	{% for id, cost in EXPAT_INSURANCE_COST.items() %}
-		{
-			id: "{{ id }}",
+	return Object.entries(healthinsurance.expat).map(([id, cost]) => {
+		return {
+			id: id,
 			total: {
-				personalContribution: {{ cost }} * (childrenCount + 1),
-				childrenCost: {{ cost }} * childrenCount,
-			},
-		},
-	{% endfor %}
-	];
+				personalContribution: cost * (childrenCount + 1),
+				childrenCost: cost * childrenCount,
+			}
+		};
+	});
 }
 
 function canHaveEHIC(hasEUPublicHealthInsurance, hasGermanPublicHealthInsurance, monthlyIncome){
@@ -516,7 +514,7 @@ function canHaveKSK(occupation, monthlyIncome, hoursWorkedPerWeek){
 	);
 }
 
-function isWerkstudent(occupation, monthlyIncome, hoursWorkedPerWeek){
+export function isWerkstudent(occupation, monthlyIncome, hoursWorkedPerWeek){
 	// A Werkstudent keeps their student insurance even if their income is above the Familienversicherung threshold
 	return (
 		occupations.isStudent(occupation)

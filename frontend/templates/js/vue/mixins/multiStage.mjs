@@ -1,3 +1,5 @@
+import { validateForm } from '/js/utils/forms.mjs';
+
 export default {
 	data: function () {
 		return {

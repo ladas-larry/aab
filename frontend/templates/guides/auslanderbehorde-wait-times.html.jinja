@@ -5,17 +5,24 @@
 	<link rel="preload" as="fetch" href="/api/forms/residence-permit-feedback.json?page=1" crossorigin>
 {% endblock %}
 
-{% include "_js/vue.js" %}
-{% include "_js/vue/components/checkbox.js" %}
-{% include "_js/vue/components/pagination.js" %}
 {% include "_js/vue/widgets/feedback-residence-permit.js" %}
 {% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import Checkbox from '/js/vue/components/checkbox.mjs';
+	import Glossary from '/js/vue/components/glossary.mjs';
+	import Pagination from '/js/vue/components/pagination.mjs';
+
 	import residencePermitFeedbackMixin from '/js/vue/mixins/residencePermitFeedback.mjs';
 	import { formatLongDate } from '/js/utils/date.mjs';
 
 	document.querySelectorAll('main .article-body').forEach(
 		el => new Vue({
-			el: el,
+			el,
+			components: {
+				Checkbox,
+				Glossary,
+				Pagination,
+			},
 			mixins: [residencePermitFeedbackMixin],
 			data() {
 				return {

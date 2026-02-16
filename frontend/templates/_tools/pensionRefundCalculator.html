@@ -1,29 +1,41 @@
-{% include "_js/vue.js" %}
-{% include "_js/vue/components/collapsible.js" %}
-{% include "_js/vue/components/date-input.js" %}
-{% include "_js/vue/components/email-input.js" %}
-{% include "_js/vue/components/eur.js" %}
-{% include "_js/vue/components/full-name-input.js" %}
-{% include "_js/vue/components/glossary.js" %}
-{% include "_js/vue/components/income-input.js" %}
-{% include "_js/vue/components/radio.js" %}
-{% include "_js/vue/components/recommended.js" %}
-{% include "_js/vue/components/price.js" %}
-{% include "_js/vue/components/state-input.js" %}
-
 {% js %}
-	import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
+	import Vue from '/js/vue/vue.mjs';
+	import Collapsible from '/js/vue/components/collapsible.mjs';
 	import CountryInput from '/js/vue/components/country-input.mjs';
+	import DateInput from '/js/vue/components/date-input.mjs';
+	import EmailInput from '/js/vue/components/email-input.mjs';
+	import Eur from '/js/vue/components/eur.mjs';
+	import FullNameInput from '/js/vue/components/full-name-input.mjs';
+	import Glossary from '/js/vue/components/glossary.mjs';
+	import IncomeInput from '/js/vue/components/income-input.mjs';
+	import Price from '/js/vue/components/price.mjs';
+	import Radio from '/js/vue/components/radio.mjs';
+	import Recommended from '/js/vue/components/recommended.mjs';
+	import StateInput from '/js/vue/components/state-input.mjs';
+
 	import { isEastGerman } from '/js/utils/germanStates.mjs';
 	import { calculatePensionRefund } from '/js/utils/pensionRefunds.mjs';
+	import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 	import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 	import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
+	import { validateForm } from '/js/utils/forms.mjs';
 
 	document.querySelectorAll('collapsible.pension-refund-calculator').forEach(
 		el => new Vue({
-			el: el,
+			el,
 			components: {
+				Collapsible,
 				CountryInput,
+				DateInput,
+				EmailInput,
+				Eur,
+				FullNameInput,
+				Glossary,
+				IncomeInput,
+				Price,
+				Radio,
+				Recommended,
+				StateInput,
 			},
 			mixins: [userDefaultsMixin, uniqueIdsMixin, trackedStagesMixin],
 			data() {

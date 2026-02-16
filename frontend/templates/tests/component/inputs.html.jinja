@@ -1,28 +1,42 @@
 {% extends "tests/component/index.html.jinja" %}
-{% include "_js/vue/components/age-input.js" %}
-{% include "_js/vue/components/checkbox.js" %}
-{% include "_js/vue/components/children-input.js" %}
-{% include "_js/vue/components/city-input.js" %}
-{% include "_js/vue/components/date-input.js" %}
-{% include "_js/vue/components/date-picker.js" %}
-{% include "_js/vue/components/email-input.js" %}
-{% include "_js/vue/components/first-name-input.js" %}
-{% include "_js/vue/components/full-name-input.js" %}
-{% include "_js/vue/components/last-name-input.js" %}
-{% include "_js/vue/components/occupation-input.js" %}
-{% include "_js/vue/components/postalcode-input.js" %}
-{% include "_js/vue/components/radio.js" %}
-{% include "_js/vue/components/state-input.js" %}
 
 {% js %}
 	import AddressInput from '/js/vue/components/address-input.mjs';
+	import AgeInput from '/js/vue/components/age-input.mjs';
+	import Checkbox from '/js/vue/components/checkbox.mjs';
+	import ChildrenInput from '/js/vue/components/children-input.mjs';
+	import CityInput from '/js/vue/components/city-input.mjs';
 	import CountryInput from '/js/vue/components/country-input.mjs';
+	import DateInput from '/js/vue/components/date-input.mjs';
+	import DatePicker from '/js/vue/components/date-picker.mjs';
+	import EmailInput from '/js/vue/components/email-input.mjs';
+	import FirstNameInput from '/js/vue/components/first-name-input.mjs';
+	import FullNameInput from '/js/vue/components/full-name-input.mjs';
+	import LastNameInput from '/js/vue/components/last-name-input.mjs';
+	import OccupationInput from '/js/vue/components/occupation-input.mjs';
+	import PostalcodeInput from '/js/vue/components/postalcode-input.mjs';
+	import Radio from '/js/vue/components/radio.mjs';
+	import StateInput from '/js/vue/components/state-input.mjs';
 
 	new Vue({
 		el: document.querySelector('main .article-body'),
 		components: {
-			CountryInput,
 			AddressInput,
+			AgeInput,
+			Checkbox,
+			ChildrenInput,
+			CityInput,
+			CountryInput,
+			DateInput,
+			DatePicker,
+			EmailInput,
+			FirstNameInput,
+			FullNameInput,
+			LastNameInput,
+			OccupationInput,
+			PostalcodeInput,
+			Radio,
+			StateInput,
 		},
 		data() {
 			return {

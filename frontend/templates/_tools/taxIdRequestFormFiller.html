@@ -284,21 +284,22 @@
 {% endraw %}
 </collapsible>
 {% include "_js/libs/pdf.js" %}
-{% include "_js/vue.js" %}
-{% include "_js/vue/components/checkbox.js" %}
-{% include "_js/vue/components/city-input.js" %}
-{% include "_js/vue/components/collapsible.js" %}
-{% include "_js/vue/components/date-input.js" %}
-{% include "_js/vue/components/email-input.js" %}
-{% include "_js/vue/components/first-name-input.js" %}
-{% include "_js/vue/components/glossary.js" %}
-{% include "_js/vue/components/last-name-input.js" %}
-{% include "_js/vue/components/postalcode-input.js" %}
-{% include "_js/vue/components/radio.js" %}
-{% include "_js/vue/components/recommended.js" %}
-{% include "_js/vue/components/state-input.js" %}
 {% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import Checkbox from '/js/vue/components/checkbox.mjs';
+	import CityInput from '/js/vue/components/city-input.mjs';
+	import Collapsible from '/js/vue/components/collapsible.mjs';
 	import CountryInput from '/js/vue/components/country-input.mjs';
+	import DateInput from '/js/vue/components/date-input.mjs';
+	import EmailInput from '/js/vue/components/email-input.mjs';
+	import FirstNameInput from '/js/vue/components/first-name-input.mjs';
+	import Glossary from '/js/vue/components/glossary.mjs';
+	import LastNameInput from '/js/vue/components/last-name-input.mjs';
+	import PostalcodeInput from '/js/vue/components/postalcode-input.mjs';
+	import Radio from '/js/vue/components/radio.mjs';
+	import Recommended from '/js/vue/components/recommended.mjs';
+	import StateInput from '/js/vue/components/state-input.mjs';
+
 	import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 	import preloadPdfMixin from '/js/vue/mixins/preloadPdf.mjs';
 	import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
@@ -307,12 +308,25 @@
 	import { countriesInGerman } from '/js/utils/countries.mjs';
 	import { germanStateNames } from '/js/utils/germanStates.mjs';
 	import { mergeFields } from '/js/utils/letter.mjs';
+	import { validateForm } from '/js/utils/forms.mjs';
 
 	document.querySelectorAll('.tax-id-form').forEach(
 		el => new Vue({
-			el: el,
+			el,
 			components: {
+				Checkbox,
+				CityInput,
+				Collapsible,
 				CountryInput,
+				DateInput,
+				EmailInput,
+				FirstNameInput,
+				Glossary,
+				LastNameInput,
+				PostalcodeInput,
+				Radio,
+				Recommended,
+				StateInput,
 			},
 			mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin, preloadPdfMixin],
 			data() {

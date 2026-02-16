@@ -1,6 +1,7 @@
-{% include "_js/vue.js" %}
 {% include "_js/vue/widgets/feedback-residence-permit.js" %}
 {% js %}
+	import Vue from '/js/vue/vue.mjs';
+
 	document.querySelectorAll('feedback-residence-permit').forEach(el => new Vue({ el }));
 {% endjs %}
 

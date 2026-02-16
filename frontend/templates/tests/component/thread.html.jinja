@@ -1,8 +1,14 @@
 {% extends "tests/component/index.html.jinja" %}
-{% include "_js/vue/components/thread.js" %}
 
 {% js %}
-	new Vue({ el: document.querySelector('main .article-body') })
+	import Thread from '/js/vue/components/thread.mjs';
+
+	new Vue({
+		el: document.querySelector('main .article-body'),
+		components: {
+			Thread,
+		},
+	})
 {% endjs %}
 
 {% block component %}

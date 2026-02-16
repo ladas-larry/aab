@@ -1,8 +1,14 @@
 {% extends "tests/component/index.html.jinja" %}
-{% include "_js/vue/components/recommended.js" %}
 
 {% js %}
-	new Vue({ el: document.querySelector('main .article-body') })
+	import Recommended from '/js/vue/components/recommended.mjs';
+
+	new Vue({
+		el: document.querySelector('main .article-body'),
+		components: {
+			Recommended
+		}
+	});
 {% endjs %}
 
 {% block component %}

@@ -1,16 +1,17 @@
-{% include "_js/vue.js" %}
-{% include "_js/vue/components/blank.js" %}
-{% include "_js/vue/components/checkbox.js" %}
-{% include "_js/vue/components/date-picker.js" %}
-{% include "_js/vue/components/first-name-input.js" %}
-{% include "_js/vue/components/full-name-input.js" %}
-{% include "_js/vue/components/gender-input.js" %}
-{% include "_js/vue/components/glossary.js" %}
-{% include "_js/vue/components/tabs.js" %}
-{% include "_js/vue/components/last-name-input.js" %}
-{% include "_js/vue/components/letter-generator.js" %}
 {% js %}
+	import Vue from '/js/vue/vue.mjs';
 	import AddressInput from '/js/vue/components/address-input.mjs';
+	import Blank from '/js/vue/components/blank.mjs';
+	import Checkbox from '/js/vue/components/checkbox.mjs';
+	import DatePicker from '/js/vue/components/date-picker.mjs';
+	import FirstNameInput from '/js/vue/components/first-name-input.mjs';
+	import FullNameInput from '/js/vue/components/full-name-input.mjs';
+	import GenderInput from '/js/vue/components/gender-input.mjs';
+	import Glossary from '/js/vue/components/glossary.mjs';
+	import LastNameInput from '/js/vue/components/last-name-input.mjs';
+	import LetterGenerator from '/js/vue/components/letter-generator.mjs';
+	import Tabs from '/js/vue/components/tabs.mjs';
+
 	import { dateFromString, formatLongDate, isoDay } from '/js/utils/date.mjs';
 	import { formatName, formatSalutations } from '/js/utils/letter.mjs';
 	import { getMoveOutDate, getLatestNoticeDate } from '/js/utils/lease.mjs';
@@ -19,9 +20,19 @@
 
 	document.querySelectorAll('.lease-termination-letter').forEach(
 		el => new Vue({
-			el: el,
+			el,
 			components: {
 				AddressInput,
+				Blank,
+				Checkbox,
+				DatePicker,
+				FirstNameInput,
+				FullNameInput,
+				GenderInput,
+				Glossary,
+				LastNameInput,
+				LetterGenerator,
+				Tabs,
 			},
 			mixins: [userDefaultsMixin, uniqueIdsMixin],
 			data() {

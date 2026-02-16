@@ -1,5 +1,5 @@
 export const bafog = {
-	bedarfssatz: {{ BAFOG_BEDARFSSATZ }};
+	bedarfssatz: {{ BAFOG_BEDARFSSATZ }},
 }
 
 export const healthInsurance = {
@@ -469,6 +469,11 @@ export const healthInsurance = {
 				},
 			},
 		},
+	},
+	expat: {
+		{% for id, cost in EXPAT_INSURANCE_COST.items() %}
+			"{{ id }}": {{ cost }},
+		{% endfor %}
 	},
 }
 

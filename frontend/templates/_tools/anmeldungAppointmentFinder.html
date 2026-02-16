@@ -1,13 +1,17 @@
-{% include "_js/vue.js" %}
-{% include "_js/vue/components/checkbox.js" %}
-{% include "_js/vue/components/collapsible.js" %}
 {% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import Checkbox from '/js/vue/components/checkbox.mjs';
+	import Collapsible from '/js/vue/components/collapsible.mjs';
 	import { isoDay, isoMonth } from '/js/utils/date.mjs';
 
 	const ding = new Audio('/js/ding.wav');
 	document.querySelectorAll(".appointment-finder").forEach(el =>
 		new Vue({
-			el: el,
+			el,
+			components: {
+				Checkbox,
+				Collapsible,
+			},
 			data() {
 				return {
 					isConnected: null,

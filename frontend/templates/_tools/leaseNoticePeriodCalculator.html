@@ -1,15 +1,20 @@
-{% include "_js/vue.js" %}
-{% include "_js/vue/components/collapsible.js" %}
-{% include "_js/vue/components/date-picker.js" %}
-{% include "_js/vue/components/glossary.js" %}
 {% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import Collapsible from '/js/vue/components/collapsible.mjs';
+	import DatePicker from '/js/vue/components/date-picker.mjs';
+	import Glossary from '/js/vue/components/glossary.mjs';
 	import { dateFromString, formatLongDate, isoDay } from '/js/utils/date.mjs';
 	import { getMoveOutDate, getLatestNoticeDate } from '/js/utils/lease.mjs';
 	import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 
 	document.querySelectorAll('collapsible.lease-notice-period-calculator').forEach(
 		el => new Vue({
-			el: el,
+			el,
+			components: {
+				Collapsible,
+				DatePicker,
+				Glossary,
+			},
 			mixins: [uniqueIdsMixin],
 			data() {
 				return {

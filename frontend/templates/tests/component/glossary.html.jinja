@@ -1,8 +1,13 @@
 {% extends "tests/component/index.html.jinja" %}
-{% include "_js/vue/components/glossary.js" %}
 
 {% js %}
-	new Vue({ el: document.querySelector('main .article-body') })
+	import Glossary from '/js/vue/components/glossary.mjs';
+	new Vue({
+		el: document.querySelector('main .article-body'),
+		components: {
+			Glossary,
+		},
+	})
 {% endjs %}
 
 {% block component %}

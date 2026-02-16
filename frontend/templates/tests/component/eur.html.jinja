@@ -1,9 +1,16 @@
 {% extends "tests/component/index.html.jinja" %}
-{% include "_js/vue/components/eur.js" %}
-{% include "_js/vue/components/price.js" %}
 
 {% js %}
-	new Vue({ el: document.querySelector('main .article-body') })
+	import Eur from '/js/vue/components/eur.mjs';
+	import Price from '/js/vue/components/price.mjs';
+
+	new Vue({
+		el: document.querySelector('main .article-body'),
+		components: {
+			Eur,
+			Price,
+		},
+	})
 {% endjs %}
 
 {% block component %}

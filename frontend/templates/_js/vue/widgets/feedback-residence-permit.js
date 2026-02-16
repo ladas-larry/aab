@@ -1,17 +1,25 @@
-{% include "_js/vue.js" %}
-{% include "_js/vue/components/collapsible.js" %}
-{% include "_js/vue/components/age-input.js" %}
-{% include "_js/vue/components/date-input.js" %}
-{% include "_js/vue/components/email-input.js" %}
 {% js %}{% raw %}
+
+import Vue from '/js/vue/vue.mjs';
+import AgeInput from '/js/vue/components/age-input.mjs';
+import Collapsible from '/js/vue/components/collapsible.mjs';
+import DateInput from '/js/vue/components/date-input.mjs';
+import EmailInput from '/js/vue/components/email-input.mjs';
 
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import residencePermitFeedbackMixin from '/js/vue/mixins/residencePermitFeedback.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
+import { validateForm } from '/js/utils/forms.mjs';
 
 Vue.component('feedback-residence-permit', {
+	components: {
+		AgeInput,
+		Collapsible,
+		DateInput,
+		EmailInput,
+	},
 	props: {
 		residencePermitType: {
 			type: String,

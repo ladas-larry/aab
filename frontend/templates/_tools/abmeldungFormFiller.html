@@ -263,17 +263,18 @@
 {% endraw %}
 </collapsible>
 {% include "_js/libs/pdf.js" %}
-{% include "_js/vue.js" %}
-{% include "_js/vue/components/collapsible.js" %}
-{% include "_js/vue/components/date-input.js" %}
-{% include "_js/vue/components/eur.js" %}
-{% include "_js/vue/components/glossary.js" %}
-{% include "_js/vue/components/postalcode-input.js" %}
-{% include "_js/vue/components/first-name-input.js" %}
-{% include "_js/vue/components/last-name-input.js" %}
-{% include "_js/vue/components/tabs.js" %}
 {% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import Collapsible from '/js/vue/components/collapsible.mjs';
 	import CountryInput from '/js/vue/components/country-input.mjs';
+	import DateInput from '/js/vue/components/date-input.mjs';
+	import Eur from '/js/vue/components/eur.mjs';
+	import FirstNameInput from '/js/vue/components/first-name-input.mjs';
+	import Glossary from '/js/vue/components/glossary.mjs';
+	import LastNameInput from '/js/vue/components/last-name-input.mjs';
+	import PostalcodeInput from '/js/vue/components/postalcode-input.mjs';
+	import Tabs from '/js/vue/components/tabs.mjs';
+
 	import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 	import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 	import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
@@ -285,10 +286,18 @@
 
 	document.querySelectorAll('.abmeldung-form').forEach(
 		el => new Vue({
-			el: el,
+			el,
 			mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin, preloadPdfMixin],
 			components: {
+				Collapsible,
 				CountryInput,
+				DateInput,
+				Eur,
+				FirstNameInput,
+				Glossary,
+				LastNameInput,
+				PostalcodeInput,
+				Tabs,
 			},
 			data() {
 				return {

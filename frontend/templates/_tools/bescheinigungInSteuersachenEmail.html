@@ -1,12 +1,12 @@
-{% include "_js/vue.js" %}
-{% include "_js/vue/components/blank.js" %}
-{% include "_js/vue/components/checkbox.js" %}
-{% include "_js/vue/components/date-input.js" %}
-{% include "_js/vue/components/full-name-input.js" %}
-{% include "_js/vue/components/glossary.js" %}
-{% include "_js/vue/components/letter-generator.js" %}
 {% js %}
+	import Vue from '/js/vue/vue.mjs';
 	import AddressInput from '/js/vue/components/address-input.mjs';
+	import Blank from '/js/vue/components/blank.mjs';
+	import Checkbox from '/js/vue/components/checkbox.mjs';
+	import DateInput from '/js/vue/components/date-input.mjs';
+	import FullNameInput from '/js/vue/components/full-name-input.mjs';
+	import Glossary from '/js/vue/components/glossary.mjs';
+	import LetterGenerator from '/js/vue/components/letter-generator.mjs';
 	import { formatDate } from '/js/utils/date.mjs';
 	import { formatSalutations } from '/js/utils/letter.mjs';
 	import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
@@ -14,9 +14,15 @@
 
 	document.querySelectorAll('.bescheinigung-in-steueresachen-letter').forEach(
 		el => new Vue({
-			el: el,
+			el,
 			components: {
 				AddressInput,
+				Blank,
+				Checkbox,
+				DateInput,
+				FullNameInput,
+				Glossary,
+				LetterGenerator,
 			},
 			mixins: [userDefaultsMixin, uniqueIdsMixin],
 			data() {
