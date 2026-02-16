@@ -1,7 +1,3 @@
-{% include "_js/libs/qrcode.js" %}
-
-{% js %}{% raw %}
-
 import Vue from '/js/vue/vue.mjs';
 import AgeInput from '/js/vue/components/age-input.mjs';
 import Checkbox from '/js/vue/components/checkbox.mjs';
@@ -27,7 +23,7 @@ import { formatCurrency } from '/js/utils/currency.mjs';
 import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
 import { validateForm } from '/js/utils/forms.mjs';
 
-Vue.component('health-insurance-calculator', {
+export default {
 	components: {
 		AgeInput,
 		Checkbox,
@@ -779,7 +775,4 @@ Vue.component('health-insurance-calculator', {
 			</template>
 		</collapsible>
 	`,
-});
-
-document.querySelectorAll('health-insurance-calculator').forEach(el => new Vue({ el }));
-{% endraw %}{% endjs %}
+}

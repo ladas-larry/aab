@@ -1,2 +1,14 @@
-{% include "_js/vue/widgets/health-insurance-calculator.js" %}
+{% include "_js/libs/qrcode.js" %}
+
+{% js %}
+	import HealthInsuranceCalculator from '/js/vue/components/health-insurance-calculator.mjs';
+
+	document.querySelectorAll('health-insurance-calculator').forEach(el => new Vue({
+		el,
+		components: {
+			HealthInsuranceCalculator,
+		},
+	}));
+{% endjs %}
+
 <health-insurance-calculator {% if occupation|default %}initial-occupation="{{ occupation }}"{% endif %} {% if static|default %}static{% endif %}></health-insurance-calculator>
