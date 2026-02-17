@@ -1,2 +1,13 @@
-{% include "_js/vue/widgets/feedback-citizenship.js" %}
+{% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import FeedbackCitizenship from '/js/vue/components/feedback-citizenship.mjs';
+
+	document.querySelectorAll('feedback-citizenship').forEach(el => new Vue({
+		el,
+		components: {
+			FeedbackCitizenship,
+		},
+	}));
+{% endjs %}
+
 <feedback-citizenship open></feedback-citizenship>

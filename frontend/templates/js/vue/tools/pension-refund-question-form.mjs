@@ -1,0 +1,136 @@
+import Vue from '/js/vue/vue.mjs';
+import Collapsible from '/js/vue/components/collapsible.mjs';
+import CountryInput from '/js/vue/components/country-input.mjs';
+import DateInput from '/js/vue/components/date-input.mjs';
+import EmailInput from '/js/vue/components/email-input.mjs';
+import FullNameInput from '/js/vue/components/full-name-input.mjs';
+import { calculatePensionRefund } from '/js/utils/pensionRefunds.mjs';
+import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
+import { validateForm } from '/js/utils/form.mjs';
+import { getNearestHeadingId } from '/js/utils/tracking.mjs';
+
+export default {
+	components: {
+		Collapsible,
+		CountryInput,
+		DateInput,
+		EmailInput,
+		FullNameInput,
+	},
+	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	data: function() {
+		return {
+			isLoading: false,
+			email: userDefaults.empty,
+			fullName: userDefaults.empty,
+			question: '',
+			nationality: userDefaults.empty,
+			countryOfResidence: userDefaults.empty,
+			stage: 'contactInfo',
+		};
+	},
+	methods: {
+		async submitForm() {
+			if(validateForm(this.$refs.collapsible.$el)) {
+				this.isLoading = true;
+				const response = await fetch(
+					'/api/forms/pension-refund-question',
+					{
+						method: 'POST',
+						keepalive: true,
+						headers: {'Content-Type': 'application/json; charset=utf-8'},
+						body: JSON.stringify({
+							name: this.fullName,
+							email: this.email,
+							question: this.question,
+							nationality: this.nationality,
+							country_of_residence: this.countryOfResidence,
+						}),
+					}
+				);
+				this.isLoading = false;
+				this.stage = response.ok ? 'thank-you' : 'error';
+				Vue.nextTick(() => {
+					this.$refs.collapsible.$el.scrollIntoView({ block: 'start', behavior: 'auto' });
+					plausible('Pension refund question', { props: {
+						stage: this.stage,
+						pageSection: getNearestHeadingId(this.$el),
+						referrer: getReferrer(),
+					}});
+				});
+			}
+		},
+	},
+	computed: {
+		isEligible() {
+			const threeYearsAgo = new Date();
+			threeYearsAgo.setYear(threeYearsAgo.getFullYear() - 3);
+			const fourYearsAgo = new Date();
+			fourYearsAgo.setYear(fourYearsAgo.getFullYear() - 4);
+
+			return calculatePensionRefund(
+				this.nationality,
+				this.countryOfResidence,
+				threeYearsAgo,
+				fourYearsAgo,
+				40000,
+				false,
+			).flags.has('eligible');
+		}
+	},
+	template: `
+	<collapsible class="pension-refund-question" aria-label="Pension refund question form" ref="collapsible">
+		<template v-slot:header>Ask a pension refund expert</template>
+		<input type="text" name="username" value="" autocomplete="off" hidden role="presentation" required/>
+		<template v-if="stage === 'contactInfo'">
+			<p>Pension Refund Germany helps people get their pension refund. You can ask them questions. They will answer in 1 to 3 business days. This is a free service.</p>
+			<hr>
+			<div class="form-group">
+				<label :for="uid('question')">Your question</label>
+				<textarea v-model="question" :id="uid('question')" required placeholder=" "></textarea>
+			</div>
+			<div class="form-group">
+				<label :for="uid('fullName')">
+					Name
+				</label>
+				<full-name-input :id="uid('fullName')" v-model="fullName" required></full-name-input>
+			</div>
+			<div class="form-group">
+				<label :for="uid('email')">
+					Email address
+				</label>
+				<email-input v-model="email" :id="uid('email')" required></email-input>
+			</div>
+			<hr>
+			<div class="form-group">
+				<label :for="uid('nationality')">Nationality</label>
+				<country-input
+					country-code
+					v-model="nationality"
+					:id="uid('nationality')"
+					required></country-input>
+			</div>
+			<div class="form-group">
+				<label :for="uid('countryOfResidence')">Where do you live?</label>
+				<country-input
+					country-code
+					v-model="countryOfResidence"
+					:id="uid('countryOfResidence')"
+					required></country-input>
+				<span class="input-instructions error" v-if="!isEligible">You do not qualify for a pension refund.</span>
+			</div>
+			<hr>
+			<div class="buttons bar">
+				<button class="button primary no-print" @click="submitForm" :disabled="isLoading" :class="{loading: isLoading}">Ask Georg <i class="icon right" aria-hidden="true"></i></button>
+			</div>
+		</template>
+		<template v-if="stage === 'thank-you'">
+			<p><strong>Message sent!</strong> Pension Refund Germany will contact you soon.</p>
+		</template>
+		<template v-if="stage === 'error'">
+			<p><strong>An error occured</strong> while sending your question. If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
+		</template>
+	</collapsible>
+	`
+}

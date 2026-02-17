@@ -1,8 +1,6 @@
-{% include "_js/libs/qrcode.js" %}
-
 {% js %}
-	import HealthInsuranceCalculator from '/js/vue/components/health-insurance-calculator.mjs';
-
+	import Vue from '/js/vue/vue.mjs';
+	import HealthInsuranceCalculator from '/js/vue/tools/health-insurance-calculator.mjs';
 	document.querySelectorAll('health-insurance-calculator').forEach(el => new Vue({
 		el,
 		components: {
@@ -11,4 +9,6 @@
 	}));
 {% endjs %}
 
-<health-insurance-calculator {% if occupation|default %}initial-occupation="{{ occupation }}"{% endif %} {% if static|default %}static{% endif %}></health-insurance-calculator>
+<health-insurance-calculator
+	{% if occupation|default %}initial-occupation="{{ occupation }}"{% endif %}
+	{% if static|default %}static{% endif %}></health-insurance-calculator>

@@ -1,4 +1,7 @@
 {% js %}
+
+import { getNearestHeadingId } from '/js/utils/tracking.mjs';
+
 // Fallback tracking if Plausible is not working as advertised
 window.plausible ??= function() {
 	console.log(`Plausible: ${arguments[0]}`, arguments[1]?.props);
@@ -30,18 +33,6 @@ function getLinkEl(l) {
 		l = l.parentNode
 	}
 	return l;
-}
-
-// Find the nearest parent H2, H3 or H4 heading in .article-body, return its ID for tracking purposes
-function getNearestHeadingId(el){
-	const articleBody = document.querySelector('.article-body');
-	if(articleBody && el && articleBody.contains(el)){
-		const nearestHeading = Array.from(articleBody.querySelectorAll(':scope > :is(h2,h3,h4)'))
-			.findLast(h => el.compareDocumentPosition(h) === Node.DOCUMENT_POSITION_PRECEDING);
-
-		return (nearestHeading && nearestHeading.id) ? `#${nearestHeading.id}` : null;
-	}
-	return null;
 }
 
 function openLinkAfterTracking(e, link) {

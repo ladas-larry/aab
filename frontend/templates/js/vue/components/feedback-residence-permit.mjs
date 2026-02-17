@@ -1,6 +1,5 @@
-{% js %}{% raw %}
-
 import Vue from '/js/vue/vue.mjs';
+import AgeInput from '/js/vue/components/age-input.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import DateInput from '/js/vue/components/date-input.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
@@ -8,25 +7,40 @@ import EmailInput from '/js/vue/components/email-input.mjs';
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+import residencePermitFeedbackMixin from '/js/vue/mixins/residencePermitFeedback.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
-import { validateForm } from '/js/utils/forms.mjs';
+import { validateForm } from '/js/utils/form.mjs';
 
-Vue.component('feedback-citizenship', {
+export default {
 	components: {
+		AgeInput,
 		Collapsible,
 		DateInput,
 		EmailInput,
 	},
-	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
+	props: {
+		residencePermitType: {
+			type: String,
+			default: null,
+		}
+	},
+	mixins: [residencePermitFeedbackMixin, userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
 	data() {
 		return {
+			showResidencePermitField: true,
 			isLoading: false,
 
-			citizenshipModificationKey: userDefaults.empty,
+			// The primary key of the Feedback item, plus a two-letter prefix denoting the residencePermitType
+			modificationKey: userDefaults.empty,
 
-			department: null,
 			notes: '',
 			email: userDefaults.empty,
+
+			healthInsurance: null,
+			healthInsuranceName: null,
+
+			validityUnit: 'months',
+			validity: null,
 
 			steps: {
 				application: {
@@ -44,18 +58,13 @@ Vue.component('feedback-citizenship', {
 					completed: null,
 					date: null,
 				},
+				pickup: {
+					dateFieldTitle: "Pick-up date",
+					completed: null,
+					date: null,
+				},
 			},
 
-			departments: {
-				S1: 'S1 — Iran, Syria (last names from A to E)',
-				S2: 'S2 — Irak, Syria (last names from F to Z)',
-				S3: 'S3 — Asia',
-				S4: 'S4 — Africa, America, Australia, Oceania',
-				S5: 'S5 — Poland, Turkey, Ukraine',
-				S6: 'S6 — Europe',
-			},
-
-			trackAs: 'Feedback (citizenship)',
 			stages: [
 				'start',
 				'email',
@@ -68,17 +77,28 @@ Vue.component('feedback-citizenship', {
 		};
 	},
 	async mounted(){
+		// The residence permit type can be pre-selected with the data-type attribute
+		if(this.$el.dataset.type){
+			this.showResidencePermitField = false;
+			this.residencePermitType = this.$el.dataset.type;
+		}
+
 		// Load the key from the URL hash
 		const keyFromHash = (new URLSearchParams(window.location.hash.substring(1))).get('feedbackKey');
 		if(keyFromHash){
-			this.citizenshipModificationKey = keyFromHash;
+			this.modificationKey = keyFromHash;
 			history.replaceState(null, null, ' '); // Remove the hash
 		}
 
-		if(this.citizenshipModificationKey){
+		// Set the residencePermitType from the modificationKey, but don't override a hard-coded type
+		if(this.modificationKey && !this.residencePermitType){
+			this.residencePermitType = this.modificationKey.split('~')[1];
+		}
+
+		if(this.modificationKey && this.modificationKeyMatchesResidencePermitType){
 			const response = await fetch(this.apiEndpoint);
 			if(!response.ok){
-				this.citizenshipModificationKey = null;
+				this.modificationKey = null;
 				return;
 			}
 			responseJson = await response.json();
@@ -92,22 +112,56 @@ Vue.component('feedback-citizenship', {
 			this.steps.appointment.date = responseJson.appointment_date;
 			this.steps.appointment.completed = !!responseJson.appointment_date;
 
+			this.steps.pickup.date = responseJson.pick_up_date;
+			this.steps.pickup.completed = !!responseJson.pick_up_date;
+
+			this.healthInsurance = responseJson.health_insurance_type;
+			this.healthInsuranceName = responseJson.health_insurance_name;
+
 			this.email = responseJson.email || this.email;
+			this.department = responseJson.department;
 			this.notes = responseJson.notes;
+			this.validity = responseJson.validity;
+			this.validityUnit = (this.validity % 12 || !this.validity) ? 'months' : 'years';
 		}
 	},
 	computed: {
+		modificationKeyMatchesResidencePermitType(){
+			return (
+				this.residencePermitType
+				&& this.modificationKey
+				&& this.modificationKey.endsWith(this.residencePermitType)
+			);
+		},
 		apiEndpoint(){
-			if(this.citizenshipModificationKey){
-				return `/api/forms/citizenship-feedback/${this.citizenshipModificationKey}`
+			if(this.modificationKeyMatchesResidencePermitType){
+				return `/api/forms/residence-permit-feedback/${this.modificationKey.split('~')[0]}`
 			}
-			return '/api/forms/citizenship-feedback';
+			return '/api/forms/residence-permit-feedback';
+		},
+		trackAs(){
+			return `Feedback (${this.residencePermitType})`;
 		},
 		ariaLabel(){
-			return `Feedback form: Citizenship processing time`;
+			return `Feedback form: ${this.residencePermitName} processing time`;
+		},
+		residencePermitName(){
+			return this.residencePermitTypes[this.residencePermitType]?.normal || "residence permit";
 		},
 		showRestOfForm(){
 			return this.steps.application.completed;
+		},
+		askAboutHealthInsurance(){
+			return this.residencePermitType && this.residencePermitTypes[this.residencePermitType].askAboutHealthInsurance;
+		},
+		showHealthInsuranceNameField(){
+			return ["PRIVATE", "EXPAT", "OTHER"].includes(this.healthInsurance);
+		},
+		validityInMonths(){
+			if(!this.validity){
+				return null;
+			}
+			return this.validity * (this.validityUnit === 'years' ? 12 : 1);
 		},
 		feedbackComplete(){
 			return Object.values(this.steps).every(s => s.completed);
@@ -148,16 +202,21 @@ Vue.component('feedback-citizenship', {
 				const response = await fetch(
 					this.apiEndpoint,
 					{
-						method: this.citizenshipModificationKey ? 'PUT' : 'POST',
+						method: this.modificationKeyMatchesResidencePermitType ? 'PUT' : 'POST',
 						keepalive: true,
 						headers: {'Content-Type': 'application/json; charset=utf-8',},
 						body: JSON.stringify({
+							health_insurance_type: this.healthInsurance || '',
+							health_insurance_name: this.healthInsuranceName || '',
 							application_date: this.steps.application.date,
 							appointment_date: (this.steps.appointment.completed ? this.steps.appointment.date : null),
 							email: emailAddress,
 							first_response_date: (this.steps.response.completed ? this.steps.response.date : null),
-							notes: this.notes,
 							department: this.department,
+							notes: this.notes,
+							pick_up_date: (this.steps.pickup.completed ? this.steps.pickup.date : null),
+							residence_permit_type: this.residencePermitType,
+							validity_in_months: this.validityInMonths,
 						}),
 					}
 				);
@@ -167,7 +226,7 @@ Vue.component('feedback-citizenship', {
 					const responseJson = await response.json();
 
 					// No need to modify complete feedback, so the key gets cleared
-					this.citizenshipModificationKey = this.feedbackComplete ? null : responseJson.modification_key;
+					this.modificationKey = this.feedbackComplete ? null : `${responseJson.modification_key}~${this.residencePermitType}`;
 				}
 				else{
 					this.goToStage('error');
@@ -177,8 +236,9 @@ Vue.component('feedback-citizenship', {
 		stepName(key){
 			return {
 				application: "I have applied in Berlin",
-				response: "I got a reply",
-				appointment: "I got an appointment",
+				response: "The Ausländerbehörde has replied",
+				appointment: "I have an appointment",
+				pickup: "I have a pick-up date for the residence card",
 			}[key];
 		},
 		minimumStepDate(step){
@@ -190,7 +250,7 @@ Vue.component('feedback-citizenship', {
 	template: `
 		<collapsible class="feedback-form" :aria-label="ariaLabel">
 			<template v-slot:header>
-				How is your <span class="no-mobile">citizenship</span> application going?
+				How is your <span class="no-mobile">{{ residencePermitName }}</span> application going?
 			</template>
 			<template v-if="stage === 'start'">
 				<div class="steps">
@@ -209,16 +269,26 @@ Vue.component('feedback-citizenship', {
 						{% endraw %}{% include "_icons/helper.svg" %}{% raw %}
 						<div>
 							<p>
-								Your feedback helps others plan their citizenship application.
+								Your feedback helps others plan their {{ residencePermitName }} application.
 							</p>
 							<p>
-								<strong><a class="internal-link" target="_blank" href="/guides/citizenship-wait-times">See other people's feedback</a></strong>
+								<strong><a class="internal-link" target="_blank" href="/guides/auslanderbehorde-wait-times">See other people's feedback</a></strong>
 							</p>
 						</div>
 					</div>
 				</template>
 				<template v-if="showRestOfForm">
 					<hr>
+					<div class="form-group" v-if="showResidencePermitField">
+						<label :for="uid('residencePermitType')">Residence permit</label>
+						<select :id="uid('residencePermitType')" v-model="residencePermitType" :class="{placeholder: !residencePermitType}" required>
+							<option disabled hidden default :value="null">Choose a residence permit</option>
+							<option v-for="(name, key) in residencePermitTypes" :key="key" :value="key" v-text="name.capitalized"></option>
+						</select>
+						<span class="input-instructions">
+							Which residence permit did you apply for?
+						</span>
+					</div>
 					<div class="form-group">
 						<label :for="uid('department')">Department</label>
 						<select :id="uid('department')" v-model="department" :class="{placeholder: !department}" required>
@@ -226,10 +296,44 @@ Vue.component('feedback-citizenship', {
 							<option v-for="(name, key) in departments" :value="key" :key="key" v-text="name"></option>
 						</select>
 						<span class="input-instructions">
-							<a target="_blank" href="/guides/immigration-office#departments">Find the correct department.</a> Don't choose a random department.
+							<a target="_blank" href="/guides/immigration-office#departments">Find your Ausländerbehörde department.</a> Don't choose a random department.
 						</span>
 					</div>
-					<div class="form-group optional">
+					<hr>
+					<template v-if="askAboutHealthInsurance">
+						<div class="form-group">
+							<label :for="uid('healthInsurance')">Health insurance</label>
+							<select v-model="healthInsurance" :class="{placeholder: healthInsurance == null}">
+								<option disabled hidden default :value="null">Type of health insurance</option>
+								<option value="PUBLIC">Public health insurance</option>
+								<option value="PRIVATE">Private health insurance</option>
+								<option value="EXPAT">Expat health insurance</option>
+								<option value="FAMILY">Insured by family</option>
+								<option value="EHIC">Insured by another EU country</option>
+								<option value="OTHER">Other</option>
+								<option value="">I don't know</option>
+							</select>
+							<input v-if="showHealthInsuranceNameField" placeholder="Name of health insurance" type="text" v-model="healthInsuranceName"/>
+							<span class="input-instructions">Which health insurance did you use when you applied?</span>
+						</div>
+						<hr>
+					</template>
+
+					<template v-if="steps.appointment.completed && residencePermitType !== 'PERMANENT_RESIDENCE'">
+						<div class="form-group">
+							<label :for="uid('validity')">Permit validity</label>
+							<div class="input-group">
+								<input type="text" placeholder="0" inputmode="numeric" pattern="[0-9]*" v-model.number="validity" maxlength="2">
+								<select v-model="validityUnit">
+									<option value="months">month{{ validity === 1 ? '' : 's' }}</option>
+									<option value="years">year{{ validity === 1 ? '' : 's' }}</option>
+								</select>
+							</div>
+							<span class="input-instructions">The expiration date is <a href="/images/residence-permit-expiration-date.jpg" target="_blank">on the back of your {{ residencePermitName }}</a>.</span>
+						</div>
+						<hr>
+					</template>
+					<div class="form-group">
 						<label :for="uid('notes')">Notes and advice</label>
 						<textarea placeholder=" " v-model="notes" :id="uid('notes')"></textarea>
 						<span class="input-instructions">Add information about your situation and give advice to other people. Do not ask questions here.</span>
@@ -238,7 +342,7 @@ Vue.component('feedback-citizenship', {
 			</template>
 			<template v-if="stage === 'email'">
 				<p><strong>Thank you for your feedback!</strong> It will help a lot of people.</p>
-				<p>Can you complete your feedback when you get your citizenship? I can remind you by email.</p>
+				<p>Can you complete your feedback when you get your {{ residencePermitName }}? I can remind you by email.</p>
 				<div class="form-group">
 					<label :for="uid('email')">Email address</label>
 					<email-input ref="emailInput" v-model="email" :id="uid('email')" required></email-input>
@@ -261,11 +365,10 @@ Vue.component('feedback-citizenship', {
 						v-if="stage === 'start'"
 						:disabled="isLoading"
 						:class="{loading: isLoading}"
-						@click="submitFeedback">{{ citizenshipModificationKey ? 'Update' : 'Send' }} feedback</button>
+						@click="submitFeedback">{{ modificationKeyMatchesResidencePermitType ? 'Update' : 'Send' }} feedback</button>
 					<button class="button primary" v-if="stage === 'email'" @click="submitFeedback">Remind me</button>
 				</div>
 			</template>
 		</collapsible>
 	`
-});
-{% endraw %}{% endjs %}
+}

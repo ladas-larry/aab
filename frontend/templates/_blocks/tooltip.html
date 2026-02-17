@@ -12,6 +12,8 @@
 	<div class="article-body" role="definition"></div>
 </dialog>
 {% js %}
+	import { getNearestHeadingId } from '/js/utils/tracking.mjs';
+
 	const tooltip = document.getElementById('tooltip');
 	let pronounciationAudio = null;
 	function showTooltip(clickEvent) {

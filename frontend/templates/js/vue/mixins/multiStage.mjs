@@ -1,4 +1,5 @@
-import { validateForm } from '/js/utils/forms.mjs';
+import { validateForm } from '/js/utils/form.mjs';
+import Vue from '/js/vue/vue.mjs';
 
 export default {
 	data: function () {

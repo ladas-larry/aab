@@ -1,6 +1,7 @@
 import Tabs from '/js/vue/components/tabs.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+import { getNearestHeadingId } from '/js/utils/tracking.mjs';
 
 export default {
 	mixins: [trackedStagesMixin, uniqueIdsMixin],
