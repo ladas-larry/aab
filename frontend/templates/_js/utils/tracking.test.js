@@ -1,8 +1,6 @@
 {% include "_js/libs/chai.js" %}
 {% include "_js/libs/mocha.js" %}
-{% include "_js/tracking.js" %}
 {% js %}
-
 import { shouldTrackUrl } from '/js/utils/tracking.mjs';
 
 describe('shouldTrackUrl', () => {

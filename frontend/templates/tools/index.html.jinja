@@ -28,7 +28,6 @@
 	{% endif %}
 {% endmacro %}
 
-
 {% block main %}
 	<main aria-label="Main page">
 		<article class="section">
@@ -127,5 +126,9 @@
 			<button class="button open-close" title="Show/hide table of contents"><i class="icon table-of-contents"></i></button>
 		</div>
 	</div>
-	{% include "_js/sidebar.js" %}
 {% endblock %}
+
+{% js %}
+	import initializeSidebar from '/js/components/sidebar.mjs';
+	initializeSidebar();
+{% endjs %}

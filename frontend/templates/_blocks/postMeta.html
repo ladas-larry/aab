@@ -54,3 +54,10 @@
 		</ul>
 	{% endif %}
 </div>
+
+{% if reviews|length %}
+	{% js %}
+		import initializeReviewers from '/js/components/reviewers.mjs';
+		initializeReviewers();
+	{% endjs %}
+{% endif %}

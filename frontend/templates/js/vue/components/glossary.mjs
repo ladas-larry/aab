@@ -1,3 +1,5 @@
+import { showTooltip } from '/js/components/tooltip.mjs';
+
 export default {
 	data() {
 		return { showTooltip };

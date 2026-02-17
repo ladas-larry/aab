@@ -1,7 +1,6 @@
-{% js %}
 import { getReferrer } from '/js/utils/tracking.mjs';
 
-window.addEventListener("DOMContentLoaded", function() {
+export default function initializeSidebar(){
 	const main = document.querySelector('main');
 	const articleBody = main.querySelector('.article-body');
 	const bodyTableOfContents = articleBody && articleBody.querySelector('.table-of-contents');
@@ -123,5 +122,4 @@ window.addEventListener("DOMContentLoaded", function() {
 	};
 	onScroll();
 	window.addEventListener("scroll", e => window.requestAnimationFrame(onScroll));
-});
-{% endjs %}
+}
