@@ -23,6 +23,7 @@ import { healthInsurance, occupations, pflegeversicherung } from '/js/utils/cons
 import { formatCurrency } from '/js/utils/currency.mjs';
 import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
 import { validateForm } from '/js/utils/form.mjs';
+import { getReferrer } from '/js/utils/tracking.mjs';
 
 export default {
 	components: {

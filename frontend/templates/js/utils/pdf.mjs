@@ -1,3 +1,5 @@
+import { getReferrer } from '/js/utils/tracking.mjs';
+
 const _pdfPromises = {};
 
 export async function fillAndSavePDF(pdfUrl, textFields, checkboxFields, radioFields, outputFileName, trackAs, pageSection) {

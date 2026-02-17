@@ -1,5 +1,7 @@
 {% js %}
 
+import { getReferrer } from '/js/utils/tracking.mjs';
+
 function addNewsletterSubscriber(email) {
 	return fetch('/api/forms/newsletter', {
 		method: "POST",

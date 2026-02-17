@@ -1,5 +1,6 @@
 import Vue from '/js/vue/vue.mjs';
 import { getNearestHeadingId } from '/js/utils/tracking.mjs';
+import { getReferrer } from '/js/utils/tracking.mjs';
 
 export default {
 	data: function () {

@@ -2,6 +2,9 @@
 {% include "_js/libs/mocha.js" %}
 {% include "_js/tracking.js" %}
 {% js %}
+
+import { shouldTrackUrl } from '/js/utils/tracking.mjs';
+
 describe('shouldTrackUrl', () => {
 	it('Should track /out links', function() {
 		assert.equal(shouldTrackUrl('/out/hello-world'), true);

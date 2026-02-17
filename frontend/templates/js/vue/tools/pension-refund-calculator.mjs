@@ -19,6 +19,7 @@ import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 import { validateForm } from '/js/utils/form.mjs';
 import { getNearestHeadingId } from '/js/utils/tracking.mjs';
+import { getReferrer } from '/js/utils/tracking.mjs';
 
 export default {
 	components: {

@@ -1,6 +1,6 @@
 {% js %}
 
-import { getNearestHeadingId } from '/js/utils/tracking.mjs';
+import { getReferrer, getNearestHeadingId } from '/js/utils/tracking.mjs';
 
 // Fallback tracking if Plausible is not working as advertised
 window.plausible ??= function() {
@@ -18,16 +18,6 @@ if(ref){
 	} catch (e) {}
 }
 
-function getReferrer(){
-	const source = localStorage.getItem('referralSource');
-	const timestamp = localStorage.getItem('referralDate');
-
-	if(!source || !timestamp) return null;
-
-	const daysAgo = (Date.now() - Number(timestamp) * 1000) / (1000 * 60 * 60 * 24);
-	return daysAgo <= 30 ? source : null;
-}
-
 function getLinkEl(l) {
 	while (l && (typeof l.tagName === 'undefined' || l.tagName.toLowerCase() !== 'a' || !l.href)) {
 		l = l.parentNode
@@ -43,7 +33,7 @@ function openLinkAfterTracking(e, link) {
 	return targetsCurrentWindow && isRegularClick;
 }
 
-function shouldTrackUrl(url){
+export function shouldTrackUrl(url){
 	return (
 		url.startsWith('/out/')
 		|| url.startsWith('{{ site_url }}/out/')

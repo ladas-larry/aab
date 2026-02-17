@@ -1,4 +1,6 @@
 {% js %}
+import { getReferrer } from '/js/utils/tracking.mjs';
+
 window.addEventListener("DOMContentLoaded", function() {
 	const main = document.querySelector('main');
 	const articleBody = main.querySelector('.article-body');
