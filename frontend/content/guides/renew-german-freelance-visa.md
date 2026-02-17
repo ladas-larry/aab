@@ -70,7 +70,7 @@ When you renew a [residence permit](/glossary/Aufenthaltstitel), [expat health i
 
 It takes 1 or 2 weeks to switch, but **it can take up to 3 months**.[^17] [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you [choose the correct health insurance](/guides/german-health-insurance/for-freelancers). His help is free. Don't choose health insurance yourself; you can make expensive mistakes. Many applications are rejected because of invalid health insurance.[^5]
 
-{% tool "healthInsuranceQuestion" %}
+{% tool "health-insurance-calculator", mode="question" %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
@@ -109,7 +109,7 @@ In most cases, your current [residence permit](/glossary/Aufenthaltstitel) stays
 
 If you wait more than 3 months, you can [sue the *Ausländerbehörde* for inaction](/guides/immigration-office#sue-the-auslanderbehorde), but it might not help.
 
-{% tool "residencePermitFeedback/form", residence_permit='FREELANCE_VISA' %}
+{% tool "feedback-residence-permit", type='FREELANCE_VISA' %}
 
 ### 3. Find a translator
 
@@ -131,7 +131,7 @@ The *Ausländerbehörde* might ask you to bring new or updated documents to your
 
 **[What happens during your Ausländerbehörde appointment ➞](/guides/residence-permit#go-to-your-appointment)**
 
-{% tool "residencePermitFeedback/form", residence_permit='FREELANCE_VISA' %}
+{% tool "feedback-residence-permit", type='FREELANCE_VISA' %}
 
 ### 5. Receive your new residence permit
 
@@ -220,7 +220,7 @@ Keep the receipts. Those expenses are [tax-deductible](/glossary/steuerlich%20ab
 
 Your feedback helps thousands of people plan their freelance visa application.
 
-{% tool "residencePermitFeedback/form", residence_permit='FREELANCE_VISA' %}
+{% tool "feedback-residence-permit", type='FREELANCE_VISA' %}
 
 **[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
 

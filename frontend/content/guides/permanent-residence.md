@@ -303,7 +303,7 @@ Go to your second *[[Ausländerbehörde]]* appointment and pick up your permanen
 
 **[How to pick up your permanent residence card ➞](/guides/residence-permit#pick-up-your-residence-card)**
 
-{% tool "residencePermitFeedback/form", residence_permit='PERMANENT_RESIDENCE' %}
+{% tool "feedback-residence-permit", type='PERMANENT_RESIDENCE' %}
 
 ## Required documents
 
@@ -412,7 +412,7 @@ If you depend on your spouse's income, bring...[^50]
 
 Your feedback helps thousands of people plan their permanent residence application.
 
-{% tool "residencePermitFeedback/form", residence_permit='PERMANENT_RESIDENCE' %}
+{% tool "feedback-residence-permit", type='PERMANENT_RESIDENCE' %}
 
 **[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
 

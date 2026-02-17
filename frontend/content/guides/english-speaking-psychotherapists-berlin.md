@@ -100,7 +100,7 @@ This guide explains:
 
 ## List of therapists
 
-{% tool "placesMap" %}
+{% include "_blocks/placesMap.html" %}
 
 To add a therapist, [fill this form](/suggest-therapist).
 

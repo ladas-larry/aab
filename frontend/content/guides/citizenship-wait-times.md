@@ -9,7 +9,7 @@ Date_created: 2025-09-13
 
 ## Share your experience
 
-{% tool "citizenshipFeedback/form" %}
+{% tool "feedback-citizenship" %}
 
 ## Feedback from other people
 

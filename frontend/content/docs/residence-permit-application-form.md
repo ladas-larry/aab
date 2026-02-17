@@ -27,7 +27,7 @@ This is the official form for Berlin. The original document is [on Berlin.de](ht
 
 ## Download the residence permit form
 
-{% tool "documentDownloads" %}
+{% include "_blocks/documentDownloads.html" %}
 
 You can download this form in 11 languages:
 

@@ -1,20 +1,52 @@
 from jinja2_simple_tags import StandaloneTag, InclusionTag
+from ursus.config import config
+import xml.etree.ElementTree as ET
 
 
-class ToolExtension(InclusionTag, StandaloneTag):
-    """Jinja extension. Adds tag for cleanly including widgets in content
+class ToolExtension(StandaloneTag):
+    """Jinja extension. Adds tag for cleanly including Vue widgets in markdown.
+    Usage: {% tool "health-insurance-calculator", initial_occupation="hello", static=True %}
 
-    Usage: {% tool 'healthInsuranceCalculator' %}
+    Outputs <health-insurance-calculator initial-occupation="hello" static="static"></health-insurance-calculator>
 
-    Arbitrary variables can be added to the context:
-    {% tool 'taxCalculator', static=True, year="2025" %}
+    Also queues the Javascript to load the Vue component from /js/tools/health-insurance-calculator.mjs
     """
 
     tags = {"tool"}
     safe_output = True
 
-    def get_template_names(self, tool_name: str, static: bool = False, **kwargs) -> str:
-        return f"_tools/{tool_name}.html"
+    def render(self, html_tag: str, **kwargs):
+        js_path = f"js/vue/tools/{html_tag}.mjs"
+        abs_js_path = config.templates_path / js_path
+        assert abs_js_path.exists(), f"Component <{html_tag}> does not exist at {abs_js_path}"
+
+        js_class = "".join(word.title() for word in html_tag.split("-"))
+
+        # js_fragments are output only once by {% alljs %}
+        self.environment.js_fragments.add("import Vue from '/js/vue/vue.mjs';")
+        self.environment.js_fragments.add(f"""
+            import {js_class} from '/{js_path}';
+            document.querySelectorAll('{html_tag}').forEach(el => new Vue({{
+                el,
+                components: {{
+                    '{html_tag}': {js_class},
+                }},
+            }}));
+        """)
+
+        html_attrs = {}
+        for attr, value in kwargs.items():
+            attr = attr.replace("_", "-")
+            if value is True:
+                # For example, disabled="disabled"
+                html_attrs[attr] = attr
+            elif value is False:
+                continue
+            else:
+                html_attrs[attr] = value
+
+        html_element = ET.Element(html_tag, html_attrs)
+        return ET.tostring(html_element, short_empty_elements=False).decode()
 
     def get_context(self, *args, **kwargs):
         return kwargs

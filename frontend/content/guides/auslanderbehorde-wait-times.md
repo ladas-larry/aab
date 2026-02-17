@@ -11,7 +11,7 @@ Date_created: 2024-11-27
 
 ## Share your experience
 
-{% tool "residencePermitFeedback/form", open=True %}
+{% tool "feedback-residence-permit", open=True %}
 
 ## Feedback from other people
 

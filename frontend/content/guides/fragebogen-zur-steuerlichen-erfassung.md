@@ -598,7 +598,7 @@ If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherun
 
 When you are self-employed, [private health insurance](/glossary/private%20Krankenversicherung) is often better and cheaper than [public](/glossary/gesetzliche%20Krankenversicherung). I switched, and I save around €600 per month. This is a complex decision. [Ask my insurance expert](/glossary/Makler) if it makes sense for you.
 
-{% tool "healthInsuranceQuestion" %}
+{% tool "health-insurance-calculator", mode="question" %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 

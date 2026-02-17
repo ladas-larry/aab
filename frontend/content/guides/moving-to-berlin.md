@@ -62,7 +62,7 @@ If you live in Germany, you need [health insurance](/glossary/Krankenversicherun
 
 Use my [health insurance calculator](/guides/german-health-insurance) to know your options. [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you choose. It's the best way to get insured.
 
-{% tool "healthInsuranceCalculator" %}
+{% tool "health-insurance-calculator" %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
