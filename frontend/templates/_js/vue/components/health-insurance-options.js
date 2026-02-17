@@ -5,13 +5,12 @@
 {% include "_js/vue/components/glossary.js" %}
 {% include "_js/vue/components/price.js" %}
 {% include "_js/vue/components/public-health-insurance-options.js" %}
-{% include "_js/vue/mixins/brokerMixin.js" %}
 {% include "_js/vue/mixins/healthInsuranceOptionsMixin.js" %}
 {% include "_js/vue/mixins/uniqueIdsMixin.js" %}
 
 {% js %}{% raw %}
 Vue.component('health-insurance-options', {
-	mixins: [brokerMixin, uniqueIdsMixin, healthInsuranceOptionsMixin],
+	mixins: [uniqueIdsMixin, healthInsuranceOptionsMixin],
 	computed: {
 		mainOptions(){
 			return this.results.asList.map(r => r.id).filter(id => ['public', 'private', 'expat'].includes(id));
