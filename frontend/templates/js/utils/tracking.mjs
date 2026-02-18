@@ -1,3 +1,5 @@
+import { site } from '/js/utils/constants.mjs';
+
 export function getReferrer() {
 	const source = localStorage.getItem('referralSource');
 	const timestamp = localStorage.getItem('referralDate');
@@ -95,10 +97,10 @@ function sendLinkClickEvent(event, link, eventName, eventProps) {
 export function shouldTrackUrl(url) {
 	return (
 		url.startsWith('/out/') ||
-		url.startsWith('{{ site_url }}/out/') ||
-		url.startsWith('{{ site_url }}/donate') ||
+		url.startsWith(site.url + '/out/') ||
+		url.startsWith(site.url + '/donate') ||
 		url.startsWith('mailto:') ||
-		(url.startsWith('http') && !url.startsWith('{{ site_url }}' || '/'))
+		(url.startsWith('http') && !url.startsWith(site.url || '/'))
 	);
 }
 

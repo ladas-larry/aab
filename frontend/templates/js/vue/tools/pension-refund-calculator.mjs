@@ -14,12 +14,15 @@ import StateInput from '/js/vue/components/state-input.mjs';
 
 import { isEastGerman } from '/js/utils/germanStates.mjs';
 import { calculatePensionRefund } from '/js/utils/pensionRefunds.mjs';
+import { pensions } from '/js/utils/constants.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 import { validateForm } from '/js/utils/form.mjs';
 import { getNearestHeadingId } from '/js/utils/tracking.mjs';
 import { getReferrer } from '/js/utils/tracking.mjs';
+
+const { pensionRefundGermany, fundsback, germanyPensionRefund } = pensions.companies;
 
 export default {
 	components: {
@@ -75,17 +78,17 @@ export default {
 					name: 'Pension Refund Germany',
 					key: 'pensionrefundgermany',
 					recommended: true,
-					fee: x => Math.min(x * {{ PENSIONREFUNDGERMANY_FEE }}/100, {{ PENSIONREFUNDGERMANY_MAX_FEE }}),
+					fee: x => Math.min(x * pensionRefundGermany.fee, pensionRefundGermany.maxFee),
 				},
 				{
 					name: 'FundsBack',
 					key: 'fundsback',
-					fee: x => Math.min(Math.max(x * {{ FUNDSBACK_FEE }}/100, {{ FUNDSBACK_MIN_FEE }}), {{ FUNDSBACK_MAX_FEE }}),
+					fee: x => Math.min(Math.max(x * fundsback.fee, fundsback.minFee), fundsback.maxFee),
 				},
 				{
 					name: 'Germany Pension Refund',
 					key: 'germanypensionrefund',
-					fee: x => Math.min(x * {{ GERMANYPENSIONREFUND_FEE }}/100, {{ GERMANYPENSIONREFUND_MAX_FEE }}),
+					fee: x => Math.min(x * germanyPensionRefund.fee, germanyPensionRefund.maxFee),
 				},
 				{
 					name: 'Do it yourself',

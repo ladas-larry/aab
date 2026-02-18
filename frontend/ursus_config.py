@@ -4,7 +4,6 @@ from extensions.functions import (
     build_wikilinks_url,
     count_weekdays,
     fail_on,
-    get_public_holiday_dates,
     get_public_holidays,
     glossary_groups,
     or_join,
@@ -430,7 +429,6 @@ ctx["LEGAL_HOTLINE_COST_PER_MINUTE"] = fail_on("2026-03-01", 3)  # https://www.v
 ctx["now"] = datetime.now(ZoneInfo("Europe/Berlin"))
 ctx["count_weekdays"] = count_weekdays
 ctx["get_public_holidays"] = get_public_holidays
-ctx["get_public_holiday_dates"] = get_public_holiday_dates
 ctx["PUBLIC_HOLIDAYS_BY_DATE_JSON"] = json.dumps(
     list(d.isoformat() for d in get_public_holidays(range(date.today().year, date.today().year + 3)).keys())
 )
@@ -439,7 +437,7 @@ ctx["PUBLIC_HOLIDAYS_BY_DATE_JSON"] = json.dumps(
 # TECHNICAL
 # ==============================================================================
 
-ctx["site_url"] = os.environ.get("URSUS_SITE_URL", "")
+ctx["SITE_URL"] = os.environ.get("URSUS_SITE_URL", "")  # No trailing slash!
 ctx["random_id"] = random_id
 ctx["fail_on"] = fail_on
 ctx["GOOGLE_MAPS_JAVASCRIPT_API_KEY"] = os.environ.get("GOOGLE_MAPS_JAVASCRIPT_API_KEY")  # Frontend use, to show a map
@@ -455,7 +453,7 @@ ctx["RECOMMENDED"] = Markup(
 # URSUS
 # ==============================================================================
 
-config.site_url = ctx["site_url"]
+config.site_url = ctx["SITE_URL"]
 config.content_path = Path(__file__).parent / "content"
 config.templates_path = Path(__file__).parent / "templates"
 

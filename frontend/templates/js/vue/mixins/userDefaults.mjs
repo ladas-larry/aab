@@ -1,3 +1,5 @@
+import { salaries, healthInsurance } from '/js/utils/constants.mjs';
+
 export const userDefaults = {  // Percentages are stored as full amounts, unlike elsewhere
 	age: 25,
 	childrenCount: 0,
@@ -7,10 +9,10 @@ export const userDefaults = {  // Percentages are stored as full amounts, unlike
 	occupation: 'employee',
 	germanState: 'be-east',
 	useMonthlyIncome: false,
-	yearlyIncome: Math.round({{ MEDIAN_INCOME_GERMANY }}/100) * 100,
+	yearlyIncome: Math.round(salaries.medianIncome/100) * 100,
 	healthInsuranceType: 'unknown',
 	privateHealthInsuranceCost: 550, // € per month
-	publicHealthInsuranceZusatzbeitrag: {{ GKV_ZUSATZBEITRAG_AVERAGE }}, // %
+	publicHealthInsuranceZusatzbeitrag: healthInsurance.averageZusatzbeitrag, // %
 	taxClass: 1,
 
 	empty: null, // Just to highlight that this field saves/loads user input, but is null by default

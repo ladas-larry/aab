@@ -2,6 +2,7 @@
 {% include "_js/libs/mocha.js" %}
 {% js %}
 import { shouldTrackUrl } from '/js/utils/tracking.mjs';
+import { site } from '/js/utils/constants.mjs';
 
 describe('shouldTrackUrl', () => {
 	it('Should track /out links', function() {
@@ -17,8 +18,8 @@ describe('shouldTrackUrl', () => {
 	it('Should not track internal links', function() {
 		assert.equal(shouldTrackUrl('/guides/hello-world'), false);
 		assert.equal(shouldTrackUrl('/'), false);
-		assert.equal(shouldTrackUrl('{{ site_url }}/guides/hello-world'), false);
-		assert.equal(shouldTrackUrl('{{ site_url }}/'), false);
+		assert.equal(shouldTrackUrl(site.url + '/guides/hello-world'), false);
+		assert.equal(shouldTrackUrl(site.url + '/'), false);
 	});
 });
 {% endjs %}

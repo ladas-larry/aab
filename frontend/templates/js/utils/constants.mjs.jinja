@@ -1,3 +1,7 @@
+export const site = {
+	url: "{{ SITE_URL }}",
+};
+
 export const bafog = {
 	bedarfssatz: {{ BAFOG_BEDARFSSATZ }},
 }
@@ -610,6 +614,25 @@ export const pensions = {
 		currentYear: {{ RV_BASE_RATE }}, // {{ fail_on('2026-12-31') }}
 		2027: 18.6, // ESTIMATED (2025)
 	},
+	companies: {
+		pensionRefundGermany: {
+			fee: {{ PENSIONREFUNDGERMANY_FEE }}/100,
+			maxFee: {{ PENSIONREFUNDGERMANY_MAX_FEE }}, // €
+		},
+		fundsback: {
+			fee: {{ FUNDSBACK_FEE }}/100,
+			minFee: {{ FUNDSBACK_MIN_FEE }}, // €
+			maxFee: {{ FUNDSBACK_MAX_FEE }}, // €
+		},
+		germanyPensionRefund: {
+			fee: {{ GERMANYPENSIONREFUND_FEE }}/100,
+			maxFee: {{ GERMANYPENSIONREFUND_MAX_FEE }}, // €
+		},
+	}
+};
+
+export const salaries = {
+	medianIncome: {{ MEDIAN_INCOME_GERMANY }},
 }
 
 // Full list: azubi, employee, selfEmployed, studentEmployee, studentSelfEmployed, studentUnemployed, unemployed
