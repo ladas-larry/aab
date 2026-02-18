@@ -1,6 +1,7 @@
 import Vue from '/js/vue/vue.mjs';
 import CitizenshipFeedbackForm from '/js/vue/tools/citizenship-feedback-form.mjs';
 import Pagination from '/js/vue/components/pagination.mjs';
+import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs'
 
 import { formatLongDate } from '/js/utils/date.mjs';
 
@@ -18,14 +19,7 @@ export default {
 			resultCount: 0,
 			itemsPerPage: 10,
 			stats: {},
-			departments: {
-				S1: 'S1 — Iran, Syria (last names from A to E)',
-				S2: 'S2 — Irak, Syria (last names from F to Z)',
-				S3: 'S3 — Asia',
-				S4: 'S4 — Africa, America, Australia, Oceania',
-				S5: 'S5 — Poland, Turkey, Ukraine',
-				S6: 'S6 — Europe',
-			},
+			citizenshipDepartments,
 		};
 	},
 	async mounted(){
@@ -153,8 +147,9 @@ export default {
 			<div class="buttons bar left">
 				<select v-model="department">
 					<option :value="null">All departments</option>
-					<option disabled>──────────</option>
-					<option v-for="(name, key) in departments" :key="key" :value="key" v-text="name"></option>
+					<optgroup label="Citizenship">
+						<option v-for="(name, key) in citizenshipDepartments" :key="key" :value="key" v-text="name"></option>
+					</optgroup>
 				</select>
 			</div>
 
@@ -186,8 +181,9 @@ export default {
 			<div class="buttons bar left">
 				<select v-model="department">
 					<option :value="null">All departments</option>
-					<option disabled>──────────</option>
-					<option v-for="(name, key) in departments" :key="key" :value="key" v-text="name"></option>
+					<optgroup label="Citizenship">
+						<option v-for="(name, key) in citizenshipDepartments" :key="key" :value="key" v-text="name"></option>
+					</optgroup>
 				</select>
 			</div>
 

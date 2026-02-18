@@ -1,15 +1,10 @@
+import { oldResidencePermitDepartments } from '/js/utils/immigrationOffice.mjs';
+
 export default {
 	data: function () {
 		return {
 			department: null,
-			oldDepartments: {
-				E1: 'E1 — Middle East',
-				E2: 'E2 — Africa, America, Israel',
-				E3: 'E3 — India, Turkey, etc.',
-				E4: 'E4 — Asia, Australia, New Zealand, Russia',
-				E5: 'E5 — Balkans, Belarus, Georgia, Ukraine',
-				E6: 'E6 — Europe',
-			},
+			oldDepartments: oldResidencePermitDepartments,
 			residencePermitType: null,
 			residencePermitTypes: {
 				BLUE_CARD: {

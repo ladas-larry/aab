@@ -8,6 +8,7 @@ import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 import { validateForm } from '/js/utils/form.mjs';
+import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs';
 
 export default {
 	components: {
@@ -23,6 +24,7 @@ export default {
 			citizenshipModificationKey: userDefaults.empty,
 
 			department: null,
+			departments: citizenshipDepartments,
 			notes: '',
 			email: userDefaults.empty,
 
@@ -42,15 +44,6 @@ export default {
 					completed: null,
 					date: null,
 				},
-			},
-
-			departments: {
-				S1: 'S1 — Iran, Syria (last names from A to E)',
-				S2: 'S2 — Irak, Syria (last names from F to Z)',
-				S3: 'S3 — Asia',
-				S4: 'S4 — Africa, America, Australia, Oceania',
-				S5: 'S5 — Poland, Turkey, Ukraine',
-				S6: 'S6 — Europe',
 			},
 
 			trackAs: 'Feedback (citizenship)',
