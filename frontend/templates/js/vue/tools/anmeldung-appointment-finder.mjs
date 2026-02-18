@@ -6,7 +6,6 @@ import { isoDay, isoMonth } from '/js/utils/date.mjs';
 const ding = new Audio('/js/ding.wav');
 
 export default {
-	el,
 	props: {
 		static: {
 			type: Boolean,

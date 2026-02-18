@@ -21,7 +21,6 @@ import { getNearestHeadingId } from '/js/utils/tracking.mjs';
 import { fillAndSavePDF } from '/js/utils/pdf.mjs';
 
 export default {
-	el,
 	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin, preloadPdfMixin],
 	components: {
 		Collapsible,
