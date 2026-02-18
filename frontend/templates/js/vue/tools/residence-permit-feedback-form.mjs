@@ -7,9 +7,9 @@ import EmailInput from '/js/vue/components/email-input.mjs';
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
-import residencePermitFeedbackMixin from '/js/vue/mixins/residencePermitFeedback.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 import { validateForm } from '/js/utils/form.mjs';
+import { residencePermitTypes, residencePermitDepartments, oldResidencePermitDepartments } from '/js/utils/immigrationOffice.mjs';
 
 export default {
 	components: {
@@ -24,9 +24,13 @@ export default {
 			default: null,
 		}
 	},
-	mixins: [residencePermitFeedbackMixin, userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
+	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
 	data() {
 		return {
+			department: null,
+			oldDepartments: oldResidencePermitDepartments,
+			residencePermitTypes,
+
 			showResidencePermitField: true,
 			isLoading: false,
 
@@ -151,6 +155,9 @@ export default {
 		showRestOfForm(){
 			return this.steps.application.completed;
 		},
+		departments(){
+			return residencePermitDepartments(this.residencePermitType);
+		},
 		askAboutHealthInsurance(){
 			return this.residencePermitType && this.residencePermitTypes[this.residencePermitType].askAboutHealthInsurance;
 		},
@@ -246,6 +253,18 @@ export default {
 			const previousStep = stepList[stepList.indexOf(step) - 1];
 			return previousStep ? previousStep.date : null;
 		},
+	},
+	watch: {
+		residencePermitType(newType){
+			// Auto select department if it's the only available option
+			if(Object.keys(this.departments).length === 1){
+				this.department = Object.keys(this.departments)[0];
+			}
+			// Deselect department if it's not a valid option
+			else if(this.department && !(this.department in this.departments)){
+				this.department = null;
+			}
+		}
 	},
 	template: `
 		<collapsible class="feedback-form" :aria-label="ariaLabel">

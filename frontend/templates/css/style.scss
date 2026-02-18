@@ -1181,7 +1181,7 @@ sup:target a{
 .article-body{
     > :last-child{margin-bottom: 0}
 
-    > * + h2{
+    > * + h2, > .component-group > * + h2{
         border-top: var(--b-box);
         padding-top: var(--xxxl);
         margin: var(--xxxl) 0 var(--xl);
@@ -1752,7 +1752,9 @@ input[type=range] {
         @include collapsible;
     }
 
-.loading, collapsible, letter-generator, feedback-citizenship, feedback-residence-permit, health-insurance-calculator{
+// v-cloak is an attribute that gets removed after a Vue JS element is mounted. It lets us style elements that have not
+// loaded yet.
+.loading, [v-cloak]{
     min-height: var(--w-icon-s);
     color: var(--c-text-light);
     position: relative;
@@ -2103,8 +2105,8 @@ output.placeholder{
     }
 }
 
-input[name="username"], // Honeypot
-[v-cloak] // Vue elements before they're ready
+// Honeypot
+input[name="username"]
 {  
     display:none!important
 }
@@ -2221,7 +2223,7 @@ details{
     }
 }
 
-collapsible, letter-generator, feedback-residence-permit, health-insurance-calculator{  // Vue element before it loads
+[v-cloak]{  // Vue element before it loads
     @include widget;
     background: transparent!important;
     box-shadow: none;

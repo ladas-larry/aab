@@ -109,7 +109,7 @@ In most cases, your current [residence permit](/glossary/Aufenthaltstitel) stays
 
 If you wait more than 3 months, you can [sue the *Ausländerbehörde* for inaction](/guides/immigration-office#sue-the-auslanderbehorde), but it might not help.
 
-{% tool "feedback-residence-permit", type='FREELANCE_VISA' %}
+{% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
 
 ### 3. Find a translator
 
@@ -131,7 +131,7 @@ The *Ausländerbehörde* might ask you to bring new or updated documents to your
 
 **[What happens during your Ausländerbehörde appointment ➞](/guides/residence-permit#go-to-your-appointment)**
 
-{% tool "feedback-residence-permit", type='FREELANCE_VISA' %}
+{% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
 
 ### 5. Receive your new residence permit
 
@@ -220,7 +220,7 @@ Keep the receipts. Those expenses are [tax-deductible](/glossary/steuerlich%20ab
 
 Your feedback helps thousands of people plan their freelance visa application.
 
-{% tool "feedback-residence-permit", type='FREELANCE_VISA' %}
+{% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
 
 **[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
 

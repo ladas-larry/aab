@@ -7,7 +7,7 @@ class ToolExtension(StandaloneTag):
     """Jinja extension. Adds tag for cleanly including Vue widgets in markdown.
     Usage: {% tool "health-insurance-calculator", initial_occupation="hello", static=True %}
 
-    Outputs <health-insurance-calculator initial-occupation="hello" static="static"></health-insurance-calculator>
+    Outputs <health-insurance-calculator initial-occupation="hello" static="static" v-cloak></health-insurance-calculator>
 
     Also queues the Javascript to load the Vue component from /js/tools/health-insurance-calculator.mjs
     """
@@ -34,7 +34,9 @@ class ToolExtension(StandaloneTag):
             }}));
         """)
 
-        html_attrs = {}
+        html_attrs = {
+            "v-cloak": "",
+        }
         for attr, value in kwargs.items():
             attr = attr.replace("_", "-")
             if value is True:

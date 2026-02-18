@@ -34,6 +34,26 @@ export function formatLongDate(date, locale="en-US", includeSameYear=false){  //
 	return '';
 }
 
+export function formatTimeDelta(date1, date2){
+	const millisecondsPerDay = 1000 * 60 * 60 * 24;
+	const days = Math.ceil((date2.getTime() - date1.getTime()) / millisecondsPerDay);
+	let qty, unit = null;
+	if(days <= 7 * 2){
+		qty = days
+		unit = (qty === 1 ? 'day' : 'days');
+	}
+	else if(days <= 7 * 8){
+		qty = Math.round(days / 7);
+		unit = (qty === 1 ? 'week' : 'weeks');
+	}
+	else{
+		qty = Math.round(days / 30)
+		unit = (qty === 1 ? 'month' : 'months');
+	}
+
+	return `${qty} ${unit}`;
+}
+
 export function isoDay(date){
 	const yyyy = date.getFullYear();
 	const mm = String(date.getMonth() + 1).padStart(2, '0');
