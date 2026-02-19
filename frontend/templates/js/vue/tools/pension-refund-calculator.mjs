@@ -6,6 +6,7 @@ import EmailInput from '/js/vue/components/email-input.mjs';
 import Eur from '/js/vue/components/eur.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
+import IconExit from '/js/vue/components/icons/exit.mjs';
 import IncomeInput from '/js/vue/components/income-input.mjs';
 import Price from '/js/vue/components/price.mjs';
 import Radio from '/js/vue/components/radio.mjs';
@@ -33,6 +34,7 @@ export default {
 		Eur,
 		FullNameInput,
 		Glossary,
+		IconExit,
 		IncomeInput,
 		Price,
 		Radio,
@@ -413,7 +415,7 @@ export default {
 				<ul class="buttons list">
 					<li>
 						<a href="/guides/leaving-germany" target="_blank">
-							{% endraw %}{% include "_icons/exit.svg" %}{% raw %}
+							<icon-exit/>
 							<div>
 								<h3>Learn how to leave Germany</h3>
 								<p>Use my checklist for moving to another country.</p>

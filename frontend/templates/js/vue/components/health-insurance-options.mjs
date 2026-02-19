@@ -1,5 +1,9 @@
 import Eur from '/js/vue/components/eur.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
+import IconBank from '/js/vue/components/icons/bank.mjs';
+import IconFamily from '/js/vue/components/icons/family.mjs';
+import IconProtection from '/js/vue/components/icons/protection.mjs';
+import IconPassport from '/js/vue/components/icons/passport.mjs';
 import Price from '/js/vue/components/price.mjs';
 import PublicHealthInsuranceOptions from '/js/vue/components/public-health-insurance-options.mjs';
 
@@ -9,11 +13,16 @@ import { occupations } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
 import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.mjs';
 
+
 export default {
 	mixins: [brokerMixin, uniqueIdsMixin, healthInsuranceOptionsMixin],
 	components: {
 		Eur,
 		Glossary,
+		IconBank,
+		IconFamily,
+		IconProtection,
+		IconPassport,
 		Price,
 		PublicHealthInsuranceOptions,
 	},
@@ -235,7 +244,7 @@ export default {
 				<ul class="buttons list">
 					<li v-for="subOption in results.other.options" :key="subOption.id">
 						<a v-if="subOption.id === 'familienversicherung'" @click="selectOption(subOption.id)" title="Learn more about family health insurance" href="/guides/german-health-insurance#free-health-insurance" target="_blank">
-							{% endraw %}{% include "_icons/family.svg" %}{% raw %}
+							<icon-family/>
 							<div>
 								<h3>Family health insurance</h3>
 								<p v-text="familienversicherungText"></p>
@@ -243,7 +252,7 @@ export default {
 							<price :amount="0" per-month></price>
 						</a>
 						<a v-if="subOption.id === 'social-benefits'" @click="selectOption(subOption.id)" title="Learn more about state-sponsored health insurance" href="/guides/german-health-insurance#free-health-insurance" target="_blank">
-							{% endraw %}{% include "_icons/bank.svg" %}{% raw %}
+							<icon-bank/>
 							<div>
 								<h3>Social benefits</h3>
 								<p>If you get <glossary term="ALG I">unemployment benefits</glossary>, <glossary>Bürgergeld</glossary> or <glossary>Elterngeld</glossary>, you get free public health insurance.</p>
@@ -251,7 +260,7 @@ export default {
 							<price :amount="0" per-month></price>
 						</a>
 						<a v-if="subOption.id === 'ehic'" @click="selectOption(subOption.id)" title="Learn more about the EHIC" href="/guides/german-health-insurance#insurance-from-other-eu-countries" target="_blank">
-							{% endraw %}{% include "_icons/passport.svg" %}{% raw %}
+							<icon-passport/>
 							<div>
 								<h3>European Health Insurance Card</h3>
 								<p>Your insurance from another EU country might cover you in Germany.</p>
@@ -259,7 +268,7 @@ export default {
 							<price :amount="0" per-month></price>
 						</a>
 						<a v-if="subOption.id === 'ksk'" @click="selectOption(subOption.id)" title="Learn more about the KSK" href="/guides/ksk-kuenstlersozialkasse" target="_blank">
-							{% endraw %}{% include "_icons/liability.svg" %}{% raw %}
+							<icon-protection/>
 							<div>
 								<h3>Join the <glossary>Künstlersozialkasse</glossary></h3>
 								<p>If you are an artist, the KSK can pay half of your public health insurance. This is a really good deal.</p>

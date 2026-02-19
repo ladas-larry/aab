@@ -7,6 +7,9 @@ import DateInput from '/js/vue/components/date-input.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
 import FirstNameInput from '/js/vue/components/first-name-input.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
+import IconDonate from '/js/vue/components/icons/donate.mjs';
+import IconMail from '/js/vue/components/icons/mail.mjs';
+import IconPdf from '/js/vue/components/icons/pdf.mjs';
 import LastNameInput from '/js/vue/components/last-name-input.mjs';
 import PostalcodeInput from '/js/vue/components/postalcode-input.mjs';
 import Radio from '/js/vue/components/radio.mjs';
@@ -35,6 +38,9 @@ export default {
 		EmailInput,
 		FirstNameInput,
 		Glossary,
+		IconDonate,
+		IconMail,
+		IconPdf,
 		LastNameInput,
 		PostalcodeInput,
 		Radio,
@@ -460,7 +466,7 @@ export default {
 					<ul class="buttons list">
 						<li v-for="(person, index) in people">
 							<button :aria-labelledby="uid('h-btnDownload') + index" @click="generatePDF(person)" :disabled="downloadInProgress">
-								{% endraw %}{% include "_icons/pdf.svg" %}{% raw %}
+								<icon-pdf/>
 								<div>
 									<h3 :id="uid('h-btnDownload') + index">Download the application form for {{ person.firstName }}</h3>
 								</div>
@@ -471,7 +477,7 @@ export default {
 				<ul class="buttons list">
 					<li v-if="people.length === 1">
 						<button @click="generatePDF(people[0], people[1])" :disabled="downloadInProgress" :aria-labelledby="uid('h-btnDownload')">
-							{% endraw %}{% include "_icons/pdf.svg" %}{% raw %}
+							<icon-pdf/>
 							<div>
 								<h3 :id="uid('h-btnDownload')">Download your application form</h3>
 								<p>Print and sign this form, and send it to your local <em>Finanzamt</em>.</p>
@@ -483,7 +489,7 @@ export default {
 				<ul class="buttons list">
 					<li>
 						<a href="/docs/010250-antrag-auf-vergabe-einer-steuerlichen-id#how-to-send-this-form" target="_blank">
-							{% endraw %}{% include "_icons/letter.svg" %}{% raw %}
+							<icon-mail/>
 							<div>
 								<h3>Submit your {{ people.length > 1 ? 'forms' : 'form' }}</h3>
 								<p>Learn how to send {{ people.length > 1 ? 'these forms' : 'this form' }} to the Finanzamt.</p>
@@ -492,7 +498,7 @@ export default {
 					</li>
 					<li>
 						<a href="/donate" target="_blank">
-							{% endraw %}{% include "_icons/beers.svg" %}{% raw %}
+							<icon-donate/>
 							<div>
 								<h3>Support this website</h3>
 								<p>Donate €10 to help me build more free tools.</p>

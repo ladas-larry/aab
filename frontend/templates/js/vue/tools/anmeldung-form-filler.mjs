@@ -6,6 +6,11 @@ import CountryInput from '/js/vue/components/country-input.mjs';
 import DateInput from '/js/vue/components/date-input.mjs';
 import FirstNameInput from '/js/vue/components/first-name-input.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
+import IconCalendar from '/js/vue/components/icons/calendar.mjs';
+import IconDonate from '/js/vue/components/icons/donate.mjs';
+import IconInterpreter from '/js/vue/components/icons/interpreter.mjs';
+import IconPdf from '/js/vue/components/icons/pdf.mjs';
+import IconRepresentative from '/js/vue/components/icons/representative.mjs';
 import LastNameInput from '/js/vue/components/last-name-input.mjs';
 import PostalcodeInput from '/js/vue/components/postalcode-input.mjs';
 import StateInput from '/js/vue/components/state-input.mjs';
@@ -31,6 +36,11 @@ export default {
 		DateInput,
 		FirstNameInput,
 		Glossary,
+		IconCalendar,
+		IconDonate,
+		IconInterpreter,
+		IconPdf,
+		IconRepresentative,
 		LastNameInput,
 		PostalcodeInput,
 		StateInput,
@@ -487,7 +497,7 @@ export default {
 					<ul class="buttons list">
 						<li v-for="([person1, person2], index) in peoplePairs">
 							<button :aria-labelledby="uid('h-btnDownload') + index" @click="generatePDF(person1, person2)" :disabled="downloadInProgress">
-								{% endraw %}{% include "_icons/pdf.svg" %}{% raw %}
+								<icon-pdf/>
 								<div>
 									<h3 :id="uid('h-btnDownload') + index">Download your Anmeldung form (part {{ index + 1 }})</h3>
 									<p v-if="person1.firstName">For {{ person1.firstName }}<template v-if="person2"> and {{ person2.firstName }}</template>.</p>
@@ -499,7 +509,7 @@ export default {
 				<ul class="buttons list">
 					<li v-if="peoplePairs.length === 1">
 						<button @click="generatePDF(people[0], people[1])" :disabled="downloadInProgress" :aria-labelledby="uid('h-btnDownload')">
-							{% endraw %}{% include "_icons/pdf.svg" %}{% raw %}
+							<icon-pdf/>
 							<div>
 								<h3 :id="uid('h-btnDownload')">Download your Anmeldung form</h3>
 								<p>Print and sign this form, and bring it to your <em>Anmeldung</em> appointment.</p>
@@ -512,7 +522,7 @@ export default {
 				<ul class="buttons list">
 					<li>
 						<a href="/guides/anmeldung-in-english-berlin#get-a-burgeramt-appointment" target="_blank">
-							{% endraw %}{% include "_icons/calendar.svg" %}{% raw %}
+							<icon-calendar/>
 							<div>
 								<h3>Book a Bürgeramt appointment</h3>
 								<p>You need an appointment to register your address.</p>
@@ -521,16 +531,16 @@ export default {
 					</li>
 					<li>
 						<a href="/out/red-tape-translation-interpreter" target="_blank">
-							{% endraw %}{% include "_icons/translator.svg" %}{% raw %}
+							<icon-interpreter/>
 							<div>
 								<h3>Hire a translator</h3>
-								<p>Bring someone who speaks German to your <em>Anmeldung</em> appointment.</p>
+								<p>Bring a German speaker to your <em>Anmeldung</em> appointment.</p>
 							</div>
 						</a>
 					</li>
 					<li>
 						<a href="/out/red-tape-translation-anmeldung" target="_blank">
-							{% endraw %}{% include "_icons/sendsomeone.svg" %}{% raw %}
+							<icon-representative/>
 							<div>
 								<h3>Pay someone to register you</h3>
 								<p>Pay someone to book your appointment, go to the Bürgeramt and do your Anmeldung. It's more convenient.</p>
@@ -539,7 +549,7 @@ export default {
 					</li>
 					<li>
 						<a href="/donate" target="_blank">
-							{% endraw %}{% include "_icons/beers.svg" %}{% raw %}
+							<icon-donate/>
 							<div>
 								<h3>Support this website</h3>
 								<p>Donate €10 to help me build more free tools.</p>

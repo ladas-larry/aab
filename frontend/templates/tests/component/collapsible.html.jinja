@@ -3,11 +3,13 @@
 {% js %}
 	import Vue from '/js/vue/vue.mjs';
 	import Collapsible from '/js/vue/components/collapsible.mjs';
+	import IconWhatsapp from '/js/vue/components/icons/whatsapp.mjs';
 
 	new Vue({
 		el: document.querySelector('main .article-body'),
 		components: {
 			Collapsible,
+			IconWhatsapp,
 		},
 	})
 {% endjs %}
@@ -39,7 +41,7 @@
 		<div class="buttons bar">
 			<button class="button primary"><i class="icon left" aria-hidden="true"></i> Primary</button>
 			<button class="button">Secondary <i class="icon right" aria-hidden="true"></i></button>
-			<button class="button whatsapp">{% include "_icons/whatsapp.svg" %} WhatsApp</button>
+			<button class="button whatsapp"><icon-whatsapp/> WhatsApp</button>
 		</div>
 	</collapsible>
 {% endblock %}

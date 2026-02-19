@@ -1,10 +1,14 @@
 import Price from '/js/vue/components/price.mjs';
 import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.mjs';
+import LogoFeather from '/js/vue/components/icons/logo-feather.mjs';
+import LogoHansemerkur from '/js/vue/components/icons/logo-hansemerkur.mjs';
 
 export default {
 	mixins: [healthInsuranceOptionsMixin],
 	components: {
 		Price,
+		LogoFeather,
+		LogoHansemerkur,
 	},
 	computed: {
 		isExpatOnlyOption() {
@@ -24,7 +28,7 @@ export default {
 			<ul class="buttons list">
 				<li>
 					<a href="/out/feather-expats" target="_blank" class="recommended">
-						{% endraw %}{% include "_icons/health-insurance/logo-feather.svg" %}{% raw %}
+						<logo-feather/>
 						<div>
 							<h3>Feather</h3>
 							<p>An English-speaking insurer from Berlin.</p>
@@ -34,7 +38,7 @@ export default {
 				</li>
 				<li>
 					<a href="/out/hansemerkur-expats" target="_blank">
-						{% endraw %}{% include "_icons/health-insurance/logo-hansemerkur.svg" %}{% raw %}
+						<logo-hansemerkur></logo-hansemerkur>
 						<div>
 							<h3>HanseMerkur</h3>
 							<p>A reliable German health insurer.</p>

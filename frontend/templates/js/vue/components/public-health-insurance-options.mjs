@@ -1,6 +1,9 @@
 import Eur from '/js/vue/components/eur.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
+import LogoBarmer from '/js/vue/components/icons/logo-barmer.mjs';
+import LogoTk from '/js/vue/components/icons/logo-tk.mjs';
 import Price from '/js/vue/components/price.mjs';
+
 import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.mjs';
 import { healthInsurance, occupations, pflegeversicherung } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
@@ -11,6 +14,8 @@ export default {
 	components: {
 		Eur,
 		Glossary,
+		LogoBarmer,
+		LogoTk,
 		Price,
 	},
 	mixins: [healthInsuranceOptionsMixin],
@@ -98,7 +103,7 @@ export default {
 			<ul class="buttons list">
 				<li>
 					<a class="recommended" title="Sign up with Techniker Krankenkasse" :href="technikerKrankenkasseUrl" target="_blank">
-						{% endraw %}{% include "_icons/health-insurance/logo-tk.svg" %}{% raw %}
+						<logo-tk/>
 						<div>
 							<h3 v-text="option('tk').name"></h3>
 							<p>The biggest public health insurer. They speak English.</p>
@@ -108,7 +113,7 @@ export default {
 				</li>
 				<li>
 					<a title="Sign up with BARMER" href="/out/feather-barmer-signup" target="_blank">
-						{% endraw %}{% include "_icons/health-insurance/logo-barmer.svg" %}{% raw %}
+						<logo-barmer/>
 						<div>
 							<h3 v-text="option('barmer').name"></h3>
 							<p>The second biggest insurer. They also speak English.</p>

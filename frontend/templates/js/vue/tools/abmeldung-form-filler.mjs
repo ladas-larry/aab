@@ -5,6 +5,11 @@ import DateInput from '/js/vue/components/date-input.mjs';
 import Eur from '/js/vue/components/eur.mjs';
 import FirstNameInput from '/js/vue/components/first-name-input.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
+import IconCalendar from '/js/vue/components/icons/calendar.mjs';
+import IconExit from '/js/vue/components/icons/exit.mjs';
+import IconMail from '/js/vue/components/icons/mail.mjs';
+import IconPdf from '/js/vue/components/icons/pdf.mjs';
+import IconRepresentative from '/js/vue/components/icons/representative.mjs';
 import LastNameInput from '/js/vue/components/last-name-input.mjs';
 import PostalcodeInput from '/js/vue/components/postalcode-input.mjs';
 import Tabs from '/js/vue/components/tabs.mjs';
@@ -28,6 +33,11 @@ export default {
 		Eur,
 		FirstNameInput,
 		Glossary,
+		IconCalendar,
+		IconExit,
+		IconMail,
+		IconPdf,
+		IconRepresentative,
 		LastNameInput,
 		PostalcodeInput,
 		Tabs,
@@ -286,7 +296,7 @@ export default {
 				<template v-for="(person, index) in people">
 					<hr>
 					<h3 v-if="people.length > 1">
-						<i class="icon person" aria-hidden="true"></i> {{ person.firstName ? `${person.title} ${person.firstName} ${person.lastName}` : `Person #${ index + 1 }` }}
+						<i class="icon person" aria-hidden="true"></i> {{ person.firstName ? [person.title, person.firstName, person.lastName].join(' ') : ['Person #', index + 1].join() }}
 					</h3>
 					<div class="form-group" v-if="person.showExtraFields">
 						<label :for="uid('title') + person.id">Title</label>
@@ -381,7 +391,7 @@ export default {
 					<ul class="buttons list">
 						<li v-for="([person1, person2, person3], index) in peopleTriples">
 							<button @click="generatePDF(person1, person2, person3)" :disabled="downloadInProgress">
-								{% endraw %}{% include "_icons/pdf.svg" %}{% raw %}
+								<icon-pdf/>
 								<div>
 									<h3>Download part {{ index + 1 }} of the form</h3>
 									<p v-if="person1.firstName">For {{ person1.firstName }}<template v-if="person2 && !person3"> and {{ person2.firstName }}</template><template v-if="person2 && person3">, {{ person2.firstName }} and {{ person3.firstName }}</template>.</p>
@@ -393,7 +403,7 @@ export default {
 				<ul class="buttons list">
 					<li v-if="peopleTriples.length === 1">
 						<button @click="generatePDF(people[0], people[1], people[2])" :disabled="downloadInProgress">
-							{% endraw %}{% include "_icons/pdf.svg" %}{% raw %}
+							<icon-pdf/>
 							<div>
 								<h3>Download the filled form</h3>
 								<p>Print this form, sign it, then send it to any <em>Bürgeramt</em> in Berlin.</p>
@@ -406,7 +416,7 @@ export default {
 				<ul class="buttons list">
 					<li>
 						<a class="recommended" href="/guides/abmeldung#in-person-at-the-burgeramt" target="_blank">
-							{% endraw %}{% include "_icons/calendar.svg" %}{% raw %}
+							<icon-calendar/>
 							<div>
 								<h3>Book a Bürgeramt appointment</h3>
 								<p>Deregister in person, get your deregistration certificate faster.</p>
@@ -415,7 +425,7 @@ export default {
 					</li>
 					<li>
 						<a href="/guides/abmeldung#by-registered-mail" target="_blank">
-							{% endraw %}{% include "_icons/mail.svg" %}{% raw %}
+							<icon-mail/>
 							<div>
 								<h3>Send the Abmeldung form</h3>
 								<p>Deregister your address by post or by email. It's easier, but slower.</p>
@@ -424,7 +434,7 @@ export default {
 					</li>
 					<li>
 						<a href="/out/deregistrationde-abmeldung" target="_blank">
-							{% endraw %}{% include "_icons/sendsomeone.svg" %}{% raw %}
+							<icon-representative/>
 							<div>
 								<h3>Pay someone to deregister you</h3>
 								<p>Let someone else do your <em>Abmeldung</em>, get your deregistration certificate by email.</p>
@@ -433,7 +443,7 @@ export default {
 					</li>
 					<li>
 						<a href="/guides/leaving-germany" target="_blank">
-							{% endraw %}{% include "_icons/exit.svg" %}{% raw %}
+							<icon-exit/>
 							<div>
 								<h3>Leave Germany</h3>
 								<p>Use my checklist for moving to another country.</p>

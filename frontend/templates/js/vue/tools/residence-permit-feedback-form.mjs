@@ -3,6 +3,7 @@ import AgeInput from '/js/vue/components/age-input.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import DateInput from '/js/vue/components/date-input.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
+import IconSupport from '/js/vue/components/icons/support.mjs';
 
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
@@ -17,6 +18,7 @@ export default {
 		Collapsible,
 		DateInput,
 		EmailInput,
+		IconSupport,
 	},
 	props: {
 		static: Boolean,
@@ -294,7 +296,7 @@ export default {
 				<template v-if="!showRestOfForm">
 					<hr>
 					<div class="icon-paragraph">
-						{% endraw %}{% include "_icons/helper.svg" %}{% raw %}
+						<icon-support/>
 						<div>
 							<p>
 								Your feedback helps others plan their {{ residencePermitName }} application.
