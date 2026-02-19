@@ -17,6 +17,12 @@ export default {
 		EmailInput,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
+	props: {
+		static: {
+			type: Boolean,
+			default: false,
+		},
+	},
 	data() {
 		return {
 			isLoading: false,
@@ -179,11 +185,12 @@ export default {
 		},
 	},
 	template: `
-		<collapsible class="feedback-form" :aria-label="ariaLabel">
+		<collapsible class="feedback-form" :static="static" :aria-label="ariaLabel">
 			<template v-slot:header>
 				How is your <span class="no-mobile">citizenship</span> application going?
 			</template>
 			<template v-if="stage === 'start'">
+				<h3 v-if="static">How is your citizenship application going?</h3>
 				<div class="steps">
 					<div class="step" v-for="(step, key, index) in steps" :key="key">
 						<input :id="uid('checkbox' + key)" type="checkbox" v-model="step.completed" @change="onStepCompletionChange(key)">
