@@ -2242,8 +2242,10 @@ details{
         margin-right: var(--s);
     }
 
-    > *{
-        display: none!important;
+    noscript{
+        font-size: var(--f-s);
+        display: block;
+        color: var(--c-text-light);
     }
 }
 

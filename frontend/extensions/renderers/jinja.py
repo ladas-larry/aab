@@ -48,6 +48,8 @@ class ToolExtension(StandaloneTag):
                 html_attrs[attr] = value
 
         html_element = ET.Element(html_tag, html_attrs)
+        noscript = ET.SubElement(html_element, "noscript")
+        noscript.text = "This tool requires JavaScript."
         return ET.tostring(html_element, short_empty_elements=False).decode()
 
     def get_context(self, *args, **kwargs):
