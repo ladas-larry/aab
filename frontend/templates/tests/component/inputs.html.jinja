@@ -1,6 +1,7 @@
 {% extends "tests/component/index.html.jinja" %}
 
 {% js %}
+	import Vue from '/js/vue/vue.mjs';
 	import AddressInput from '/js/vue/components/address-input.mjs';
 	import AgeInput from '/js/vue/components/age-input.mjs';
 	import Checkbox from '/js/vue/components/checkbox.mjs';
@@ -68,9 +69,9 @@
 	<div class="form-group">
 		<label>Children</label>
 		<children-input></children-input>
-		<children-input value="5"></children-input>
+		<children-input :value="5"></children-input>
 		<children-input required></children-input>
-		<children-input disabled value="0"></children-input>
+		<children-input disabled :value="0"></children-input>
 	</div>
 
 	<div class="form-group">

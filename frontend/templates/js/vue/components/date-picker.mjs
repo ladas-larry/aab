@@ -26,7 +26,7 @@ export default {
 		onOutsideValueChange(){
 			// Update the field value, but not if the user is currently editing the date
 			if(document.activeElement !== this.$el){
-				this.$el.value = dateFromString(this.value) ? this.value : '';
+				this.$el.value = (this.value && dateFromString(this.value)) ? this.value : '';
 			}
 		}
 	},
@@ -44,4 +44,4 @@ export default {
 			@blur="onBlur"
 			@input="onInput">
 	`,
-});
+}
