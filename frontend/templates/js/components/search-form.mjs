@@ -1,3 +1,5 @@
+import lunr from '/js/libs/lunr.mjs';
+
 export default function initializeSearchForm(){
 	window.addEventListener("DOMContentLoaded", function() {
 		/* Search */
