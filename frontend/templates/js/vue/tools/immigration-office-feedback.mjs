@@ -205,6 +205,7 @@ export default {
 		},
 		residencePermitType(){
 			this.resultPages = [];
+			this.department = null;
 			this.loadPage(1, false);
 			this.$el.querySelector('#immigration-office-wait-times').innerHTML = `${this.residencePermitName(this.residencePermitType).capitalized} wait times`;
 		},
@@ -231,18 +232,19 @@ export default {
 					</optgroup>
 					<optgroup label="Residence permits">
 						<option :value="null">All residence permits</option>
+						<option disabled="disabled">──────────</option>
 						<option v-for="(name, key) in residencePermitTypes" :key="key" :value="key" v-text="name.capitalized"></option>
 					</optgroup>
 				</select>
 				<select v-model="department">
 					<option :value="null">All departments</option>
-					<optgroup label="Citizenship">
+					<template v-if="isCitizenship">
 						<option v-for="(name, key) in citizenshipDepartments" :key="key" :value="key" v-text="name"></option>
-					</optgroup>
-					<optgroup label="Residence permit">
+					</template>
+					<optgroup label="Current departments" v-if="!isCitizenship">
 						<option v-for="(name, key) in residencePermitDepartments" :key="key" :value="key" v-text="name"></option>
 					</optgroup>
-					<optgroup label="Residence permit (old departments)">
+					<optgroup label="Old departments" v-if="!isCitizenship">
 						<option v-for="(name, key) in oldResidencePermitDepartments" :key="key" :value="key" v-text="name"></option>
 					</optgroup>
 				</select>
@@ -296,18 +298,19 @@ export default {
 					</optgroup>
 					<optgroup label="Residence permits">
 						<option :value="null">All residence permits</option>
+						<option disabled="disabled">──────────</option>
 						<option v-for="(name, key) in residencePermitTypes" :key="key" :value="key" v-text="name.capitalized"></option>
 					</optgroup>
 				</select>
 				<select v-model="department">
 					<option :value="null">All departments</option>
-					<optgroup label="Citizenship">
+					<template v-if="isCitizenship">
 						<option v-for="(name, key) in citizenshipDepartments" :key="key" :value="key" v-text="name"></option>
-					</optgroup>
-					<optgroup label="Residence permit">
+					</template>
+					<optgroup label="Current departments" v-if="!isCitizenship">
 						<option v-for="(name, key) in residencePermitDepartments" :key="key" :value="key" v-text="name"></option>
 					</optgroup>
-					<optgroup label="Residence permit (old departments)">
+					<optgroup label="Old departments" v-if="!isCitizenship">
 						<option v-for="(name, key) in oldResidencePermitDepartments" :key="key" :value="key" v-text="name"></option>
 					</optgroup>
 				</select>
