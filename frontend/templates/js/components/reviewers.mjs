@@ -4,6 +4,6 @@ export default function initializeReviewers(){
 			e.preventDefault();
 			link.classList.toggle('expanded');
 			document.getElementById('reviewers').classList.toggle('hidden');
-		});
+		}));
 	});
 }

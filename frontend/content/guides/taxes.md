@@ -13,7 +13,7 @@ This guide explains how taxes work in Germany, and how to pay less taxes.
 
 This tax calculator shows your salary after taxes. It works for employees, students and freelancers.
 
-{% tool "tax-calculator" %}
+{% tool "tax-calculator", static=True %}
 
 ## The taxes you pay in Germany
 
