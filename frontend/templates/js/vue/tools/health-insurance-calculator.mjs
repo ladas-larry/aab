@@ -373,8 +373,12 @@ export default {
 		},
 	},
 	template: `
-		<collapsible :data-stage="stage" class="health-insurance-calculator" :aria-label="trackAs" :static="static">
-			<template v-slot:header v-text="trackAs">
+		<collapsible
+			class="health-insurance-calculator"
+			:aria-label="trackAs"
+			:data-stage="stage"
+			:static="static">
+			<template v-slot:header>
 				<template v-if="mode === 'question'">Ask our<span class="no-mobile"> health</span> insurance expert</template>
 				<template v-else>Health insurance calculator</template>
 			</template>

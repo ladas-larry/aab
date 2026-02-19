@@ -271,7 +271,11 @@ export default {
 		}
 	},
 	template: `
-		<collapsible class="feedback-form" :static="static" :aria-label="ariaLabel">
+		<collapsible
+			:aria-label="ariaLabel"
+			aria-description="Share your experience applying for a residence permit in Berlin."
+			class="feedback-form"
+			:static="static">
 			<template v-slot:header>
 				How is your <span class="no-mobile">{{ residencePermitName }}</span> application going?
 			</template>

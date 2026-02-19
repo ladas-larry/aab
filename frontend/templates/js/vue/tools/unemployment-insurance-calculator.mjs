@@ -55,7 +55,11 @@ export default {
 		},
 	},
 	template: `
-		<collapsible class="unemployment-insurance-calculator" aria-label="Unemployment insurance calculator" :static="static">
+		<collapsible
+			aria-description="Calculate how much unemployment insurance you pay on your salary in Germany"
+			aria-label="Unemployment insurance calculator"
+			class="unemployment-insurance-calculator"
+			:static="static">
 			<template v-slot:header>Unemployment insurance calculator</template>
 			<div class="form-group">
 				<label :for="uid('occupation')">

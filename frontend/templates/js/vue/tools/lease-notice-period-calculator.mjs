@@ -51,7 +51,12 @@ export default {
 		},
 	},
 	template: `
-		<collapsible aria-label="Lease notice period calculator" class="lease-notice-period-calculator" :static="static">
+		<collapsible
+			aria-label="Lease notice period calculator"
+			aria-description="Calculate the notice period of your apartment lease"
+			class="lease-notice-period-calculator"
+			:static="static">
+
 			<template v-slot:header>Lease notice period calculator</template>
 			<div class="form-group show-errors">
 				<label :for="uid('noticeDate')">Notice date</label>

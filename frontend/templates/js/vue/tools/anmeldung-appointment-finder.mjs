@@ -202,7 +202,11 @@ export default {
 		}
 	},
 	template: `
-		<collapsible class="appointment-finder no-print" aria-label="Anmeldung appointment finder" :static="static">
+		<collapsible
+			aria-label="Anmeldung appointment finder"
+			class="appointment-finder no-print"
+			:static="static">
+
 			<template v-slot:header>Find an Anmeldung appointment</template>
 			<h3 v-if="static">Book a Bürgeramt appointment</h3>
 			<div class="months" v-if="appointments.length > 0">

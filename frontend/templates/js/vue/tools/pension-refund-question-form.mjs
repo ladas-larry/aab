@@ -85,7 +85,11 @@ export default {
 		}
 	},
 	template: `
-	<collapsible class="pension-refund-question" aria-label="Pension refund question form" ref="collapsible">
+	<collapsible
+		aria-description="Ask an expert about German pension payments refunds"
+		aria-label="Pension refund question form"
+		class="pension-refund-question"
+		:static="static">
 		<template v-slot:header>Ask a pension refund expert</template>
 		<input type="text" name="username" value="" autocomplete="off" hidden role="presentation" required/>
 		<template v-if="stage === 'contactInfo'">

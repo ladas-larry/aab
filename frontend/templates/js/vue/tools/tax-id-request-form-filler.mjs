@@ -227,7 +227,11 @@ export default {
 		this.addPerson();
 	},
 	template: `
-		<collapsible aria-label="Tax ID request form" class="tax-id-form" :static="static">
+		<collapsible
+			aria-description="Fill this form to request a German tax ID from the Finanzamt"
+			aria-label="Tax ID request form"
+			class="tax-id-form"
+			:static="static">
 			<template v-slot:header>
 				<small>Fill the form online</small>
 				Request a new tax ID

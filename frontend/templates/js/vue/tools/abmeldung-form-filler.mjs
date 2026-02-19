@@ -188,7 +188,11 @@ export default {
 		this.addPerson();
 	},
 	template: `
-		<collapsible aria-label="Tool to fill the Abmeldung form" class="abmeldung-form" :static="static">
+		<collapsible
+			aria-label="Tool to fill the Abmeldung form"
+			class="abmeldung-form"
+			:static="static">
+
 			<template v-slot:header>
 				<small>Fill the form online</small>
 				Abmeldung form

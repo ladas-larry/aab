@@ -97,9 +97,6 @@ export default {
 			}
 			return '/api/forms/citizenship-feedback';
 		},
-		ariaLabel(){
-			return `Feedback form: Citizenship processing time`;
-		},
 		showRestOfForm(){
 			return this.steps.application.completed;
 		},
@@ -182,7 +179,10 @@ export default {
 		},
 	},
 	template: `
-		<collapsible class="feedback-form" :aria-label="ariaLabel" :static="static">
+		<collapsible
+			aria-label="Feedback form: Citizenship processing time"
+			class="feedback-form"
+			:static="static">
 			<template v-slot:header>
 				How is your <span class="no-mobile">citizenship</span> application going?
 			</template>

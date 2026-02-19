@@ -216,7 +216,10 @@ export default {
 		this.addPerson();
 	},
 	template: `
-		<collapsible aria-label="Tool to fill the Anmeldung form" class="anmeldung-form" :static="static">
+		<collapsible
+			aria-label="Tool to fill the Anmeldung form"
+			class="anmeldung-form"
+			:static="static">
 			<template v-slot:header>
 				<small>Fill the form online</small>
 				Anmeldung form
