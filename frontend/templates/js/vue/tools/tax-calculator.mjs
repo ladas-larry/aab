@@ -35,6 +35,9 @@ export default {
 		Tabs,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			age: userDefaults.age,

@@ -23,6 +23,9 @@ export default {
 		StateInput,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			occupation: userDefaults.occupation,
@@ -52,7 +55,7 @@ export default {
 		},
 	},
 	template: `
-		<collapsible class="unemployment-insurance-calculator" aria-label="Unemployment insurance calculator">
+		<collapsible class="unemployment-insurance-calculator" aria-label="Unemployment insurance calculator" :static="static">
 			<template v-slot:header>Unemployment insurance calculator</template>
 			<div class="form-group">
 				<label :for="uid('occupation')">

@@ -32,6 +32,9 @@ export default {
 		Tabs,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			people: [],
@@ -111,7 +114,7 @@ export default {
 		},
 	},
 	template: `
-		<letter-generator aria-label="Lease termination letter" class="lease-termination-letter" track-as="Lease termination letter">
+		<letter-generator aria-label="Lease termination letter" class="lease-termination-letter" track-as="Lease termination letter" :static="static">
 			<template v-slot:header>Lease termination letter</template>
 
 			<template v-slot:letter-recipient="{ language, stage }">

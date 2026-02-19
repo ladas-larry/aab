@@ -21,6 +21,9 @@ export default{
 		LetterGenerator,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			fullName: userDefaults.empty,
@@ -38,7 +41,7 @@ export default{
 		formatSalutations,
 	},
 	template: `
-		<letter-generator aria-label="Letter generator to request a preliminary decision for ALG I" class="alg-i-vorlaeufige-bewilligung" track-as="ALG I vorläufige Bewilligung">
+		<letter-generator aria-label="Letter generator to request a preliminary decision for ALG I" class="alg-i-vorlaeufige-bewilligung" track-as="ALG I vorläufige Bewilligung" :static="static">
 			<template v-slot:header>ALG I – Request a preliminary decision</template>
 
 			<template v-slot:letter-recipient="{ language, stage }">

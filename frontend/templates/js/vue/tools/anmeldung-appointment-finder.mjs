@@ -6,16 +6,13 @@ import { isoDay, isoMonth } from '/js/utils/date.mjs';
 const ding = new Audio('/js/ding.wav');
 
 export default {
-	props: {
-		static: {
-			type: Boolean,
-			default: false,
-		}
-	}
 	components: {
 		Checkbox,
 		Collapsible,
 	},
+	props: {
+		static: Boolean,
+	}
 	data() {
 		return {
 			isConnected: null,

@@ -24,6 +24,9 @@ export default {
 		Tabs,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			fullName: userDefaults.empty,
@@ -69,7 +72,7 @@ export default {
 		},
 	}
 	template: `
-		<letter-generator aria-label="Ausländerbehörde job change notice letter generator" class="auslaenderbehoerde-job-change" track-as="Ausländerbehörde job change">
+		<letter-generator aria-label="Ausländerbehörde job change notice letter generator" class="auslaenderbehoerde-job-change" track-as="Ausländerbehörde job change" :static="static">
 			<template v-slot:header>Ausländerbehörde – Job change notice</template>
 
 			<template v-slot:letter-recipient="{ language, stage }">

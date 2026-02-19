@@ -21,7 +21,6 @@ import { getNearestHeadingId } from '/js/utils/tracking.mjs';
 import { fillAndSavePDF } from '/js/utils/pdf.mjs';
 
 export default {
-	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin, preloadPdfMixin],
 	components: {
 		Collapsible,
 		CountryInput,
@@ -32,6 +31,10 @@ export default {
 		LastNameInput,
 		PostalcodeInput,
 		Tabs,
+	},
+	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin, preloadPdfMixin],
+	props: {
+		static: Boolean
 	},
 	data() {
 		return {
@@ -185,7 +188,7 @@ export default {
 		this.addPerson();
 	},
 	template: `
-		<collapsible aria-label="Tool to fill the Abmeldung form" class="abmeldung-form">
+		<collapsible aria-label="Tool to fill the Abmeldung form" class="abmeldung-form" :static="static">
 			<template v-slot:header>
 				<small>Fill the form online</small>
 				Abmeldung form

@@ -40,6 +40,9 @@ export default {
 		StateInput,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin, trackedStagesMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			trackAs: 'Pension refund calculator',
@@ -257,7 +260,7 @@ export default {
 		}
 	},
 	template: `
-		<collapsible class="pension-refund-calculator" ref="collapsible" aria-label="Pension refund calculator">
+		<collapsible class="pension-refund-calculator" aria-label="Pension refund calculator" :static="static">
 			<template v-slot:header>Calculate your pension refund</template>
 
 			<p v-if="stage === 'start'">This calculator tells you if you can get a pension refund, and how much you can get back.</p>

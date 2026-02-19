@@ -13,6 +13,9 @@ export default {
 		Glossary,
 	},
 	mixins: [uniqueIdsMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			inputNoticeDate: '',  // YYYY-MM-DD string
@@ -48,7 +51,7 @@ export default {
 		},
 	},
 	template: `
-		<collapsible aria-label="Lease notice period calculator" class="lease-notice-period-calculator" ref="collapsible">
+		<collapsible aria-label="Lease notice period calculator" class="lease-notice-period-calculator" :static="static">
 			<template v-slot:header>Lease notice period calculator</template>
 			<div class="form-group show-errors">
 				<label :for="uid('noticeDate')">Notice date</label>

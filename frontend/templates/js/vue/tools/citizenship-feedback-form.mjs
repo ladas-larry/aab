@@ -18,10 +18,7 @@ export default {
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
 	props: {
-		static: {
-			type: Boolean,
-			default: false,
-		},
+		static: Boolean,
 	},
 	data() {
 		return {
@@ -185,7 +182,7 @@ export default {
 		},
 	},
 	template: `
-		<collapsible class="feedback-form" :static="static" :aria-label="ariaLabel">
+		<collapsible class="feedback-form" :aria-label="ariaLabel" :static="static">
 			<template v-slot:header>
 				How is your <span class="no-mobile">citizenship</span> application going?
 			</template>

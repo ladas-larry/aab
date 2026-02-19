@@ -21,6 +21,9 @@ export default {
 		FullNameInput,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	props: {
+		static: Boolean
+	},
 	data: function() {
 		return {
 			isLoading: false,

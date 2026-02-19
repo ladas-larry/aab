@@ -19,16 +19,16 @@ export default {
 		EmailInput,
 	},
 	props: {
-		static: {
-			type: Boolean,
-			default: false,
-		},
+		static: Boolean,
 		residencePermitType: {
 			type: String,
 			default: null,
 		}
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			department: null,

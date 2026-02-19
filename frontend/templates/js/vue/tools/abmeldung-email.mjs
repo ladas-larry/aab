@@ -20,6 +20,9 @@ export default {
 		LetterGenerator,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	props: {
+		static: Boolean,
+	},
 	data(){
 		return {
 			fullName: userDefaults.empty,
@@ -50,7 +53,7 @@ export default {
 		formatSalutations,
 	},
 	template: `
-		<letter-generator :printable="false" aria-label="Letter generator to deregister your address" class="abmeldung-email" track-as="Abmeldung email" static>
+		<letter-generator :printable="false" aria-label="Letter generator to deregister your address" class="abmeldung-email" track-as="Abmeldung email" :static="static">
 			<template v-slot:header>Abmeldung – Deregister your address</template>
 			<template v-slot:letter-body="{ language, stage }">
 				<p v-if="language === 'en'">

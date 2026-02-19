@@ -23,6 +23,9 @@ export default {
 		LetterGenerator,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			fullName: userDefaults.empty,
@@ -38,7 +41,7 @@ export default {
 		};
 	},
 	template: `
-		<letter-generator aria-label="Bescheinigung in Steuersachen letter generator" :printable="false" class="bescheinigung-in-steueresachen-letter" track-as="Bescheinigung in Steuersachen letter">
+		<letter-generator aria-label="Bescheinigung in Steuersachen letter generator" :printable="false" class="bescheinigung-in-steueresachen-letter" track-as="Bescheinigung in Steuersachen letter" :static="static">
 			<template v-slot:header>Request for a Bescheinigung in Steuersachen</template>
 
 			<template v-slot:letter-body="{ language, stage }">

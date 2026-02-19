@@ -42,6 +42,9 @@ export default {
 		StateInput,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin, preloadPdfMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			trackAs: 'Tax ID request form',
@@ -224,7 +227,7 @@ export default {
 		this.addPerson();
 	},
 	template: `
-		<collapsible aria-label="Tax ID request form" class="tax-id-form">
+		<collapsible aria-label="Tax ID request form" class="tax-id-form" :static="static">
 			<template v-slot:header>
 				<small>Fill the form online</small>
 				Request a new tax ID

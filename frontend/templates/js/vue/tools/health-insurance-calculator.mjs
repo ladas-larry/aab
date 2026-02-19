@@ -44,10 +44,7 @@ export default {
 	},
 	mixins: [brokerMixin, multiStageMixin, uniqueIdsMixin, trackedStagesMixin],
 	props: {
-		static: {
-			type: Boolean,
-			default: false,
-		},
+		static: Boolean,
 		mode: {
 			type: String,
 			default: 'calculator',
@@ -376,7 +373,7 @@ export default {
 		},
 	},
 	template: `
-		<collapsible :data-stage="stage" class="health-insurance-calculator" :static="static" :aria-label="trackAs">
+		<collapsible :data-stage="stage" class="health-insurance-calculator" :aria-label="trackAs" :static="static">
 			<template v-slot:header v-text="trackAs">
 				<template v-if="mode === 'question'">Ask our<span class="no-mobile"> health</span> insurance expert</template>
 				<template v-else>Health insurance calculator</template>

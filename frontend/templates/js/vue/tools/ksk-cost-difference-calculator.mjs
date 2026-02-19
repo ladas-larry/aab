@@ -19,6 +19,9 @@ export default {
 		Price,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			yearlyIncome: userDefaults.yearlyIncome,
@@ -52,7 +55,7 @@ export default {
 		}
 	},
 	template: `
-		<collapsible aria-label="KSK cost calculator" aria-description="Calculate the cost difference between Künstlersozialkasse members and regular freelancers." class="ksk-cost-difference-calculator" ref="collapsible">
+		<collapsible aria-label="KSK cost calculator" aria-description="Calculate the cost difference between Künstlersozialkasse members and regular freelancers." class="ksk-cost-difference-calculator" :static="static">
 			<template v-slot:header>KSK cost calculator</template>
 
 			<div class="range-input">

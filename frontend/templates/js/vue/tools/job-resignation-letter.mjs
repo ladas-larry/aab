@@ -31,6 +31,9 @@ export default {
 		Recommended,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			fullName: userDefaults.empty,
@@ -60,7 +63,7 @@ export default {
 		formatSalutations,
 	},
 	template: `
-		<letter-generator aria-label="Job resignation letter generator" class="job-resignation-letter" track-as="Job resignation letter">
+		<letter-generator aria-label="Job resignation letter generator" class="job-resignation-letter" track-as="Job resignation letter" :static="static">
 			<template v-slot:header>Job resignation letter</template>
 
 			<template v-slot:letter-recipient="{ language, stage }">

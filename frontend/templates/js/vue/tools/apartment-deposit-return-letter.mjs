@@ -35,6 +35,9 @@ export default {
 		Tabs,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
+	props: {
+		static: Boolean
+	},
 	data() {
 		return {
 			fullName: userDefaults.empty,
@@ -80,7 +83,7 @@ export default {
 		}
 	},
 	template: `
-		<letter-generator class="deposit-return" track-as="Return of apartment deposit letter generator">
+		<letter-generator class="deposit-return" track-as="Return of apartment deposit letter generator" :static="static">
 			<template v-slot:header>Return of apartment deposit</template>
 
 			<template v-slot:letter-recipient="{ language, stage }">
