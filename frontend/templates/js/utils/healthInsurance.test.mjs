@@ -1,13 +1,9 @@
-{% include "_js/libs/chai.js" %}
-{% include "_js/libs/mocha.js" %}
-{% include "_js/utils/test.js" %}
-{% js %}
-
 // TODO: Test custom zusatzbeitrag
-
 import { roundCurrency } from '/js/utils/currency.mjs';
 import { bafog, healthInsurance, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
 import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
+import { assert } from '/js/libs/chai.mjs';
+import { hasFlag, notHasFlag } from '/js/utils/test.mjs';
 
 const round = roundCurrency;
 const equal = assert.equal;
@@ -1273,6 +1269,7 @@ function cannotGetFreeInsuranceThroughSocialBenefits(output){
 function canUseEHIC(output){
 	it('can use their EHIC card', hasFlag(output, 'ehic'));
 }
+
 function cannotUseEHIC(output){
 	it('cannot use their EHIC card', notHasFlag(output, 'ehic'));
 }
@@ -1280,8 +1277,7 @@ function cannotUseEHIC(output){
 function earnsEnoughForPrivate(output){
 	it('earns enough for private health insurance', notHasFlag(output, 'private-income-too-low'));
 }
+
 function doesNotEarnEnoughForPrivate(output){
 	it('might not earn enough for private health insurance', hasFlag(output, 'private-income-too-low'));
 }
-
-{% endjs %}

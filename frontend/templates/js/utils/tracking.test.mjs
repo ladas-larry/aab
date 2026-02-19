@@ -1,8 +1,6 @@
-{% include "_js/libs/chai.js" %}
-{% include "_js/libs/mocha.js" %}
-{% js %}
 import { shouldTrackUrl } from '/js/utils/tracking.mjs';
 import { site } from '/js/utils/constants.mjs';
+import { assert } from '/js/libs/chai.mjs';
 
 describe('shouldTrackUrl', () => {
 	it('Should track /out links', function() {
@@ -22,4 +20,3 @@ describe('shouldTrackUrl', () => {
 		assert.equal(shouldTrackUrl(site.url + '/'), false);
 	});
 });
-{% endjs %}

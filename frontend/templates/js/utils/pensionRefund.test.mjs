@@ -1,9 +1,6 @@
-{% include "_js/libs/chai.js" %}
-{% include "_js/libs/mocha.js" %}
-{% include "_js/utils/test.js" %}
-{% js %}
-
 import { calculatePensionRefund } from '/js/utils/pensionRefund.mjs';
+import { assert } from '/js/libs/chai.mjs';
+import { yearsAgo, hasFlags } from '/js/utils/test.mjs';
 
 describe('calculatePensionRefund', () => {
 	describe('a 30,000€ income for 12 months in 2005', () => {
@@ -724,4 +721,3 @@ describe('calculatePensionRefund', () => {
 		});
 	});
 });
-{% endjs %}

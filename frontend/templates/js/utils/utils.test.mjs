@@ -1,7 +1,5 @@
-{% include "_js/libs/chai.js" %}
-{% include "_js/libs/mocha.js" %}
-{% js %}
 import { formatCurrency } from '/js/utils/currency.mjs';
+import { assert } from '/js/libs/chai.mjs';
 
 describe('formatCurrency', () => {
 	const testCases = [
@@ -70,4 +68,3 @@ describe('formatCurrency', () => {
 		});
 	});
 });
-{% endjs %}

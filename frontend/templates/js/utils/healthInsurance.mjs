@@ -1,4 +1,4 @@
-import { healthInsurance, occupations, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
+import { bafog, healthInsurance, occupations, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
 import { roundCurrency } from '/js/utils/currency.mjs';
 
 function getAdjustedMonthlyIncome(tariff, monthlyIncome){
@@ -46,11 +46,11 @@ function getAdjustedMonthlyIncome(tariff, monthlyIncome){
 
 	}
 	else if(tariff === 'student'){
-		// Students pay a fixed amount based on the bafogBedarfssatz
+		// Students pay a fixed amount based on the bafog.bedarfssatz
 		return {
-			personal: bafogBedarfssatz,
-			employer: bafogBedarfssatz,
-			total: bafogBedarfssatz,
+			personal: bafog.bedarfssatz,
+			employer: bafog.bedarfssatz,
+			total: bafog.bedarfssatz,
 		}
 	}
 
@@ -344,7 +344,7 @@ export function pkvOptions({occupation, monthlyIncome, hoursWorkedPerWeek, age, 
 }
 
 function expatOptions(childrenCount){
-	return Object.entries(healthinsurance.expat).map(([id, cost]) => {
+	return Object.entries(healthInsurance.expat).map(([id, cost]) => {
 		return {
 			id: id,
 			total: {
