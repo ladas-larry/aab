@@ -2,7 +2,7 @@ import { roundCurrency } from '/js/utils/currency.mjs';
 import { healthInsurance, occupations, pensions, taxes } from '/js/utils/constants.mjs';
 import { isEastGerman } from '/js/utils/germanStates.mjs';
 import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
-import { estimateYearlyPensionContributions } from '/js/utils/pensionRefunds.mjs';
+import { estimateYearlyPensionContributions } from '/js/utils/pensionRefund.mjs';
 
 export function calculateTax(yearlyIncome, {
 	age,  // Number
@@ -231,9 +231,8 @@ export function calculateIncomeTax(taxableIncome, isSplittingTarif=false) {  // 
 		);
 
 		incomeTaxFlags.add(`income-tax-bracket-${taxBracketNumber}`);
-		incomeTax = taxBracket.formula(x, y, z);
-		incomeTax = Math.floor(incomeTax);
 
+		const incomeTax = Math.floor(taxBracket.formula(x, y, z));
 		return {
 			flags: incomeTaxFlags,
 			incomeTax: isSplittingTarif ? incomeTax * 2 : incomeTax,

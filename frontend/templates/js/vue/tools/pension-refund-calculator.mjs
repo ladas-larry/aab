@@ -13,7 +13,7 @@ import Recommended from '/js/vue/components/recommended.mjs';
 import StateInput from '/js/vue/components/state-input.mjs';
 
 import { isEastGerman } from '/js/utils/germanStates.mjs';
-import { calculatePensionRefund } from '/js/utils/pensionRefunds.mjs';
+import { calculatePensionRefund } from '/js/utils/pensionRefund.mjs';
 import { pensions } from '/js/utils/constants.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';

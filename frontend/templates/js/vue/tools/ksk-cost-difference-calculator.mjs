@@ -6,7 +6,7 @@ import IncomeInput from '/js/vue/components/income-input.mjs';
 import Price from '/js/vue/components/price.mjs';
 import { healthInsurance, taxes } from '/js/utils/constants.mjs';
 import { kskOption, gkvOptions } from '/js/utils/healthInsurance.mjs';
-import { estimateMonthlyPensionContributions } from '/js/utils/pensionRefunds.mjs';
+import { estimateMonthlyPensionContributions } from '/js/utils/pensionRefund.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 

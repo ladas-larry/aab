@@ -3,7 +3,7 @@
 {% include "_js/utils/test.js" %}
 {% js %}
 
-import { calculatePensionRefund } from '/js/utils/pensionRefunds.mjs';
+import { calculatePensionRefund } from '/js/utils/pensionRefund.mjs';
 
 describe('calculatePensionRefund', () => {
 	describe('a 30,000€ income for 12 months in 2005', () => {

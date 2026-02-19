@@ -1,3 +1,4 @@
+import { getCurrencyTooltipText } from '/js/utils/exchangeRates.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
 
 export default {

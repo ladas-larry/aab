@@ -1,3 +1,5 @@
+import { getCurrencyTooltipText } from '/js/utils/exchangeRates.mjs';
+
 export default function initializeCurrencyTooltips(){
 	window.addEventListener("DOMContentLoaded", function() {
 		document.querySelectorAll('.currency').forEach(element => {

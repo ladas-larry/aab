@@ -294,7 +294,7 @@ export default {
 		monthlyYearlyCost(monthlyAmount) {
 			return this.useMonthlyIncome ? monthlyAmount : monthlyAmount * 12;
 		}
-	}
+	},
 	// TODO: Spouse's familienversicherung
 	template: `
 		<collapsible aria-label="German tax calculator" class="income-tax-calculator" ref="collapsible">
