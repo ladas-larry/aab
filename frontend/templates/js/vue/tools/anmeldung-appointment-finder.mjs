@@ -12,7 +12,7 @@ export default {
 	},
 	props: {
 		static: Boolean,
-	}
+	},
 	data() {
 		return {
 			isConnected: null,
@@ -210,7 +210,7 @@ export default {
 			<template v-slot:header>Find an Anmeldung appointment</template>
 			<h3 v-if="static">Book a Bürgeramt appointment</h3>
 			<div class="months" v-if="appointments.length > 0">
-				<div class="month" :class="month.classes" v-for="month in months" :key="month" :aria-label="month.name">
+				<div class="month" :class="month.classes" v-for="month in months" :key="month.iso" :aria-label="month.name">
 					<time :datetime="month.iso" v-text="month.name"></time>
 					<ol v-if="month.hasAppointments" class="days weekdays">
 						<li data-weekday="1" class="day"><abbr title="Monday">Mo</abbr></li>
@@ -222,7 +222,7 @@ export default {
 						<li data-weekday="7" class="day"><abbr title="Sunday">Su</abbr></li>
 					</ol>
 					<ol v-if="month.hasAppointments" class="days">
-						<li class="day" :class="day.classes" :data-weekday="day.weekday" v-for="day in month.days" :key="day" :aria-label="day.name" :title="day.name">
+						<li class="day" :class="day.classes" :data-weekday="day.weekday" v-for="day in month.days" :key="day.iso" :aria-label="day.name" :title="day.name">
 							<time v-if="!day.hasAppointments" :datetime="day.iso" v-text="day.number"></time>
 							<a v-if="day.hasAppointments" :href="day.url" target="_blank">
 								<time :datetime="day.iso" v-text="day.number"></time>
