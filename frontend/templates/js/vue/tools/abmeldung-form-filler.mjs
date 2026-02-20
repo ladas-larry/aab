@@ -437,7 +437,7 @@ export default {
 							<icon-representative/>
 							<div>
 								<h3>Pay someone to deregister you</h3>
-								<p>Let someone else do your <em>Abmeldung</em>, get your deregistration certificate by email.</p>
+								<p>Let an expert do your <em>Abmeldung</em>, get your <glossary term="Abmeldebescheinigung">deregistration certificate</glossary> by email.</p>
 							</div>
 						</a>
 					</li>

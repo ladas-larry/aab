@@ -543,7 +543,7 @@ export default {
 							<icon-representative/>
 							<div>
 								<h3>Pay someone to register you</h3>
-								<p>Pay someone to book your appointment, go to the Bürgeramt and do your Anmeldung. It's more convenient.</p>
+								<p>Let an expert do your <em>Anmeldung</em>, get your <glossary term="Anmeldebestätigung">registration certificate</glossary> by email.</p>
 							</div>
 						</a>
 					</li>
