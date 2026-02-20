@@ -54,7 +54,7 @@ export default {
 	},
 	template: `
 		<collapsible
-			aria-label="Künstlersozialkasse cost calculator"
+			aria-label="Künstlersozialkasse cost difference calculator"
 			aria-description="Calculate the cost difference between Künstlersozialkasse members and regular freelancers."
 			class="ksk-cost-difference-calculator"
 			:static="static">
