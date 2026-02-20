@@ -1,4 +1,5 @@
 import Eur from '/js/vue/components/eur.mjs';
+import Glossary from '/js/vue/components/glossary.mjs';
 import Price from '/js/vue/components/price.mjs';
 
 import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.mjs';
@@ -6,6 +7,7 @@ import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.m
 export default {
 	components: {
 		Eur,
+		Glossary,
 		Price,
 	},
 	mixins: [healthInsuranceOptionsMixin],

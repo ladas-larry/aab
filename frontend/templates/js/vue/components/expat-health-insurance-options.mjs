@@ -1,3 +1,4 @@
+import Glossary from '/js/vue/components/glossary.mjs';
 import Price from '/js/vue/components/price.mjs';
 import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.mjs';
 import LogoFeather from '/js/vue/components/icons/logo-feather.mjs';
@@ -6,6 +7,7 @@ import LogoHansemerkur from '/js/vue/components/icons/logo-hansemerkur.mjs';
 export default {
 	mixins: [healthInsuranceOptionsMixin],
 	components: {
+		Glossary,
 		Price,
 		LogoFeather,
 		LogoHansemerkur,

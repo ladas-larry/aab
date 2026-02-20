@@ -1,7 +1,6 @@
 import Vue from '/js/vue/vue.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import Eur from '/js/vue/components/eur.mjs';
-import Glossary from '/js/vue/components/glossary.mjs';
 import IncomeInput from '/js/vue/components/income-input.mjs';
 import Price from '/js/vue/components/price.mjs';
 import { healthInsurance, taxes } from '/js/utils/constants.mjs';
@@ -14,7 +13,6 @@ export default {
 	components: {
 		Collapsible,
 		Eur,
-		Glossary,
 		IncomeInput,
 		Price,
 	},

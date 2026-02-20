@@ -251,7 +251,7 @@ export default {
 				<p>
 					<template v-if="isDuringOfficeHours">This happens often.</template>
 					<template v-if="!isDuringOfficeHours">There are more appointments on weekdays between 8:00 and 17:00.</template>
-					<a target="_blank" href="/out/appointment-anmeldung">Check Berlin.de</a>, <a target="_blank" href="/glossary/Bürgertelefon">call 115</a> or <a href="/guides/berlin-burgeramt-appointment#email-the-burgeramt">email your <em>Bürgeramt</em></a>. It might work better. You can also <a href="/guides/anmeldung-in-english-berlin#how-to-register-your-address-online">do your Anmeldung online</a>.
+					<a target="_blank" href="/out/appointment-anmeldung">Check Berlin.de</a>, <a href="tel:+49115>call 115</a> or <a href="/guides/berlin-burgeramt-appointment#email-the-burgeramt">email your <em>Bürgeramt</em></a>. It might work better. You can also <a href="/guides/anmeldung-in-english-berlin#how-to-register-your-address-online">do your Anmeldung online</a>.
 				</p>
 			</template>
 

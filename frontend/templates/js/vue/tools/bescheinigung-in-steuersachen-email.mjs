@@ -4,7 +4,6 @@ import Blank from '/js/vue/components/blank.mjs';
 import Checkbox from '/js/vue/components/checkbox.mjs';
 import DateInput from '/js/vue/components/date-input.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
-import Glossary from '/js/vue/components/glossary.mjs';
 import LetterGenerator from '/js/vue/components/letter-generator.mjs';
 import { formatDate } from '/js/utils/date.mjs';
 import { formatSalutations } from '/js/utils/letter.mjs';
@@ -19,7 +18,6 @@ export default {
 		Checkbox,
 		DateInput,
 		FullNameInput,
-		Glossary,
 		LetterGenerator,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin],
