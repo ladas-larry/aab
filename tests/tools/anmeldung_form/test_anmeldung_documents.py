@@ -1,5 +1,5 @@
 from playwright.sync_api import expect
-from ..anmeldung_form import (
+from . import (
     fill_anmeldung_form_until,
     fill_people,
     fill_bei_address,
@@ -7,7 +7,7 @@ from ..anmeldung_form import (
     previous_step,
     next_step,
 )
-from ..test_data import people
+from tests.test_data import people
 
 
 def test_data_remembered(page, test_screenshot):

@@ -1,5 +1,5 @@
 from playwright.sync_api import expect
-from ..anmeldung_form import (
+from . import (
     fill_anmeldung_form_until,
     fill_bei_address,
     next_step,

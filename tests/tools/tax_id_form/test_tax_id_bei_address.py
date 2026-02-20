@@ -1,5 +1,5 @@
 from playwright.sync_api import expect
-from ..tax_id_form import fill_tax_id_form_until, fill_bei_address, previous_step, next_step, fill_people, get_form
+from . import fill_tax_id_form_until, fill_bei_address, previous_step, next_step, fill_people, get_form
 
 
 def test_data_remembered(page, test_screenshot):

@@ -1,5 +1,5 @@
 from playwright.sync_api import expect
-from ..tax_id_form import fill_tax_id_form_until, fill_purpose, get_form
+from . import fill_tax_id_form_until, fill_purpose, get_form
 
 
 def test_invalid_options(page, test_screenshot):

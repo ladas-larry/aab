@@ -1,5 +1,5 @@
 from playwright.sync_api import expect
-from tests.health_insurance_calculator import assert_stage, cases, get_calculator, fill_calculator_until
+from . import assert_stage, cases, get_calculator, fill_calculator_until
 import json
 import re
 

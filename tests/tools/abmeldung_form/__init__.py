@@ -1,4 +1,4 @@
-from ..test_data import people
+from tests.test_data import people
 
 
 def next_step(page):

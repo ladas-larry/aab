@@ -1,6 +1,6 @@
 from playwright.sync_api import expect
-from ..test_data import people
-from ..abmeldung_form import fill_abmeldung_form_until
+from tests.test_data import people
+from . import fill_abmeldung_form_until
 
 
 def test_download_buttons(page, test_screenshot, tmp_path):

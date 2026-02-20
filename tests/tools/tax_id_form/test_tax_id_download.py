@@ -1,5 +1,5 @@
-from ..test_data import people
-from ..tax_id_form import fill_tax_id_form_until, get_form
+from tests.test_data import people
+from . import fill_tax_id_form_until, get_form
 
 
 def test_download_buttons_no_anmeldung(page, test_screenshot, tmp_path):

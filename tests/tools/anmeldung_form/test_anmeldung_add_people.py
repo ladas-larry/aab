@@ -1,13 +1,18 @@
 from playwright.sync_api import expect
-from ..test_data import people
-from ..abmeldung_form import fill_abmeldung_form_until, fill_people, previous_step
+from tests.test_data import people
+from . import (
+    fill_anmeldung_form_until,
+    fill_people,
+    next_step,
+    previous_step,
+)
 
 
 def test_data_remembered(page, test_screenshot):
-    fill_abmeldung_form_until(page, "addPeople")
+    fill_anmeldung_form_until(page, "addPeople")
     fill_people(page, multiple_people=True)
 
-    page.get_by_role("button", name="Finish").click()
+    next_step(page)
     previous_step(page)
 
     for index in range(0, 5):
@@ -29,5 +34,5 @@ def test_data_remembered(page, test_screenshot):
         expect(page.get_by_title("Month", exact=True).nth(index)).to_have_value(month)
         expect(page.get_by_title("Year").nth(index)).to_have_value(year)
 
-    form = page.get_by_role("group", name="Tool to fill the Abmeldung form")
+    form = page.get_by_role("group", name="Tool to fill the Anmeldung form")
     test_screenshot(page, form)
