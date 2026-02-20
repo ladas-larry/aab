@@ -301,6 +301,7 @@ export default {
 			aria-description="Calculate how much income tax and social contributions you pay on your salary."
 			aria-label="German tax calculator"
 			class="income-tax-calculator"
+			ref="collapsible"
 			:static="static">
 			<template v-slot:header>German tax calculator</template>
 

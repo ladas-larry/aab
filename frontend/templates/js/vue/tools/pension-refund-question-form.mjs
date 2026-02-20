@@ -89,11 +89,11 @@ export default {
 		aria-description="Ask an expert about German pension payments refunds"
 		aria-label="Pension refund question form"
 		class="pension-refund-question"
+		ref="collapsible"
 		:static="static">
 		<template v-slot:header>Ask a pension refund expert</template>
-		<input type="text" name="username" value="" autocomplete="off" hidden role="presentation" required/>
 		<template v-if="stage === 'contactInfo'">
-			<p>Pension Refund Germany helps people get their pension refund. You can ask them questions. They will answer in 1 to 3 business days. This is a free service.</p>
+			<p><a target="_blank" href="/out/pension-refund-germany">Pension Refund Germany</a> helps people get their pension refund. They answer in 1 to 3 business days. This is a free service.</p>
 			<hr>
 			<div class="form-group">
 				<label :for="uid('question')">Your question</label>
@@ -129,9 +129,10 @@ export default {
 					required></country-input>
 				<span class="input-instructions error" v-if="!isEligible">You do not qualify for a pension refund.</span>
 			</div>
+			<input type="text" name="username" value="" autocomplete="off" hidden role="presentation" required/>
 			<hr>
 			<div class="buttons bar">
-				<button class="button primary no-print" @click="submitForm" :disabled="isLoading" :class="{loading: isLoading}">Ask Georg <i class="icon right" aria-hidden="true"></i></button>
+				<button class="button primary no-print" @click="submitForm" :disabled="isLoading" :class="{loading: isLoading}">Send question <i class="icon right" aria-hidden="true"></i></button>
 			</div>
 		</template>
 		<template v-if="stage === 'thank-you'">

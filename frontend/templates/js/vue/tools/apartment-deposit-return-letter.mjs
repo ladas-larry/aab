@@ -89,7 +89,7 @@ export default {
 			<template v-slot:letter-recipient="{ language, stage }">
 				<span class="letter-return-address">
 					<blank placeholder="Your full name">{{ fullName }}</blank>,
-					<blank placeholder="your address">{{ newAddress.replaceAll('\n', ', ') }}</blank>
+					<blank placeholder="your address">{{ newAddress.replaceAll('\\n', ', ') }}</blank>
 				</span>
 
 				<blank placeholder="Housing company name" v-if="recipientType === 'company'" :key="uid('landlordCompanyNameBlank')">
@@ -100,8 +100,8 @@ export default {
 				</blank>
 
 				<br>
-				<blank :placeholder="recipientType === 'company' ? 'Housing company address' : 'Landlord\'s address'" :key="uid('recipientAddressBlank')">
-					<span v-if="recipientAddress" v-html="recipientAddress.replaceAll('\n', '<br>')"></span>
+				<blank :placeholder="recipientType === 'company' ? 'Housing company address' : 'Landlord\\'s address'" :key="uid('recipientAddressBlank')">
+					<span v-if="recipientAddress" v-html="recipientAddress.replaceAll('\\n', '<br>')"></span>
 				</blank>
 			</template>
 
@@ -138,12 +138,12 @@ export default {
 				</p>
 
 				<p v-if="language === 'en'">
-					Address: <blank :key="uid('oldAddressBlankEn')" placeholder="Apartment address" key="oldAddress">{{ oldAddress.replaceAll('\n', ', ') }}</blank>
+					Address: <blank :key="uid('oldAddressBlankEn')" placeholder="Apartment address" key="oldAddress">{{ oldAddress.replaceAll('\\n', ', ') }}</blank>
 					<br>
 					Tenant name: <blank :key="uid('tenantNameBlankEn')" placeholder="Full name" key="fullName">{{ fullName }}</blank>
 				</p>
 				<p v-if="language === 'de'">
-					Anschrift: <blank :key="uid('oldAddressBlankDe')" placeholder="Apartment address" key="oldAddress">{{ oldAddress.replaceAll('\n', ', ') }}</blank>
+					Anschrift: <blank :key="uid('oldAddressBlankDe')" placeholder="Apartment address" key="oldAddress">{{ oldAddress.replaceAll('\\n', ', ') }}</blank>
 					<br>
 					Name des Mieters/der Mieterin: <blank :key="uid('tenantNameBlankDe')" placeholder="Full name" key="fullName">{{ fullName }}</blank>
 				</p>
@@ -226,7 +226,7 @@ export default {
 					<label :for="uid('oldAddress')">Old address</label>
 					<address-input :id="uid('oldAddress')"
 						v-model="oldAddress"
-						placeholder="Alte Wohnungstraße 123&#10;12345 Berlin"
+						:placeholder="'Alte Wohnungstraße 123\\n12345 Berlin'"
 						required></address-input>
 					<span class="input-instructions">This is the apartment for which you want the deposit back.</span>
 					<a class="input-instructions internal-link" href="/guides/addressing-a-letter-in-germany#how-to-write-german-addresses" target="_blank">How to write your address</a>
@@ -239,7 +239,7 @@ export default {
 					<label :for="uid('newAddress')">Current address</label>
 					<address-input :id="uid('newAddress')"
 						v-model="newAddress"
-						placeholder="Neue Wohnungstraße 123&#10;12345 Berlin"
+						:placeholder="'Neue Wohnungstraße 123\\n12345 Berlin'"
 						home></address-input>
 				</div>
 				<hr>
@@ -307,7 +307,7 @@ export default {
 					<address-input
 						:id="uid('recipientAddress')"
 						v-model="recipientAddress"
-						placeholder="Vermieterstraße 123&#10;12345 Berlin"
+						:placeholder="'Vermieterstraße 123\\n12345 Berlin'"
 						autocomplete="off"
 						required></address-input>
 				</div>

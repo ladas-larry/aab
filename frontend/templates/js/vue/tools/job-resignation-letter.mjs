@@ -69,14 +69,14 @@ export default {
 			<template v-slot:letter-recipient="{ language, stage }">
 				<span class="letter-return-address">
 					<blank :key="uid('fullNameReturnBlank')" placeholder="Your full name">{{ fullName }}</blank>,
-					<blank :key="uid('addressReturnBlank')" placeholder="your address">{{ address.replaceAll('\n', ', ') }}</blank>
+					<blank :key="uid('addressReturnBlank')" placeholder="your address">{{ address.replaceAll('\\n', ', ') }}</blank>
 				</span>
 				<blank :key="uid('employerNameBlank')" placeholder="Employer name">{{ employerCompanyName }}</blank><br>
 				<template v-if="formatName(recipientGender, recipientFirstName, recipientLastName, language)">
 					{{ formatName(recipientGender, recipientFirstName, recipientLastName, language) }}<br>
 				</template>
 				<blank :key="uid('employerAddressBlank')" v-if="!employerAddress.trim()" placeholder="Employer address"></blank>
-				<span v-if="employerAddress.trim()" v-html="employerAddress.replaceAll('\n', '<br>')"></span>
+				<span v-if="employerAddress.trim()" v-html="employerAddress.replaceAll('\\n', '<br>')"></span>
 			</template>
 
 			<template v-slot:letter-details="{ language, stage }">

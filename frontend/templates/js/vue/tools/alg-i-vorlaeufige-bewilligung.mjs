@@ -47,13 +47,13 @@ export default{
 			<template v-slot:letter-recipient="{ language, stage }">
 				<span class="letter-return-address" v-if="address">
 					{{ fullName }}<template v-if="fullName && address">, </template>
-					{{ address.replaceAll('\n', ', ') }}
+					{{ address.replaceAll('\\n', ', ') }}
 				</span>
 
 				<template v-if="formatName(recipientGender, recipientFirstName, recipientLastName, language)">
 					{{ formatName(recipientGender, recipientFirstName, recipientLastName, language) }}<br>
 				</template>
-				<span v-html="agenturFurArbeitAddress.replaceAll('\n', '<br>')"></span>
+				<span v-html="agenturFurArbeitAddress.replaceAll('\\n', '<br>')"></span>
 			</template>
 
 			<template v-slot:letter-details="{ language, stage }">
@@ -117,7 +117,7 @@ export default{
 				</div>
 				<div class="form-group">
 					<label :for="uid('agenturFurArbeitAddress')">Agentur für Arbeit address</label>
-					<address-input :id="uid('agenturFurArbeitAddress')" v-model="agenturFurArbeitAddress" placeholder="Agentur für Arbeit Mitte&#10;Example Straße 123&#10;12345 Berlin"></address-input>
+					<address-input :id="uid('agenturFurArbeitAddress')" v-model="agenturFurArbeitAddress" placeholder="'Agentur für Arbeit Mitte\\nExample Straße 123\\n12345 Berlin'"></address-input>
 					<a class="input-instructions external-link" href="https://web.arbeitsagentur.de/portal/metasuche/suche/dienststellen" target="_blank">
 						Find your Agentur für Arbeit
 					</a>

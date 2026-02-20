@@ -5,6 +5,7 @@ import Checkbox from '/js/vue/components/checkbox.mjs';
 import DateInput from '/js/vue/components/date-input.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
 import LetterGenerator from '/js/vue/components/letter-generator.mjs';
+import { formatCurrency } from '/js/utils/currency.mjs';
 import { formatDate } from '/js/utils/date.mjs';
 import { formatSalutations } from '/js/utils/letter.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
@@ -35,7 +36,10 @@ export default {
 			hasPaidFee: false,
 			formatSalutations,
 			formatDate,
-			bescheinigungInSteuersachenFee, // TODO: Use <eur> to display with correct format in both languages
+			bescheinigungInSteuersachenFee: {
+				en: formatCurrency(bescheinigungInSteuersachenFee, true, false, false, "en-US"),
+				de: formatCurrency(bescheinigungInSteuersachenFee, true, false, false, "de-DE"),
+			},
 		};
 	},
 	template: `
@@ -74,7 +78,7 @@ export default {
 					<li>
 						<template v-if="language === 'en'">Address:</template>
 						<template v-if="language === 'de'">Anschrift:</template>
-						<blank :key="uid('addressBlank')" placeholder="Address">{{ address.replaceAll('\n', ', ') }}</blank>
+						<blank :key="uid('addressBlank')" placeholder="Address">{{ address.replaceAll('\\n', ', ') }}</blank>
 					</li>
 					<li>
 						<template v-if="language === 'en'">Date of birth:</template>
@@ -89,11 +93,11 @@ export default {
 				</ul>
 
 				<p v-if="language === 'en'">
-					<template v-if="hasPaidFee">I have already paid the fee of €{{ bescheinigungInSteuersachenFee }} on {{ currentDate.toLocaleDateString("en-US") }}. </template>
+					<template v-if="hasPaidFee">I have already paid the fee of €{{ bescheinigungInSteuersachenFee.en }} on {{ currentDate.toLocaleDateString("en-US") }}. </template>
 					Please issue the requested document to my home address as soon as possible.
 				</p>
 				<p v-if="language === 'de'">
-					<template v-if="hasPaidFee">Ich habe die Gebühr von €{{ bescheinigungInSteuersachenFee }} bereits am {{ currentDate.toLocaleDateString("de-DE") }} bezahlt. </template>
+					<template v-if="hasPaidFee">Ich habe die Gebühr von €{{ bescheinigungInSteuersachenFee.de }} bereits am {{ currentDate.toLocaleDateString("de-DE") }} bezahlt. </template>
 					Bitte stellen Sie die angeforderte Bescheinigung so schnell wie möglich an meine Privatadresse aus.
 				</p>
 
@@ -130,7 +134,7 @@ export default {
 				</div>
 				<hr>
 				<checkbox v-model="hasPaidFee">
-					<div>I already transferred €{{ bescheinigungInSteuersachenFee }} to the <em>Finanzamt</em> (optional)</div>
+					<div>I already transferred €{{ bescheinigungInSteuersachenFee.en }} to the <em>Finanzamt</em> (optional)</div>
 				</checkbox>
 			</template>
 		</letter-generator>

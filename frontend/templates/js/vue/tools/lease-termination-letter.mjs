@@ -120,7 +120,7 @@ export default {
 			<template v-slot:letter-recipient="{ language, stage }">
 				<span class="letter-return-address">
 					<blank placeholder="Your full name">{{ fullName }}</blank>,
-					<blank placeholder="your address">{{ address.replaceAll('\n', ', ') }}</blank>
+					<blank placeholder="your address">{{ address.replaceAll('\\n', ', ') }}</blank>
 				</span>
 
 				<blank placeholder="Housing company name" v-if="recipientType === 'company'" :key="uid('landlordCompanyNameBlank')">
@@ -131,8 +131,8 @@ export default {
 				</blank>
 
 				<br>
-				<blank :placeholder="recipientType === 'company' ? 'Housing company address' : 'Landlord\'s address'" :key="uid('recipientAddressBlank')">
-					<span v-if="recipientAddress" v-html="recipientAddress.replaceAll('\n', '<br>')"></span>
+				<blank :placeholder="recipientType === 'company' ? 'Housing company address' : 'Landlord\\'s address'" :key="uid('recipientAddressBlank')">
+					<span v-if="recipientAddress" v-html="recipientAddress.replaceAll('\\n', '<br>')"></span>
 				</blank>
 			</template>
 
@@ -140,12 +140,12 @@ export default {
 				<template v-if="language === 'en'">
 					<template v-if="fullName"><strong>Name:</strong> {{ fullName }}<br></template>
 					<strong>Date:</strong> {{ currentDate.toLocaleDateString("en-US") }}
-					<template v-if="address"><br>{{ address.replaceAll('\n', ', ') }}</template>
+					<template v-if="address"><br>{{ address.replaceAll('\\n', ', ') }}</template>
 				</template>
 				<template v-if="language === 'de'">
 					<strong>Name:</strong> <blank :key="uid('fullNameBlank')" placeholder="Your full name">{{ fullName }}</blank><br>
 					<strong>Datum:</strong> {{ currentDate.toLocaleDateString("de-DE") }}
-					<template v-if="address"><br>{{ address.replaceAll('\n', ', ') }}</template>
+					<template v-if="address"><br>{{ address.replaceAll('\\n', ', ') }}</template>
 				</template>
 			</template>
 
@@ -156,11 +156,11 @@ export default {
 			<template v-slot:letter-body="{ language, stage }">
 				<p v-if="language === 'en'">
 					<strong>Subject: Termination of {{ en.our }} lease agreement</strong>
-					<br><blank :key="uid('addressBlank')" placeholder="Apartment address">{{ address.replaceAll('\n', ', ') }}</blank>
+					<br><blank :key="uid('addressBlank')" placeholder="Apartment address">{{ address.replaceAll('\\n', ', ') }}</blank>
 				</p>
 				<p v-if="language === 'de'">
 					<strong>Betreff: Kündigung {{ de.unser }}es Mietvertrags</strong>
-					<br><blank :key="uid('addressBlank')" placeholder="Apartment address">{{ address.replaceAll('\n', ', ') }}</blank>
+					<br><blank :key="uid('addressBlank')" placeholder="Apartment address">{{ address.replaceAll('\\n', ', ') }}</blank>
 				</p>
 
 				<p v-text="formatSalutations(recipientGender, recipientFirstName, recipientLastName, language)"></p>
@@ -310,7 +310,7 @@ export default {
 					<address-input
 						:id="uid('recipientAddress')"
 						v-model="recipientAddress"
-						placeholder="Vermieterstraße 123&#10;12345 Berlin"
+						:placeholder="'Vermieterstraße 123\\n12345 Berlin'"
 						autocomplete="off"
 						required></address-input>
 				</div>

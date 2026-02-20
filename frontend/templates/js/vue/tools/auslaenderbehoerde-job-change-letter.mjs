@@ -70,7 +70,7 @@ export default {
 				name => this.$refs[name].$el.querySelector('input').setCustomValidity(this.showJobChangeWarning ? 'Use the official form to report a job change.' : '')
 			);
 		},
-	}
+	},
 	template: `
 		<letter-generator aria-label="Ausländerbehörde job change notice letter generator" class="auslaenderbehoerde-job-change" track-as="Ausländerbehörde job change" :static="static">
 			<template v-slot:header>Ausländerbehörde – Job change notice</template>
@@ -78,10 +78,10 @@ export default {
 			<template v-slot:letter-recipient="{ language, stage }">
 				<span class="letter-return-address" v-if="address">
 					{{ fullName }}<template v-if="fullName && address">, </template>
-					{{ address.replaceAll('\n', ', ') }}
+					{{ address.replaceAll('\\n', ', ') }}
 				</span>
 				<span class="letter-return-address" v-else></span>
-				<span v-if="recipientAddress" v-html="recipientAddress.replaceAll('\n', '<br>')"></span>
+				<span v-if="recipientAddress" v-html="recipientAddress.replaceAll('\\n', '<br>')"></span>
 			</template>
 
 			<template v-slot:letter-details="{ language, stage }">
@@ -236,7 +236,7 @@ export default {
 						:id="uid('customRecipientAddress')"
 						v-if="auslaenderbehoerde === 'other'"
 						v-model="customRecipientAddress"
-						placeholder="Ausländerbehörde&#10;Example Straße 123&#10;12345 Munich"
+						:placeholder="'Ausländerbehörde\\nExample Straße 123\\n12345 Munich'"
 						required></address-input>
 					<a class="input-instructions external-link" v-if="auslaenderbehoerde === 'other'" href="https://bamf-navi.bamf.de/en/Themen/Behoerden/" target="_blank">
 						Find your Ausländerbehörde
