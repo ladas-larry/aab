@@ -23,7 +23,7 @@ def external_tax_calculator(session_context):
 def local_tax_calculator(session_context, base_url):
     page = session_context.new_page()
     page.set_default_timeout(2000)
-    page.goto(f"{base_url}/tests/component/tax-calculator")
+    page.goto(f"{base_url}/tests/tools/tax-calculator")
     page.get_by_role("link", name="Show options").click()
     yield page
     page.close()

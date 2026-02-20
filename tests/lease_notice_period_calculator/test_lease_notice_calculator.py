@@ -2,7 +2,7 @@ from playwright.sync_api import expect
 
 
 def test_results(page, test_screenshot):
-    page.goto("/tests/component/lease-notice-period-calculator")
+    page.goto("/tests/tools/lease-notice-period-calculator")
     calculator = page.get_by_role("group", name="Lease notice period calculator")
 
     calculator.get_by_label("Notice date").fill("1992-01-01")

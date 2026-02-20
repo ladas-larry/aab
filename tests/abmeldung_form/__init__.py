@@ -10,7 +10,7 @@ def previous_step(page):
 
 
 def load_abmeldung_form(page):
-    page.goto("/tests/component/abmeldung-form")
+    page.goto("/tests/tools/abmeldung-form-filler")
 
 
 def start_abmeldung(page):

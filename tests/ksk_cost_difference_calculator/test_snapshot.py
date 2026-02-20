@@ -3,7 +3,7 @@ import pytest
 
 @pytest.fixture
 def ksk_cost_difference_calculator(page):
-    page.goto("/tests/component/ksk-cost-difference-calculator")
+    page.goto("/tests/tools/ksk-cost-difference-calculator")
     return page.get_by_role("group", name="Künstlersozialkasse cost difference calculator")
 
 

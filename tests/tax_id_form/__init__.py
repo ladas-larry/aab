@@ -15,7 +15,7 @@ def previous_step(page):
 
 
 def load_tax_id_form(page):
-    page.goto("/tests/component/tax-id-form")
+    page.goto("/tests/tools/tax-id-request-form-filler")
 
 
 def start_form(page):

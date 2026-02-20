@@ -443,19 +443,23 @@ ctx["fail_on"] = fail_on
 ctx["GOOGLE_MAPS_JAVASCRIPT_API_KEY"] = os.environ.get("GOOGLE_MAPS_JAVASCRIPT_API_KEY")  # Frontend use, to show a map
 ctx["glossary_groups"] = glossary_groups
 
-ctx["commit_id"] = git.Repo(Path(__file__).parent / "content", search_parent_directories=True).head.commit.hexsha
-
 ctx["RECOMMENDED"] = Markup(
     '&nbsp; <a target="_blank" class="recommended" aria-label="Recommended option" href="/glossary/Recommended"></a>'
 )
+
+content_path = Path(__file__).parent / "content"
+templates_path = Path(__file__).parent / "templates"
+
+ctx["commit_id"] = git.Repo(content_path, search_parent_directories=True).head.commit.hexsha
+
 
 # ==============================================================================
 # URSUS
 # ==============================================================================
 
 config.site_url = ctx["SITE_URL"]
-config.content_path = Path(__file__).parent / "content"
-config.templates_path = Path(__file__).parent / "templates"
+config.content_path = content_path
+config.templates_path = templates_path
 
 config.output_path = (
     Path(env_output_dir) if (env_output_dir := os.environ.get("URSUS_OUTPUT_DIR")) else Path(__file__).parent / "output"
@@ -485,6 +489,7 @@ config.context_processors.extend(
         "extensions.renderers.entry_images.EntryImageUrlProcessor",
         "ursus.context_processors.git_date.GitDateProcessor",
         "extensions.context_processors.hyphenated_titles.HyphenatedTitleProcessor",
+        "extensions.context_processors.tool_tests.ToolTestEntriesProcessor",
     ]
 )
 

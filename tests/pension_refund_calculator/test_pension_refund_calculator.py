@@ -6,7 +6,7 @@ import pytest
 
 @pytest.fixture
 def pension_refund_calculator(page):
-    page.goto("/tests/component/pension-refund-calculator")
+    page.goto("/tests/tools/pension-refund-calculator")
     return page.get_by_role("group", name="Pension refund calculator")
 
 
