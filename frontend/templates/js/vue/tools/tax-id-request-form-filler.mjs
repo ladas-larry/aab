@@ -244,7 +244,11 @@ export default {
 			</template>
 			<progress v-if="stage !== 'start'" aria-label="Form progress" :max="stages.length - 1" :value="stageIndex"></progress>
 			<template v-if="stage === 'start'">
-				{% endraw %}{% image 'documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.pdf', alt="German document preview", sizes="300px" %}{% raw %}
+				<picture>
+					<source srcset="/documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.webp 1600w, /documents/previews/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.webp 300w, /documents/previews2x/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.webp 600w" type="image/webp">
+					<source srcset="/documents/previews/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.png 300w, /documents/previews2x/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.png 600w" type="image/png">
+					<img alt="German tax ID application form" loading="lazy" src="/documents/previews/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.png">
+				</picture>
 				<p>This tool helps you request a new <glossary term="Steueridentifikationsnummer">tax ID</glossary>.</p>
 				<p>You normally get a tax ID when you <glossary term="Anmeldung">register your address</glossary> for the first time. <strong>Only use this form if you can't register your address.</strong></p>
 			</template>

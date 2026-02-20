@@ -209,7 +209,11 @@ export default {
 			</template>
 			<progress v-if="stage !== 'start'" aria-label="Form progress" :max="stages.length - 1" :value="stageIndex"></progress>
 			<template v-if="stage === 'start'">
-				{% endraw %}{% image 'documents/abmeldung-original.pdf', alt="German document preview", sizes="300px" %}{% raw %}
+				<picture>
+					<source srcset="/documents/abmeldung-original.webp 1600w, /documents/previews/abmeldung-original.webp 300w, /documents/previews2x/abmeldung-original.webp 600w" type="image/webp">
+					<source srcset="/documents/previews/abmeldung-original.png 300w, /documents/previews2x/abmeldung-original.png 600w" type="image/png">
+					<img alt="Berlin Abmeldung form" loading="lazy" src="/documents/previews/abmeldung-original.png">
+				</picture>
 				<p>This tool helps you <strong>fill the <glossary>Abmeldung</glossary> form</strong> in 3 minutes. You can save the completed form, print it, and bring it to your <glossary>Bürgeramt</glossary> appointment.</p>
 				<p>Your personal information stays on your computer. No one else can see it.</p>
 			</template>

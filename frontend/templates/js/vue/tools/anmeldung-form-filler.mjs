@@ -236,7 +236,11 @@ export default {
 			</template>
 			<progress v-if="stage !== 'start'" aria-label="Form progress" :max="stages.length - 1" :value="stageIndex"></progress>
 			<template v-if="stage === 'start'">
-				{% endraw %}{% image 'documents/anmeldung-original.pdf', alt="German document preview", sizes="300px" %}{% raw %}
+				<picture>
+					<source srcset="/documents/anmeldung-original.webp 1600w, /documents/previews/anmeldung-original.webp 300w, /documents/previews2x/anmeldung-original.webp 600w" type="image/webp">
+					<source srcset="/documents/previews/anmeldung-original.png 300w, /documents/previews2x/anmeldung-original.png 600w" type="image/png">
+					<img alt="Berlin Anmeldung form" loading="lazy" src="/documents/previews/anmeldung-original.png">
+				</picture>
 				<p>This tool helps you <strong>fill the <glossary>Anmeldung</glossary> form</strong> in 3 minutes. You can save the completed form, print it, and bring it to your <glossary>Bürgeramt</glossary> appointment.</p>
 				<p>Your personal information stays on your computer. No one else can see it.</p>
 			</template>
