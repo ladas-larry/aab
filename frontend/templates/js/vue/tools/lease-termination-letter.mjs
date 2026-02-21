@@ -94,6 +94,9 @@ export default {
 		effectiveMoveOutDate(){
 			// Leases end on the last day of the month
 			return this.isDesiredMoveOutDateValid && getMoveOutDate(this.maximumNoticeDate);
+		},
+		firstPersonName(){
+			return this.people?.[0]?.fullName || '';
 		}
 	},
 	methods: {
@@ -114,12 +117,16 @@ export default {
 		},
 	},
 	template: `
-		<letter-generator aria-label="Lease termination letter" class="lease-termination-letter" track-as="Lease termination letter" :static="static">
+		<letter-generator
+			aria-label="Lease termination letter generator"
+			class="lease-termination-letter"
+			track-as="Lease termination letter"
+			:static="static">
 			<template v-slot:header>Lease termination letter</template>
 
 			<template v-slot:letter-recipient="{ language, stage }">
 				<span class="letter-return-address">
-					<blank placeholder="Your full name">{{ fullName }}</blank>,
+					<blank placeholder="Your full name">{{ firstPersonName }}</blank>,
 					<blank placeholder="your address">{{ address.replaceAll('\\n', ', ') }}</blank>
 				</span>
 
@@ -138,12 +145,12 @@ export default {
 
 			<template v-slot:letter-details="{ language, stage }">
 				<template v-if="language === 'en'">
-					<template v-if="fullName"><strong>Name:</strong> {{ fullName }}<br></template>
+					<template v-if="firstPersonName"><strong>Name:</strong> {{ firstPersonName }}<br></template>
 					<strong>Date:</strong> {{ currentDate.toLocaleDateString("en-US") }}
 					<template v-if="address"><br>{{ address.replaceAll('\\n', ', ') }}</template>
 				</template>
 				<template v-if="language === 'de'">
-					<strong>Name:</strong> <blank :key="uid('fullNameBlank')" placeholder="Your full name">{{ fullName }}</blank><br>
+					<strong>Name:</strong> <blank :key="uid('fullNameBlank')" placeholder="Your full name">{{ firstPersonName }}</blank><br>
 					<strong>Datum:</strong> {{ currentDate.toLocaleDateString("de-DE") }}
 					<template v-if="address"><br>{{ address.replaceAll('\\n', ', ') }}</template>
 				</template>
@@ -193,7 +200,7 @@ export default {
 					</p>
 
 					<p>
-						{{ language === 'en' ? 'Account holder' : 'Kontoinhaber' }}:</strong> <blank :key="uid('bankAccountNameBlank')" placeholder="Full name">{{ bankAccountName || people[0]?.fullName }}</blank>
+						{{ language === 'en' ? 'Account holder' : 'Kontoinhaber' }}:</strong> <blank :key="uid('bankAccountNameBlank')" placeholder="Full name">{{ bankAccountName || firstPersonName }}</blank>
 						<br>
 						IBAN: <blank :key="uid('bankAccountIBAN')" placeholder="Account IBAN">{{ bankAccountIBAN }}</blank>
 					</p>
@@ -208,11 +215,11 @@ export default {
 
 				<p v-if="language === 'en'">
 					Best regards,<br>
-					<blank :key="uid('fullNameBlankEn')" placeholder="Your full name">{{ people[0]?.fullName }}</blank>
+					<blank :key="uid('fullNameBlankEn')" placeholder="Your full name">{{ firstPersonName }}</blank>
 				</p>
 				<p v-if="language === 'de'">
 					Mit freundlichen Grüßen,<br>
-					<blank :key="uid('fullNameBlankDe')" placeholder="Your full name">{{ people[0]?.fullName }}</blank>
+					<blank :key="uid('fullNameBlankDe')" placeholder="Your full name">{{ firstPersonName }}</blank>
 				</p>
 
 				<p v-for="person in people" :key="person.fullName"
@@ -323,7 +330,7 @@ export default {
 					<p>Where should your landlord refund your deposit? Deposits are usually paid by <glossary term="SEPA-Überweisung">bank transfer</glossary>.</p>
 					<div class="form-group">
 						<label :for="uid('bankAccountName')">Bank account holder</label>
-						<full-name-input :id="uid('bankAccountName')" v-model="bankAccountName" :placeholder="people[0].fullName"></full-name-input>
+						<full-name-input :id="uid('bankAccountName')" v-model="bankAccountName" :placeholder="firstPersonName"></full-name-input>
 					</div>
 					<div class="form-group">
 						<label :for="uid('bankAccountIBAN')"><glossary>IBAN</glossary></label>
