@@ -1,6 +1,5 @@
 from playwright.sync_api import expect
 from . import assert_stage, cases, get_calculator, fill_calculator_until
-import json
 import re
 
 
@@ -22,9 +21,8 @@ def test_by_whatsapp(page, test_screenshot):
 
     page.get_by_label("Your name").fill("John Doe")
 
-    with page.expect_request("**/api/insurance/case") as api_request:
+    with page.expect_response("**/api/insurance/case") as api_response:
         page.locator(".button.whatsapp").click()
-    request_data = json.loads(api_request.value.post_data)
 
     expected_response = {
         **case,
@@ -36,7 +34,11 @@ def test_by_whatsapp(page, test_screenshot):
         "broker": "seamus-wolf",
     }
     expected_response.pop("can_have_private")
-    assert request_data == expected_response
+    assert api_response.value.ok
+
+    response_data = api_response.value.json()
+    for key, value in expected_response.items():
+        assert response_data[key] == value
 
     test_screenshot(page, get_calculator(page))
     assert_stage(page, "thank-you")
@@ -60,9 +62,8 @@ def test_by_email(page, test_screenshot):
     page.get_by_label("Email address").fill("j.doe@example.com")
     page.get_by_label("Question").fill("This is a question\nPlease answer soon")
 
-    with page.expect_request("**/api/insurance/case") as api_request:
+    with page.expect_response("**/api/insurance/case") as api_response:
         page.get_by_role("button", name="Ask Seamus").click()
-    request_data = json.loads(api_request.value.post_data)
 
     expected_response = {
         **case,
@@ -74,7 +75,12 @@ def test_by_email(page, test_screenshot):
         "broker": "seamus-wolf",
     }
     expected_response.pop("can_have_private")
-    assert request_data == expected_response
+
+    assert api_response.value.ok
+
+    response_data = api_response.value.json()
+    for key, value in expected_response.items():
+        assert response_data[key] == value
 
     test_screenshot(page, get_calculator(page))
     assert_stage(page, "thank-you")

@@ -1,5 +1,4 @@
 from playwright.sync_api import expect
-import json
 
 import pytest
 
@@ -43,10 +42,11 @@ def test_apply_for_refund(page, pension_refund_calculator, test_screenshot):
     page.get_by_title("Month", exact=True).fill("9")
     page.get_by_title("Year").fill("1995")
 
-    with page.expect_request("**/api/forms/pension-refund-request") as api_request:
+    with page.expect_response("**/api/forms/pension-refund-request") as api_response:
         page.get_by_role("button", name="Send request").click()
-    request_data = json.loads(api_request.value.post_data)
-    assert request_data == {
+    assert api_response.value.ok
+
+    expected_response = {
         "arrival_date": "2020-01-01",
         "departure_date": "2022-02-01",
         "birth_date": "1995-09-03",
@@ -56,6 +56,9 @@ def test_apply_for_refund(page, pension_refund_calculator, test_screenshot):
         "name": "John Smith",
         "partner": "fundsback",
     }
+    response_data = api_response.value.json()
+    for key, value in expected_response.items():
+        assert response_data[key] == value
 
     expect(pension_refund_calculator).to_contain_text("Request sent")
     test_screenshot(page, pension_refund_calculator)

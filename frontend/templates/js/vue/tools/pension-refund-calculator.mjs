@@ -6,6 +6,7 @@ import EmailInput from '/js/vue/components/email-input.mjs';
 import Eur from '/js/vue/components/eur.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
+import IconDonate from '/js/vue/components/icons/donate.mjs';
 import IconExit from '/js/vue/components/icons/exit.mjs';
 import IncomeInput from '/js/vue/components/income-input.mjs';
 import Price from '/js/vue/components/price.mjs';
@@ -34,6 +35,7 @@ export default {
 		Eur,
 		FullNameInput,
 		Glossary,
+		IconDonate,
 		IconExit,
 		IncomeInput,
 		Price,
@@ -419,6 +421,15 @@ export default {
 							<div>
 								<h3>Learn how to leave Germany</h3>
 								<p>Use my checklist for moving to another country.</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/donate" target="_blank">
+							<icon-donate/>
+							<div>
+								<h3>Support this website</h3>
+								<p>Donate €10 to help me build more free tools.</p>
 							</div>
 						</a>
 					</li>

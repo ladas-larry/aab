@@ -4,6 +4,8 @@ import CountryInput from '/js/vue/components/country-input.mjs';
 import DateInput from '/js/vue/components/date-input.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
+import IconDonate from '/js/vue/components/icons/donate.mjs';
+import IconExit from '/js/vue/components/icons/exit.mjs';
 
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { calculatePensionRefund } from '/js/utils/pensionRefund.mjs';
@@ -17,6 +19,8 @@ export default {
 		Collapsible,
 		CountryInput,
 		DateInput,
+		IconDonate,
+		IconExit,
 		EmailInput,
 		FullNameInput,
 	},
@@ -137,6 +141,26 @@ export default {
 		</template>
 		<template v-if="stage === 'thank-you'">
 			<p><strong>Message sent!</strong> Pension Refund Germany will contact you soon.</p>
+			<ul class="buttons list">
+				<li>
+					<a href="/guides/leaving-germany" target="_blank">
+						<icon-exit/>
+						<div>
+							<h3>Learn how to leave Germany</h3>
+							<p>Use my checklist for moving to another country.</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="/donate" target="_blank">
+						<icon-donate/>
+						<div>
+							<h3>Support this website</h3>
+							<p>Donate €10 to help me build more free tools.</p>
+						</div>
+					</a>
+				</li>
+			</ul>
 		</template>
 		<template v-if="stage === 'error'">
 			<p><strong>An error occured</strong> while sending your question. If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
