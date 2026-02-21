@@ -16,6 +16,14 @@ These digital forms reduce [wait times](/guides/auslanderbehorde-wait-times) and
 
 The immigration office is issuing residence permits as [stickers instead of plastic cards](https://www.visaguard.berlin/en/post/budget-savings-only-adhesive-labels-instead-of-plastic-cards-at-the-lea), citing budget issues. This is unlawful, and it creates serious problems for immigrants when opening a bank account or accessing digital government services.
 
+### New citizenship departments
+
+The [departments for citizenship applications](https://www.berlin.de/einwanderung/ueber-uns/kontakt/artikel.1394181.php) have slightly changed. S1 only handles Syrians, S2 now handles Afghans, Iranians, Iraqis and Russians, and S5 now also handles Belarusians, Georgians, and Moldovans.[^4]
+
+If you already sent your citizenship application, you don't need to do anything. You might just get a response from a different department.
+
+I have updated the departments on my [citizenship wait times page](/guides/citizenship-wait-times).
+
 ## What's new on All About Berlin
 
 ### Open source
@@ -74,3 +82,4 @@ If you are [moving out](/guides/moving-out) or just spring cleaning, you might s
 [^1]: [pharmazeutische-zeitung.de](https://www.pharmazeutische-zeitung.de/index.php?id=5616), [pharmazeutische-zeitung.de](https://www.pharmazeutische-zeitung.de/rezeptsammelbox-im-supermarkt-ist-rechtens-117159/)
 [^2]: [mdr.de](https://www.mdr.de/nachrichten/deutschland/wirtschaft/apotheke-kosten-100.html)
 [^3]: [Reddit](https://old.reddit.com/r/germany/comments/1hlnbii/title_why_are_german_pharmacies_ripping_us_off_on/?tl=de)
+[^4]: [Reddit](https://old.reddit.com/r/GermanCitizenship/comments/1q13g0q/some_countries_have_switched_lea_departments/)

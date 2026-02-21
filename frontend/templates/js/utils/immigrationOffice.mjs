@@ -1,9 +1,9 @@
 export const citizenshipDepartments = {
-	S1: 'S1 — Iran, Syria (last names from A to E)',
-	S2: 'S2 — Irak, Syria (last names from F to Z)',
+	S1: 'S1 — Syria',
+	S2: 'S2 — Afghanistan, Irak, Russia',
 	S3: 'S3 — Asia',
 	S4: 'S4 — Africa, America, Australia, Oceania',
-	S5: 'S5 — Poland, Turkey, Ukraine',
+	S5: 'S5 — Georgia, Poland, Turkey, Ukraine',
 	S6: 'S6 — Europe',
 };
 
