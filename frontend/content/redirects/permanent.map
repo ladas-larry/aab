@@ -8,7 +8,7 @@
 "/glossary/zertifierte Teststelle" /guides
 /appointments "/tools/appointment-finder"
 /calculators "/tools"
-/calculators/arbeitslosenversicherung "/tools/arbeitslosenversicherung-calculator"
+/calculators/arbeitslosenversicherung "/tools/tax-calculator"
 /calculators/health-insurance "/tools/health-insurance-calculator"
 /calculators/pension-refund "/tools/pension-refund-calculator"
 /calculators/tax-calculator "/tools/tax-calculator"
@@ -177,4 +177,5 @@
 /search /guides
 /support /contact
 /tools/null /guides
+/tools/arbeitslosenversicherung-calculator /tools/tax-calculator
 /tools/residence-permit-feedback /guides/auslanderbehorde-wait-times

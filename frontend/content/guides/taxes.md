@@ -79,9 +79,7 @@ If you are self-employed, public pension insurance is usually optional. If you d
 
 Unemployment insurance (*[[Arbeitslosenversicherung]]*) pays a percentage of your salary if you [lose your job](/guides/losing-your-job).
 
-It costs {{ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE}}% of your income.
-
-**[Unemployment insurance calculator ➞](/tools/arbeitslosenversicherung-calculator)**
+It costs {{ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE}}% of your income. The maximum cost is €{{(BEITRAGSBEMESSUNGSGRENZE * ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE / 100 / 12)|cur}} per month.[^6]
 
 ### Church tax
 
@@ -173,3 +171,4 @@ A tax advisor can answer your questions and help you file your German taxes corr
 [^3]: [§ 32d EStG](https://www.buzer.de/32d_EStG.htm)
 [^4]: [wendl-koehler.de](https://wendl-koehler.de/rechtliches/kryptowaehrung-steuererklaerung/)
 [^5]: [orderbird.com](https://www.orderbird.com/blog/trinkgeld-versteuern/#anker2)
+[^6]: {{ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE}}% of the *[[Beitragsbemessungsgrenze]]*
