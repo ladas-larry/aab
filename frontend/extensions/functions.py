@@ -95,7 +95,7 @@ def get_public_holidays(years: Iterable[int]):
             "en": in_english[date],
             "de": in_german[date],
         }
-        for date in in_english.keys()
+        for date in sorted(in_english.keys())
     }
 
 

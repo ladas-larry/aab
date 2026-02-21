@@ -6,6 +6,12 @@ Date_created: 2026-03-01
 
 ## What's new in Berlin
 
+### Public holiday
+
+March 8 is Women's Day, and it's a public holiday in Berlin. If you were supposed to work on that day, you get a paid day off. Most businesses will be closed, like on a Sunday.
+
+**[What stays open on public holidays ➞](https://allaboutberlin.com/guides/open-on-sundays-in-berlin)**
+
 ### Digital freelance visa
 
 The Berlin immigration office has digitalized the freelance visa application process. Instead of dumping your documents into a general mailbox, they now ask the right questions, collect the right documents, and track your application in their system.
@@ -22,7 +28,7 @@ The [departments for citizenship applications](https://www.berlin.de/einwanderun
 
 If you already sent your citizenship application, you don't need to do anything. You might just get a response from a different department.
 
-I have updated the departments on my [citizenship wait times page](/guides/citizenship-wait-times).
+I have updated the departments on my [citizenship wait times](/guides/citizenship-wait-times) page.
 
 ## What's new on All About Berlin
 
