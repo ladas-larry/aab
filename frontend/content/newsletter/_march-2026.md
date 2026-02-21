@@ -8,31 +8,37 @@ Date_created: 2026-03-01
 
 ### Digital freelance visa
 
-The Berlin immigration office has digitalized the freelance visa application process. Instead of dumping your documents into a general mailbox, your application now goes into a proper application tracking system.
+The Berlin immigration office has digitalized the freelance visa application process. Instead of dumping your documents into a general mailbox, they now ask the right questions, collect the right documents, and track your application in their system.
 
-This should help reduce the wait times and prevent applications from falling in the cracks. It has worked well for the Blue Card and the work visa. These digital forms are not perfect, but they are a step forward.
+These digital forms reduce [wait times](/guides/auslanderbehorde-wait-times) and prevent lost applications. They have worked well for the Blue Card and the work visa.
 
 ### Residence permit downgrade
 
-There have been a few reports of people getting a residence permit sticker in their passport, instead of a plastic card. The reason? Budget problems. Issuing residence permit stickers is [unlawful](https://de.wikipedia.org/wiki/Verordnung_(EG)_Nr._1030/2002_(Einheitlicher_Aufenthaltstitel)), and it creates serious problems for immigrants, as they often need a plastic residence card to open a bank account and access digital government services.
+The immigration office is issuing residence permits as [stickers instead of plastic cards](https://www.visaguard.berlin/en/post/budget-savings-only-adhesive-labels-instead-of-plastic-cards-at-the-lea), citing budget issues. This is unlawful, and it creates serious problems for immigrants when opening a bank account or accessing digital government services.
 
 ## What's new on All About Berlin
 
 ### Open source
 
-All About Berlin is now source-available. The content, templates and backend are [available on GitHub](https://github.com/All-About-Berlin/aab). I hope that this will encourage others to contribute to the website.
+All About Berlin is now source-available. The content, templates and backend are [available on GitHub](https://github.com/All-About-Berlin/aab). I hope that this will encourage others to contribute fixes and updates.
 
 I had wanted to do this for a long time, but I did not want to compete with unauthorised copies of my own work. This has happened anyway with ChatGPT and Google AI Overviews, so I have decided to make the code public.
 
-### New tools
+### New tools for tenants
 
-To make it easier to end your lease, I created a [lease notice period calculator](/guides/moving-out#calculate-your-notice-period) and a [termination letter generator](/guides/moving-out#send-a-termination-letter).
+I created a [lease notice period calculator](/guides/moving-out#calculate-your-notice-period) and a [termination letter generator](/guides/moving-out#send-a-termination-letter) to make it easier to [end your lease](/guides/moving-out#end-your-lease).
 
 ### Public holidays
 
-I rewrote my [public holidays guide](/guides/public-holidays). It automatically calculates and shows public holidays for the next 3 years. It even shows which public holidays fall on a weekend.
+I rewrote my [public holidays guide](/guides/public-holidays). It automatically calculates and shows public holidays for the next 3 years. It also shows which public holidays fall on a weekend.
 
 ## What I learned this month
+
+### The DHL app is pretty good
+
+You can pay for postage with the DHL app. If you send a letter, it gives you a number that you write on the envelope instead of using a postage stamp. If you send a package, it gives you a QR code that you show at the *[[Paketshop]]* when you bring your package.
+
+It works well, accepts many payment methods, and works without opening an account or using a printer.
 
 ### The weird thing with Apotheken
 
@@ -52,6 +58,18 @@ Because of this monopoly on medicine sales, you must go to a different place to 
 Online pharmacies are a weird development of this system. You can't buy medicine from dm, *but* you can buy it from their website, because it's sold by dm-med, an online pharmacy run by dm.
 
 Then things get weirder. You see, online pharmacies can offer in-store pickup.[^1] You could buy ibuprofen on dm.de, and pick it up at the dm store. That would be perfectly legal. However, you couldn't walk into a dm and buy ibuprofen, because *that* would be illegal.
+
+### Recycling woes
+
+The German recycling system is mind-numbingly complex: paper, plastic, food, clothes, glass, batteries, lightbulbs, small electronics, furniture and old oil all go in different places. That's on top of selling what's still usable on Kleinanzeigen, or leaving it in a *zu Verschenken* box.
+
+If you are [moving out](/guides/moving-out) or just spring cleaning, you might spend a few weeks slowly distributing your old stuff to various bins scattered across the city.
+
+**[How to sort your trash ➞](/guides/sorting-trash-in-germany)**
+
+## Interesting links
+
+- [Berlin streets named after women](https://www.named-after-women.berlin/)
 
 [^1]: [pharmazeutische-zeitung.de](https://www.pharmazeutische-zeitung.de/index.php?id=5616), [pharmazeutische-zeitung.de](https://www.pharmazeutische-zeitung.de/rezeptsammelbox-im-supermarkt-ist-rechtens-117159/)
 [^2]: [mdr.de](https://www.mdr.de/nachrichten/deutschland/wirtschaft/apotheke-kosten-100.html)
