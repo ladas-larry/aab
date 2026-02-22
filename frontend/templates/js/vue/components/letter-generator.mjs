@@ -58,9 +58,11 @@ export default {
 				<button class="button" @click="stage = 'edit'">
 					<i class="icon left" aria-hidden="true"></i> Customize
 				</button>
+
 				<tabs
 					aria-label="Letter language"
 					v-model="language"
+					class="language-picker"
 					:id="uid('language-print')"
 					:options="[{label: 'English', value: 'en'}, {label: 'German', value: 'de'}]"></tabs>
 				<button class="button primary" @click="print">
