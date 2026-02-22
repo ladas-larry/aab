@@ -2,7 +2,7 @@ import Vue from '/js/vue/vue.mjs';
 import AddressInput from '/js/vue/components/address-input.mjs';
 import Blank from '/js/vue/components/blank.mjs';
 import Checkbox from '/js/vue/components/checkbox.mjs';
-import DateInput from '/js/vue/components/date-input.mjs';
+import DatePicker from '/js/vue/components/date-picker.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
 import LetterGenerator from '/js/vue/components/letter-generator.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
@@ -17,7 +17,7 @@ export default {
 		AddressInput,
 		Blank,
 		Checkbox,
-		DateInput,
+		DatePicker,
 		FullNameInput,
 		LetterGenerator,
 	},
@@ -43,7 +43,12 @@ export default {
 		};
 	},
 	template: `
-		<letter-generator aria-label="Bescheinigung in Steuersachen letter generator" :printable="false" class="bescheinigung-in-steueresachen-letter" track-as="Bescheinigung in Steuersachen letter" :static="static">
+		<letter-generator
+			aria-label="Bescheinigung in Steuersachen email generator"
+			aria-description="Generate an email to request a Bescheinigung in Steuersachen from your Finanzamt"
+			track-as="Bescheinigung in Steuersachen letter"
+			:printable="false"
+			:static="static">
 			<template v-slot:header>Request for a Bescheinigung in Steuersachen</template>
 
 			<template v-slot:letter-body="{ language, stage }">
@@ -121,11 +126,11 @@ export default {
 					<address-input :id="uid('address')" v-model="address" home required></address-input>
 				</div>
 				<div class="form-group">
-					<label :for="uid('date-of-birth') + '-day'">Date of birth</label>
-					<date-input
+					<label :for="uid('date-of-birth')">Date of birth</label>
+					<date-picker
 						v-model="dateOfBirth"
 						:id="uid('date-of-birth')"
-						autocomplete="bday" required></date-input>
+						autocomplete="bday" required></date-picker>
 				</div>
 				<div class="form-group">
 					<label :for="uid('taxID')">Tax ID</label>
