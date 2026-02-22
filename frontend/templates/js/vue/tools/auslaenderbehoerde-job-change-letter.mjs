@@ -2,7 +2,7 @@ import Vue from '/js/vue/vue.mjs';
 import AddressInput from '/js/vue/components/address-input.mjs';
 import Blank from '/js/vue/components/blank.mjs';
 import CountryInput from '/js/vue/components/country-input.mjs';
-import DateInput from '/js/vue/components/date-input.mjs';
+import DatePicker from '/js/vue/components/date-picker.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
 import LetterGenerator from '/js/vue/components/letter-generator.mjs';
 import Radio from '/js/vue/components/radio.mjs';
@@ -17,7 +17,7 @@ export default {
 		AddressInput,
 		Blank,
 		CountryInput,
-		DateInput,
+		DatePicker,
 		FullNameInput,
 		LetterGenerator,
 		Radio,
@@ -188,10 +188,11 @@ export default {
 					<span v-if="showJobChangeWarning" class="input-instructions">In Berlin, use the <a href="/out/auslanderbehorde-job-change" target="_blank">official form</a> to report a job change.</span>
 				</div>
 				<div class="form-group">
-					<label :for="uid('last-workday') + '-day'">Last day of work</label>
-					<date-input
+					<label :for="uid('last-workday')">Last day of work</label>
+					<date-picker
 						v-model="lastDayOfWork"
-						:id="uid('last-workday')" required></date-input>
+						:id="uid('last-workday')"
+						required></date-picker>
 				</div>
 				<hr>
 				<div class="form-group">
@@ -204,12 +205,12 @@ export default {
 					<a class="input-instructions internal-link" href="/guides/addressing-a-letter-in-germany#how-to-write-german-addresses" target="_blank">How to write your address</a>
 				</div>
 				<div class="form-group">
-					<label :for="uid('date-of-birth') + '-day'">Date of birth</label>
-					<date-input
+					<label :for="uid('date-of-birth')">Date of birth</label>
+					<date-picker
 						v-model="dateOfBirth"
 						:id="uid('date-of-birth')"
 						autocomplete="bday"
-						required></date-input>
+						required></date-picker>
 				</div>
 				<div class="form-group">
 					<label :for="uid('place-of-birth')">Place of birth</label>
