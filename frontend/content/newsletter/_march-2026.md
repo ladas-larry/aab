@@ -6,11 +6,11 @@ Date_created: 2026-03-01
 
 ## What's new in Berlin
 
-### Public holiday
+### Women's Day
 
-March 8 is Women's Day, and it's a public holiday in Berlin. If you were supposed to work on that day, you get a paid day off. Most businesses will be closed, like on a Sunday.
+March 8 is Women's Day, and it's a public holiday in Berlin. Unfortunately, it falls on a Sunday. In Germany, public holidays that fall on a weekend are "lost": they are not moved to another day, and you do not get a paid day off.
 
-**[What stays open on public holidays ➞](https://allaboutberlin.com/guides/open-on-sundays-in-berlin)**
+**[Berlin events on Women's Day ➞](https://www.berlin.de/en/events/specials/womens-day/)**
 
 ### Digital freelance visa
 
@@ -20,7 +20,7 @@ These digital forms reduce [wait times](/guides/auslanderbehorde-wait-times) and
 
 ### Residence permit downgrade
 
-The immigration office is issuing residence permits as [stickers instead of plastic cards](https://www.visaguard.berlin/en/post/budget-savings-only-adhesive-labels-instead-of-plastic-cards-at-the-lea), citing budget issues. This is unlawful, and it creates serious problems for immigrants when opening a bank account or accessing digital government services.
+The immigration office is issuing residence permits as [passport stickers instead of plastic cards](https://www.visaguard.berlin/en/post/budget-savings-only-adhesive-labels-instead-of-plastic-cards-at-the-lea), citing budget issues. This is unlawful, and it creates problems for immigrants when opening a bank account or accessing digital services.
 
 ### New citizenship departments
 

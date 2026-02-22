@@ -27,6 +27,8 @@ These are the {{ now.year }} public holidays in Berlin. On public holidays, most
 - [Instructions for Apple Calendar](https://support.apple.com/en-us/guide/iphone/iph3d1110d4/ios) (iOS)
 - [Instructions for Apple Calendar](https://support.apple.com/en-us/guide/calendar/iclead4e0ec3/mac) (Mac)
 
+Public holidays are also announced in the [monthly newsletter](/newsletter).
+
 ## How public holidays work
 
 ### Businesses are closed
