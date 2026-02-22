@@ -2,7 +2,7 @@ import Vue from '/js/vue/vue.mjs';
 import AddressInput from '/js/vue/components/address-input.mjs';
 import Blank from '/js/vue/components/blank.mjs';
 import Checkbox from '/js/vue/components/checkbox.mjs';
-import DateInput from '/js/vue/components/date-input.mjs';
+import DatePicker from '/js/vue/components/date-picker.mjs';
 import FirstNameInput from '/js/vue/components/first-name-input.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
 import GenderInput from '/js/vue/components/gender-input.mjs';
@@ -21,7 +21,7 @@ export default {
 		AddressInput,
 		Blank,
 		Checkbox,
-		DateInput,
+		DatePicker,
 		FirstNameInput,
 		FullNameInput,
 		GenderInput,
@@ -59,11 +59,16 @@ export default {
 		}
 	},
 	methods: {
+		formatDate,
 		formatName,
 		formatSalutations,
 	},
 	template: `
-		<letter-generator aria-label="Job resignation letter generator" class="job-resignation-letter" track-as="Job resignation letter" :static="static">
+		<letter-generator
+			aria-label="Job resignation letter generator"
+			aria-description="Generate a letter to officially quit your job"
+			track-as="Job resignation letter"
+			:static="static">
 			<template v-slot:header>Job resignation letter</template>
 
 			<template v-slot:letter-recipient="{ language, stage }">
@@ -210,10 +215,10 @@ export default {
 				</div>
 				<hr>
 				<div class="form-group">
-					<label :for="uid('last-workday') + '-day'">Last day of work</label>
-					<date-input
+					<label :for="uid('last-workday')">Last day of work</label>
+					<date-picker
 						v-model="lastDayOfWork"
-						:id="uid('last-workday')"></date-input>
+						:id="uid('last-workday')"></date-picker>
 					<span class="input-instructions">To resign at the earliest possible date, leave this field empty.</span>
 				</div>
 				<div class="form-group">
