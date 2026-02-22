@@ -477,9 +477,12 @@ config.jinja_filters = {
     "cur": to_currency,
     "percent": to_percent,
 }
+
+config.jinja_extensions.remove("ursus.renderers.jinja.JsLoaderExtension")
 config.jinja_extensions.extend(
     [
         "extensions.renderers.jinja.ToolExtension",
+        "extensions.renderers.jinja.EsbuildJsLoaderExtension",
         "extensions.renderers.jinja.TableOfContentsExtension",
     ]
 )

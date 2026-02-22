@@ -9,9 +9,12 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends git rsync \
         build-essential \
         python3-dev \
+        curl \
     && pip3 install --no-cache-dir -r /requirements.txt \
     && mkdir -p /var/output /var/live-output \
-    && rm -rf /var/lib/apt/lists/* /requirements.txt
+    && rm -rf /var/lib/apt/lists/* /requirements.txt \
+    && sh -c 'curl -fsSL https://esbuild.github.io/dl/v0.27.3 | sh' \
+    && mv ./esbuild /usr/local/bin/esbuild
 
 ENV URSUS_OUTPUT_DIR=/var/output
 

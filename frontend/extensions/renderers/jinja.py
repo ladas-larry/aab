@@ -1,6 +1,12 @@
 from jinja2_simple_tags import StandaloneTag, InclusionTag
+from subprocess import CalledProcessError, run
 from ursus.config import config
+from ursus.renderers.jinja import JsLoaderExtension
+import json
+import logging
 import xml.etree.ElementTree as ET
+
+logger = logging.getLogger(__name__)
 
 
 class ToolExtension(StandaloneTag):
@@ -54,6 +60,39 @@ class ToolExtension(StandaloneTag):
 
     def get_context(self, *args, **kwargs):
         return kwargs
+
+
+class EsbuildJsLoaderExtension(JsLoaderExtension):
+    def minify_js(self, js_code: str):
+        ts_config = json.dumps(
+            {
+                "compilerOptions": {
+                    "baseUrl": ".",
+                    "paths": {
+                        # The Javascript import root is the static site root
+                        "/*": [f"{config.output_path}/*"],
+                    },
+                },
+            }
+        )
+        try:
+            output = run(
+                [
+                    "esbuild",
+                    "--bundle",
+                    "--minify",
+                    "--loader=js",
+                    f"--tsconfig-raw={ts_config}",
+                ],
+                input=js_code,
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+        except CalledProcessError as e:
+            logger.exception(f"Could not run esbuild: {e.stderr}")
+            return js_code
+        return output.stdout
 
 
 class TableOfContentsExtension(InclusionTag, StandaloneTag):

@@ -970,7 +970,6 @@ main{
     }
 
     .collection{
-        width: calc(50% - 19px / 2);
         box-sizing: border-box;
         text-align: left;
         background: var(--c-bg-page);
@@ -1006,16 +1005,6 @@ main{
 
         @include not-desktop{
             width: 100%;
-        }
-    }
-    @include only-print{
-        // Undo masonry.js layout, because it does not print well
-        .collections{
-            height: auto!important;
-            .collection{
-                position: static!important;
-                width: 100%;
-            }
         }
     }
 
