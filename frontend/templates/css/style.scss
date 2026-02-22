@@ -2543,14 +2543,6 @@ details{
     background: var(--c-bg-widget);
     box-shadow: inset var(--shadow-s);
 
-    @include full-width-site{
-        display: flex; // Items have equal width on desktop, not on mobile
-        &.language-picker{
-            float:none;
-            margin: 0 auto;
-        }
-    }
-
     input{
         clip-path: polygon(0 0); // Hidden but not for screen readers
         position: absolute;
@@ -2597,6 +2589,18 @@ details{
     &.language-picker{
         float: right;
         margin-left: var(--m);
+    }
+
+    @include full-width-site{
+        display: flex; // Items have equal width on desktop, not on mobile
+        &.language-picker{
+            float:none;
+            margin: 0 auto;
+
+            label: {
+                flex-grow: 1;
+            }
+        }
     }
 }
 
