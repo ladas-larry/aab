@@ -2,7 +2,7 @@ import Vue from '/js/vue/vue.mjs';
 import AddressInput from '/js/vue/components/address-input.mjs';
 import Blank from '/js/vue/components/blank.mjs';
 import Checkbox from '/js/vue/components/checkbox.mjs';
-import DateInput from '/js/vue/components/date-input.mjs';
+import DatePicker from '/js/vue/components/date-picker.mjs';
 import Eur from '/js/vue/components/eur.mjs';
 import FirstNameInput from '/js/vue/components/first-name-input.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
@@ -23,7 +23,7 @@ export default {
 		AddressInput,
 		Blank,
 		Checkbox,
-		DateInput,
+		DatePicker,
 		Eur,
 		FirstNameInput,
 		FullNameInput,
@@ -83,7 +83,10 @@ export default {
 		}
 	},
 	template: `
-		<letter-generator class="deposit-return" track-as="Return of apartment deposit letter generator" :static="static">
+		<letter-generator
+			aria-label="Letter generator to ask for your apartment deposit back"
+			track-as="Return of apartment deposit letter generator"
+			:static="static">
 			<template v-slot:header>Return of apartment deposit</template>
 
 			<template v-slot:letter-recipient="{ language, stage }">
@@ -232,8 +235,8 @@ export default {
 					<a class="input-instructions internal-link" href="/guides/addressing-a-letter-in-germany#how-to-write-german-addresses" target="_blank">How to write your address</a>
 				</div>
 				<div class="form-group">
-					<label :for="uid('moveOutDate') + '-day'">Move-out date</label>
-					<date-input v-model="moveOutDate" :id="uid('moveOutDate')" required></date-input>
+					<label :for="uid('moveOutDate')">Move-out date</label>
+					<date-picker v-model="moveOutDate" :id="uid('moveOutDate')" required></date-picker>
 				</div>
 				<div class="form-group">
 					<label :for="uid('newAddress')">Current address</label>
@@ -241,18 +244,24 @@ export default {
 						v-model="newAddress"
 						:placeholder="'Neue Wohnungstraße 123\\n12345 Berlin'"
 						home></address-input>
+					<span class="input-instructions">
+						The return address for this letter.
+					</span>
 				</div>
 				<hr>
 				<div class="form-group">
-					<label :for="uid('kautionAmount') + '-day'">Deposit amount</label>
+					<label :for="uid('kautionAmount')">Deposit amount</label>
 					<div class="input-group">
 						<income-input :id="uid('kautionAmount')" v-model="kautionAmount" required></income-input>&nbsp;€
 					</div>
 					<checkbox v-model="hasReceivedPartOfKaution">
-						I received part of my deposit back
+						I already got part of my deposit back
 					</checkbox>
+				</div>
+				<div class="form-group" v-if="hasReceivedPartOfKaution">
+					<label :for="uid('remainingKautionAmount')">Remaining deposit</label>
 					<div class="input-group" v-if="hasReceivedPartOfKaution">
-						<income-input v-model="remainingKautionAmount" required></income-input>€ left&nbsp;to&nbsp;pay
+						<income-input :id="uid('remainingKautionAmount')" v-model="remainingKautionAmount" required></income-input>€ left&nbsp;to&nbsp;pay
 					</div>
 				</div>
 				<div class="form-group">
@@ -312,8 +321,8 @@ export default {
 						required></address-input>
 				</div>
 				<div class="form-group">
-					<label>Time to respond</label>
-					<select v-model="deadlineWeeks">
+					<label :for="uid('deadlineWeeks')">Time to respond</label>
+					<select :id="uid('deadlineWeeks')" v-model="deadlineWeeks">
 						<option :value="2">2 weeks</option>
 						<option :value="4">4 weeks</option>
 						<option :value="6">6 weeks</option>

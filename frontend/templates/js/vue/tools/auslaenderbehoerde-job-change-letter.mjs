@@ -72,7 +72,11 @@ export default {
 		},
 	},
 	template: `
-		<letter-generator aria-label="Ausländerbehörde job change notice letter generator" class="auslaenderbehoerde-job-change" track-as="Ausländerbehörde job change" :static="static">
+		<letter-generator
+			aria-description="Generate a letter to notify the Berlin immigration office of a job change"
+			aria-label="Ausländerbehörde job change notice letter generator"
+			track-as="Ausländerbehörde job change"
+			:static="static">
 			<template v-slot:header>Ausländerbehörde – Job change notice</template>
 
 			<template v-slot:letter-recipient="{ language, stage }">
