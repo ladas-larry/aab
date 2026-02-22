@@ -53,7 +53,11 @@ export default {
 		formatSalutations,
 	},
 	template: `
-		<letter-generator :printable="false" aria-label="Letter generator to deregister your address" class="abmeldung-email" track-as="Abmeldung email" :static="static">
+		<letter-generator
+			aria-label="Letter generator to deregister your address"
+			track-as="Abmeldung email"
+			:printable="false"
+			:static="static">
 			<template v-slot:header>Abmeldung – Deregister your address</template>
 			<template v-slot:letter-body="{ language, stage }">
 				<p v-if="language === 'en'">
