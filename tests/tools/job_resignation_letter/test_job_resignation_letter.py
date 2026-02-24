@@ -3,13 +3,12 @@ import pytest
 
 @pytest.fixture
 def job_resignation_letter_generator(page):
+    page.clock.set_fixed_time("2026-02-22T10:00:00")
     page.goto("/tests/tools/job-resignation-letter")
     return page.get_by_role("group", name="Job resignation letter generator")
 
 
 def test_snapshot(page, job_resignation_letter_generator, test_screenshot):
-    page.clock.set_fixed_time("2026-02-22T10:00:00")
-
     tool = job_resignation_letter_generator
     test_screenshot(page, tool)
     tool.get_by_role("button", name="Customize").click()

@@ -3,6 +3,7 @@ import pytest
 
 @pytest.fixture
 def lease_termination_letter_generator(page):
+    page.clock.set_fixed_time("2026-02-22T10:00:00")
     page.goto("/tests/tools/lease-termination-letter")
     return page.get_by_role("group", name="Lease termination letter generator")
 

@@ -3,6 +3,7 @@ import pytest
 
 @pytest.fixture
 def bescheinigung_in_steuersachen_email_generator(page):
+    page.clock.set_fixed_time("2026-02-22T10:00:00")
     page.goto("/tests/tools/bescheinigung-in-steuersachen-email")
     return page.get_by_role("group", name="Bescheinigung in Steuersachen email generator")
 

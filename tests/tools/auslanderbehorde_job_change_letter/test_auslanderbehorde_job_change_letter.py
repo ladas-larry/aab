@@ -4,6 +4,7 @@ import pytest
 
 @pytest.fixture
 def job_change_letter_generator(page):
+    page.clock.set_fixed_time("2026-02-22T10:00:00")
     page.goto("/tests/tools/auslaenderbehoerde-job-change-letter")
     return page.get_by_role("group", name="Ausländerbehörde job change notice letter generator")
 
