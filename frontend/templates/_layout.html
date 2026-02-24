@@ -95,17 +95,19 @@
 {% block postFooter %}
 	{% include "_blocks/tooltip.html" %}
 	<script type="module">
-		import { getCurrencyTooltipText } from '/js/utils/exchangeRates.mjs';
-		import { validateForm } from '/js/utils/form.mjs';
-		import { initializeTracking } from '/js/utils/tracking.mjs';
-		import initializeCurrencyTooltips from '/js/components/currency.mjs';
-		import initializeChecklists from '/js/components/checklist.mjs';
-		import initializeFootnotes from '/js/components/footnotes.mjs';
+		{% js %}
+			import { getCurrencyTooltipText } from '/js/utils/exchangeRates.mjs';
+			import { validateForm } from '/js/utils/form.mjs';
+			import { initializeTracking } from '/js/utils/tracking.mjs';
+			import initializeCurrencyTooltips from '/js/components/currency.mjs';
+			import initializeChecklists from '/js/components/checklist.mjs';
+			import initializeFootnotes from '/js/components/footnotes.mjs';
 
-		initializeTracking();
-		initializeChecklists();
-		initializeCurrencyTooltips();
-		initializeFootnotes();
+			initializeTracking();
+			initializeChecklists();
+			initializeCurrencyTooltips();
+			initializeFootnotes();
+		{% endjs %}
 
 		{% alljs %}
 	</script>
