@@ -112,7 +112,6 @@ def previous_stage(page):
 
 
 def load_calculator(page, preset_occupation: str | None = None):
-    page.add_init_script("window.localStorage.setItem('healthInsuranceBroker', 'seamus-wolf');")
     page.goto(
         f"/tests/tools/health-insurance-calculator-{preset_occupation}?ref=test-referrer"
         if preset_occupation

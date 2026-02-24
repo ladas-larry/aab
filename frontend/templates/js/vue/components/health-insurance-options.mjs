@@ -7,7 +7,6 @@ import IconPassport from '/js/vue/components/icons/passport.mjs';
 import Price from '/js/vue/components/price.mjs';
 import PublicHealthInsuranceOptions from '/js/vue/components/public-health-insurance-options.mjs';
 
-import brokerMixin from '/js/vue/mixins/broker.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { occupations } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
@@ -15,7 +14,7 @@ import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.m
 
 
 export default {
-	mixins: [brokerMixin, uniqueIdsMixin, healthInsuranceOptionsMixin],
+	mixins: [uniqueIdsMixin, healthInsuranceOptionsMixin],
 	components: {
 		Eur,
 		Glossary,

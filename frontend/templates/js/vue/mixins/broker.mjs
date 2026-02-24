@@ -1,9 +1,9 @@
 import { healthInsurance } from '/js/utils/constants.mjs';
 
 export default {
-	computed: {
-		broker() {
-			const brokers = [
+	data() {
+		return {
+			broker: {
 				{
 					id: 'seamus-wolf',
 					name: 'Seamus',
@@ -14,28 +14,7 @@ export default {
 					him: 'him',
 					his: 'his',
 				},
-				{
-					id: 'christina-weber',
-					name: 'Christina',
-					fullName: 'Christina Weber',
-					phoneNumber: '+493083792299',
-					phoneNumberPretty: '+49 30 83792299',
-					he: 'she',
-					him: 'her',
-					his: 'her',
-				},
-			];
-
-			// Choose a broker at random
-			let brokerId = localStorage.getItem('healthInsuranceBroker') || brokers[Math.random() < 0.8 ? 0 : 1].id;
-
-			// Prefer Seamus for well-paid people
-			if(this.mode === 'calculator' && this.yearlyIncome > healthInsurance.maxMonthlyIncome){
-				brokerId = 'seamus-wolf';
-			}
-			localStorage.setItem('healthInsuranceBroker', brokerId);
-
-			return brokers.find(b => b.id === brokerId) || brokers[0];
+			},
 		},
 	},
 	methods: {
