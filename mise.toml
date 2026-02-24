@@ -95,18 +95,21 @@ frontend/scripts/add_review.py
 # = TEST =======================================================================
 
 [tasks.test-api]
+env = { "BUNDLE_JS" = "1" }
 run = """
 mise dev
 docker compose exec backend python3 manage.py test -b --parallel
 """
 
 [tasks.test-ui]
+env = { "BUNDLE_JS" = "1" }
 run = """
 mise dev
 pytest tests
 """
 
 [tasks.update-snapshots]
+env = { "BUNDLE_JS" = "1" }
 run = """
 mise dev
 rm -rf tests/snapshots/*
@@ -114,6 +117,7 @@ pytest tests --update-snapshots
 """
 
 [tasks.test]
+env = { "BUNDLE_JS" = "1" }
 run = """
 mise test-ui
 mise test-api

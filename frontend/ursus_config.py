@@ -469,7 +469,10 @@ config.google_maps_places_api_key = os.environ.get("GOOGLE_MAPS_PLACES_API_KEY",
 config.google_tts_api_key = os.environ.get("GOOGLE_TTS_API_KEY", "")  # Backend use, to generate pronunciation files
 
 config.html_url_extension = ""
-config.minify_js = True
+
+# JS is minified in production and for running tests, but served as-is by default
+# When minify_js is True, changing .mjs files do not re-render the pages
+config.minify_js = bool(os.environ.get("BUNDLE_JS", False))
 config.minify_css = True
 
 config.context_globals = ctx
