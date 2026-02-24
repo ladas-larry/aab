@@ -39,7 +39,6 @@ ursus -wfs -c frontend/ursus_config.py
 description = "Serve the frontend and the backend in docker."
 alias = "d"
 run = """
-echo "BUNDLE_JS is '$BUNDLE_JS'"
 echo "Starting docker daemon"
 if ! docker info >/dev/null 2>&1; then
   open -a Docker;
@@ -64,6 +63,11 @@ until curl --fail -s -k https://localhost >/dev/null; do
   fi
   ((attempt++))
   sleep 1
+done
+
+echo "Waiting for frontend rebuild to finish"
+until [ $(docker ps --filter "name=frontend" --filter "health=healthy" --quiet) ]; do
+  sleep 2
 done
 """
 
