@@ -38,7 +38,7 @@ All About Berlin is now source-available. The content, templates and backend are
 
 I had wanted to do this for a long time, but I did not want to compete with unauthorised copies of my own work. This has happened anyway with ChatGPT and Google AI Overviews, so I have decided to make the code public.
 
-### New tools for tenants
+### Tools for tenants
 
 I created a [lease notice period calculator](/guides/moving-out#calculate-your-notice-period) and a [termination letter generator](/guides/moving-out#send-a-termination-letter) to make it easier to [end your lease](/guides/moving-out#end-your-lease).
 
@@ -48,11 +48,11 @@ I rewrote my [public holidays guide](/guides/public-holidays). It automatically 
 
 ## What I learned this month
 
-### The DHL app is pretty good
+### The DHL app rocks
 
-You can pay for postage with the DHL app. If you send a letter, it gives you a number that you write on the envelope instead of using a postage stamp. If you send a package, it gives you a QR code that you show at the *[[Paketshop]]* when you bring your package.
+You can pay for postage with the [DHL app](https://www.dhl.de/en/privatkunden/kampagnenseiten/dhl-app.html). For letters, you get a code to write on the envelope. For packages, you get a QR code to show at the *[[Paketshop]]* when you drop off your package.
 
-It works well, accepts many payment methods, and works without opening an account or using a printer.
+No printer, not stamps! It accepts many payment methods, and does not even require an account. A rare win in the land of inconvenience.
 
 ### The weird thing with Apotheken
 
