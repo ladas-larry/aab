@@ -966,10 +966,16 @@ main{
     }
 
     #related .collection{
-        padding: var(--m) 0;
+        padding: 0;
+        @include full-width-site{
+            &:not(:last-child){
+                margin-bottom: var(--xl);
+            }
+        }
     }
 
     .collection{
+        width: calc(50% - 19px / 2);
         box-sizing: border-box;
         text-align: left;
         background: var(--c-bg-page);
@@ -1003,8 +1009,18 @@ main{
             @include list-marker-light;
         }
 
-        @include not-desktop{
+        @include full-width-site{
             width: 100%;
+        }
+    }
+    @include only-print{
+        // Undo masonry.js layout, because it does not print well
+        .collections{
+            height: auto!important;
+            .collection{
+                position: static!important;
+                width: 100%;
+            }
         }
     }
 
