@@ -472,7 +472,7 @@ config.html_url_extension = ""
 
 # JS is minified in production and for running tests, but served as-is by default
 # When minify_js is True, changing .mjs files do not re-render the pages
-config.minify_js = bool(os.environ.get("BUNDLE_JS", False))
+config.minify_js = bool(int(os.environ.get("BUNDLE_JS", 0)))
 config.minify_css = True
 
 config.context_globals = ctx

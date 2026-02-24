@@ -105,8 +105,7 @@ class EsbuildJsLoaderExtension(JsLoaderExtension):
                     check=True,
                 )
             except CalledProcessError as e:
-                logger.exception(f"Could not run esbuild: {e.stderr}")
-                return js_code
+                raise Exception(f"Could not run esbuild: {e.stderr}")
 
             self.build_cache[code_hash] = output.stdout
 

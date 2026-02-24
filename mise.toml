@@ -39,6 +39,7 @@ ursus -wfs -c frontend/ursus_config.py
 description = "Serve the frontend and the backend in docker."
 alias = "d"
 run = """
+echo "BUNDLE_JS is '$BUNDLE_JS'"
 echo "Starting docker daemon"
 if ! docker info >/dev/null 2>&1; then
   open -a Docker;
@@ -50,9 +51,7 @@ while ! docker ps > /dev/null 2>&1; do
 done
 
 echo "Starting docker containers"
-if [ "$(docker ps -q | wc -l)" -eq 0 ]; then
-  docker compose up --build -d;
-fi
+docker compose up --build -d --force-recreate frontend;
 
 # Waiting for server to be available
 max_attempts=30
