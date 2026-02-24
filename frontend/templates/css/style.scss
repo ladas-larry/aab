@@ -976,18 +976,21 @@ main{
         }
     }
 
+    .collections{
+        margin-bottom: calc(var(--m) * -1)
+    }
+
     .collection{
         width: calc(50% - 19px / 2);
         box-sizing: border-box;
-        text-align: left;
+        width: calc(50% - 19px / 2);
         background: var(--c-bg-page);
-        padding: var(--m) var(--w-page-border);
-        border-radius: var(--b-radius);
-        margin: 0 0 var(--m);
+        margin-bottom: var(--m);
 
-        &:last-child{
-            margin-bottom: 0;
-        }
+        padding: var(--m) var(--w-page-border);
+        box-sizing: border-box;
+        background: var(--c-bg-page);
+        border-radius: var(--b-radius);
 
         h3{
             margin: 0 0 var(--m);
@@ -999,18 +1002,20 @@ main{
             }
         }
 
-        .current{
-            @include text-bold;
+        > :is(ol, ul) > li {
+            > a {
+                font-weight: 600;
+            }
+
+            + li {
+                margin-top: var(--m);
+            }
         }
 
-        ol {
-            margin: 0;
-        }
-        li {
+        li li {
             @include list-marker-ul-compact;
             @include list-marker-light;
         }
-
         @include full-width-site{
             width: 100%;
         }
@@ -1027,6 +1032,10 @@ main{
     }
 
     @include full-width-site{
+        .collection {
+            width: 100%;
+        }
+
         > .section:first-child{
             margin-top: calc(var(--m) * -1);
         }
@@ -2810,7 +2819,6 @@ details{
 }
 
 .glossary-sections{
-    @include text-block;
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     gap:var(--s);
@@ -2818,15 +2826,6 @@ details{
 
     @include only-phone{
         grid-template-columns: repeat(12, 1fr);
-    }
-}
-.glossary-links{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--s);
-
-    @include full-width-site{
-        grid-template-columns: 1fr;
     }
 }
 
