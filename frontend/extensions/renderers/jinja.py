@@ -2,6 +2,7 @@ from jinja2_simple_tags import StandaloneTag, InclusionTag
 from subprocess import CalledProcessError, run
 from ursus.config import config
 from ursus.renderers.jinja import JsLoaderExtension
+import hashlib
 import json
 import logging
 import xml.etree.ElementTree as ET
@@ -63,36 +64,53 @@ class ToolExtension(StandaloneTag):
 
 
 class EsbuildJsLoaderExtension(JsLoaderExtension):
-    def minify_js(self, js_code: str):
-        ts_config = json.dumps(
-            {
-                "compilerOptions": {
-                    "baseUrl": ".",
-                    "paths": {
-                        # The Javascript import root is the static site root
-                        "/*": [f"{config.output_path}/*"],
-                    },
+    """
+    Use esbuild to bundle JS
+    """
+
+    def __init__(self, *args, **kwargs) -> None:
+        self.build_cache = {}
+        super().__init__(*args, **kwargs)
+
+    def get_ts_config(self):
+        return {
+            "compilerOptions": {
+                "baseUrl": ".",
+                "paths": {
+                    # The Javascript import root is the static site root
+                    "/*": [f"{config.output_path}/*"],
                 },
-            }
-        )
-        try:
-            output = run(
-                [
-                    "esbuild",
-                    "--bundle",
-                    "--minify",
-                    "--loader=js",
-                    f"--tsconfig-raw={ts_config}",
-                ],
-                input=js_code,
-                capture_output=True,
-                text=True,
-                check=True,
-            )
-        except CalledProcessError as e:
-            logger.exception(f"Could not run esbuild: {e.stderr}")
-            return js_code
-        return output.stdout
+            },
+        }
+
+    def minify_js(self, js_code: str) -> str:
+        """
+        esbuild doubles the build time. Many pages have the same JS code.
+        Use caching to avoid rebundling the same code again and again.
+        """
+        code_hash = hashlib.md5(js_code.encode()).hexdigest()
+        if code_hash not in self.build_cache:
+            try:
+                output = run(
+                    [
+                        "esbuild",
+                        "--bundle",
+                        "--minify",
+                        "--loader=js",
+                        f"--tsconfig-raw={json.dumps(self.get_ts_config())}",
+                    ],
+                    input=js_code,
+                    capture_output=True,
+                    text=True,
+                    check=True,
+                )
+            except CalledProcessError as e:
+                logger.exception(f"Could not run esbuild: {e.stderr}")
+                return js_code
+
+            self.build_cache[code_hash] = output.stdout
+
+        return self.build_cache[code_hash]
 
 
 class TableOfContentsExtension(InclusionTag, StandaloneTag):
