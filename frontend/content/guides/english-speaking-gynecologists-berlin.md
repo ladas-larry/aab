@@ -1,6 +1,6 @@
 ---
-Title: List of English-speaking gynecologists and obstetricians in Berlin
-short_title: English-speaking gynecologists
+Title: List of English-speaking gynaecologists and obstetricians in Berlin
+short_title: English-speaking gynaecologists
 Description: These Berlin OB/GYNs serve their patients in English
 Date_created: 2018-04-19
 Related_places:
