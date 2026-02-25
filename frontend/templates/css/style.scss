@@ -2659,6 +2659,7 @@ details{
     align-items: center;
     svg{
         flex: 0 0 auto;
+        color: var(--c-text-heading);
     }
     p{
         margin: 0;
@@ -3546,6 +3547,12 @@ details{
             color: var(--c-text-light);
             @include only-phone{
                 flex:1 0 100%
+            }
+            @include not-phone{
+                span{
+                    @include heading;
+                    font-size: var(--m);
+                }
             }
         }
     }

@@ -324,7 +324,7 @@ export default {
 						{{ residencePermitName(result.residence_permit_type).capitalized }}
 						<template v-if="isCitizenship && result.appointment_date">in {{ formatTimeDelta(result.application_date, result.appointment_date) }}</template>
 						<template v-if="!isCitizenship && result.pick_up_date">in {{ formatTimeDelta(result.application_date, result.pick_up_date) }}</template>
-						<span class="department" v-if="departmentName(result)">Department <strong v-text="departmentName(result)"></strong></span>
+						<span class="department" v-if="departmentName(result)">Department <span v-text="departmentName(result)"></span></span>
 						<span class="validity" v-if="result.validity_in_months">
 							Valid for
 							<template v-if="result.validity_in_months % 12">{{ result.validity_in_months }} month{{ result.validity_in_months === 1 ? '' : 's'}}</template>
