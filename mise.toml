@@ -50,7 +50,7 @@ while ! docker ps > /dev/null 2>&1; do
 done
 
 echo "Starting docker containers"
-docker compose up --build -d --force-recreate frontend;
+docker compose up --build -d --force-recreate;
 
 # Waiting for server to be available
 max_attempts=30
