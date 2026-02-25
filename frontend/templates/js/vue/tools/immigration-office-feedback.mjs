@@ -157,11 +157,13 @@ export default {
 				CITIZENSHIP: {
 					normal: "citizenship",
 					capitalized: "Citizenship",
+					glossaryTerm: null,
 				},
 				...this.residencePermitTypes,
 			}[residencePermitType] || {
 				normal: "residence permit",
-				capitalized: "Residence permit"
+				capitalized: "Residence permit",
+				glossaryTerm: "Aufenthaltstitel",
 			};
 		},
 		departmentName(result){
@@ -207,16 +209,14 @@ export default {
 			this.resultPages = [];
 			this.department = null;
 			this.loadPage(1, false);
-			this.$el.querySelector('#immigration-office-wait-times').innerHTML = `${this.residencePermitName(this.residencePermitType).capitalized} wait times`;
 		},
 	},
 	template: `
 		<div class="component-group">
-			<h2 id="immigration-office-wait-times">Immigration office wait times</h2>
 			<p>
 				In Berlin, it takes <strong v-text="totalWaitRange">a few months</strong> to
 				<template v-if="isCitizenship">become a German citizen.</template>
-				<template v-else>get a <span v-text="residencePermitName(residencePermitType).normal">residence permit</span>.</template>
+				<template v-else>get a <glossary :term="residencePermitName(residencePermitType).glossaryTerm">{{ residencePermitName(residencePermitType).normal }}</glossary>.</template>
 
 				The average wait time is <span v-text="totalWaitAverage">unknown</span>.
 

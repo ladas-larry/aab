@@ -21,36 +21,43 @@ export const residencePermitTypes = {
 	BLUE_CARD: {
 		capitalized: "Blue Card",
 		normal: "Blue Card",
+		glossaryTerm: "Blue Card",
 	},
 	FAMILY_REUNION_VISA: {
 		capitalized: "Family reunion visa",
 		normal: "family reunion visa",
+		glossaryTerm: "Family reunion visa",
 		askAboutHealthInsurance: true,
 	},
 	FREELANCE_VISA: {
 		capitalized: "Freelance visa",
 		normal: "freelance visa",
+		glossaryTerm: "Freelance visa",
 		askAboutHealthInsurance: true,
 	},
 	JOB_SEEKER_VISA: {
 		capitalized: "Job seeker visa",
 		normal: "job seeker visa",
+		glossaryTerm: "Job seeker visa",
 		askAboutHealthInsurance: true,
 	},
 	PERMANENT_RESIDENCE: {
 		capitalized: "Permanent residence",
 		normal: "permanent residence",
+		glossaryTerm: "Niederlassungserlaubnis",
 		askAboutHealthInsurance: true,
 	},
 	STUDENT_VISA: {
 		capitalized: "Student visa",
 		normal: "student visa",
+		glossaryTerm: "Student visa",
 		askAboutHealthInsurance: true,
 	},
 	WORK_VISA: {
 		capitalized: "Work visa",
 		normal: "work visa",
-	}
+		glossaryTerm: "Work Visa",
+	},
 };
 
 export function residencePermitDepartments(residencePermitType){
