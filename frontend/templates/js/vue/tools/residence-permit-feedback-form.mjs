@@ -22,20 +22,18 @@ export default {
 	},
 	props: {
 		static: Boolean,
-		residencePermitType: {
+		type: {
 			type: String,
 			default: null,
 		}
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
-	props: {
-		static: Boolean
-	},
 	data() {
 		return {
 			department: null,
 			oldDepartments: oldResidencePermitDepartments,
 			residencePermitTypes,
+			residencePermitType: null,
 
 			showResidencePermitField: true,
 			isLoading: false,
@@ -88,9 +86,9 @@ export default {
 	},
 	async mounted(){
 		// The residence permit type can be pre-selected with the data-type attribute
-		if(this.$el.dataset.type){
+		if(this.type){
 			this.showResidencePermitField = false;
-			this.residencePermitType = this.$el.dataset.type;
+			this.residencePermitType = this.type;
 		}
 
 		// Load the key from the URL hash
@@ -111,7 +109,8 @@ export default {
 				this.modificationKey = null;
 				return;
 			}
-			responseJson = await response.json();
+
+			const responseJson = await response.json();
 
 			this.steps.application.date = responseJson.application_date;
 			this.steps.application.completed = !!responseJson.application_date;
@@ -261,16 +260,19 @@ export default {
 		},
 	},
 	watch: {
-		residencePermitType(newType){
-			// Auto select department if it's the only available option
-			if(Object.keys(this.departments).length === 1){
-				this.department = Object.keys(this.departments)[0];
-			}
-			// Deselect department if it's not a valid option
-			else if(this.department && !(this.department in this.departments)){
-				this.department = null;
-			}
-		}
+		residencePermitType: {
+			handler(newType){
+				// Auto select department if it's the only available option
+				if(Object.keys(this.departments).length === 1){
+					this.department = Object.keys(this.departments)[0];
+				}
+				// Deselect department if it's not a valid option
+				else if(this.department && !(this.department in this.departments)){
+					this.department = null;
+				}
+			},
+			immediate: true, // So it runs before mounted()
+		},
 	},
 	template: `
 		<collapsible

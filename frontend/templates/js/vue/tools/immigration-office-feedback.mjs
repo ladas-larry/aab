@@ -321,7 +321,7 @@ export default {
 				<li v-for="result in resultsPage" v-if="!isLoading" :key="result.modification_date.toString()">
 					<button class="button" v-if="result.modification_key" @click="deleteResult(result.modification_key)">Delete</button>
 					<h3>
-						{{ residencePermitName(result.residence_permit_type).capitalized }}
+						{{ residencePermitName(result.residence_permit_type || 'CITIZENSHIP').capitalized }}
 						<template v-if="isCitizenship && result.appointment_date">in {{ formatTimeDelta(result.application_date, result.appointment_date) }}</template>
 						<template v-if="!isCitizenship && result.pick_up_date">in {{ formatTimeDelta(result.application_date, result.pick_up_date) }}</template>
 						<span class="department" v-if="departmentName(result)">Department <span v-text="departmentName(result)"></span></span>

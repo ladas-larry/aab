@@ -77,7 +77,8 @@ export default {
 				this.citizenshipModificationKey = null;
 				return;
 			}
-			responseJson = await response.json();
+
+			const responseJson = await response.json();
 
 			this.steps.application.date = responseJson.application_date;
 			this.steps.application.completed = !!responseJson.application_date;
