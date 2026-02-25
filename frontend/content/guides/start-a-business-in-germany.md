@@ -160,11 +160,11 @@ Ask my health insurance broker for advice. He will help you choose the best insu
 
 If you are not a citizen of the [EU](/glossary/European%20Union), [[EEA]] or Switzerland, you need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany. The freelance visa is a residence permit for self-employed people.
 
-It takes [a few months](/guides/auslanderbehorde-wait-times) to get a freelance visa. You must have clients in Germany, and a few thousand euros in savings.
+It takes [a few months](/guides/immigration-office/wait-times) to get a freelance visa. You must have clients in Germany, and a few thousand euros in savings.
 
 Other residence permits [sometimes allow self-employment](/guides/residence-permit#for-self-employment). This lets you start your business while you wait for your freelance visa.
 
-[If your current residence permit does not allow self-employment](/guides/residence-permit#for-self-employment), you must wait for your freelance visa. During that time, you can't work. You need enough savings to wait [a few months](/guides/auslanderbehorde-wait-times) without an income. It might be cheaper to get a freelance visa in your home country, before you move to Germany.
+[If your current residence permit does not allow self-employment](/guides/residence-permit#for-self-employment), you must wait for your freelance visa. During that time, you can't work. You need enough savings to wait [a few months](/guides/immigration-office/wait-times) without an income. It might be cheaper to get a freelance visa in your home country, before you move to Germany.
 
 **[How to apply for a freelance visa ➞](/guides/freelance-visa)**
 

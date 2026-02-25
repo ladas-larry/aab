@@ -100,6 +100,9 @@ export default {
 			}
 			return '/api/forms/citizenship-feedback';
 		},
+		showFeedbackLink(){
+			return !window.location.pathname.startsWith('/guides/immigration-office/wait-times');
+		},
 		showRestOfForm(){
 			return this.steps.application.completed;
 		},
@@ -209,8 +212,8 @@ export default {
 							<p>
 								Your feedback helps others plan their citizenship application.
 							</p>
-							<p>
-								<strong><a class="internal-link" target="_blank" href="/guides/citizenship-wait-times">See other people's feedback</a></strong>
+							<p v-if="showFeedbackLink">
+								<strong><a class="internal-link" target="_blank" href="/guides/immigration-office/wait-times">Read other people's feedback</a></strong>
 							</p>
 						</div>
 					</div>

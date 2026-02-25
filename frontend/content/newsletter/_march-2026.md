@@ -16,7 +16,7 @@ March 8 is Women's Day, and it's a public holiday in Berlin. Unfortunately, it f
 
 The Berlin immigration office has digitalized the freelance visa application process. Instead of dumping your documents into a general mailbox, they now ask the right questions, collect the right documents, and track your application in their system.
 
-These digital forms reduce [wait times](/guides/auslanderbehorde-wait-times) and prevent lost applications. They have worked well for the Blue Card and the work visa.
+These digital forms reduce [wait times](/guides/immigration-office/wait-times) and prevent lost applications. They have worked well for the Blue Card and the work visa.
 
 ### Residence permit downgrade
 
@@ -28,7 +28,7 @@ The [departments for citizenship applications](https://www.berlin.de/einwanderun
 
 If you already sent your citizenship application, you don't need to do anything. You might just get a response from a different department.
 
-I have updated the departments on my [citizenship wait times](/guides/citizenship-wait-times) page.
+I have updated the departments on my [citizenship wait times](/guides/immigration-office/wait-times) page.
 
 ## What's new on All About Berlin
 

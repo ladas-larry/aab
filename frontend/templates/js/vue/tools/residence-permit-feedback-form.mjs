@@ -157,6 +157,9 @@ export default {
 		residencePermitName(){
 			return this.residencePermitTypes[this.residencePermitType]?.normal || "residence permit";
 		},
+		showFeedbackLink(){
+			return !window.location.pathname.startsWith('/guides/immigration-office/wait-times');
+		},
 		showRestOfForm(){
 			return this.steps.application.completed;
 		},
@@ -303,8 +306,8 @@ export default {
 							<p>
 								Your feedback helps others plan their {{ residencePermitName }} application.
 							</p>
-							<p>
-								<strong><a class="internal-link" target="_blank" href="/guides/auslanderbehorde-wait-times">See other people's feedback</a></strong>
+							<p v-if="showFeedbackLink">
+								<strong><a class="internal-link" target="_blank" href="/guides/immigration-office/wait-times">Read other people's feedback</a></strong>
 							</p>
 						</div>
 					</div>

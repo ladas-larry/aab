@@ -225,7 +225,7 @@ The opportunity card lets you work 20 hours per week for any employer.[^47] To w
 
 ### Job seeker visa
 
-[Check your *Zusatzblatt*.](/guides/zusatzblatt) It tells you if you can work with your job seeker visa. If not, you need another residence permit to start working. It will take [a few weeks](/guides/auslanderbehorde-wait-times).
+[Check your *Zusatzblatt*.](/guides/zusatzblatt) It tells you if you can work with your job seeker visa. If not, you need another residence permit to start working. It will take [a few weeks](/guides/immigration-office/wait-times).
 
 **[Residence permits for work ➞](/guides/residence-permit#for-work)**
 
@@ -243,7 +243,7 @@ If you change jobs, you don't need to update your spouse and children's family r
 
 [Check your *Zusatzblatt*.](/guides/zusatzblatt) If it says "Beschäftigung erlaubt" or "Erwerbstätigkeit erlaubt", you can start a new job immediately. You don't need permission from the *Ausländerbehörde*.
 
-Usually, you need the *[[Ausländerbehörde]]*'s permission to change jobs. You must apply for a new residence permit before you start working. It takes [a few weeks](/guides/auslanderbehorde-wait-times). After 2 to 3 years in Germany, they might allow you to take any job, in any field, for any salary.[^8]
+Usually, you need the *[[Ausländerbehörde]]*'s permission to change jobs. You must apply for a new residence permit before you start working. It takes [a few weeks](/guides/immigration-office/wait-times). After 2 to 3 years in Germany, they might allow you to take any job, in any field, for any salary.[^8]
 
 Always [tell the *Ausländerbehörde*](#tell-the-auslanderbehorde) about your new job, even if you don't need their permission to change jobs.
 

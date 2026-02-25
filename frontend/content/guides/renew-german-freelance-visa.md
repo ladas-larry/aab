@@ -99,9 +99,9 @@ If your documents are not in English or German, you might need [certified transl
 
 ### 2. Send your documents
 
-You can't book an *Ausländerbehörde* appointment. You must [use their contact form](/guides/immigration-office#use-the-contact-form) to send your documents, then wait for a response. They can take [a few months](/guides/auslanderbehorde-wait-times) to reply.
+You can't book an *Ausländerbehörde* appointment. You must [use their contact form](/guides/immigration-office#use-the-contact-form) to send your documents, then wait for a response. They can take [a few months](/guides/immigration-office/wait-times) to reply.
 
-When they reply, they will give you an appointment. This appointment can be [in a few months](/guides/auslanderbehorde-wait-times). They might also ask for more documents.
+When they reply, they will give you an appointment. This appointment can be [in a few months](/guides/immigration-office/wait-times). They might also ask for more documents.
 
 In most cases, your current [residence permit](/glossary/Aufenthaltstitel) stays valid while you wait. [If it expires](/guides/residence-permit#if-your-visa-or-residence-permit-expires), you don't have to leave Germany. You can continue working, studying or freelancing like before. If you get a *[[Fiktionsbescheinigung]]*, you can [travel with your expired residence permit](/guides/fiktionsbescheinigung#travel-with-a-fiktionsbescheinigung).
 
@@ -222,7 +222,7 @@ Your feedback helps thousands of people plan their freelance visa application.
 
 {% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
 
-**[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
+**[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
 
 ### Apply for permanent residence
 
