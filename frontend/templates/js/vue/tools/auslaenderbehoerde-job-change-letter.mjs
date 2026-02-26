@@ -241,7 +241,7 @@ export default {
 						:id="uid('customRecipientAddress')"
 						v-if="auslaenderbehoerde === 'other'"
 						v-model="customRecipientAddress"
-						:placeholder="'Ausländerbehörde\\nExample Straße 123\\n12345 Munich'"
+						:placeholder="'Ausländerbehörde\\nMusterstraße 123\\n12345 Munich'"
 						required></address-input>
 					<a class="input-instructions external-link" v-if="auslaenderbehoerde === 'other'" href="https://bamf-navi.bamf.de/en/Themen/Behoerden/" target="_blank">
 						Find your Ausländerbehörde

@@ -120,7 +120,7 @@ export default{
 				</div>
 				<div class="form-group">
 					<label :for="uid('agenturFurArbeitAddress')">Agentur für Arbeit address</label>
-					<address-input :id="uid('agenturFurArbeitAddress')" v-model="agenturFurArbeitAddress" placeholder="'Agentur für Arbeit Mitte\\nExample Straße 123\\n12345 Berlin'"></address-input>
+					<address-input :id="uid('agenturFurArbeitAddress')" v-model="agenturFurArbeitAddress" :placeholder="'Agentur für Arbeit Mitte\\nnMusterstraße 123\\n12345 Berlin'"></address-input>
 					<a class="input-instructions external-link" href="https://web.arbeitsagentur.de/portal/metasuche/suche/dienststellen" target="_blank">
 						Find your Agentur für Arbeit
 					</a>
