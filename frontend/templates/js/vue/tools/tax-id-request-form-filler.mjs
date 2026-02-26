@@ -3,7 +3,7 @@ import Checkbox from '/js/vue/components/checkbox.mjs';
 import CityInput from '/js/vue/components/city-input.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import CountryInput from '/js/vue/components/country-input.mjs';
-import DateInput from '/js/vue/components/date-input.mjs';
+import DatePicker from '/js/vue/components/date-picker.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
 import FirstNameInput from '/js/vue/components/first-name-input.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
@@ -34,7 +34,7 @@ export default {
 		CityInput,
 		Collapsible,
 		CountryInput,
-		DateInput,
+		DatePicker,
 		EmailInput,
 		FirstNameInput,
 		Glossary,
@@ -378,13 +378,13 @@ export default {
 						<span class="input-instructions" :id="uid('birthName-instructions-' + person.id)">If you changed your name, enter your full name at birth.</span>
 					</div>
 					<div class="form-group">
-						<label :for="uid('dateOfBirth-' + person.id) + '-day'">Date of birth</label>
-						<date-input
+						<label :for="uid('dateOfBirth-' + person.id)">Date of birth</label>
+						<date-picker
 							:key="person.id"
 							:id="uid('dateOfBirth-' + person.id)"
 							v-model="person.dateOfBirth"
 							autocomplete="bday"
-							required></date-input>
+							required></date-picker>
 					</div>
 					<div class="form-group">
 						<label :for="uid('birthPlace-' + person.id)">Place of birth</label>

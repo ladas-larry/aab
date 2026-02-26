@@ -53,12 +53,7 @@ def fill_person(page, index=0):
     # Note: this link disappears after clicking, so we can't select by index
     page.get_by_role("link", name="Add a title or birth name").nth(0).click()
     page.get_by_label("Name at birth").nth(index).fill(person["birth_name"])
-
-    year, month, day = person["birth_date"]
-    page.get_by_title("Day of the month").nth(index).fill(day)
-    page.get_by_title("Month", exact=True).nth(index).fill(month)
-    page.get_by_title("Year").nth(index).fill(year)
-
+    page.get_by_label("Date of birth").nth(index).fill(person["birth_date"])
     page.get_by_label("Place of birth").nth(index).fill(person["birth_place"])
 
 
@@ -88,18 +83,9 @@ def fill_documents(page, multiple_people=False):
 
         # Passport/ID card number. The name changes with the document type
         page.get_by_label("number").nth(index).fill(doc["number"])
-
-        year, month, day = doc["issue_date"]
-        page.get_by_title("Day of the month").nth(index * 2).fill(day)
-        page.get_by_title("Month", exact=True).nth(index * 2).fill(month)
-        page.get_by_title("Year").nth(index * 2).fill(year)
-
+        page.get_by_label("Date issued").nth(index).fill(doc["issue_date"])
         page.get_by_label("Issuing authority").nth(index).fill(doc["authority"])
-
-        year, month, day = doc["expiration_date"]
-        page.get_by_title("Day of the month").nth(index * 2 + 1).fill(day)
-        page.get_by_title("Month", exact=True).nth(index * 2 + 1).fill(month)
-        page.get_by_title("Year").nth(index * 2 + 1).fill(year)
+        page.get_by_label("Expiration date").nth(index).fill(doc["expiration_date"])
 
 
 def fill_employer(page, send_to_employer=False):

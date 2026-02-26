@@ -38,9 +38,7 @@ def test_apply_for_refund(page, pension_refund_calculator, test_screenshot):
     test_screenshot(page, pension_refund_calculator)
     page.get_by_label("Full name").fill("John Smith")
     page.get_by_label("Email address").fill("testaccount@gmail.com")
-    page.get_by_title("Day of the month").fill("3")
-    page.get_by_title("Month", exact=True).fill("9")
-    page.get_by_title("Year").fill("1995")
+    page.get_by_label("Date of birth").fill("1995-09-03")
 
     with page.expect_response("**/api/forms/pension-refund-request") as api_response:
         page.get_by_role("button", name="Send request").click()

@@ -1,8 +1,7 @@
 import { dateFromString, isoDay } from '/js/utils/date.mjs';
 
 export default {
-	// Mimics the date-input behaviour: The value is always a valid date or an
-	// empty string
+	// The value is always a valid YYYY-MM-DD date string or ''
 	props: {
 		value: String,
 		required: Boolean,
@@ -13,7 +12,7 @@ export default {
 		this.onOutsideValueChange();
 	},
 	methods: {
-		onInput(e) {
+		onInput() {
 			// Only emit the value if it's a valid date
 			// Do not rely on $el.checkValidity() because the parent element can set it to false with setCustomValidity
 			const parsedDate = dateFromString(this.$el.value);
@@ -31,8 +30,8 @@ export default {
 		}
 	},
 	watch: {
-		min() { this.onChange() },
-		max() { this.onChange() },
+		min() { this.onInput() },
+		max() { this.onInput() },
 		value() {
 			this.onOutsideValueChange();
 		}
@@ -41,6 +40,7 @@ export default {
 		<input
 			type="date"
 			:class="{required: required}"
+			:required="required"
 			@blur="onBlur"
 			@input="onInput">
 	`,

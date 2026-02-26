@@ -1,6 +1,6 @@
 import Vue from '/js/vue/vue.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
-import DateInput from '/js/vue/components/date-input.mjs';
+import DatePicker from '/js/vue/components/date-picker.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
 import IconSupport from '/js/vue/components/icons/support.mjs';
 
@@ -14,7 +14,7 @@ import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs';
 export default {
 	components: {
 		Collapsible,
-		DateInput,
+		DatePicker,
 		EmailInput,
 		IconSupport,
 	},
@@ -199,8 +199,8 @@ export default {
 						<input :id="uid('checkbox' + key)" type="checkbox" v-model="step.completed" @change="onStepCompletionChange(key)">
 						<label :for="uid('checkbox' + key)" class="description" v-text="stepName(key)"></label>
 						<div class="duration form-group" v-if="step.completed">
-							<label :for="uid(key) + '-date-day'" v-text="step.dateFieldTitle"></label>
-							<date-input :min="minimumStepDate(step)" v-model="step.date" :id="uid(key) + '-date'" required></date-input>
+							<label :for="uid(key) + '-date'" v-text="step.dateFieldTitle"></label>
+							<date-picker :min="minimumStepDate(step)" v-model="step.date" :id="uid(key) + '-date'" required></date-picker>
 						</div>
 					</div>
 				</div>

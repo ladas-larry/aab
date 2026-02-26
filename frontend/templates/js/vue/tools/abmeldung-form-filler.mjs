@@ -1,7 +1,7 @@
 import Vue from '/js/vue/vue.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import CountryInput from '/js/vue/components/country-input.mjs';
-import DateInput from '/js/vue/components/date-input.mjs';
+import DatePicker from '/js/vue/components/date-picker.mjs';
 import Eur from '/js/vue/components/eur.mjs';
 import FirstNameInput from '/js/vue/components/first-name-input.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
@@ -29,7 +29,7 @@ export default {
 	components: {
 		Collapsible,
 		CountryInput,
-		DateInput,
+		DatePicker,
 		Eur,
 		FirstNameInput,
 		Glossary,
@@ -253,8 +253,8 @@ export default {
 				</div>
 				<hr>
 				<div class="form-group">
-					<label :for="uid('moveOutDate') + '-day'">Move-out date</label>
-					<date-input v-model="moveOutDate" :id="uid('moveOutDate')" required></date-input>
+					<label :for="uid('moveOutDate')">Move-out date</label>
+					<date-picker v-model="moveOutDate" :id="uid('moveOutDate')" required></date-picker>
 				</div>
 			</template>
 			<template v-if="stage === 'newAddress'">
@@ -367,13 +367,13 @@ export default {
 						</select>
 					</div>
 					<div class="form-group">
-						<label :for="uid('dateOfBirth-' + person.id) + '-day'">Date of birth</label>
-						<date-input
+						<label :for="uid('dateOfBirth-' + person.id)">Date of birth</label>
+						<date-picker
 							:key="person.id"
 							:id="uid('dateOfBirth-' + person.id)"
 							v-model="person.dateOfBirth"
 							autocomplete="bday"
-							required></date-input>
+							required></date-picker>
 					</div>
 					<div class="form-group">
 						<label :for="uid('birthPlace-' + person.id)">Place of birth</label>

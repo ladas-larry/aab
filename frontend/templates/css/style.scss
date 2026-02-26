@@ -1899,7 +1899,7 @@ input[type=range] {
         line-height: var(--line-height-label);
     }
 
-    &.required, &:has(:required) {
+    &:has(:required) {
         > :is(label, .label):first-child{
             &:after{
                 content: ' *';
@@ -1945,34 +1945,6 @@ input[type=range] {
 }
 .input-instructions:not(a){
     color: var(--c-text-light);
-}
-
-.date-input{
-    @include form-input;
-    width: fit-content;
-    flex: 0 0 fit-content;
-    display: inline-flex;
-    align-items: baseline;
-    color: var(--c-border-input); // The date separator, "/"
-
-    &:focus-within{
-        color: var(--c-border-input-focused);
-        border-color: var(--c-border-input-focused);
-    }
-
-    input, input:invalid{
-        background: transparent!important;
-        border: none!important;
-        box-shadow: none!important;
-        box-sizing:content-box!important;
-        flex: 0 0 auto!important;
-        text-align: center;
-        width: 3ch!important; // A bit wider because of the placeholder
-        padding: 0;
-    }
-    .year-input, .year-input:invalid{
-        width: 5ch!important;
-    }
 }
 
 .show-errors :invalid,

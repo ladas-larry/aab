@@ -28,18 +28,9 @@ def test_data_remembered(page, test_screenshot):
         doc = people[index]["id_document"]
         # expect(page.get_by_label(doc['type'][0], exact=True).nth(index)).to_be_checked()
         expect(page.get_by_label("number").nth(index)).to_have_value(doc["number"])
-
-        year, month, day = doc["issue_date"]
-        expect(page.get_by_title("Day of the month").nth(index * 2)).to_have_value(day)
-        expect(page.get_by_title("Month", exact=True).nth(index * 2)).to_have_value(month)
-        expect(page.get_by_title("Year").nth(index * 2)).to_have_value(year)
-
+        expect(page.get_by_label("Date issued").nth(index)).to_have_value(doc["issue_date"])
         expect(page.get_by_label("Issuing authority").nth(index)).to_have_value(doc["authority"])
-
-        year, month, day = doc["expiration_date"]
-        expect(page.get_by_title("Day of the month").nth(index * 2 + 1)).to_have_value(day)
-        expect(page.get_by_title("Month", exact=True).nth(index * 2 + 1)).to_have_value(month)
-        expect(page.get_by_title("Year").nth(index * 2 + 1)).to_have_value(year)
+        expect(page.get_by_label("Expiration date").nth(index)).to_have_value(doc["expiration_date"])
 
     form = page.get_by_role("group", name="Tool to fill the Anmeldung form")
     test_screenshot(page, form)

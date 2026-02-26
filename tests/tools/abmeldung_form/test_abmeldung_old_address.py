@@ -19,11 +19,7 @@ def test_data_remembered(page, test_screenshot):
     expect(page.get_by_label("Street address")).to_have_value(address["street"])
     expect(page.get_by_label("Post code")).to_have_value(address["post_code"])
     expect(page.get_by_label("Building details")).to_have_value(address["zusatz"])
-
-    year, month, day = people[0]["move_out_date"]
-    expect(page.get_by_title("Day of the month")).to_have_value(day)
-    expect(page.get_by_title("Month", exact=True)).to_have_value(month)
-    expect(page.get_by_title("Year")).to_have_value(year)
+    expect(page.get_by_label("Move-out date")).to_have_value(people[0]["move_out_date"])
 
     form = page.get_by_role("group", name="Tool to fill the Abmeldung form")
     test_screenshot(page, form)
@@ -37,19 +33,15 @@ def test_data_validity_check(page, test_screenshot):
     expect(page.get_by_title("Postal code (Postleitzahl)")).to_have_js_property("validity.valid", False)
     expect(page.get_by_label("Building details")).to_have_js_property("validity.valid", True)
 
-    expect(page.get_by_title("Day of the month")).to_have_js_property("validity.valid", False)
-    expect(page.get_by_title("Month", exact=True)).to_have_js_property("validity.valid", False)
-    expect(page.get_by_title("Year")).to_have_js_property("validity.valid", False)
+    expect(page.get_by_label("Move-out date")).to_have_js_property("validity.valid", False)
 
-    next_step(page)
+    next_step(page)  # Triggers form validation
 
     expect(page.locator(".abmeldung-form")).to_have_class(re.compile(r".*show-errors.*"))
     expect(page.get_by_label("Street address")).to_have_js_property("validity.valid", False)
     expect(page.get_by_title("Postal code (Postleitzahl)")).to_have_js_property("validity.valid", False)
 
-    expect(page.get_by_title("Day of the month")).to_have_js_property("validity.valid", False)
-    expect(page.get_by_title("Month", exact=True)).to_have_js_property("validity.valid", False)
-    expect(page.get_by_title("Year")).to_have_js_property("validity.valid", False)
+    expect(page.get_by_label("Move-out date")).to_have_js_property("validity.valid", False)
 
     form = page.get_by_role("group", name="Tool to fill the Abmeldung form")
     test_screenshot(page, form)

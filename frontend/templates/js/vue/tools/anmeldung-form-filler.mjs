@@ -3,7 +3,7 @@ import Checkbox from '/js/vue/components/checkbox.mjs';
 import CityInput from '/js/vue/components/city-input.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import CountryInput from '/js/vue/components/country-input.mjs';
-import DateInput from '/js/vue/components/date-input.mjs';
+import DatePicker from '/js/vue/components/date-picker.mjs';
 import FirstNameInput from '/js/vue/components/first-name-input.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
 import IconCalendar from '/js/vue/components/icons/calendar.mjs';
@@ -33,7 +33,7 @@ export default {
 		CityInput,
 		Collapsible,
 		CountryInput,
-		DateInput,
+		DatePicker,
 		FirstNameInput,
 		Glossary,
 		IconCalendar,
@@ -280,8 +280,8 @@ export default {
 				</div>
 				<hr>
 				<div class="form-group">
-					<label :for="uid('moveInDate') + '-day'">Move-in date</label>
-					<date-input v-model="moveInDate" :id="uid('moveInDate')" required></date-input>
+					<label :for="uid('moveInDate')">Move-in date</label>
+					<date-picker v-model="moveInDate" :id="uid('moveInDate')" required></date-picker>
 					<span class="input-instructions">Use the same date as on your <em><glossary>Wohnungsgeberbestätigung</glossary></em>.</span>
 				</div>
 			</template>
@@ -410,13 +410,13 @@ export default {
 						<span :id="uid('religion-instructions-' + person.id)" class="input-instructions">Members of some churches must pay the <glossary term="Kirchensteuer">church tax</glossary>.</span>
 					</div>
 					<div class="form-group">
-						<label :for="uid('dateOfBirth-' + person.id) + '-day'">Date of birth</label>
-						<date-input
+						<label :for="uid('dateOfBirth-' + person.id)">Date of birth</label>
+						<date-picker
 							:key="person.id"
 							:id="uid('dateOfBirth-' + person.id)"
 							v-model="person.dateOfBirth"
 							autocomplete="bday"
-							required></date-input>
+							required></date-picker>
 					</div>
 					<div class="form-group">
 						<label :for="uid('birthPlace-' + person.id)">Place of birth</label>
@@ -475,8 +475,8 @@ export default {
 							required>
 					</div>
 					<div class="form-group">
-						<label :for="uid('documentIssueDate-' + person.id) + '-day'">Date issued</label>
-						<date-input :key="person.id" :id="uid('documentIssueDate-' + person.id)" v-model="person.documentIssueDate" required></date-input>
+						<label :for="uid('documentIssueDate-' + person.id)">Date issued</label>
+						<date-picker :key="person.id" :id="uid('documentIssueDate-' + person.id)" v-model="person.documentIssueDate" required></date-picker>
 					</div>
 					<div class="form-group" v-if="person.documentType === 'PA'">
 						<label :for="uid('documentIssuingAuthority-' + person.id)">Issuing authority</label>
@@ -489,8 +489,8 @@ export default {
 						<span class="input-instructions" v-if="person.documentType !== 'PA'">It's written in your passport, on the photo page.</span>
 					</div>
 					<div class="form-group">
-						<label :for="uid('documentExpirationDate-' + person.id) + '-day'">Expiration date</label>
-						<date-input :key="person.id" :id="uid('documentExpirationDate-' + person.id)" v-model="person.documentExpirationDate" required></date-input>
+						<label :for="uid('documentExpirationDate-' + person.id)">Expiration date</label>
+						<date-picker :key="person.id" :id="uid('documentExpirationDate-' + person.id)" v-model="person.documentExpirationDate" required></date-picker>
 					</div>
 				</template>
 			</template>

@@ -1,7 +1,6 @@
 import Vue from '/js/vue/vue.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import CountryInput from '/js/vue/components/country-input.mjs';
-import DateInput from '/js/vue/components/date-input.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
 import IconDonate from '/js/vue/components/icons/donate.mjs';
@@ -18,7 +17,6 @@ export default {
 	components: {
 		Collapsible,
 		CountryInput,
-		DateInput,
 		IconDonate,
 		IconExit,
 		EmailInput,

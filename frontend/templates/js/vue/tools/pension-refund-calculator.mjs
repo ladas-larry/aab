@@ -1,7 +1,7 @@
 import Vue from '/js/vue/vue.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import CountryInput from '/js/vue/components/country-input.mjs';
-import DateInput from '/js/vue/components/date-input.mjs';
+import DatePicker from '/js/vue/components/date-picker.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
 import Eur from '/js/vue/components/eur.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
@@ -30,7 +30,7 @@ export default {
 	components: {
 		Collapsible,
 		CountryInput,
-		DateInput,
+		DatePicker,
 		EmailInput,
 		Eur,
 		FullNameInput,
@@ -487,8 +487,8 @@ export default {
 						<email-input v-model="email" :id="uid('email')" required></email-input>
 					</div>
 					<div class="form-group">
-						<label :for="uid('date-of-birth') + '-day'">Date of birth</label>
-						<date-input v-model="dateOfBirth" :id="uid('date-of-birth')" required autocomplete="bday" :aria-describedby="uid('instructions-date-of-birth')"></date-input>
+						<label :for="uid('date-of-birth')">Date of birth</label>
+						<date-picker v-model="dateOfBirth" :id="uid('date-of-birth')" required autocomplete="bday" :aria-describedby="uid('instructions-date-of-birth')"></date-picker>
 						<span class="input-instructions" :id="uid('instructions-date-of-birth')">Required by the <glossary>Deutsche Rentenversicherung</glossary></span>
 					</div>
 				</div>

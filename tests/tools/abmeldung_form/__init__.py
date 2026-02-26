@@ -29,11 +29,7 @@ def fill_old_address(page):
     page.get_by_label("Street address").fill(address["street"])
     page.get_by_label("Post code").fill(address["post_code"])
     page.get_by_label("Building details").fill(address["zusatz"])
-
-    year, month, day = people[0]["move_out_date"]
-    page.get_by_title("Day of the month").fill(day)
-    page.get_by_title("Month", exact=True).fill(month)
-    page.get_by_title("Year").fill(year)
+    page.get_by_label("Move-out date").fill(people[0]["move_out_date"])
 
 
 def add_person(page):
@@ -46,21 +42,14 @@ def fill_person(page, index=0):
     # Note: this link disappears after clicking, so we can't select by index
     page.get_by_title("First name").nth(index).fill(person["first_name"])
     page.get_by_title("Last name").nth(index).fill(person["last_name"])
-
     page.get_by_role("link", name="Add a title or birth name").nth(0).click()
     page.get_by_label("Title").nth(index).fill(person["title"])
     page.get_by_label("Name at birth").nth(index).fill(person["birth_name"])
-
     page.get_by_text(person["gender"], exact=True).nth(index).set_checked(True)
-
     page.get_by_label("Place of birth").nth(index).fill(person["birth_place"])
     page.get_by_label("Nationality").nth(index).select_option(person["nationality"])
     page.get_by_label("Religion").nth(index).select_option(person["religion"][0])
-
-    year, month, day = person["birth_date"]
-    page.get_by_title("Day of the month").nth(index).fill(day)
-    page.get_by_title("Month", exact=True).nth(index).fill(month)
-    page.get_by_title("Year").nth(index).fill(year)
+    page.get_by_label("Date of birth").nth(index).fill(person["birth_date"])
 
 
 def fill_people(page, multiple_people=False):

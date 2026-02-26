@@ -113,7 +113,7 @@ export default {
 	},
 	watch: {
 		isDesiredMoveOutDateValid(isValid) {
-			this.$refs.desiredMoveOutDateInput.$el.setCustomValidity(isValid ? '' : "This move-out date is too early.");
+			this.$refs.desiredMoveOutDatePicker.$el.setCustomValidity(isValid ? '' : "This move-out date is too early.");
 		},
 	},
 	template: `
@@ -237,7 +237,7 @@ export default {
 					<span class="input-instructions">The address of the apartment you are leaving</span>
 				</div>
 				<div class="form-group show-errors">
-					<label :for="uid('desiredMoveOutDate') + '-day'">Move-out date</label>
+					<label :for="uid('desiredMoveOutDate')">Move-out date</label>
 					<tabs
 						aria-label="Move-out date"
 						v-model="customMoveOutDate"
@@ -246,7 +246,7 @@ export default {
 						required>
 					</tabs>
 					<date-picker
-						ref="desiredMoveOutDateInput"
+						ref="desiredMoveOutDatePicker"
 						:min="isoDay(currentDate)"
 						v-if="customMoveOutDate"
 						v-model="desiredMoveOutDate"
