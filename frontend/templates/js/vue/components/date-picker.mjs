@@ -41,6 +41,8 @@ export default {
 			type="date"
 			:class="{required: required}"
 			:required="required"
+			:min="min"
+			:max="max"
 			@blur="onBlur"
 			@input="onInput">
 	`,
