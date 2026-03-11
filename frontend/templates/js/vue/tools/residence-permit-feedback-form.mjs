@@ -405,7 +405,7 @@ export default {
 				</ul>
 			</template>
 			<template v-if="stage === 'error'">
-				<p><strong>An error occured.</strong> If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
+				<p><strong>An error occurred.</strong> If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
 			</template>
 			<template v-if="showRestOfForm && stage !== 'finish'">
 				<hr>
