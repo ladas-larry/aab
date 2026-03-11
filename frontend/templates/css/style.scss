@@ -3429,7 +3429,7 @@ details{
 }
 .feedback-form, .feedback-list > li, .feedback-summary{
     @include text-block;
-    h3, .notes{
+    > h3, .notes{
         border-bottom: var(--b-box);
         margin: 0 0 var(--l);
         padding: 0 0 var(--l);

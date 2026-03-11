@@ -3,6 +3,7 @@ import AgeInput from '/js/vue/components/age-input.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import DatePicker from '/js/vue/components/date-picker.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
+import IconDonate from '/js/vue/components/icons/donate.mjs';
 import IconSupport from '/js/vue/components/icons/support.mjs';
 
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
@@ -18,6 +19,7 @@ export default {
 		Collapsible,
 		DatePicker,
 		EmailInput,
+		IconDonate,
 		IconSupport,
 	},
 	props: {
@@ -186,7 +188,7 @@ export default {
 		async nextStage(){
 			if(validateForm(this.$el)){
 				if(this.stage === 'start'){
-					this.goToStage(this.feedbackComplete ? 'finish' : 'email');
+					this.goToStage((this.email || this.feedbackComplete) ? 'finish' : 'email');
 				}
 				else{
 					this.goToStage('finish');
@@ -211,8 +213,12 @@ export default {
 			if(validateForm(this.$el)){
 				this.isLoading = true;
 
-				// Don't set the email before the email stage, even if it's not empty
-				const emailAddress = (this.stage === 'email' && this.email) ? this.email : null;
+				// Don't set the email before the email stage, even if it's not empty. The email might be prefilled by
+				// userDefaultsMixin, but that does not mean the user consented to email notifications.
+				const emailAddress = (
+					(this.stage === 'email' && this.email)
+					|| (this.stage === 'start' && this.modificationKey && this.email)
+				) ? this.email : null;
 
 				const response = await fetch(
 					this.apiEndpoint,
@@ -251,7 +257,7 @@ export default {
 		stepName(key){
 			return {
 				application: "I have applied in Berlin",
-				response: "The Ausländerbehörde has replied",
+				response: "The immigration office has replied",
 				appointment: "I have an appointment",
 				pickup: "I have a pick-up date for the residence card",
 			}[key];
@@ -259,7 +265,7 @@ export default {
 		minimumStepDate(step){
 			const stepList = Object.values(this.steps);
 			const previousStep = stepList[stepList.indexOf(step) - 1];
-			return previousStep ? previousStep.date : null;
+			return previousStep?.date ? previousStep.date : null;
 		},
 	},
 	watch: {
@@ -338,7 +344,7 @@ export default {
 					<template v-if="askAboutHealthInsurance">
 						<div class="form-group">
 							<label :for="uid('healthInsurance')">Health insurance</label>
-							<select v-model="healthInsurance" :class="{placeholder: healthInsurance == null}">
+							<select :id="uid('healthInsurance')" v-model="healthInsurance" :class="{placeholder: healthInsurance == null}">
 								<option disabled hidden default :value="null">Type of health insurance</option>
 								<option value="PUBLIC">Public health insurance</option>
 								<option value="PRIVATE">Private health insurance</option>
@@ -358,7 +364,7 @@ export default {
 						<div class="form-group">
 							<label :for="uid('validity')">Permit validity</label>
 							<div class="input-group">
-								<input type="text" placeholder="0" inputmode="numeric" pattern="[0-9]*" v-model.number="validity" maxlength="2">
+								<input :id="uid('validity')" type="text" placeholder="0" inputmode="numeric" pattern="[0-9]*" v-model.number="validity" maxlength="2">
 								<select v-model="validityUnit">
 									<option value="months">month{{ validity === 1 ? '' : 's' }}</option>
 									<option value="years">year{{ validity === 1 ? '' : 's' }}</option>
@@ -386,7 +392,17 @@ export default {
 			</template>
 			<template v-if="stage === 'finish'">
 				<p><strong>Thank you for your feedback!</strong> This information will help a lot of people.</p>
-				<p>If this tool helped you, consider <a href="/donate" target="_blank" title="Donate to All About Berlin">donating €10</a> to support my work.</p>
+				<ul class="buttons list">
+					<li>
+						<a href="/donate" target="_blank">
+							<icon-donate/>
+							<div>
+								<h3>Support this website</h3>
+								<p>Donate €10 to help me build more free tools.</p>
+							</div>
+						</a>
+					</li>
+				</ul>
 			</template>
 			<template v-if="stage === 'error'">
 				<p><strong>An error occured.</strong> If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
