@@ -6,7 +6,6 @@ import FullNameInput from '/js/vue/components/full-name-input.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
 import LetterGenerator from '/js/vue/components/letter-generator.mjs';
 
-import { formatSalutations } from '/js/utils/letter.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
@@ -48,9 +47,6 @@ export default {
 
 			return `${recipient}<br>${this.backupAddress.replaceAll('\n', '<br>')}`;
 		},
-	},
-	methods: {
-		formatSalutations,
 	},
 	template: `
 		<letter-generator
