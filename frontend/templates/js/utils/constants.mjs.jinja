@@ -45,7 +45,7 @@ export const healthInsurance = {
 		},
 	},
 	private: {
-		{{ fail_on('2026-02-25') }}
+		{{ fail_on('2026-02-28') }}
 		pflegeversicherung: [  // Ages 0-99
 			45.82,
 			45.82,
@@ -541,7 +541,7 @@ export const taxes = {
 	},
 	minVorsorgepauschal: {{ VORSORGEPAUSCHAL_MIN }},
 	minVorsorgepauschalTaxClass3: {{ VORSORGEPAUSCHAL_MIN_TAX_CLASS_3 }},
-	{{ fail_on('2026-03-01') }}
+	{{ fail_on('2026-03-12') }}
 	incomeTaxBrackets: {  // § 32a EStG - https://www.lohn-info.de/lohnsteuerzahlen.html
 		1: {
 			formula: (x, y, z) => 0,
