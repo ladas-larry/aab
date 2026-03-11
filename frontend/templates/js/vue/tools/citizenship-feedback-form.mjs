@@ -2,6 +2,7 @@ import Vue from '/js/vue/vue.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import DatePicker from '/js/vue/components/date-picker.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
+import IconDonate from '/js/vue/components/icons/donate.mjs';
 import IconSupport from '/js/vue/components/icons/support.mjs';
 
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
@@ -16,6 +17,7 @@ export default {
 		Collapsible,
 		DatePicker,
 		EmailInput,
+		IconDonate,
 		IconSupport,
 	},
 	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
@@ -91,6 +93,8 @@ export default {
 
 			this.email = responseJson.email || this.email;
 			this.notes = responseJson.notes;
+
+			this.department = responseJson.department;
 		}
 	},
 	computed: {
@@ -114,7 +118,7 @@ export default {
 		async nextStage(){
 			if(validateForm(this.$el)){
 				if(this.stage === 'start'){
-					this.goToStage(this.feedbackComplete ? 'finish' : 'email');
+					this.goToStage((this.email || this.feedbackComplete) ? 'finish' : 'email');
 				}
 				else{
 					this.goToStage('finish');
@@ -139,8 +143,12 @@ export default {
 			if(validateForm(this.$el)){
 				this.isLoading = true;
 
-				// Don't set the email before the email stage, even if it's not empty
-				const emailAddress = (this.stage === 'email' && this.email) ? this.email : null;
+				// Don't set the email before the email stage, even if it's not empty. The email might be prefilled by
+				// userDefaultsMixin, but that does not mean the user consented to email notifications.
+				const emailAddress = (
+					(this.stage === 'email' && this.email)
+					|| (this.stage === 'start' && this.citizenshipModificationKey && this.email)
+				) ? this.email : null;
 
 				const response = await fetch(
 					this.apiEndpoint,
@@ -248,7 +256,17 @@ export default {
 			</template>
 			<template v-if="stage === 'finish'">
 				<p><strong>Thank you for your feedback!</strong> This information will help a lot of people.</p>
-				<p>If this tool helped you, consider <a href="/donate" target="_blank" title="Donate to All About Berlin">donating €10</a> to support my work.</p>
+				<ul class="buttons list">
+					<li>
+						<a href="/donate" target="_blank">
+							<icon-donate/>
+							<div>
+								<h3>Support this website</h3>
+								<p>Donate €10 to help me build more free tools.</p>
+							</div>
+						</a>
+					</li>
+				</ul>
 			</template>
 			<template v-if="stage === 'error'">
 				<p><strong>An error occurred.</strong> If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
