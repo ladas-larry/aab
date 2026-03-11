@@ -21,7 +21,7 @@ export function formatSalutations(gender, firstName, lastName, language='en', co
 		return {
 			en: 'Dear Sir or Madam',
 			de: 'Sehr geehrte Damen und Herren'
-		}[language];
+		}[language] + (comma ? ',' : '');
 	}
 	return {
 		'man': {
