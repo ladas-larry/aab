@@ -176,6 +176,8 @@ If your freelance visa is approved, you will get a second appointment to pick up
 
 Go to your second *[[Ausländerbehörde]]* appointment and pick up your freelance visa. Your new freelance visa is valid for up to 3 years.[^17] You might get a shorter freelance visa if they are not sure that your business will work.[^24]
 
+If you had a residence permit for over 3 years, you might get an "unrestricted" residence permit. It allows any kind of employment or self-employment. [Check your new *Zusatzblatt*](/guides/zusatzblatt) to see what you can do.
+
 **[How to pick up your freelance visa ➞](/guides/residence-permit#pick-up-your-residence-card)**
 
 {% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
