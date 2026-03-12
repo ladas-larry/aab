@@ -95,7 +95,7 @@ The Berlin immigration office has multiple departments. Send your application to
 
 **[Wait times by department ➞](/guides/immigration-office/wait-times)**
 
-**Note:** The departments changed in October 2025: departments E1 to E6 were replaced with departments F1, F2 and M1 to M4.[^15]{{ fail_on('2026-03-12') }}. 
+**Note:** The departments changed in October 2025: departments E1 to E6 were replaced with departments F1, F2 and M1 to M4.[^15]{{ fail_on('2026-03-13') }}. 
 
 ## How to get an appointment
 
