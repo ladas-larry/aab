@@ -162,6 +162,14 @@ Your landlord can refuse to give you a *Mietschuldenfreiheitsbescheinigung*. Som
 
 **[Mietschuldenfreiheitsbescheinigung template ➞](/documents/Mietschuldenfreiheitsbescheinigung-muster.pdf)**
 
+### Get your last utility bill
+
+After you move out, you will get your last utility bill (*[[Nebenkostenabrechnung]]*). It will tell you if you paid too much or not enough for [utilities](/glossary/Nebenkosten). Landlords send this document once per year, so it might take a few months to get it.
+
+Read your *Nebenkostenabrechnung* carefully. They often contain errors or wrong charges.
+
+After you got your utility bill, and you paid any extra utility costs, your landlord must return the rest of your [deposit](/glossary/Kaution). They have no other reason to keep it.
+
 ## Move your things
 
 ### Find cardboard boxes
@@ -238,6 +246,7 @@ If your landlord tries to scam you, get help from your [tenants' association](/g
     - [ ] [Read your electricity, gas and water meters](/guides/moving-out#read-the-electricity-meter)
     - [ ] [Sign a handover document](/guides/moving-out#sign-the-ubergabeprotokoll) (*[[Übergabeprotokoll]]*)
     - [ ] [Get a *Mietschuldenfreiheitsbescheinigung*](/guides/moving-out#get-a-mietschuldenfreiheitsbescheinigung)
+    - [ ] [Get your last utility bill](#get-your-last-utility-bill) (*[[Nebenkostenabrechnung]]*)
 - [ ] [Get your deposit back](/guides/moving-out#get-your-deposit-back)
 - [ ] Deduct your moving expenses in your next [tax declaration](/glossary/Steuererklärung)
 

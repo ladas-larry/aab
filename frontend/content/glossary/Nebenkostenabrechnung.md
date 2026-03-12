@@ -9,7 +9,7 @@ Related_guides:
     guides/moving-out.md
 ---
 
-The utilities bill (*Nebenkostenabrechnung* or *Betriebskostenabrechnung*) is calculated every year. It shows how much hot water and electricity you really used.
+The utility bill (*Nebenkostenabrechnung* or *Betriebskostenabrechnung*) is calculated every year. It shows how much hot water and electricity you really used.
 
 You already pay the *estimated* utility costs (*[[Nebenkosten]]*) every month with the rent. If you used more than you paid for, you get an invoice. If you used less, you get money back.
 

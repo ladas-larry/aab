@@ -264,7 +264,7 @@ export default {
 					</div>
 				</div>
 				<div class="form-group">
-					<span class="label">Utilities bill</span>
+					<span class="label">Utility bill</span>
 					<checkbox v-model="hasReceivedNebenkostenabrechnung">
 						<div>
 							I received the last <glossary>Nebenkostenabrechnung</glossary>
