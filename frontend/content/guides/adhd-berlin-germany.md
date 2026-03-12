@@ -15,6 +15,8 @@ This guide shows you how ADHD treatment usually works in Germany. It's based on 
 
 Public health insurance covers the cheapest treatment that works. Doctors will only try medication if it's necessary. They will start with the cheapest medication: Medikinet (Ritalin).
 
+You can get an diagnosis from a private psychiatrist. It's much faster, but you must pay for the diagnosis yourself. It costs around €150. Your insurer might reimburse you for the diagnosis. They will still pay for your ADHD medication.[^6]
+
 **If you have [private health insurance](/glossary/private%20Krankenversicherung)**, ask your insurer what is covered. Private health insurance usually covers the ADHD diagnosis, therapy and medication. It usually covers better ADHD medication like Elvanse (Vyvanse).
 
 **[English-speaking psychiatrists in Berlin ➞](/guides/english-speaking-psychiatrists-berlin)**
@@ -28,7 +30,7 @@ To get diagnosed for ADHD, you must:
 2. **Book an appointment**  
     This can be hard. Many psychiatrists don't accept new patients. If you have public health insurance, it's harder to find a psychiatrist.
 3. **Take an ADHD diagnosis test**  
-    In most cases, the test is a simple interview. They just ask you a few questions about your life. Some psychiatrists will ask for more tests.
+    Usually, the test is a simple interview. They ask you a few questions about your life. Some psychiatrists have more complicated tests.
 
 The hardest part is to find a psychiatrist and book an appointment. This is harder for people with ADHD.
 
@@ -39,6 +41,7 @@ These Berlin psychiatrists speak English and diagnose people with ADHD:
 - [Dr. Yrsa Werzinger](https://www.patienten-praxis.com/psychiatrie/dr-med-yrsa-wertzinger-fachaerztin-fuer-psychiatrie/)[^2]
 - [Dr. Nikolaos Riga](https://www.dr-rigas.de/)[^3]
 - [Charité Outpatient Center for Adult ADHD](https://psychiatrie.charite.de/en/department/ambulanzbereich/outpatient_center_for_adult_adhd/) - very hard to get an appointment
+- [Dr. Lazaros Giousmpasis](https://psychiater-praxis-berlin.de/)[^7] - no public health insurance
 - [Dr. Susanne Finke](https://privatpraxis-psychiatrie-berlin.de/) - no public health insurance
 
 **[English-speaking psychiatrists in Berlin ➞](/guides/english-speaking-psychiatrists-berlin)**
@@ -97,3 +100,5 @@ After you adjust your medication dosage, you can get prescriptions from your fam
 [^3]: [Facebook](https://www.facebook.com/groups/1501180583530755/posts/2507204306261706/?comment_id=2659109251071210)
 [^4]: [reddit.com](https://old.reddit.com/r/ADHD/comments/vpd8vt/moving_to_germany_how_is_germany_with_managing/ieikpii/)
 [^5]: [reddit.com](https://old.reddit.com/r/askberliners/comments/124jitd/tk_insuranceprescribing_elvansevyvanse_adhd/), [ADxS](https://www.adxs.org/en/page/231/choice-of-medication-for-adhd-or-adhd-with-comorbidity#content-21-order-of-priority-of-the-choice-of-medication) (July 2025)
+[^6]: [Reddit](https://old.reddit.com/r/berlin/comments/1r9s2y2/why_is_it_so_hard_to_get_an_adhd_diagnosis_in/o6lxvws/?context=3) (February 2026), Seamus Wolf (March 2026)
+[^7]: Personal experience, friend's experience (2026)
