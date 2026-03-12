@@ -152,6 +152,16 @@ You will fill a handover document (*[[Übergabeprotokoll]]*) with your landlord.
 
 **Always make a handover document.**[^43] If your landlord repairs something that is not in this document, you don't have to pay for it. If it's not in the *Übergabeprotokoll*, it's not your problem.[^44] It helps you [get your deposit back](/guides/mietkaution#when-do-i-get-my-kaution-back) faster.
 
+### Get a Mietschuldenfreiheitsbescheinigung
+
+Get a *[[Mietschuldenfreiheitsbescheinigung]]* from your landlord. It confirms that you have no debt to your landlord. You might need it to [apply for an apartment](/guides/find-a-flat-in-berlin#apply-for-the-apartment). Your landlord can refuse to give you one, or charge a fee for it.[^46]
+
+If you live in a [[WG]], you can also get a letter from your roommates to confirm that you always paid your rent on time.[^42]
+
+Your landlord can refuse to give you a *Mietschuldenfreiheitsbescheinigung*. Some landlords charge around €50 for it.[^2]
+
+**[Mietschuldenfreiheitsbescheinigung template ➞](/documents/Mietschuldenfreiheitsbescheinigung-muster.pdf)**
+
 ## Move your things
 
 ### Find cardboard boxes
@@ -212,16 +222,6 @@ Your landlord can use your *Kaution* to repair things that you broke. For exampl
 If your landlord tries to scam you, get help from your [tenants' association](/glossary/Mieterverein) or a [lawyer](/guides/english-speaking-lawyers-berlin). If you have [legal insurance](/glossary/Rechtsschutzversicherung), it will cover the cost of a lawyer.
 
 **[Where to get help ➞](/guides/help#apartment-questions)**
-
-## Get a Mietschuldenfreiheitsbescheinigung
-
-Get a *[[Mietschuldenfreiheitsbescheinigung]]* from your landlord. It confirms that you have no debt to your landlord. You might need it to [apply for an apartment](/guides/find-a-flat-in-berlin#apply-for-the-apartment). Your landlord can refuse to give you one, or charge a fee for it.[^46]
-
-If you live in a [[WG]], you can also get a letter from your roommates to confirm that you always paid your rent on time.[^42]
-
-Your landlord can refuse to give you a *Mietschuldenfreiheitsbescheinigung*. Some landlords charge around €50 for it.[^2]
-
-**[Mietschuldenfreiheitsbescheinigung template ➞](/documents/Mietschuldenfreiheitsbescheinigung-muster.pdf)**
 
 ## Checklist
 
