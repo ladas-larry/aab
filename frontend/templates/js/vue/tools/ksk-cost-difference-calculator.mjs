@@ -1,4 +1,3 @@
-import Vue from '/js/vue/vue.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import Eur from '/js/vue/components/eur.mjs';
 import IncomeInput from '/js/vue/components/income-input.mjs';

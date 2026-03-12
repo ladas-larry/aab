@@ -1,4 +1,3 @@
-import Vue from '/js/vue/vue.mjs';
 import AgeInput from '/js/vue/components/age-input.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import DatePicker from '/js/vue/components/date-picker.mjs';

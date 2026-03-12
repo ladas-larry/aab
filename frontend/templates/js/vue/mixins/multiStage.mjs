@@ -1,5 +1,4 @@
 import { validateForm } from '/js/utils/form.mjs';
-import Vue from '/js/vue/vue.mjs';
 
 export default {
 	data: function () {
@@ -32,7 +31,7 @@ export default {
 	},
 	watch: {
 		stageIndex(newStageIndex){
-			Vue.nextTick(() => {
+			this.$nextTick(() => {
 				// Focus on the first form item in the list when changing steps
 				const inputToFocusFunction = this.inputsToFocus[this.stages[newStageIndex]];
 				if(inputToFocusFunction){

@@ -1,4 +1,3 @@
-import Vue from '/js/vue/vue.mjs';
 import Checkbox from '/js/vue/components/checkbox.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import { isoDay, isoMonth } from '/js/utils/date.mjs';

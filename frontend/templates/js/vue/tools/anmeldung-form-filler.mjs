@@ -1,4 +1,3 @@
-import Vue from '/js/vue/vue.mjs';
 import Checkbox from '/js/vue/components/checkbox.mjs';
 import CityInput from '/js/vue/components/city-input.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';

@@ -1,4 +1,3 @@
-import Vue from '/js/vue/vue.mjs';
 import AddressInput from '/js/vue/components/address-input.mjs';
 import FirstNameInput from '/js/vue/components/first-name-input.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';

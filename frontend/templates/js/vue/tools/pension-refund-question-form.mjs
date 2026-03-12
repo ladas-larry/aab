@@ -1,4 +1,3 @@
-import Vue from '/js/vue/vue.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import CountryInput from '/js/vue/components/country-input.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
@@ -58,7 +57,7 @@ export default {
 				);
 				this.isLoading = false;
 				this.stage = response.ok ? 'thank-you' : 'error';
-				Vue.nextTick(() => {
+				this.$nextTick(() => {
 					this.$refs.collapsible.$el.scrollIntoView({ block: 'start', behavior: 'auto' });
 					plausible('Pension refund question', { props: {
 						stage: this.stage,

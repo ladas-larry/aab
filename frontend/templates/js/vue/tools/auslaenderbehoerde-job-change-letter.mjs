@@ -1,4 +1,3 @@
-import Vue from '/js/vue/vue.mjs';
 import AddressInput from '/js/vue/components/address-input.mjs';
 import Blank from '/js/vue/components/blank.mjs';
 import CountryInput from '/js/vue/components/country-input.mjs';

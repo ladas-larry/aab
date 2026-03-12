@@ -1,4 +1,3 @@
-import Vue from '/js/vue/vue.mjs';
 import AgeInput from '/js/vue/components/age-input.mjs';
 import ChildrenInput from '/js/vue/components/children-input.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
@@ -271,7 +270,7 @@ export default {
 			this.showExtraQuestions = !this.showExtraQuestions;
 			if(!this.showExtraQuestions) {
 				// When collapsing the questions, make sure that the calculator stays in the viewport
-				Vue.nextTick(() => {
+				this.$nextTick(() => {
 					const collapsibleEl = this.$refs.collapsible.$el;
 					if(collapsibleEl.getBoundingClientRect().bottom > window.innerHeight) {
 						collapsibleEl.scrollIntoView(false);

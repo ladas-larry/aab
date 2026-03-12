@@ -1,4 +1,3 @@
-import Vue from '/js/vue/vue.mjs';
 import AgeInput from '/js/vue/components/age-input.mjs';
 import Checkbox from '/js/vue/components/checkbox.mjs';
 import ChildrenInput from '/js/vue/components/children-input.mjs';

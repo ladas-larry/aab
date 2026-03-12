@@ -1,4 +1,3 @@
-import Vue from '/js/vue/vue.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import DatePicker from '/js/vue/components/date-picker.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
