@@ -75,7 +75,7 @@ To suggest a tax advisor, [fill this form](/suggest-business).
 Hire a tax advisor when...
 
 - **You have a complicated tax situation**  
-    For example, you have income from multiple countries, income from multiple sources, or problems that tax software can't solve.
+    For example, you have income from multiple countries, income from multiple sources (rental, investmens, stock options), or problems that tax software can't solve.
 - **You want someone to take care of everything**  
     They can talk with the *[[Finanzamt]]*, and do all your taxes for you. You don't have to do anything. This makes your life much easier.
 - **You are [starting a business](/guides/start-a-business-in-germany)**  
@@ -85,7 +85,7 @@ Hire a tax advisor when...
 - **You are in trouble**  
     If you have problems with the *[[Finanzamt]]*, and you don't know what to do. They can take care of all communications with the *Finanzamt*. They can quickly solve your problem.
 
-If you have a simple tax situation, you don't need a tax advisor. The *[[Finanzamt]]* already knows how much you earned from your job. You might not need to make a [tax declaration](/glossary/Steuererklärung). You can use [[ELSTER]] or [tax software](/guides/german-tax-software) to declare [tax-deductible](/glossary/steuerlich%20absetzbar) expenses.
+If you have a regular situation, you don't need a tax advisor. The *[[Finanzamt]]* already knows how much you earned from your job. You might not need to make a [tax declaration](/glossary/Steuererklärung). You can use [[ELSTER]] or [tax software](/guides/german-tax-software) to declare [tax-deductible](/glossary/steuerlich%20absetzbar) expenses.
 
 ## Cost of a tax advisor
 
@@ -109,7 +109,7 @@ Your tax advisor can be anywhere in Germany. It's easier if you look in other Ge
 
 ### Tax software
 
-If your tax situation is simple, use tax software. For example, if you have a full time job and no [tax-deductible](/glossary/steuerlich%20absetzbar) expenses.
+In most situations using tax software will be suficient. Particulary if you have a full time job and regular [tax-deductible](/glossary/steuerlich%20absetzbar) expenses.
 
 Using tax software cheaper and easier than finding a tax advisor. There are English-speaking options.
 
