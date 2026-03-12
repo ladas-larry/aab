@@ -754,6 +754,8 @@ body > header {
         text-align: left;
         padding-top: var(--l);
         border-top: var(--b-box);
+        color: var(--c-text-light);
+        font-size: var(--f-s);
     }
 }
 @include not-desktop{
@@ -1186,7 +1188,7 @@ sup:target a{
 .article-body{
     > :last-child{margin-bottom: 0}
 
-    > * + h2, > .component-group > * + h2{
+    > * + h2{
         border-top: var(--b-box);
         padding-top: var(--xxxl);
         margin: var(--xxxl) 0 var(--xl);
@@ -2525,17 +2527,18 @@ details{
         position: absolute;
 
         &:checked + label{
+            cursor: default;
             color: var(--c-text-light);
             background: transparent;
             z-index: 0;
+            box-shadow: 0px -7px 0 0px #0003, inset 0px 0px 2px 0 #0003;
+            position: relative;
+            top: 1px;
         }
-    }
 
-    input:first-child + label{
-        border-radius: var(--b-radius) 0 0 var(--b-radius);
-    }
-    label:last-child{
-        border-radius: 0 var(--b-radius) var(--b-radius) 0;
+        &:first-child + label{
+            border-radius: var(--b-radius) 0 0 var(--b-radius);
+        }
     }
 
     label{
@@ -2546,16 +2549,16 @@ details{
 
         cursor: pointer;
         background: var(--c-bg-widget-opaque);
-        box-shadow: inset 0 -4px 5px -5px var(--c-border-clickable), 0 0 0 1px var(--c-border-clickable);
+        box-shadow: inset 0 -4px 5px -5px #0005, 0 0 0 1px var(--c-border-clickable);
         position: relative;
         z-index: 1;
 
         display: grid;
         align-items: center;
-    }
 
-    input:checked + label{
-        cursor: default;
+        &:last-child{
+            border-radius: 0 var(--b-radius) var(--b-radius) 0;
+        }
     }
 
     label:focus-visible, input:focus-visible + label{
@@ -3411,6 +3414,43 @@ details{
     gap: var(--s) var(--l);
     font-weight: 600;
     flex-wrap: wrap;
+}
+
+.component-group{
+    .collapsible{
+        margin: var(--xxxl) 0;
+    }
+}
+
+.filters{
+    @include text-block;
+    display: grid;
+    gap: var(--m);
+    grid-template-columns: max-content;
+    grid-auto-flow: column;
+    justify-content: stretch;
+
+    .tabs{
+        display: flex;
+    }
+
+    select{
+        max-width: none;
+    }
+
+    @include full-width-site{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: row;
+
+        .tabs{
+            grid-column: 1 / -1;
+        }
+    }
+
+    @include only-phone{
+        grid-template-columns: 1fr;
+        gap: var(--s);
+    }
 }
 
 .feedback-table, .feedback-summary {

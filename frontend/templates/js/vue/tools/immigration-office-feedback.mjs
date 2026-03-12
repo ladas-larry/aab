@@ -1,8 +1,8 @@
-import Vue from '/js/vue/vue.mjs';
 import CitizenshipFeedbackForm from '/js/vue/tools/citizenship-feedback-form.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
 import ResidencePermitFeedbackForm from '/js/vue/tools/residence-permit-feedback-form.mjs';
 import Pagination from '/js/vue/components/pagination.mjs';
+import Tabs from '/js/vue/components/tabs.mjs';
 import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs'
 import { formatLongDate, formatTimeDelta } from '/js/utils/date.mjs';
 import { residencePermitTypes, residencePermitDepartments, oldResidencePermitDepartments } from '/js/utils/immigrationOffice.mjs';
@@ -13,18 +13,21 @@ export default {
 		Glossary,
 		ResidencePermitFeedbackForm,
 		Pagination,
+		Tabs,
 	},
 	data() {
 		return {
+			isCitizenship: false,
 			department: null,
-			isLoading: true,
-			resultPages: [], // An array of arrays. First a list of pages, then items on that page
-			page: null,
-			resultCount: 0,
-			itemsPerPage: 10,
-			stats: {},
 			citizenshipDepartments,
 			oldResidencePermitDepartments,
+
+			apiEndpointForCurrentResults: null,
+			page: 1,
+			resultCount: 0,
+			itemsPerPage: 10,
+			resultsPage: [],
+			stats: {},
 
 			residencePermitType: null,
 			residencePermitTypes,
@@ -54,36 +57,16 @@ export default {
 					glossaryTerm: null,
 				},
 			},
+
+			isLoading: true,
 		};
 	},
 	async mounted(){
-		this.loadPage(1, false);
+		this.loadPage();
 	},
 	computed: {
-		isCitizenship(){
-			return this.residencePermitType === 'CITIZENSHIP';
-		},
-		apiEndpoint(){
-			const querystring = new URLSearchParams({ page: this.page });
-			if(this.department){
-				querystring.append('department', this.department);
-			}
-
-			if(this.isCitizenship){
-				return '/api/forms/citizenship-feedback.json?' + querystring.toString();	
-			}
-			else{
-				if(this.residencePermitType){
-					querystring.append('residence_permit_type', this.residencePermitType);
-				}
-				return '/api/forms/residence-permit-feedback.json?' + querystring.toString();
-			}
-		},
 		pageCount(){
-			return Math.ceil(this.resultCount / this.itemsPerPage);
-		},
-		resultsPage(){
-			return this.isLoading ? [] : this.resultPages[this.page];
+			return this.isLoading ? 0 : Math.ceil(this.resultCount / this.itemsPerPage);
 		},
 		feedbackCount(){
 			return this.stats?.first_response_date?.count || 0;
@@ -94,64 +77,35 @@ export default {
 		totalWaitRange(){
 			return this.stats?.total?.readable_range ?? 'a few months';
 		},
-
 		residencePermitDepartments(){
 			return residencePermitDepartments(this.residencePermitType);
 		},
-
 		guideUrl(){
-			return {
-				BLUE_CARD: '/guides/blue-card',
-				WORK_VISA: '/guides/work-visa',
-				FREELANCE_VISA: '/guides/freelance-visa',
-				PERMANENT_RESIDENCE: '/guides/permanent-residence',
-			}[this.residencePermitType] || null;
+			return residencePermitTypes?.[this.residencePermitType]?.guideUrl;
 		},
+
+		apiEndpoint(){
+			let apiEndpoint = '/api/forms/citizenship-feedback.json';
+			const querystring = new URLSearchParams({ page: this.page });
+			if(this.department){
+				querystring.append('department', this.department);
+			}
+			if(!this.isCitizenship){
+				if(this.residencePermitType){
+					querystring.append('residence_permit_type', this.residencePermitType);
+				}
+				apiEndpoint = '/api/forms/residence-permit-feedback.json';
+			}
+			return `${apiEndpoint}?${querystring.toString()}`;
+		}
 	},
 	methods: {
 		formatLongDate,
+		formatTimeDelta,
+
 		healthInsuranceType(result){
 			return result.health_insurance_type && this.healthInsuranceTypes[result.health_insurance_type];
 		},
-		async loadPage(page, scrollToTop=true){
-			this.page = page;
-			if(scrollToTop){
-				Vue.nextTick(() => {
-					this.$el.querySelector('#feedback-from-other-people').scrollIntoView(true);
-				});
-			}
-
-			if(!this.resultPages[page]){
-				this.isLoading = true;
-				const response = await (await fetch(this.apiEndpoint)).json();
-				this.resultCount = response.count;
-				this.resultPages[page] = response.results.map(r => {
-					r.modification_date = new Date(r.modification_date);
-					r.application_date = new Date(r.application_date);
-					r.first_response_date = r.first_response_date ? new Date(r.first_response_date) : null;
-					r.appointment_date = r.appointment_date ? new Date(r.appointment_date) : null;
-					r.pick_up_date = r.pick_up_date ? new Date(r.pick_up_date) : null;
-					return r;
-				});
-				this.stats = response.stats;
-				this.isLoading = false;
-			}
-		},
-		async deleteResult(modificationKey){
-			if(confirm('Delete this item?')){
-				const apiEndpoint = '/api/forms/' + (this.isCitizenship ? 'citizenship' : 'residence-permit') + '-feedback/' + modificationKey
-				await fetch(
-					apiEndpoint, {
-						method: 'DELETE',
-						keepalive: true,
-						headers: {'Content-Type': 'application/json; charset=utf-8'}
-					}
-				);
-				this.resultPages.splice(0, this.resultPages.length);
-				this.loadPage(this.page);
-			}
-		},
-
 		residencePermitName(residencePermitType){
 			return {
 				CITIZENSHIP: {
@@ -174,8 +128,6 @@ export default {
 			}[result.department];
 			return longName?.split(' — ')[0];
 		},
-
-		formatTimeDelta,
 		stepWaitRange(stepKey){
 			if(this.isLoading){
 				return 'Loading…';
@@ -198,21 +150,100 @@ export default {
 		},
 		isInTheFuture(date){
 			return date > (new Date());
-		}
+		},
+
+		async loadPage(){
+			if(this.apiEndpoint !== this.apiEndpointForCurrentResults){
+				this.resultsPage = [];
+				this.apiEndpointForCurrentResults = this.apiEndpoint;
+				this.isLoading = true;
+
+				const response = await (await fetch(this.apiEndpoint)).json();
+				this.resultCount = response.count;
+				this.resultsPage = response.results.map(r => {
+					r.modification_date = new Date(r.modification_date);
+					r.application_date = new Date(r.application_date);
+					r.first_response_date = r.first_response_date ? new Date(r.first_response_date) : null;
+					r.appointment_date = r.appointment_date ? new Date(r.appointment_date) : null;
+					r.pick_up_date = r.pick_up_date ? new Date(r.pick_up_date) : null;
+					return r;
+				});
+				this.stats = response.stats;
+
+				this.isLoading = false;
+			}
+		},
+		scrollToTopOfResults(){
+			this.$nextTick(() => {
+				this.$el.querySelector('#feedback-from-other-people').scrollIntoView({
+					behavior: "instant",
+					block: "start",
+					inline: "nearest"
+				});
+			});
+		},
+		async deleteResult(modificationKey){
+			if(confirm('Delete this item?')){
+				const queryType = this.isCitizenship ? 'citizenship' : 'residence-permit';
+				const apiEndpoint = `/api/forms/${queryType}-feedback/${modificationKey}`;
+				await fetch(
+					apiEndpoint, {
+						method: 'DELETE',
+						keepalive: true,
+						headers: {'Content-Type': 'application/json; charset=utf-8'}
+					}
+				);
+				this.resultsPage = [];
+				this.loadPage();
+			}
+		},
 	},
 	watch: {
+		apiEndpoint(){
+			this.$nextTick(() => this.loadPage());
+		},
+		isCitizenship(){
+			this.department = null;
+			this.residencePermitType = null;
+			this.page = 1;
+		},
 		department(){
-			this.resultPages = [];
-			this.loadPage(1, false);
+			this.page = 1;
 		},
 		residencePermitType(){
-			this.resultPages = [];
-			this.department = null;
-			this.loadPage(1, false);
+			// Avoiding invalid department + type combinations
+			if(!(this.department in this.residencePermitDepartments)){
+				this.department = null;
+			}
+			this.page = 1;
 		},
 	},
 	template: `
 		<div class="component-group">
+			<div class="filters">
+				<tabs
+					id="is-citizenship-top"
+					aria-label="Feedback type"
+					v-model="isCitizenship"
+					:options="[{label: 'Residence permit', value: false}, {label: 'Citizenship', value: true}]"
+					required>
+				</tabs>
+				<select v-model="residencePermitType" v-if="!isCitizenship">
+					<option :value="null">All types</option>
+					<option disabled="disabled">──────────</option>
+					<option v-for="(name, key) in residencePermitTypes" :key="key" :value="key" v-text="name.capitalized"></option>
+				</select>
+				<select v-model="department">
+					<option :value="null">All departments</option>
+					<option disabled="disabled">──────────</option>
+					<option v-if="isCitizenship" v-for="(name, key) in citizenshipDepartments" :key="key" :value="key" v-text="name"></option>
+					<option v-if="!isCitizenship" v-for="(name, key) in residencePermitDepartments" :key="key" :value="key" v-text="name"></option>
+					<optgroup v-if="!isCitizenship && !residencePermitType" label="Old departments">
+						<option v-for="(name, key) in oldResidencePermitDepartments" :key="key" :value="key" v-text="name"></option>
+					</optgroup>
+				</select>
+			</div>
+
 			<p>
 				In Berlin, it takes <strong v-text="totalWaitRange">a few months</strong> to
 				<template v-if="isCitizenship">become a German citizen.</template>
@@ -224,31 +255,6 @@ export default {
 
 				Based on <a href="#feedback-from-other-people">feedback from <span v-text="feedbackCount">many</span> people</a>.
 			</p>
-
-			<div class="buttons bar left">
-				<select v-model="residencePermitType">
-					<optgroup label="Citizenship">
-						<option value="CITIZENSHIP">Citizenship</option>
-					</optgroup>
-					<optgroup label="Residence permits">
-						<option :value="null">All residence permits</option>
-						<option disabled="disabled">──────────</option>
-						<option v-for="(name, key) in residencePermitTypes" :key="key" :value="key" v-text="name.capitalized"></option>
-					</optgroup>
-				</select>
-				<select v-model="department">
-					<option :value="null">All departments</option>
-					<template v-if="isCitizenship">
-						<option v-for="(name, key) in citizenshipDepartments" :key="key" :value="key" v-text="name"></option>
-					</template>
-					<optgroup label="Current departments" v-if="!isCitizenship">
-						<option v-for="(name, key) in residencePermitDepartments" :key="key" :value="key" v-text="name"></option>
-					</optgroup>
-					<optgroup label="Old departments" v-if="!isCitizenship">
-						<option v-for="(name, key) in oldResidencePermitDepartments" :key="key" :value="key" v-text="name"></option>
-					</optgroup>
-				</select>
-			</div>
 
 			<div class="feedback-summary">
 				<div class="steps">
@@ -284,33 +290,29 @@ export default {
 				<strong><a :href="guideUrl" class="internal-link">How to apply for the {{ residencePermitTypes[residencePermitType].normal }}</a></strong>
 			</p>
 
-			<h2 id="share-your-experience">Share your experience</h2>
-
 			<citizenship-feedback-form v-if="isCitizenship" static></citizenship-feedback-form>
 			<residence-permit-feedback-form v-else static></residence-permit-feedback-form>
 
 			<h2 id="feedback-from-other-people">Feedback from other people</h2>
 
-			<div class="buttons bar left">
-				<select v-model="residencePermitType">
-					<optgroup label="Citizenship">
-						<option value="CITIZENSHIP">Citizenship</option>
-					</optgroup>
-					<optgroup label="Residence permits">
-						<option :value="null">All residence permits</option>
-						<option disabled="disabled">──────────</option>
-						<option v-for="(name, key) in residencePermitTypes" :key="key" :value="key" v-text="name.capitalized"></option>
-					</optgroup>
+			<div class="filters">
+				<tabs
+					id="is-citizenship-bottom"
+					aria-label="Feedback type"
+					v-model="isCitizenship"
+					:options="[{label: 'Residence permit', value: false}, {label: 'Citizenship', value: true}]"
+					required>
+				</tabs>
+				<select v-model="residencePermitType" v-if="!isCitizenship">
+					<option :value="null">All types</option>
+					<option disabled="disabled">──────────</option>
+					<option v-for="(name, key) in residencePermitTypes" :key="key" :value="key" v-text="name.capitalized"></option>
 				</select>
 				<select v-model="department">
 					<option :value="null">All departments</option>
-					<template v-if="isCitizenship">
-						<option v-for="(name, key) in citizenshipDepartments" :key="key" :value="key" v-text="name"></option>
-					</template>
-					<optgroup label="Current departments" v-if="!isCitizenship">
-						<option v-for="(name, key) in residencePermitDepartments" :key="key" :value="key" v-text="name"></option>
-					</optgroup>
-					<optgroup label="Old departments" v-if="!isCitizenship">
+					<option v-if="isCitizenship" v-for="(name, key) in citizenshipDepartments" :key="key" :value="key" v-text="name"></option>
+					<option v-if="!isCitizenship" v-for="(name, key) in residencePermitDepartments" :key="key" :value="key" v-text="name"></option>
+					<optgroup v-if="!isCitizenship" label="Old departments">
 						<option v-for="(name, key) in oldResidencePermitDepartments" :key="key" :value="key" v-text="name"></option>
 					</optgroup>
 				</select>
@@ -392,7 +394,7 @@ export default {
 				</li>
 			</ul>
 
-			<pagination :value="page" @input="loadPage($event, true)" :page-count="pageCount"></pagination>
+			<pagination :value="page" @input="page = $event; scrollToTopOfResults()" :page-count="pageCount"></pagination>
 		</div>
 	`,
 }

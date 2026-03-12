@@ -304,7 +304,7 @@ export default {
 						</div>
 					</div>
 				</div>
-				<template v-if="!showRestOfForm">
+				<template v-if="showFeedbackLink && !showRestOfForm">
 					<hr>
 					<div class="icon-paragraph">
 						<icon-support/>
@@ -312,7 +312,7 @@ export default {
 							<p>
 								Your feedback helps others plan their {{ residencePermitName }} application.
 							</p>
-							<p v-if="showFeedbackLink">
+							<p>
 								<strong><a class="internal-link" target="_blank" href="/guides/immigration-office/wait-times">Read other people's feedback</a></strong>
 							</p>
 						</div>

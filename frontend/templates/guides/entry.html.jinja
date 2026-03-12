@@ -17,8 +17,10 @@
 	<main aria-label="Main page">
 		{% block precontent %}{% endblock %}
 		<article class="section">
-			<h1>{{ entry.title }}</h1>
-			{% include "_blocks/postMeta.html" %}
+			{% block contentHeader %}
+				<h1>{{ entry.title }}</h1>
+				{% include "_blocks/postMeta.html" %}
+			{% endblock %}
 			{% with entry=entry, showRelatedEntriesLink=related_collections|length %}
 				<div class="article-body">
 					{{ entry.body|render|safe }}

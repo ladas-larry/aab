@@ -22,6 +22,7 @@ export const residencePermitTypes = {
 		capitalized: "Blue Card",
 		normal: "Blue Card",
 		glossaryTerm: "Blue Card",
+		guideUrl: '/guides/blue-card',
 	},
 	FAMILY_REUNION_VISA: {
 		capitalized: "Family reunion visa",
@@ -34,6 +35,7 @@ export const residencePermitTypes = {
 		normal: "freelance visa",
 		glossaryTerm: "Freelance visa",
 		askAboutHealthInsurance: true,
+		guideUrl: '/guides/freelance-visa',
 	},
 	JOB_SEEKER_VISA: {
 		capitalized: "Job seeker visa",
@@ -46,6 +48,7 @@ export const residencePermitTypes = {
 		normal: "permanent residence",
 		glossaryTerm: "Niederlassungserlaubnis",
 		askAboutHealthInsurance: true,
+		guideUrl: '/guides/permanent-residence',
 	},
 	STUDENT_VISA: {
 		capitalized: "Student visa",
@@ -57,6 +60,7 @@ export const residencePermitTypes = {
 		capitalized: "Work visa",
 		normal: "work visa",
 		glossaryTerm: "Work Visa",
+		guideUrl: '/guides/work-visa',
 	},
 };
 
