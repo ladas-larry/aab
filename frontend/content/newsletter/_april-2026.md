@@ -36,6 +36,10 @@ It's *really* hard to get an ADHD diagnosis with public health insurance. Fortun
 
 I have verified this with an expert and updated my [ADHD guide](/guides/adhd-berlin-germany).
 
+### The Bahn app rocks
+
+On a recent train trip, I discovered the [Bahn app](https://bahnapp.com/). This unofficial Deutsche Bahn app does not do anything special, but it's *really good* at clearly displaying train routes. It's better than the official DB Navigator app in many subtle ways.
+
 ## Interesting links
 
 - Someone created a website to [gamble fake money on real Deutsche Bahn delays](https://bahn.bet/). Users have already placed over 150,000 bets.
