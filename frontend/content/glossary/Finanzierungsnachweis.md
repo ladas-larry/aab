@@ -18,6 +18,7 @@ There are many ways to prove your financial resources:[^1]
 - A blocked account (*[[Sperrkonto]]*) with €{{SPERRKONTO_AMOUNT|cur}} in it[^2]
 - A letter from a guarantor (*Verpflichtungserklärung*)
 - A grant or a scholarship
+- A work contract
 
 **[More information](https://www.study-in-germany.de/en/plan-your-studies/requirements/proof-of-financing/)** - Study in Germany
 
