@@ -129,6 +129,12 @@ A tax help union (*[[Lohnsteuerhilfeverein]]*) is a non-profit organisation that
 
 The membership costs €30 to €300 per year, depending on your income.[^4] Only employees can be members, not self-employed people.[^3]
 
+### Hybrid tax adviser services
+
+Apps that offer tax adviser service, such apps Taxfix Expert Service. But your case might not be supported.[^6] 
+You might end up filing most of your data yourself anyway.
+Once you decide to use the app, it's alwyas much cheaper to do self-filing.
+
 ### Freelancer cooperative
 
 **[Smart](/out/smart-coop)** is a cooperative for freelancers. If you are a member, they take care of invoicing, taxes, and many other things for you. They also give you an employment contract and a steady income. 
@@ -141,3 +147,7 @@ If you want the flexibility of a freelancer and the stability of a job, it's a g
 [^3]: [bubolz-bartsch.de](https://web.archive.org/web/20240804204416/https://bubolz-bartsch.de/lohnsteuerhilfeverein-oder-steuerberater-was-lohnt-sich-mehr/#:~:text=wen%20darf%20der%20lohnsteuerhilfeverein%20nicht%20beraten%3F) (August 2019)
 [^4]: [bubolz-bartsch.de](https://web.archive.org/web/20240804204416/https://bubolz-bartsch.de/lohnsteuerhilfeverein-oder-steuerberater-was-lohnt-sich-mehr/#:~:text=kosten%20bei%20einem%20steuerverein) (August 2019)
 [^5]: [reddit.com/r/finanzen](https://old.reddit.com/r/Finanzen/comments/scgrpu/steuerberater_als_freelancer/hu64wbv/)
+[^6]: [Taxfix](https://support.taxfix.de/hc/en-us/articles/27734287254557-Who-can-use-the-Expert-Service#h_01JWBJ5B04WRY1AWGSB0MT4DD8)
+
+
+
