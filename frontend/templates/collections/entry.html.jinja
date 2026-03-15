@@ -1,11 +1,35 @@
 {% extends "_layout.html" %}
 {% set metatitle = entry.title %}
 {% set metadescription = entry.description %}
+{% set collection = entry %}
+
 
 {% block postHead %}
 	{{ super() }}
 	<link rel="index" href="{{ SITE_URL }}/guides">
 {% endblock %}
+
+{% macro collectionItem(item, isSubitem=false) %}
+	<li>
+		<strong>
+			{% if item.uri|default %}
+				<a href="{{ entries[item.uri].url }}">{{ entries[item.uri].short_title|default(entries[item.uri].title) }}</a>
+			{% else %}
+				{{ item.title }}
+			{% endif %}
+		</strong>
+		{% if item.uri|default %}
+			<br>{{ entries[item.uri].description }}
+		{% endif %}
+		{% if item.entries|default %}
+			<ul>
+				{% for subItem in item.entries %}
+					{{ collectionItem(subItem, true) }}
+				{% endfor %}
+			</ul>
+		{% endif %}
+	</li>
+{% endmacro %}
 
 {% block main %}
 	<main aria-label="Main page">
@@ -14,9 +38,31 @@
 			{% if entry.description %}<p>{{ entry.description }}</p>{% endif %}
 		</header>
 		<div class="section" aria-label="Guides in this collection">
-			{% with entries=entry.related_guides|default([]), showDateUpdated=true %}
-				{% include "_blocks/entryPreviews.html" %}
-			{% endwith %}
+			<div class="article-body">
+			{% for item in collection.entries %}
+				<h2>
+					{% if item.uri|default %}
+						<a title="{{ entries[item.uri].title }}" href="{{ entries[item.uri].url }}">{{ item.title }}</a>
+					{% else %}
+						{{ item.title }}
+					{% endif %}
+				</h2>
+				{% if item.uri|default %}
+					<p>{{ entries[item.uri].description }}</p>
+				{% endif %}
+				{% if item.entries|default %}
+					<ul>
+						{% for item in item.entries %}
+							{{ collectionItem(item) }}
+						{% endfor %}
+					</ul>
+				{% endif %}
+			{% endfor %}
+			</div>
+			<hr>
+			<nav class="previous-next">
+				<a rel="index" href="/guides"><i class="icon left"></i> See all other guides</a>
+			</nav>
 		</div>
 	</main>
 {% endblock %}

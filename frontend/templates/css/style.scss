@@ -970,8 +970,8 @@ main{
     #related .collection{
         padding: 0;
         @include full-width-site{
-            &:not(:last-child){
-                margin-bottom: var(--xl);
+            + .collection{
+                margin-top: var(--l);
             }
         }
     }
@@ -980,10 +980,12 @@ main{
         margin-bottom: calc(var(--m) * -1)
     }
 
+    .collection:not(:only-of-type){
+        width: calc(50% - 19px / 2);
+    }
+
     .collection{
-        width: calc(50% - 19px / 2);
         box-sizing: border-box;
-        width: calc(50% - 19px / 2);
         background: var(--c-bg-page);
         margin-bottom: var(--m);
 
@@ -1002,12 +1004,10 @@ main{
             }
         }
 
-        > :is(ol, ul) > li {
-            > a {
-                font-weight: 600;
-            }
+        > :is(ol, ul) {
+            margin-bottom: 0;
 
-            + li {
+            > li + li {
                 margin-top: var(--m);
             }
         }
@@ -1016,6 +1016,7 @@ main{
             @include list-marker-ul-compact;
             @include list-marker-light;
         }
+
         @include full-width-site{
             width: 100%;
         }

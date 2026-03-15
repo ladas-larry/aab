@@ -1,0 +1,400 @@
+- id: housing
+  title: Housing in Germany
+  short_title: Housing
+  description: Guides about finding an apartment, tenant rights, moving in and moving out.
+  entries:
+    - title: How to find an apartment
+      uri: guides/find-a-flat-in-berlin.md
+      entries:
+        - title: Housing prices map
+          uri: tools/rent-map.md
+        - title: Housing scams
+          uri: guides/housing-scams.md
+        - title: Getting a Schufa
+          uri: guides/schufa.md
+    - title: Moving in
+      uri: guides/moving-in.md
+      entries:
+        - title: Apartment deposit
+          uri: guides/mietkaution.md
+        - title: Getting key doubles
+          uri: guides/key-copies.md
+        - title: Electric bills
+          uri: guides/electric-bill-berlin.md
+        - title: TV tax
+          uri: guides/gez-rundfunkbeitrag.md
+        - title: Quiet hours
+          uri: guides/quiet-hours.md
+          entries:
+            - title: Making a noise complaint
+              uri: guides/noise-complaint.md
+        - title: Review of Conny rent reduction
+          uri: guides/conny-review.md
+    - title: Changing your address
+      uri: guides/address-change.md
+      entries:
+        - title: Registering your address
+          uri: guides/anmeldung-in-english-berlin.md
+        - title: Getting a Bürgeramt appointment
+          uri: guides/berlin-burgeramt-appointment.md
+        - title: Getting a Meldebescheinigung
+          uri: guides/replacement-meldebescheinigung.md
+    - title: Moving out
+      uri: guides/moving-out.md
+      entries:
+        - title: Deregistering your address
+          uri: guides/abmeldung.md
+        - title: Replacing lost keys
+          uri: guides/lost-keys.md
+        - title: Leaving Germany
+          uri: guides/leaving-germany.md
+          entries:
+            - title: Getting a pension refund
+              uri: guides/pension-payments-refund.md
+- id: work
+  title: Working in Germany
+  short_title: Work
+  description: Guides about finding a job, the German workplace and employee rights.
+  entries:
+    - title: How to find a job
+      uri: guides/find-a-job-in-berlin.md
+      entries:
+        - title: Salaries in Germany
+          uri: guides/salaries-in-germany.md
+        - title: The probation period
+          uri: guides/probezeit.md
+        - title: What does "m/w/d" mean?
+          uri: guides/mwd-meaning.md
+    - title: Changing or losing your job
+      uri: guides/losing-your-job.md
+      entries:
+        - title: Job notice periods
+          uri: guides/job-notice-period.md
+        - title: Unemployment benefits
+          uri: guides/unemployment-benefits.md
+        - title: Health insurance when unemployed
+          uri: guides/german-health-insurance/when-unemployed.md
+    - title: Employee rights
+      entries:
+        - title: Vacations
+          uri: guides/vacation-days.md
+        - title: Sick leave
+          uri: guides/sick-leave.md
+        - title: Sabbatical leave
+          uri: guides/sabbatical-leave.md
+        - title: Educational leave
+          uri: guides/bildungsurlaub.md
+- id: living-in-germany
+  title: Living in Germany
+  description: Guides about the basics of life in Germany.
+  entries:
+    - title: Visiting Berlin
+      uri: guides/visit-berlin.md
+      entries:
+        - title: German power sockets
+          uri: guides/power-sockets.md
+    - title: German culture
+      entries:
+        - title: Learning German
+          uri: guides/learn-german.md
+        - title: Tipping
+          uri: guides/tipping.md
+        - title: Recycling
+          uri: guides/sorting-trash-in-germany.md
+          entries:
+            - title: Returning empty bottles
+              uri: guides/pfand-bottles.md
+            - title: Getting rid of a Christmas tree
+              uri: guides/christmas-tree-disposal.md
+        - title: Public holidays
+          uri: guides/public-holidays.md
+    - title: Mailing letters
+      uri: guides/mail-a-letter.md
+      entries:
+        - title: Writing German addresses
+          uri: guides/addressing-a-letter-in-germany.md
+        - title: Receiving your packages
+          uri: guides/package-delivery.md
+    - title: Dialling German phone numbers
+      uri: guides/dial-phone-numbers-germany.md
+      entries:
+        - title: Emergency numbers
+          uri: guides/emergency-numbers.md
+    - title: German laws
+      entries:
+        - title: Photography laws
+          uri: guides/photography-laws-germany.md
+        - title: Streaming and torrenting movies
+          uri: guides/pirating-streaming-movies-in-germany.md
+    - title: Other guides
+      entries:
+        - title: Two kinds of Netto
+          uri: guides/netto-vs-netto.md
+        - title: Worms in trees
+          uri: guides/worms-in-trees.md
+        - title: German fonts
+          uri: guides/germany-sign-fonts.md
+        - title: Movies set in Berlin
+          uri: guides/movies-set-in-berlin.md
+- id: immigration
+  title: German visas and immigration
+  short_title: Visas and immigration
+  description: Guides about German visas, residence permits, permanent residence and citizenship.
+  entries:
+    - title: Getting a residence permit
+      uri: guides/residence-permit.md
+      entries:
+        - title: Work visa
+          uri: guides/work-visa.md
+        - title: Blue Card
+          uri: guides/blue-card.md
+        - title: Permanent residence
+          uri: guides/permanent-residence.md
+        - title: Freelance visa
+          uri: guides/freelance-visa.md
+          entries:
+            - title: Getting letters of intent
+              uri: guides/freelance-visa-letter-of-intent.md
+            - title: Renewing a freelance visa
+              uri: guides/renew-german-freelance-visa.md
+        - title: Fiktionsbescheinigung
+          uri: guides/fiktionsbescheinigung.md
+        - title: The Zusatzblatt
+          uri: guides/zusatzblatt.md
+        - title: Activating your eID
+          uri: guides/eid-online-ausweisfunktion.md
+    - title: Berlin immigration office
+      uri: guides/immigration-office.md
+      entries:
+        - title: Immigration office wait times
+          uri: guides/immigration-office/wait-times.md
+- id: personal-finance
+  title: Personal finance in Germany
+  short_title: Personal finance
+  description: Guides about German taxes, banking, insurance and pensions.
+  entries:
+    - title: Cost of living
+      uri: guides/cost-of-living.md
+      entries:
+        - title: Saving money
+          uri: guides/saving-money-germany.md
+    - title: Banking
+      uri: guides/banking.md
+      entries:
+        - title: Best German banks
+          uri: guides/best-bank-germany.md
+        - title: N26 review
+          uri: guides/an-honest-review-of-n26.md
+        - title: Kontist review
+          uri: guides/kontist-review.md
+        - title: Degiro review
+          uri: guides/an-honest-review-of-degiro.md
+        - title: Exchanging coins
+          uri: guides/exchange-coins-berlin.md
+    - title: Taxes
+      uri: guides/taxes.md
+      entries:
+        - title: English-speaking tax advisors
+          uri: guides/english-speaking-steuerberater-berlin.md
+          entries:
+            - title: Steuerberater or Buchhalter?
+              uri: guides/steuerberater-vs-buchhalter.md
+        - title: Tax software
+          uri: guides/german-tax-software.md
+        - title: Tax ID, tax number, VAT number
+          uri: guides/german-tax-id-steuernummer.md
+        - title: Sozialversicherungsnummer
+          uri: guides/german-versicherungsnummer.md
+        - title: Creating an ELSTER account
+          uri: guides/elster-account.md
+        - title: Getting a Bescheinigung in Steuersachen
+          uri: guides/bescheinigung-in-steuersachen.md
+    - title: Health insurance
+      uri: guides/german-health-insurance.md
+      entries:
+        - title: For a visa application
+          uri: guides/german-health-insurance/for-a-visa-application.md
+        - title: For employees
+          uri: guides/german-health-insurance/for-employees.md
+        - title: For students
+          uri: guides/german-health-insurance/for-students.md
+        - title: For freelancers
+          uri: guides/german-health-insurance/for-freelancers.md
+          entries:
+            - title: Künstlersozialkasse
+              uri: guides/ksk-kuenstlersozialkasse.md
+        - title: For apprentices
+          uri: guides/german-health-insurance/for-apprentices.md
+        - title: Ottonova review
+          uri: guides/ottonova-review.md
+        - title: Techniker Krankenkasse review
+          uri: guides/techniker-krankenkasse-review.md
+    - title: Insurance
+      uri: guides/insurance.md
+      entries:
+        - title: Liability insurance
+          uri: guides/haftpflichtversicherung.md
+        - title: Legal insurance
+          uri: guides/legal-insurance.md
+- id: family-friends-pets
+  title: Family, friends and pets in Germany
+  short_title: Family, friends and pets
+  description: Guides for you and the people you love
+  entries:
+    - title: Making friends
+      uri: guides/making-friends.md
+    - title: Getting married
+      uri: guides/getting-married-in-germany.md
+    - title: Finding a Kita
+      uri: guides/kita.md
+      entries:
+        - title: Getting a Kitagutschein
+          uri: guides/kitagutschein.md
+    - title: Dog ownership
+      uri: guides/dog-ownership.md
+      entries:
+        - title: English-speaking veterinarians
+          uri: guides/english-speaking-vets.md
+        - title: Burying a pet
+          uri: guides/dead-animal-disposal-berlin.md
+- id: health
+  title: Doctors and healthcare in Berlin
+  short_title: Health
+  description: Guides about finding English-speaking doctors, choosing health insurance and getting healthcare in Germany.
+  entries:
+    - title: English-speaking doctors
+      uri: guides/how-to-find-english-speaking-medical-professionals-in-berlin.md
+      entries:
+        - title: GPs
+          uri: guides/english-speaking-doctors-berlin.md
+        - title: Psychiatrists
+          uri: guides/english-speaking-psychiatrists-berlin.md
+        - title: Psychotherapists
+          uri: guides/english-speaking-psychotherapists-berlin.md
+        - title: Dentists
+          uri: guides/list-of-english-speaking-dentists-in-berlin.md
+        - title: Gynaecologists
+          uri: guides/english-speaking-gynecologists-berlin.md
+    - title: Healthcare
+      entries:
+        - title: HIV and STI testing
+          uri: guides/std-testing.md
+        - title: ADHD diagnosis
+          uri: guides/adhd-berlin-germany.md
+        - title: Hay fever
+          uri: guides/hay-fever.md
+        - title: Eyeglasses
+          uri: guides/eyeglasses.md
+        - title: Registering as an organ donor
+          uri: guides/organ-donor.md
+- id: getting-around
+  title: Getting around in Berlin
+  short_title: Getting around
+  description: Guides about Berlin public transit and driving in Germany.
+  entries:
+    - title: Public transit
+      uri: guides/public-transit.md
+      entries:
+        - title: Buying a Deutschland Ticket
+          uri: guides/deutschland-ticket.md
+        - title: Paying a BVG fine
+          uri: guides/paying-a-bvg-fine.md
+        - title: Cancelling a BVG subscription
+          uri: guides/cancel-bvg-yearly-ticket.md
+    - title: Buying and riding a bicycle
+      uri: guides/bicycle-in-berlin.md
+    - title: Buying a car
+      uri: guides/buying-used-car-in-germany.md
+      entries:
+        - title: Car insurance
+          uri: guides/car-insurance-germany.md
+        - title: Cost of having a car
+          uri: guides/car-cost-of-ownership-germany.md
+        - title: Getting an International Driving Permit
+          uri: guides/international-driving-permit-germany.md
+        - title: Parking motorcycles on the sidewalk
+          uri: guides/motorcycle-parking.md
+    - title: Getting a driving licence
+      uri: guides/driving-licence.md
+      entries:
+        - title: Converting a foreign driving licence
+          uri: guides/convert-to-german-driving-licence.md
+        - title: English-speaking driving schools
+          uri: guides/english-speaking-driving-schools.md
+- id: where-to-find
+  title: Where to find...
+  description: Guides for finding the products and services you need in Berlin.
+  entries:
+    - title: What is open on Sundays?
+      uri: guides/open-on-sundays-in-berlin.md
+    - title: Where to buy, sell and donate things
+      uri: guides/how-do-i-buy-and-sell-used-things-in-berlin.md
+      entries:
+        - title: Donating clothes
+          uri: guides/donate-clothes.md
+    - title: Where to buy what
+      uri: guides/where-to-buy-what.md
+      entries:
+        - title: Passport photos
+          uri: guides/biometric-pictures-in-berlin.md
+        - title: Foreign cooking ingredients
+          uri: guides/foreign-cooking-ingredients-in-berlin.md
+          entries:
+            - title: American pizza
+              uri: guides/where-to-eat-american-pizza-in-berlin.md
+        - title: Motorcycle gear
+          uri: guides/motorcycle-stores-in-berlin.md
+        - title: Cannabis
+          uri: guides/buying-marijuana-in-berlin.md
+          entries:
+            - title: Is cannabis legal?
+              uri: guides/is-marijuana-legal.md
+    - title: Finding lost things
+      uri: guides/lost-and-found-berlin.md
+    - title: Watching movies in English
+      uri: guides/english-cinemas-berlin.md
+    - title: English-speaking hair salons
+      uri: guides/hairdressers-hairstylists-barbers-berlin.md
+    - title: 24-hour gyms
+      uri: guides/24-hour-gym-berlin.md
+- id: self-employment
+  title: Self-employment in Germany
+  short_title: Self-employment
+  description: Guides for starting a business and becoming a freelancer in Berlin.
+  entries:
+    - title: How to start a business
+      uri: guides/start-a-business-in-germany.md
+      entries:
+        - title: Registering your business
+          uri: guides/fragebogen-zur-steuerlichen-erfassung.md
+          entries:
+            - title: Being a Kleinunternehmer
+              uri: guides/kleinunternehmer.md
+            - title: Freiberufler or Gewerbe?
+              uri: guides/freiberufler-or-gewerbe.md
+            - title: The Gewerbeanmeldung
+              uri: guides/gewerbeschein.md
+            - title: Getting a Handelsregisternummer
+              uri: guides/handelsregisternummer-germany.md
+        - title: Trade tax
+          uri: guides/gewerbesteuer.md
+        - title: VAT
+          uri: guides/value-added-tax.md
+        - title: Running a website
+          uri: guides/website-compliance-germany.md
+        - title: From employee to freelancer
+          uri: guides/german-work-visa-to-freelance-visa.md
+        - title: Freelance developer salaries
+          uri: guides/freelance-developer-rate.md
+- id: help
+  title: Where to get help in Berlin
+  short_title: Getting help
+  description: Guides about finding help and answers to your questions about Berlin.
+  entries:
+    - title: Where to get help
+      uri: guides/help.md
+      entries:
+        - title: Relocation consultants
+          uri: guides/relocation-agency-in-berlin.md
+        - title: English-speaking lawyers
+          uri: guides/english-speaking-lawyers-berlin.md

@@ -1,10 +1,32 @@
+{% macro collectionItem(item, isSubitem=false) %}
+	<li>
+		{% if not isSubitem %}<h4>{% endif %}
+			{% if item.uri|default %}
+				<a title="{{ entries[item.uri].title }}" href="{{ entries[item.uri].url }}">{{ item.title }}</a>
+			{% else %}
+				{{ item.title }}
+			{% endif %}
+		{% if not isSubitem %}</h4>{% endif %}
+		{% if item.entries|default %}
+			<ul>
+				{% for subItem in item.entries %}
+					{{ collectionItem(subItem, true) }}
+				{% endfor %}
+			</ul>
+		{% endif %}
+	</li>
+{% endmacro %}
+
 {% if collections|length %}
 	<nav class="collections" aria-label="{% if currentEntry|default %}Collections that feature this guide{% else %}All guide collections{% endif %}">
 		{% for collection in collections %}
-			{% set slug = collection.url.split('/')[-1] %}
-			<div {% if not currentEntry|default %}id="{{ slug }}"{% endif %} class="collection" aria-labelledby="h-coll-{{ slug }}">
-				<h3 id="h-coll-{{ slug }}"><a href="{{ collection.url }}">{{ collection.title }}</a></h3>
-				{{ collection.body|safe }}
+			<div {% if not currentEntry|default %}id="{{ collection.id }}"{% endif %} class="collection" aria-labelledby="h-coll-{{ collection.id }}">
+				<h3 id="h-coll-{{ collection.id }}"><a href="{{ SITE_URL }}/collections/{{ collection.id }}">{{ collection.short_title|default(collection.title) }}</a></h3>
+				<ul>
+					{% for item in collection.entries %}
+						{{ collectionItem(item) }}
+					{% endfor %}
+				</ul>
 			</div>
 		{% endfor %}
 	</nav>

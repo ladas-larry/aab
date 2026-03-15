@@ -496,6 +496,7 @@ config.context_processors.extend(
         "ursus.context_processors.git_date.GitDateProcessor",
         "extensions.context_processors.hyphenated_titles.HyphenatedTitleProcessor",
         "extensions.context_processors.tool_tests.ToolTestEntriesProcessor",
+        "extensions.context_processors.collections.CollectionsProcessor",
     ]
 )
 
