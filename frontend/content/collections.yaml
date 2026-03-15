@@ -84,6 +84,38 @@
           uri: guides/sabbatical-leave.md
         - title: Educational leave
           uri: guides/bildungsurlaub.md
+- id: immigration
+  title: German visas and immigration
+  short_title: Visas and immigration
+  description: Guides about German visas, residence permits, permanent residence and citizenship.
+  entries:
+    - title: Getting a residence permit
+      uri: guides/residence-permit.md
+      entries:
+        - title: Work visa
+          uri: guides/work-visa.md
+        - title: Blue Card
+          uri: guides/blue-card.md
+        - title: Permanent residence
+          uri: guides/permanent-residence.md
+        - title: Freelance visa
+          uri: guides/freelance-visa.md
+          entries:
+            - title: Getting letters of intent
+              uri: guides/freelance-visa-letter-of-intent.md
+            - title: Renewing a freelance visa
+              uri: guides/renew-german-freelance-visa.md
+        - title: Fiktionsbescheinigung
+          uri: guides/fiktionsbescheinigung.md
+        - title: The Zusatzblatt
+          uri: guides/zusatzblatt.md
+        - title: Activating your eID
+          uri: guides/eid-online-ausweisfunktion.md
+    - title: Berlin immigration office
+      uri: guides/immigration-office.md
+      entries:
+        - title: Immigration office wait times
+          uri: guides/immigration-office/wait-times.md
 - id: living-in-germany
   title: Living in Germany
   description: Guides about the basics of life in Germany.
@@ -136,38 +168,6 @@
           uri: guides/germany-sign-fonts.md
         - title: Movies set in Berlin
           uri: guides/movies-set-in-berlin.md
-- id: immigration
-  title: German visas and immigration
-  short_title: Visas and immigration
-  description: Guides about German visas, residence permits, permanent residence and citizenship.
-  entries:
-    - title: Getting a residence permit
-      uri: guides/residence-permit.md
-      entries:
-        - title: Work visa
-          uri: guides/work-visa.md
-        - title: Blue Card
-          uri: guides/blue-card.md
-        - title: Permanent residence
-          uri: guides/permanent-residence.md
-        - title: Freelance visa
-          uri: guides/freelance-visa.md
-          entries:
-            - title: Getting letters of intent
-              uri: guides/freelance-visa-letter-of-intent.md
-            - title: Renewing a freelance visa
-              uri: guides/renew-german-freelance-visa.md
-        - title: Fiktionsbescheinigung
-          uri: guides/fiktionsbescheinigung.md
-        - title: The Zusatzblatt
-          uri: guides/zusatzblatt.md
-        - title: Activating your eID
-          uri: guides/eid-online-ausweisfunktion.md
-    - title: Berlin immigration office
-      uri: guides/immigration-office.md
-      entries:
-        - title: Immigration office wait times
-          uri: guides/immigration-office/wait-times.md
 - id: personal-finance
   title: Personal finance in Germany
   short_title: Personal finance

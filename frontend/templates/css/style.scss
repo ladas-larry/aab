@@ -1004,6 +1004,10 @@ main{
             }
         }
 
+        h4{
+            color: var(--c-text);
+        }
+
         > :is(ol, ul) {
             margin-bottom: 0;
 
