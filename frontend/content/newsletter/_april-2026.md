@@ -30,7 +30,21 @@ Last month, I have made All About Berlin's [entire source code](https://github.c
 
 If you can't contribute changes, [donations are also welcome](/donate).
 
+### Labour rights update
+
+This year, I promised to focus on labour and tenant rights.
+
+I have updated my [sabbatical leave guide](/guides/sabbatical-leave) with a new alternative: reducing your working hours. More on that below.
+
 ## What I learned this month
+
+### The right to work less
+
+In Germany, you have the right to reduce your work hours. If your company has at least 15 employees, and you have worked there for at least 6 months, you can choose to work less. Usually, this change is permanent, but at larger companies, temporary reductions are also possible.
+
+Your employer can only refuse if it seriously disadvantages the company. Most of the time, they are forced to accept. They cannot punish you or disadvantage you for it.
+
+You can read more in my [sabbatical leave guide](/guides/sabbatical-leave).
 
 ### Private ADHD diagnosis
 

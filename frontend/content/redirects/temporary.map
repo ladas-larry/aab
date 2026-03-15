@@ -22,7 +22,7 @@
 /out/auslanderbehorde-departments             "/out/auslanderbehorde-contact"
 /out/auslanderbehorde-departments-citizenship "https://www.berlin.de/einwanderung/ueber-uns/kontakt/artikel.1394181.php"
 /out/auslanderbehorde-blue-card               "https://liste-antraege-bc01.bda.service.berlin.de/intelliform/forms/default/bda/LEA/Befristeter_Aufenthaltstitel_zur_Beschaeftigung/index?parameter=324659&lang=en"
-/out/auslanderbehorde-freelance-visa          "https://liste-antraege-bc01.bda.service.berlin.de/intelliform/forms/default/bda/LEA/Aufenthaltserlaubnis_selbststaendig_freiberuflich/index?lang=en";
+/out/auslanderbehorde-freelance-visa          "https://liste-antraege-bc01.bda.service.berlin.de/intelliform/forms/default/bda/LEA/Aufenthaltserlaubnis_selbststaendig_freiberuflich/index?lang=en"
 /out/auslanderbehorde-permanent-residence     "https://liste-antraege-bc01.bda.service.berlin.de/intelliform/forms/default/bda/LEA/Niederlassungserlaubnis_Fachkraefte_Quick-Check/index"
 /out/auslanderbehorde-work-visa               "https://liste-antraege-bc01.bda.service.berlin.de/intelliform/forms/default/bda/LEA/Befristeter_Aufenthaltstitel_zur_Beschaeftigung/index?parameter=329328&lang=en"
 /out/auslanderbehorde-job-change              "https://service.berlin.de/dienstleistung/326856/"
