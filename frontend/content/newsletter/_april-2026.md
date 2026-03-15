@@ -20,7 +20,9 @@ A little over a year ago, I started collecting feedback about immigration office
 
 I have redesigned the feedback page. It combines residence permit and citizenship feedback, and it's a little less cluttered.
 
-If you haven't done it already, [tell us how your last application went](/guides/immigration-office/wait-times).
+[![Immigration office wait times page redesign](/images/wait-times-redesign-2026-03-12.png)](/images/wait-times-redesign-2026-03-12.png)
+
+If you haven't done it already, [share how your application went](/guides/immigration-office/wait-times).
 
 ### Pull requests welcome
 
