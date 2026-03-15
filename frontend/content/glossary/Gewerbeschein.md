@@ -7,7 +7,6 @@ Date_created: 2018-07-31
 Related_guides:
     guides/gewerbeschein.md
     guides/freiberufler-or-gewerbe.md
-    guides/website-freiberuf-or-gewerbe.md
     guides/start-a-business-in-germany.md
     guides/freelance-visa.md
     guides/fragebogen-zur-steuerlichen-erfassung.md

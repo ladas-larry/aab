@@ -6,7 +6,6 @@ Description: A self-employed professional with special qualifications.
 Date_created: 2018-07-31
 Related_guides:
     guides/freiberufler-or-gewerbe.md
-    guides/website-freiberuf-or-gewerbe.md
     guides/start-a-business-in-germany.md
     guides/freelance-visa.md
     guides/fragebogen-zur-steuerlichen-erfassung.md
@@ -20,4 +19,4 @@ Not all self-employed people are *Freiberufler*. If you are self-employed, but n
 
 The difference is important: it affects the taxes you pay and the type of [residence permit](/glossary/Aufenthaltstitel) you get.
 
-**[Freiberufler or Gewerbe: what is the difference? ➞](/guides/freiberufler-or-gewerbe)**
+**[Difference between Freiberufler and Gewerbe ➞](/guides/freiberufler-or-gewerbe)**

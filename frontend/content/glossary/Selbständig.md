@@ -8,7 +8,6 @@ Related_guides:
     guides/freelance-visa.md
     guides/fragebogen-zur-steuerlichen-erfassung.md
     guides/freiberufler-or-gewerbe.md
-    guides/website-freiberuf-or-gewerbe.md
     guides/start-a-business-in-germany.md
     guides/gewerbesteuer.md
     guides/german-health-insurance/for-freelancers.md
