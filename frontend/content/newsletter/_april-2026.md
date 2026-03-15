@@ -36,6 +36,12 @@ This year, I promised to focus on labour and tenant rights.
 
 I have updated my [sabbatical leave guide](/guides/sabbatical-leave) with a new alternative: reducing your working hours. More on that below.
 
+### New guides page
+
+I have redesigned the [guides page](/guides). I used shorter titles and clearer categories to make guides easier to find.
+
+[![Redesigned guides page](/images/new-guides-page-2026-03-15.png)](/images/new-guides-page-2026-03-15.png)
+
 ## What I learned this month
 
 ### The right to work less
