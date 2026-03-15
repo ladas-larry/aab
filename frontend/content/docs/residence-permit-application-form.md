@@ -14,7 +14,6 @@ Related_guides:
     guides/fragebogen-zur-steuerlichen-erfassung.md
     guides/immigration-office.md
     guides/immigration-office/wait-times.md
-    guides/german-work-visa-to-freelance-visa.md
     guides/german-health-insurance/for-a-visa-application.md
     guides/freelance-visa-letter-of-intent.md
 Categories:
