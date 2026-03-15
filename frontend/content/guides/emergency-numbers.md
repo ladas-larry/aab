@@ -46,4 +46,3 @@ Call the **[Berliner Krisendienst](https://www.berliner-krisendienst.de/en/)**. 
 ## Drugs and addiction: +49 30 19237
 
 Call **[+49 30 19237](tel:+493019237).** This is the [Drogennotdienst](https://drogennotdienst.de/english/). They speak English. This is a free service.
-

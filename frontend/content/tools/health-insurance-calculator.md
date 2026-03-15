@@ -41,4 +41,3 @@ Read my [health insurance guide](/guides/german-health-insurance), and [ask my i
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
 {% tool "health-insurance-calculator", mode="question" %}
-

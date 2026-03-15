@@ -25,4 +25,3 @@ When you create the account, select security level 1 (*Sicherheitsstufe 1*).
 ## Need help?
 
 **[Where to ask business questions ➞](/guides/help#business-questions)**
-

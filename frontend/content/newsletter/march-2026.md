@@ -12,6 +12,8 @@ March 8 is Women's Day, and it's a public holiday in Berlin. Unfortunately, it f
 
 **[Berlin events on Women's Day ➞](https://www.berlin.de/en/events/specials/womens-day/)**
 
+### Changing the clocks
+
 ### Digital freelance visa
 
 The Berlin immigration office has digitalized the freelance visa application process. Instead of dumping your documents into a general mailbox, they now ask the right questions, collect the right documents, and track your application in their system.

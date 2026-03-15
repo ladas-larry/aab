@@ -92,4 +92,3 @@ Cold War Berlin is the backdrop of this tightly choreographed, action-packed, ne
 - [Eine auswärtige Affäre (1948)](https://www.imdb.com/title/tt0040367/?ref_=fn_al_tt_1) **DE**
 - [Die Mörder sind unter uns (1946)](https://www.imdb.com/title/tt0038769/) **DE**
 - [Eine Frau in Berlin (2008)](https://www.imdb.com/title/tt1035730/) **DE**
-

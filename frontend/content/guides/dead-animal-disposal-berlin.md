@@ -35,4 +35,3 @@ Many veterinarians will dispose of animal bodies, albeit for a fee. Alternativel
 
 - [Wohin mit dem toten Haustier?](https://www.berlin.de/sen/verbraucherschutz/aufgaben/tierschutz/tierkoerperbeseitigung/wohin-mit-dem-toten-haustier-348294.php) - An official guide from Berlin.de
 - [Entsorgung tierischer Nebenprodukte](https://www.berlin.de/sen/verbraucherschutz/aufgaben/tierschutz/tierkoerperbeseitigung/entsorgung-tierischer-nebenprodukte-348300.php) - An official resource for disposing of animal by-products
-
