@@ -15,7 +15,7 @@ This guide shows you how ADHD treatment usually works in Germany. It's based on 
 
 Public health insurance covers the cheapest treatment that works. Doctors will only try medication if it's necessary. They will start with the cheapest medication: Medikinet (Ritalin).
 
-You can get an diagnosis from a private psychiatrist. It's much faster, but you must pay for the diagnosis yourself. It costs around €150. Your insurer might reimburse you for the diagnosis. They will still pay for your ADHD medication.[^6]
+You can get an diagnosis from a private psychiatrist. It's much faster, but you must pay for the diagnosis yourself. It costs around €200.[^8] Your insurer might reimburse you for the diagnosis. They will still pay for your ADHD medication.[^6]
 
 **If you have [private health insurance](/glossary/private%20Krankenversicherung)**, ask your insurer what is covered. Private health insurance usually covers the ADHD diagnosis, therapy and medication. It usually covers better ADHD medication like Elvanse (Vyvanse).
 
@@ -102,3 +102,4 @@ After you adjust your medication dosage, you can get prescriptions from your fam
 [^5]: [reddit.com](https://old.reddit.com/r/askberliners/comments/124jitd/tk_insuranceprescribing_elvansevyvanse_adhd/), [ADxS](https://www.adxs.org/en/page/231/choice-of-medication-for-adhd-or-adhd-with-comorbidity#content-21-order-of-priority-of-the-choice-of-medication) (July 2025)
 [^6]: [Reddit](https://old.reddit.com/r/berlin/comments/1r9s2y2/why_is_it_so_hard_to_get_an_adhd_diagnosis_in/o6lxvws/?context=3) (February 2026), Seamus Wolf (March 2026)
 [^7]: Personal experience, friend's experience (2026)
+[^8]: [Reddit](https://old.reddit.com/r/askberliners/comments/1rv7ek5/psychiatrist_for_adult_adhd/oaqov4x/) (March 2026)
