@@ -27,7 +27,7 @@ If someone gets hurt because of you, you might pay thousands or even millions of
 
 83% of Germans have liability insurance.[^6] It costs around €5 per month.
 
-[Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance, and they speak English. Both options are fine. Both insurers speak English. I have insurance with Feather, but Getsafe is a little better: they sell their own insurance, their website clearly explains what it covers, and the contract is in English.
+[Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance, and they speak English. I prefer Feather because other readers had problems making claims with Getsafe. I have Feather's liability insurance since 2022.
 
 **[How to choose liability insurance ➞](/guides/haftpflichtversicherung)**
 
