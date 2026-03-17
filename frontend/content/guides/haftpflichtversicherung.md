@@ -41,14 +41,16 @@ Liability insurance rarely covers...
 
 - **Damage to your own things**  
     The things you have in your apartment are not covered by the liability insurance. To insure them, get [home contents insurance](/glossary/Hausratversicherung).[^11] Liability insurance covers damage to an apartment you that you rent, but not to an apartment that you own. It covers damage to your neighbours' apartments.
-- **Your business activities**  
-    If you are a freelancer or a business owner, you need [professional liability insurance](#professional-liability-insurance). Personal liability insurance does not cover your work.
 - **Damage caused by children under 7 years old**  
     Your young children are not covered by most liability insurances.[^3] You must pay more for this. Your children over 6 years old are covered by your liability insurance until they finish their studies.[^4]
 - **Damage or injuries caused by your pets**  
     It covers cats and small pets, but not dogs. If you have a dog, you need [dog liability insurance](/glossary/Hundehaftpflichtversicherung). It's mandatory in Berlin, Brandenburg, Hamburg, Lower Saxony and Thuringia.
 - **Car accidents**  
     Your liability insurance covers damage someone's car when you are *not* driving. When you are driving, your [car insurance](/guides/car-insurance-germany) covers damage to other people and other cars.
+- **Work accidents**  
+    If you are an employee, your employer is liable for your work accidents. Their liability insurance covers you.
+- **Business activities**  
+    If you are self-employed, you need [professional liability insurance](#professional-liability-insurance) for your work.
 - **Legal disputes**  
     If *you* want to sue someone, your liability insurance won't protect you. For this, you need [legal insurance](/glossary/Rechtsschutzversicherung).
 - **Piracy and copyright infringement**  
@@ -56,7 +58,7 @@ Liability insurance rarely covers...
 - **Locksmiths**  
     If you lock yourself out of your apartment, and you call a locksmith to open the door, your liability insurance does not cover the cost.[^32] [Home contents insurance](/glossary/Hausratversicherung) sometimes covers locksmiths.
 
-**You must get insured before you have a problem.** Insurance only covers damage that happened *after* you got insured. If you get liability insurance just before you [move out](/guides/moving-out), it won't cover the damaged floors or the broken fridge. If you make a claim just a few weeks after getting insured, your insurer might be suspicious and ask for more proof.
+**Get insured before you have a problem.** Liability insurance only covers damage that happened *after* you got insured. If you get liability insurance just before you [move out](/guides/moving-out), it won't cover the damaged floors or the broken fridge. If you make a claim just a few weeks after getting insured, your insurer might be suspicious and ask for more proof.
 
 ## Do I really need it?
 
@@ -76,7 +78,7 @@ It usually costs **around €5 per month**, or around €60 per year. You can pa
 
 ## Best liability insurance
 
-I have [Feather's liability insurance](/out/feather-haftpflicht) since 2022 because...
+I have [Feather's liability insurance](/out/feather-haftpflicht) since 2022. I recommend it because...
 
 - They speak English. Their contract and documents are in English.
 - It exceeds the [coverage requirements](#the-minimum-coverage-you-need)
