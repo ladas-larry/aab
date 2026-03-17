@@ -22,7 +22,6 @@ import PrivateHealthInsuranceOptions from '/js/vue/components/private-health-ins
 import Radio from '/js/vue/components/radio.mjs';
 import Tabs from '/js/vue/components/tabs.mjs';
 
-import brokerMixin from '/js/vue/mixins/broker.mjs';
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
@@ -59,7 +58,7 @@ export default {
 		Radio,
 		Tabs,
 	},
-	mixins: [brokerMixin, multiStageMixin, uniqueIdsMixin, trackedStagesMixin],
+	mixins: [multiStageMixin, uniqueIdsMixin, trackedStagesMixin],
 	props: {
 		static: Boolean,
 		mode: {
@@ -93,6 +92,20 @@ export default {
 			question: '',
 			isLoading: false,
 			intent: 'other',
+			broker: {
+				id: 'seamus-wolf',
+				name: 'Seamus',
+				fullName: 'Seamus Wolf',
+				phoneNumber: '+491626969454',
+				phoneNumberPretty: '+49 162 6969454',
+				email: 'seamus.wolf@horizon65.com',
+				he: 'he',
+				him: 'him',
+				his: 'his',
+				He: 'He',
+				Him: 'Him',
+				His: 'His',
+			},
 
 			// Component settings
 			trackAs: `Health insurance ${this.mode}`,
@@ -683,7 +696,7 @@ export default {
 					<div>
 						<p v-if="occupation === 'other'">If your situation is complicated, let our expert help you.</p>
 						<p>{{ broker.name }} will help you <strong v-text="intentString">choose the best health insurance</strong>. I work with {{ broker.him }} because {{ broker.he }} is honest and knowledgeable.</p>
-						<p>{{ capitalize(broker.he) }} replies on the same day. {{ capitalize(broker.his) }} help is <strong>100% free</strong>.</p>
+						<p>{{ broker.He }} replies on the same day. {{ broker.His }} help is <strong>100% free</strong>.</p>
 					</div>
 					<img
 						:srcset="'/experts/photos/bioLarge1x/' + broker.id + '.jpg, /experts/photos/bioLarge2x/' + broker.id + '.jpg 2x'"
@@ -757,7 +770,7 @@ export default {
 							To chat with {{ broker.name }}, <a :href="whatsappUrl" target="_blank">open WhatsApp</a> <span class="no-mobile">or scan this QR code</span>.
 						</p>
 						<p>
-							{{ capitalize(broker.his) }} number is <strong class="selectable">{{ broker.phoneNumberPretty }}</strong>.
+							{{ broker.His }} number is <strong class="selectable">{{ broker.phoneNumberPretty }}</strong>.
 						</p>
 					</div>
 					<svg class="no-mobile" v-html="qrCode" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 150 150"></svg>
@@ -775,7 +788,7 @@ export default {
 			</template>
 
 			<template v-if="stage === 'thank-you' && contactMethod === 'EMAIL'">
-				<p><strong>Thank you!</strong> {{ broker.name }} got your message. {{ capitalize(broker.he) }} will answer your question in the next 24 hours.</p>
+				<p><strong>Thank you!</strong> {{ broker.name }} got your message. You will get an email from <a :href="'mailto:' + broker.email">{{ broker.email }}</a> in the next 24 hours. If you don't get a response, check your spam folder.</p>
 				<hr>
 				<div class="buttons bar">
 					<button aria-label="Go back" class="button" @click="goToStart()">
