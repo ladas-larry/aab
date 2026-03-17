@@ -14,42 +14,38 @@ This is an overview of the common types of insurance in Germany, and why they ar
 
 ## Liability insurance
 
-If you cause financial damage to other people, liability insurance (*Haftpflichtversicherung*) pays for fixing the damages.
+Liability insurance (*[[Haftpflichtversicherung]]*) covers **accidents that are your fault**. It pays to fix the damage that you caused.
 
 For example:
 
 - You scratch someone's car with your shopping cart.
-- Your child breaks something expensive in a store.
+- Your child breaks something at their friend's house.
 - Your computer chair destroys the floor in the apartment you rent.
-- Someone slips in your driveway and breaks their leg.
+- You trip someone while playing football, and they break their leg.
 
-If someone gets hurt because of you, you might pay thousands or even millions of euros in reparations. This is why liability insurance is so important.
+It's the most important insurance after health insurance. 83% of Germans homes have it. It costs around €5 per month.
 
-83% of Germans have liability insurance.[^6] It costs around €5 per month.
+I recommend [Feather's liability insurance](/out/feather-haftpflicht). It's what I have since 2022.
 
-[Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance, and they speak English. I prefer Feather because other readers had problems making claims with Getsafe. I have Feather's liability insurance since 2022.
-
-**[How to choose liability insurance ➞](/guides/haftpflichtversicherung)**
+**[What is liability insurance? ➞](/guides/haftpflichtversicherung)**
 
 ### Professional liability insurance
 
-Private liability insurance does not cover you at work.
+If you are self-employed, personal liability insurance does not cover your business activities. You need professional liability insurance (*Berufshaftpflichtversicherung*).
 
-If you are self-employed and you make a mistake, your clients can sue you. Professional liability insurance (*Berufshaftpflichtversicherung*) protects you against that. It's required for doctors, architects, lawyers and some other professions.[^0]
+It protects you if you make an expensive mistake, and your client sues you. It's required for doctors, architects, lawyers and some other professions.[^0]
 
-If you are an employee, you don't need professional liability insurance. Your employer's insurance covers you at work.[^1]
+Employees don't need professional liability insurance. Your employer's insurance covers you at work.[^1]
 
 ### Dog liability insurance
 
-Dog liability insurance (*[[Hundehaftpflichtversicherung]]*) pays for the damages caused by your dog. It's sometimes called pet liability insurance or pet owner liability insurance (*Tierhaftpflichtversicherung* or *Tierhalterhaftpflichtversicherung*).
+Dog liability insurance (*[[Hundehaftpflichtversicherung]]* or *Tierhaftpflichtversicherung*) covers **accidents caused by your dog**. For example if your dog bites someone, or destroys something.
 
-Dog liability insurance is **required in Berlin, Brandenburg, Hamburg, Lower Saxony and Thuringia**. Some states only require dog liability insurance for dangerous breeds.
+It's mandatory in Berlin, Brandenburg, Hamburg, Lower Saxony and Thuringia. Some states only require dog liability insurance for dangerous breeds.
+
+It costs around €5 per month. [Feather](/out/feather-dogs) and [Getsafe](/out/getsafe-dogs) sell it, and they speak English. Use [Tarifcheck](/out/tarifcheck-dogs) to compare more options.
 
 **[Having a dog in Berlin ➞](/guides/dog-ownership)**
-
-Dog liability insurance costs around €5 per month. You sometimes pay less if you combine private liability insurance and dog liability insurance.
-
-If you don't speak German, [Feather](/out/feather-dogs) and [Getsafe](/out/getsafe-dogs) sell dog liability insurance and they speak English. They also cover dangerous breeds. Use [Tarifcheck](/out/tarifcheck-dogs) to compare prices.
 
 ## Home contents insurance
 
@@ -139,5 +135,4 @@ Life insurance (*Lebensversicherung*) pays money to your family when you die. It
 [^3]: [ruv.de](https://www.ruv.de/ratgeber/versicherungsinfos/bauen-wohnen/hausratschaeden)
 [^4]: [gdv.de](https://www.gdv.de/de/themen/news/versicherungsschutz-versicherungsdichte-ueberversicherung-49418) (2019)
 [^5]: [verbraucherzentrale.de](https://www.verbraucherzentrale.de/wissen/geld-versicherungen/weitere-versicherungen/krankenversicherungen-fuer-haustiere-sinnvoll-oder-ueberfluessig-10781#2)
-[^6]: [handelsblatt.com](https://www.handelsblatt.com/finanzen/vorsorge/versicherung/keine-haftpflicht-viele-deutsche-riskieren-ihr-gesamtes-vermoegen/3817046.html)
 [^7]: [gdv.de](https://www.gdv.de/gdv/themen/gesellschaft/versicherungsschutz-versicherungsdichte-ueberversicherung-49418#:~:text=besonders%20wichtig%20ist%20dieser%20schutz%2C%20wenn%20vom%20einkommen%20des%20oder%20der%20versicherten%20viele%20menschen%20abhangen) (2019)
