@@ -148,6 +148,3 @@ If you want the flexibility of a freelancer and the stability of a job, it's a g
 [^4]: [bubolz-bartsch.de](https://web.archive.org/web/20240804204416/https://bubolz-bartsch.de/lohnsteuerhilfeverein-oder-steuerberater-was-lohnt-sich-mehr/#:~:text=kosten%20bei%20einem%20steuerverein) (August 2019)
 [^5]: [reddit.com/r/finanzen](https://old.reddit.com/r/Finanzen/comments/scgrpu/steuerberater_als_freelancer/hu64wbv/)
 [^6]: [Taxfix](https://support.taxfix.de/hc/en-us/articles/27734287254557-Who-can-use-the-Expert-Service#h_01JWBJ5B04WRY1AWGSB0MT4DD8)
-
-
-
