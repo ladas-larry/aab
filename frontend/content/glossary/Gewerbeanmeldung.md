@@ -6,7 +6,6 @@ Description: The act of registering a business at the Gewerbeamt. This is how yo
 Date_created: 2021-05-14
 Related_guides:
     guides/freiberufler-or-gewerbe.md
-    guides/website-freiberuf-or-gewerbe.md
     guides/start-a-business-in-germany.md
     guides/freelance-visa.md
     guides/fragebogen-zur-steuerlichen-erfassung.md

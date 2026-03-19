@@ -69,6 +69,10 @@ Most *[Spätis](/glossary/Sp%C3%A4ti)* open on Sundays.
 
 Some museums and tourist attractions stay open on Sundays.
 
+### Public transit
+
+You can still use trains, trams and buses. Trains are less frequent.[^5]
+
 ## What is open on public holidays?
 
 If a business can open on Sundays, it can open on public holidays. Some businesses still choose to close on public holidays.
@@ -93,3 +97,4 @@ These shops usually open on Sunday shopping days:
 [^2]: [in-berlin-brandenburg.com](https://www.in-berlin-brandenburg.com/Einkaufen_Berlin/Verkaufsoffener-Sonntag/Sonntags-in-Berlin-geoeffnet.html)
 [^3]: [BerlLadÖffG](https://gesetze.berlin.de/bsbe/document/jlr-L%C3%96GBErahmen), [berlin.de](https://www.berlin.de/sen/wirtschaft/branchen/handel/ladenoeffnungszeiten/ladenoeffnungszeiten-in-berlin-152543.php)
 [^4]: [rbb24](https://www.rbb24.de/wirtschaft/beitrag/2022/08/berliner-spaetis-spaetverkaufsstellen-oeffnungszeiten-sonntag-ruhetag-gesetz-verkauf.html)
+[^5]: [S-Bahn Berlin](https://sbahn.berlin/fileadmin/user_upload/Linien/Regelfahrplaene/Fahrplantabellen_aller_S-Bahn-Linien.pdf) (March 2026)

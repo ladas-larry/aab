@@ -8,31 +8,75 @@
 {% endblock %}
 
 {% block main %}
-<main aria-label="Main page">
-	<header class="intro" aria-label="Title and search box">
-		<h1>Guides about Germany</h1>
-		{% with autofocus=true %}
-			{% include "_blocks/searchForm.html" %}
-		{% endwith %}
-	</header>
-	<section aria-label="Guide collections">
-		{% with currentEntry=null, collections=get_entries('collections', sort_by='order') %}
-			{% include "_blocks/collections.html" %}
-		{% endwith %}
-	</section>
-	<section class="section" aria-label="Newest guides">
-		<h2>Newest guides</h2>
-		{% set newEntries = get_entries('guides', sort_by='date_created', reverse=True)[0:10] %}
-		{% with entries=newEntries, showDatePosted=true %}
-			{% include "_blocks/entryPreviews.html" %}
-		{% endwith %}
-	</section>
-	<section class="section" aria-label="Recently updated guides">
-		<h2>Recent updates</h2>
-		{% set updatedEntries = get_entries('guides', sort_by='date_updated', reverse=True)[0:10] %}
-		{% with entries=updatedEntries, showDateUpdated=true %}
-			{% include "_blocks/entryPreviews.html" %}
-		{% endwith %}
-	</section>
-</main>
+	<main aria-label="Main page">
+		<header class="intro" aria-label="Title and search box">
+			<h1>Guides for living in Germany</h1>
+			{% with autofocus=true %}
+				{% include "_blocks/searchForm.html" %}
+			{% endwith %}
+		</header>
+		<section aria-label="Guide collections">
+			{% with currentEntry=null, collections=get_entries('collections') %}
+				{% include "_blocks/collections.html" %}
+			{% endwith %}
+		</section>
+		<section id="newest" class="section" aria-label="Newest guides">
+			<h2>Newest guides</h2>
+			{% set newEntries = get_entries('guides', sort_by='date_created', reverse=True)[0:10] %}
+			{% with entries=newEntries, showDatePosted=true %}
+				{% include "_blocks/entryPreviews.html" %}
+			{% endwith %}
+		</section>
+		<section id="recent-updates" class="section" aria-label="Recently updated guides">
+			<h2>Recent updates</h2>
+			{% set updatedEntries = get_entries('guides', sort_by='date_updated', reverse=True)[0:10] %}
+			{% with entries=updatedEntries, showDateUpdated=true %}
+				{% include "_blocks/entryPreviews.html" %}
+			{% endwith %}
+		</section>
+	</main>
 {% endblock%}
+
+{% block postFooter %}
+	{{ super() }}
+	<script type="application/ld+json">
+		[
+			{
+				"@context": "http://schema.org",
+				"@type": "WebPage",
+				"name": {{ metatitle|tojson }},
+				"description": {{ metadescription|tojson }},
+				"breadcrumb": {
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					"itemListElement": [
+						{
+							"@type": "ListItem",
+							"position": 1,
+							"item": {
+								"@id": "{{ SITE_URL }}/",
+								"name": "Home"
+							}
+						},
+						{
+							"@type": "ListItem",
+							"position": 2,
+							"item": {
+								"@id": "{{ SITE_URL }}/guides",
+								"name": "Guides"
+							}
+						},
+					]
+				},
+				"author": {
+					"@type": "Person",
+					"@id": "https://nicolasbouliane.com"
+				},
+				"publisher": {
+					"@type": "Organization",
+					"@id": "{{ SITE_URL }}/#organization"
+				}
+			}
+		]
+	</script>
+{% endblock %}

@@ -101,11 +101,9 @@ class PensionRefundQuestion(NameMixin, EmailMixin, ScheduledMessage):
     country_of_residence = CountryField()
     question = models.TextField()
 
-    recipients = [
-        "support@pension-refund.com",
-    ]
+    recipients = ["support@pension-refund.com"]
     template = "pension-refund-question.html"
-    daily_digest_fields = ["name", "nationality", "country_of_residence", "question"]
+    daily_digest_fields = ["question", "nationality", "country_of_residence"]
 
     @property
     def subject(self) -> str:
@@ -162,7 +160,7 @@ class PensionRefundRequest(NameMixin, EmailMixin, ScheduledMessage):
     partner = models.CharField(max_length=30, choices=pension_refund_partners)
 
     template = "pension-refund-request.html"
-    daily_digest_fields = ["name", "partner", "nationality", "country_of_residence"]
+    daily_digest_fields = ["partner", "nationality", "country_of_residence"]
 
     def remove_personal_data(self):
         super().remove_personal_data()
@@ -170,9 +168,7 @@ class PensionRefundRequest(NameMixin, EmailMixin, ScheduledMessage):
 
     @property
     def recipients(self) -> List[str]:
-        return [
-            pension_refund_partners[self.partner],
-        ]
+        return [pension_refund_partners[self.partner]]
 
     @property
     def subject(self) -> str:
@@ -218,10 +214,7 @@ class PensionRefundReminder(EmailMixin, ScheduledMessage):
 
     subject = "Reminder: you can now get your German pension payments back"
     template = "pension-refund-reminder.html"
-    daily_digest_fields = [
-        "email",
-        "delivery_date",
-    ]
+    daily_digest_fields = ["delivery_date"]
 
     @property
     def recipients(self) -> List[str]:
@@ -372,6 +365,7 @@ class ResidencePermitFeedback(MultiStageFeedback):
 
     objects = FeedbackManager()
     daily_digest_fields = [
+        "notes",
         "application_date",
         "first_response_date",
         "appointment_date",
@@ -379,8 +373,6 @@ class ResidencePermitFeedback(MultiStageFeedback):
         "validity_in_months",
         "health_insurance_type",
         "health_insurance_name",
-        "notes",
-        "email",
     ]
 
     def clean(self):
@@ -450,10 +442,10 @@ class CitizenshipFeedback(MultiStageFeedback):
 
     objects = FeedbackManager()
     daily_digest_fields = [
+        "notes",
         "application_date",
         "first_response_date",
         "appointment_date",
-        "notes",
         "email",
     ]
 

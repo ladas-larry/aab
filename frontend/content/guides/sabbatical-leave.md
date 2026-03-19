@@ -39,7 +39,7 @@ Talk to your human resources department. They will tell you if they have such a 
 
 The second best option is unpaid leave (*unbezahlter Urlaub*).
 
-You have the right to take unpaid leave in some situations:[^0]
+In these situations, you have the *right* to take unpaid leave:[^0]
 
 - Unexpected emergencies
 - Parental leave (*Elternzeit*)
@@ -65,10 +65,43 @@ Disadvantages:
 ### How to take unpaid leave
 
 1. Read your work contract. You might have the *right* to unpaid leave.
-2. Look if other employees have taken unpaid leave. You have the right to the same treatment as your coworkers. If they took unpaid leave, you can do it too.[^4]
+2. Look if other employees have taken unpaid leave. You have the right to the same treatment as your co-workers. If they took unpaid leave, you can do it too.[^4]
 3. Talk to your manager and your human resources department. You must plan this together.
 
-## Option 3: Quit your job
+## Option 3: Reduce your hours
+
+In Germany, you have the *right* to work fewer hours. You can reduce your work hours temporarily or permanently. For example, you can work 30 hours per week or 4 days per week.
+
+You can reduce your hours if...
+
+- You have worked at this company for at least 6 months[^6]
+- and the company has at least 15 employees[^9]
+
+Usually, the reduction is permanent. If you want to work more hours later, your employer can refuse. If your company has more than 45 employees, you can *temporarily* reduce your working hours for 1 to 5 years.[^13] This is called *Brückenteilzeit*.
+
+Your employer can't punish you for reducing your work hours. For example, if there are layoffs at your company, they can't fire you before other employees.
+
+Benefits of reduced hours:
+
+- **You keep your salary and benefits**  
+    You still have a job, [health insurance](/glossary/Krankenversicherung), [unemployment insurance](/glossary/ALG%20I), a public pension, [vacations](/guides/vacation-days) and [sick leave](/guides/sick-leave).
+
+Disadvantages:
+
+- **You get paid less**  
+    For example, if you work 25% less, you also earn 25% less.[^11]
+- **It's not always reversible**  
+    If you reduce your hours, you can't always get them back later. Your employer can refuse to give you more work.[^10] If your company has over 45 employees, you can temporarily reduce your hours, and resume full-time work later. This is called *Brückenteilzeit*.
+
+To reduce your hours, you must...
+
+1. **Send a request**  
+    Ask by letter or email at least 3 months before you start reducing your work hours.[^5] Your request must include the start and duration of your reduced work hours. It can explain your desired schedule.[^7] You don't need to give a reason.
+2. **Wait for your employer's response**  
+    Your employer must reply in writing. Your employer can refuse to reduce your hours if it "significantly impairs" the business. If they refuse, they must give a clear explanation.[^12] If they don't responded 1 month before your desired start date, your work hours are reduced anyway.[^8]
+3. **Sign an agreement with your employer**
+
+## Option 4: Quit your job
 
 If your employer does not help you take a sabbatical, you can quit your job.
 
@@ -102,3 +135,12 @@ If you want to get training for your job, take a *[[Bildungsurlaub]]*. It's a pa
 [^2]: [arbeitsrechte.de](https://www.arbeitsrechte.de/unbezahlter-urlaub/anspruch/#:~:text=bis%20zu%20einem%20monat%20bleibt)
 [^3]: [tk.de](https://www.tk.de/techniker/leistungen-und-mitgliedschaft/informationen-versicherte/veraenderung-berufliche-situation/versichert-als-arbeitnehmer/haeufige-fragen-fuer-arbeitnehmer/unbezahlter-urlaub-versicherung-weiterversicherung-2005312)
 [^4]: [personio.de](https://www.personio.de/hr-lexikon/unbezahlter-urlaub/#1), [impulse.de](https://www.impulse.de/personal/unbezahlter-urlaub/7290147.html#Gleichbehandlungsgrundsatz)
+[^5]: [hensche.de](https://www.hensche.de/Rechtsanwalt_Arbeitsrecht_Handbuch_Arbeitszeitverkuerzung.html#:~:text=namlich%20z.b.%20per%20e-mail%2C%20fax%2C%20sms) (March 2026), [§ 7 Abs. 3 TzBfG](https://www.buzer.de/7_TzBfG.htm)
+[^6]: [§ 8 Abs. 1 TzBfG](https://www.buzer.de/8_TzBfG.htm)
+[^7]: [§ 8 Abs. 2 TzBfG](https://www.buzer.de/8_TzBfG.htm), [hensche.de](https://www.hensche.de/Rechtsanwalt_Arbeitsrecht_Handbuch_Arbeitszeitverkuerzung.html#:~:text=%20der%20an%C2%ADtrag%20muss%20ent%C2%ADhal%C2%ADten) (March 2026)
+[^8]: [§ 8 Abs. 5 TzBfG](https://www.buzer.de/8_TzBfG.htm)
+[^9]: [§ 8 Abs. 7 TzBfG](https://www.buzer.de/8_TzBfG.htm)
+[^10]: [hensche.de](https://www.hensche.de/Rechtsanwalt_Arbeitsrecht_Handbuch_Arbeitszeitverkuerzung.html#:~:text=Ei%C2%ADne%20ein%C2%ADmal%20durch%C2%ADgef%C3%BChr%C2%ADte,mit%20ge%C2%ADrin%C2%ADge%C2%ADrem%20Ge%C2%ADhalt.) (March 2026)
+[^11]: [arag.de](https://www.arag.de/rechtsschutzversicherung/arbeitsrechtsschutz/teilzeit-arbeit/#:~:text=arbeitnehmer%2C%20die%20fur%20eine%2040-stunden-woche%20ein%20bruttogehalt%20von%203.500%20euro%20bekommt%2C%20konnen%20mit%20einer%20reduzierung%20auf%20eine%2030-stunden-woche%20noch%20immer%202.625%20euro%20brutto%20im%20monat%20verdienen.) (March 2026)
+[^12]: [arbeitsrechtsiegen.de](https://www.arbeitsrechtsiegen.de/artikel/arbeitszeitverringerung-entgegenstehende-betriebliche-gruenden/#:~:text=die%20blo%C3%9Fe%20behauptung%20solcher%20grunde%20reicht%20jedoch%20nicht%20aus%20%E2%80%93%20der%20arbeitgeber%20muss%20sie%20konkret%20darlegen%20und%20beweisen%20konnen.) (March 2026)
+[^13]: [§ 9a TzBfG](https://www.buzer.de/9a_TzBfG.htm)

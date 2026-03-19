@@ -185,7 +185,7 @@ If you don't speak German, [Feather](/out/feather-rechtsschutz) and [Getsafe](/o
 
 **[Where to ask legal questions ➞](/guides/help#legal-questions)**
 
-For apartment problems, join a tenant association (*[[Mieterverein]]*). [Conny](/out/conny-mietpreisbremse) can help you lower your rent. [Mineko](https://www.mineko.de/) can check your [utilities bill](/glossary/Betriebskostenabrechnung).
+For apartment problems, join a tenant association (*[[Mieterverein]]*). [Conny](/out/conny-mietpreisbremse) can help you lower your rent. [Mineko](https://www.mineko.de/) can check your [utility bill](/glossary/Betriebskostenabrechnung).
 
 For quick business or immigration questions, try Alexander von Engelhardt's legal hotline: [09008 529 366 11](tel:0900852936611). It costs €{{LEGAL_HOTLINE_COST_PER_MINUTE|cur}} per minute.
 

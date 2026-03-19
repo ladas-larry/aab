@@ -9,7 +9,6 @@ Date_created: 2018-10-22
 Related_guides:
     guides/freelance-visa.md
     guides/freelance-visa-letter-of-intent.md
-    guides/german-work-visa-to-freelance-visa.md
     guides/residence-permit.md
 Categories:
     auslaenderbehoerde

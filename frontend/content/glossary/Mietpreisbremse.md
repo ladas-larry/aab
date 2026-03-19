@@ -10,7 +10,6 @@ Related_guides:
     guides/housing-scams.md
     guides/conny-review.md
     guides/saving-money-germany.md
-    guides/mietendeckel-repealed.md
 ---
 
 The rent price brake (*Mietpreisbremse*) is a rent control law in Germany. It limits how much rent the landlord can ask for.

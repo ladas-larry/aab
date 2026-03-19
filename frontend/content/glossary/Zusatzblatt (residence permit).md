@@ -8,7 +8,6 @@ Related_guides:
     guides/zusatzblatt.md
     guides/residence-permit.md
     guides/losing-your-job.md
-    guides/german-work-visa-to-freelance-visa.md
     guides/ksk-kuenstlersozialkasse.md
     guides/blue-card.md
     guides/work-visa.md

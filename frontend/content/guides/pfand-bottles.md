@@ -29,7 +29,7 @@ These bottles have a deposit.[^0] You can return them at any store that sells th
 - Aluminium cans - €0.25
 - Single-use (*Einweg*) plastic bottles - €0.25
 - Multiple-use (*Mehrweg*) glass and plastic bottles - €0.08 to €0.15[^1]
-- *Landliebe* yoghurt containers
+- Glass yoghurt containers - €0.15
 - Some wine bottles - €0.03
 
 ### Bottles with no deposit

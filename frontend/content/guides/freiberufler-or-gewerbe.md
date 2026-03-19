@@ -30,9 +30,9 @@ If you sell products, you are rarely a *Freiberufler*.
 
 If you are self-employed, but not a *Freiberufler*, you are a tradesperson (*Gewerbetreibender*). Your business is a trade (*Gewerbe*).
 
-Websites that are financed by ads or affiliate links are almost always a *Gewerbe*.[^17]
+Websites that are financed by ads or affiliate links are almost always a *Gewerbe*.
 
-**[Is a website a Gewerbe? ➞](/guides/website-freiberuf-or-gewerbe)**
+**[Is a website a Gewerbe? ➞](/guides/freiberufler-or-gewerbe#are-websites-a-freiberuf-or-a-gewerbe)**
 
 ## What is the difference?
 
@@ -123,6 +123,26 @@ If you are mostly in one category, it's okay if you do a little bit of the other
 
 If you are not sure, [ask for help](/guides/help#business-questions).
 
+## Are websites a Freiberuf or a Gewerbe?
+
+**It depends on how the website makes money**, but a commercial website is usually a *[[Gewerbe]]*.
+
+Websites that must be registered as a *Gewerbe*:
+
+- **Online stores**  
+    For example, a website that sells products, media or software.
+- **Monetised websites**[^7]  
+    For example, a travel blog that has ads or affiliate links.
+- **Monetised social media accounts**  
+    For example, an Instagram or TikTok account with affiliate links or paid promotions.
+
+Websites that are not a *Gewerbe*:
+
+- **Online portfolios**  
+    For example, a portfolio for a freelance writer or a software developer. If you are a *Freiberufler*, and you promote your freelance services on your website, you don't need to register a *Gewerbe* for your website.
+- **Non-commercial website**  
+    For example, a personal blog or a website with no monetisation. You don't need to register a business for non-commercial websites.
+
 ## Need help?
 
 **[Where to ask business questions ➞](/guides/help#business-questions)**
@@ -133,10 +153,10 @@ If you are not sure, [ask for help](/guides/help#business-questions).
 [^4]: This happened to me
 [^5]: Sebastian Hoffmann from [Touring Artists](https://www.touring-artists.info/en/home) (November 2024)
 [^6]: [VAB A21.5](/out/vab) (October 2025)
+[^7]: [existenzgruender.de](http://www.existenzgruender.de/SharedDocs/BMWi-Expertenforum/Gruendungsplanung/Freie-Berufe/kuenstl-publ-Taetig/Website-und-Blog-betreiben-freiberufliche-Taetigkeit.html)
 [^12]: [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/finanzen/buchfuehrung/bilanzierung/)
 [^14]: [§ 18 EStG](https://www.buzer.de/18_EStG.htm), [Wikipedia](https://de.wikipedia.org/wiki/Freier_Beruf_\(Deutschland\)), [IHK Hamburg](https://www.ihk.de/hamburg/produktmarken/beratung-service/recht-und-steuern/steuerrecht/real-kommunale-steuern/abgrenzung-gewerbebetrieb-freie-berufe-1157144#titleInText8)
 [^15]: [§ 148 AO](https://www.buzer.de/148_AO.htm)
 [^16]: [kultur-kreativ-wirtschaft.de](https://www.kultur-kreativ-wirtschaft.de/KUK/Redaktion/DE/Standardartikel/freier-beruf-gewerbe.html#:~:text=die%20entscheidung%2C%20ob%20ihre%20tatigkeit%20freiberuflich%20oder%20gewerblich%20ist)
-[^17]: [allaboutberlin.com](/guides/website-freiberuf-or-gewerbe)
 [^18]: [ihk.de](https://www.ihk.de/schwerin/existenzgruendung/existenzgruendung/tipps-rund-um-die-gruendung/selbststaendigkeit-als-gewerbetreibender-oder-freiberufler-3032726), [selbststaendig.de](https://www.selbststaendig.de/geschaeftsideen/paketdienst), [uber.com](https://www.uber.com/de/de/drive/requirements/), [haufe.de](https://www.haufe.de/finance/haufe-finance-office-premium/fotografische-taetigkeit-freiberuflich-oder-gewerblich_idesk_PI20354_HI20924.html), [gewerbeanmeldung.de](https://www.gewerbeanmeldung.de/gewerbe-anmelden/fotograf#:~:text=grundlagen%20zur%20selbststandigen%20tatigkeit%20als%20fotograf%3A%20freiberuflich%20oder%20gewerblich%3F)
 [^21]: This happened to me

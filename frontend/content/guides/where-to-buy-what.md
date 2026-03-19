@@ -95,4 +95,3 @@ If you need help to move furniture, use a [Möbel Taxi](https://www.moebel-taxi.
 - [Modulor](https://goo.gl/maps/xBwoyWBzGx2YKhEE9) - Large store in Kreuzberg
 - McPaper - Stationery store chain
 - [Idee](https://goo.gl/maps/5jhDL8R91oyjh7Yh9) - Smaller stores in many locations
-

@@ -1,12 +1,6 @@
 {% extends "_layout.html" %}
 {% set metatitle = entry.title %}
 {% set metadescription = entry.description %}
-{% set related_collections = [] %}
-{% for collection in get_entries('collections', sort_by='order') %}
-	{% if entry in collection.related_guides %}
-		{% do related_collections.append(collection) %}
-	{% endif %}
-{% endfor %}
 
 {% block postHead %}
 	{{ super() }}
@@ -21,7 +15,7 @@
 				<h1>{{ entry.title }}</h1>
 				{% include "_blocks/postMeta.html" %}
 			{% endblock %}
-			{% with entry=entry, showRelatedEntriesLink=related_collections|length %}
+			{% with entry=entry, showRelatedEntriesLink=entry.collections|default %}
 				<div class="article-body">
 					{{ entry.body|render|safe }}
 				</div>
@@ -32,10 +26,10 @@
 			{% include "_blocks/footerDonationPrompt.html" %}
 		{% endwith %}
 
-		{% if related_collections %}
+		{% if entry.collections|default %}
 			<aside id="related" class="section no-print" aria-label="Collections that include this guide" data-nosnippet>
 				<h2>Related guides</h2>
-				{% with collections=related_collections, currentEntry=entry %}
+				{% with collections=entry.collections, currentEntry=entry %}
 					{% include "_blocks/collections.html" %}
 				{% endwith %}
 			</aside>
@@ -44,7 +38,7 @@
 		{% include "_blocks/affiliateNotice.html" %}
 	</main>
 
-	{% with entry=entry, showRelatedEntriesLink=related_collections|length %}
+	{% with entry=entry, showRelatedEntriesLink=entry.collections|default %}
 		{% include "_blocks/sidebar.html" %}
 	{% endwith %}
 {% endblock %}

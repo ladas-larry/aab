@@ -12,6 +12,10 @@ March 8 is Women's Day, and it's a public holiday in Berlin. Unfortunately, it f
 
 **[Berlin events on Women's Day ➞](https://www.berlin.de/en/events/specials/womens-day/)**
 
+### Daylight Saving Time
+
+On March 29 at 2 AM, remember to set your clocks forward 1 hour for *Sommerzeit*. We will lose an hour of sleep, but it's a small price to pay for a few months of sun.
+
 ### Digital freelance visa
 
 The Berlin immigration office has digitalized the freelance visa application process. Instead of dumping your documents into a general mailbox, they now ask the right questions, collect the right documents, and track your application in their system.

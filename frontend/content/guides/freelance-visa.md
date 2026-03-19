@@ -144,11 +144,15 @@ While you wait for an *Ausländerbehörde* appointment, you should also...
 
 ### 3. Apply for the freelance visa
 
-[Use the *Ausländerbehörde* contact form](/guides/immigration-office#how-to-contact-the-auslanderbehorde) to send all the [required documents](#required-documents). Send your application to the [correct department](/guides/immigration-office#departments). Choose departments M1, M2, M3, M4, F1 or F2.[^7]
+You must apply for the freelance visa online.[^4] You do not need an *[[Ausländerbehörde]]* appointment.
 
-This is the only way. You can't go to the *Ausländerbehörde* without an appointment. You only get an appointment after you send your documents through the contact form.
+**[Apply for the Freelance visa ➞](/out/auslanderbehorde-freelance-visa)**
 
-**[How to send your application ➞](/guides/residence-permit#send-your-application)**
+It costs €{{NATIONAL_VISA_FEE|cur}}. It's cheaper for Turkish citizens. You can pay with Visa, Mastercard or PayPal. You can't pay with cash or [[Girocard]].[^39] The fee is [tax-deductible](/glossary/steuerlich%20absetzbar), so keep the receipt.
+
+If you have too many documents, [merge them](https://www.adobe.com/acrobat/online/merge-pdf.html) or [make them smaller](https://www.adobe.com/acrobat/online/compress-pdf.html).
+
+After you pay and send your application, you can download a PDF. This is your proof of application. Save it for later.
 
 ### 4. Wait
 
@@ -175,6 +179,8 @@ If your freelance visa is approved, you will get a second appointment to pick up
 ### 6. Get your freelance visa
 
 Go to your second *[[Ausländerbehörde]]* appointment and pick up your freelance visa. Your new freelance visa is valid for up to 3 years.[^17] You might get a shorter freelance visa if they are not sure that your business will work.[^24]
+
+If you had a residence permit for over 3 years, you might get an "unrestricted" residence permit. It allows any kind of employment or self-employment. [Check your new *Zusatzblatt*](/guides/zusatzblatt) to see what you can do.
 
 **[How to pick up your freelance visa ➞](/guides/residence-permit#pick-up-your-residence-card)**
 
@@ -365,7 +371,6 @@ An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocatio
 [^4]: [Red Tape Translation](/out/red-tape-translation) (December 2024)
 [^5]: [Red Tape Translation](/out/red-tape-translation) (December 2023), [Berlin.de](https://service.berlin.de/dienstleistung/324659/en/#:~:text=Proof%20of%20your,for%20example%20by)
 [^6]: [Berlin.de](https://service.berlin.de/dienstleistung/324659/en/#:~:text=for%20private%20health%20insurance)
-[^7]: Kathleen Parker, [relocation consultant](/out/red-tape-translation) (December 2024)
 [^8]: [Touring Artists](https://www.touring-artists.info/en/visa-residence/to-germany-as-non-eu-citizen/translate-to-englisch-aufenthalt-nach-21-absatz-5-aufenthg) (August 2025), [c/o Germany](https://co-germany.de/the-artist-visa/), [bbk Berlin](https://www.bbk-kulturwerk.de/buero-fuer-kuenstler_innen-beratung/ratgeber/visa)
 [^9]: [§ 41 AufenthV](https://www.buzer.de/41_AufenthV.htm), [Berlin.de](https://www.berlin.de/einwanderung/en/entry/visa-extension/artikel.1049092.en.php#:~:text=Ireland%20and%20Romania-,exceptions%20for%20certain%20countries,-Special%20privileges%20apply)
 [^10]: [§ 21 Abs. 4 AufenthG](https://www.buzer.de/21_AufenthG.htm)
@@ -397,6 +402,7 @@ An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocatio
 [^36]: [§ 81 Abs. 5 AufenthG](https://www.buzer.de/81_AufenthG.htm)
 [^37]: [Mirko Vorreuter](https://visaguard.berlin) (October 2025)
 [^38]: [Facebook](https://www.facebook.com/groups/germanfreelancevisa/permalink/481416252327083/?comment_id=481798318955543&comment_tracking=%7B%22tn%22%3A%22R0%22%7D) (2018)
+[^39]: [Berlin.de](https://service.berlin.de/dienstleistung/324659/en/#:~:text=by%20credit%20card)
 [^41]: [VAB 2.4](/out/vab)
 [^42]: [Berlin.de](https://service.berlin.de/dienstleistung/328332/#:~:text=nur%20bei%20erstmaliger%20beantragung), [Berlin.de](https://service.berlin.de/dienstleistung/305249/#:~:text=nur%20bei%20erstmaliger%20beantragung)
 [^43]: [Facebook](https://www.facebook.com/groups/germanfreelancevisa/permalink/461865790948796/)

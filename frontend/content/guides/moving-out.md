@@ -152,6 +152,24 @@ You will fill a handover document (*[[Übergabeprotokoll]]*) with your landlord.
 
 **Always make a handover document.**[^43] If your landlord repairs something that is not in this document, you don't have to pay for it. If it's not in the *Übergabeprotokoll*, it's not your problem.[^44] It helps you [get your deposit back](/guides/mietkaution#when-do-i-get-my-kaution-back) faster.
 
+### Get a Mietschuldenfreiheitsbescheinigung
+
+Get a *[[Mietschuldenfreiheitsbescheinigung]]* from your landlord. It confirms that you have no debt to your landlord. You might need it to [apply for an apartment](/guides/find-a-flat-in-berlin#apply-for-the-apartment). Your landlord can refuse to give you one, or charge a fee for it.[^46]
+
+If you live in a [[WG]], you can also get a letter from your roommates to confirm that you always paid your rent on time.[^42]
+
+Your landlord can refuse to give you a *Mietschuldenfreiheitsbescheinigung*. Some landlords charge around €50 for it.[^2]
+
+**[Mietschuldenfreiheitsbescheinigung template ➞](/documents/Mietschuldenfreiheitsbescheinigung-muster.pdf)**
+
+### Get your last utility bill
+
+After you move out, you will get your last utility bill (*[[Nebenkostenabrechnung]]*). It will tell you if you paid too much or not enough for [utilities](/glossary/Nebenkosten). Landlords send this document once per year, so it might take a few months to get it.
+
+Read your *Nebenkostenabrechnung* carefully. They often contain errors or wrong charges.
+
+After you got your utility bill, and you paid any extra utility costs, your landlord must return the rest of your [deposit](/glossary/Kaution). They have no other reason to keep it.
+
 ## Move your things
 
 ### Find cardboard boxes
@@ -213,16 +231,6 @@ If your landlord tries to scam you, get help from your [tenants' association](/g
 
 **[Where to get help ➞](/guides/help#apartment-questions)**
 
-## Get a Mietschuldenfreiheitsbescheinigung
-
-Get a *[[Mietschuldenfreiheitsbescheinigung]]* from your landlord. It confirms that you have no debt to your landlord. You might need it to [apply for an apartment](/guides/find-a-flat-in-berlin#apply-for-the-apartment). Your landlord can refuse to give you one, or charge a fee for it.[^46]
-
-If you live in a [[WG]], you can also get a letter from your roommates to confirm that you always paid your rent on time.[^42]
-
-Your landlord can refuse to give you a *Mietschuldenfreiheitsbescheinigung*. Some landlords charge around €50 for it.[^2]
-
-**[Mietschuldenfreiheitsbescheinigung template ➞](/documents/Mietschuldenfreiheitsbescheinigung-muster.pdf)**
-
 ## Checklist
 
 - [ ] [End your lease](#end-your-lease)
@@ -238,6 +246,7 @@ Your landlord can refuse to give you a *Mietschuldenfreiheitsbescheinigung*. Som
     - [ ] [Read your electricity, gas and water meters](/guides/moving-out#read-the-electricity-meter)
     - [ ] [Sign a handover document](/guides/moving-out#sign-the-ubergabeprotokoll) (*[[Übergabeprotokoll]]*)
     - [ ] [Get a *Mietschuldenfreiheitsbescheinigung*](/guides/moving-out#get-a-mietschuldenfreiheitsbescheinigung)
+    - [ ] [Get your last utility bill](#get-your-last-utility-bill) (*[[Nebenkostenabrechnung]]*)
 - [ ] [Get your deposit back](/guides/moving-out#get-your-deposit-back)
 - [ ] Deduct your moving expenses in your next [tax declaration](/glossary/Steuererklärung)
 

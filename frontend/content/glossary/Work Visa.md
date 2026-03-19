@@ -17,7 +17,6 @@ Related_guides:
     guides/freelance-visa.md
     guides/permanent-residence.md
     guides/fragebogen-zur-steuerlichen-erfassung.md
-    guides/german-work-visa-to-freelance-visa.md
 ---
 
 The German work visa (*Aufenthaltserlaubnis zur Aufnahme einer Beschäftigung*) is a type of [residence permit](/glossary/Aufenthaltstitel). It's also called a work permit.

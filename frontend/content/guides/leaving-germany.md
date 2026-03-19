@@ -41,6 +41,7 @@ This checklist helps you move from Germany to another country.
         - [ ] [Read your electricity, gas and water meters](/guides/moving-out#read-the-electricity-meter)
         - [ ] [Sign a handover document](/guides/moving-out#sign-the-ubergabeprotokoll) (*[[Übergabeprotokoll]]*)
         - [ ] [Get a *Mietschuldenfreiheitsbescheinigung*](/guides/moving-out#get-a-mietschuldenfreiheitsbescheinigung)
+        - [ ] [Get your last utility bill](/guides/moving-out#get-your-last-utility-bill) (*[[Nebenkostenabrechnung]]*)
     - [ ] **[Get your deposit back](/guides/moving-out#get-your-deposit-back)**  
         Your landlord must return most of your [deposit](/glossary/Kaution) after the [handover](/glossary/Wohnungsübergabe). They can keep *part* of your deposit for up to 1 year, until the next *[[Nebenkostenabrechnung]]*.
     - [ ] **Save your receipts**  

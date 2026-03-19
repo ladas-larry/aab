@@ -114,7 +114,7 @@ export default function initializeSidebar(){
 			(!bodyTableOfContents || bodyTableOfContents.getBoundingClientRect().bottom <= 0)
 
 			// The main content is in view (so the button does not overlap the footer)
-			&& articleBody.getBoundingClientRect().bottom >= window.innerHeight
+			&& (!articleBody || articleBody.getBoundingClientRect().bottom >= window.innerHeight)
 		);
 		if(floatingNav) {
 			floatingNav.classList.toggle('visible', showMobileSidebarButton);

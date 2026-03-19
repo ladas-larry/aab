@@ -33,7 +33,9 @@
 			<meta property="og:url" content="{{ entry.url }}">
 			<meta property="og:title" content="{{ entry.title }}">
 			<meta property="og:description" content="{{ entry.description }}">
-			<meta property="og:image" content="{{ entry.image_url }}">
+			{% if entry.image_url|default %}
+				<meta property="og:image" content="{{ entry.image_url }}">
+			{% endif %}
 			<link rel="canonical" href="{{ entry.url }}">
 		{% else %}
 			<meta property="og:type" content="website">

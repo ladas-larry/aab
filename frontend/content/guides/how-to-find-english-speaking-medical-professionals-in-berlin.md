@@ -38,4 +38,3 @@ These websites let you to find doctors by language.
 - [Queermed](https://queermed-deutschland.de/en/look-for-recommendations/) - Queer-friendly doctors and therapists
 
 Ask your health insurance too. [TK](/glossary/Techniker%20Krankenkasse) has a list of English-speaking doctors. They can even [book an appointment for you](https://www.tk.de/service/form/2028156/terminservice.form).
-

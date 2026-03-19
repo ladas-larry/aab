@@ -13,32 +13,27 @@
 {% set ns = namespace(currentLetter=None) %}
 {% set groups = glossary_groups(get_entries('glossary'))|dictsort %}
 
-{% block precontent %}
-	<header class="intro">
-		<h1>Glossary</h1>
-	</header>
-{% endblock %}
-
 {% block main %}
 	<main aria-label="Main page">
+		<header class="intro">
+			<h1>Glossary</h1>
+		</header>
 		<nav class="section glossary-sections" aria-label="Letter shortcuts">
 			{% for group_name, entries in groups %}
 				<a href="#letter-{{ group_name }}" title="Terms that start with '{{ group_name }}'">{{ group_name }}</a>
 			{% endfor %}
 		</nav>
-		<section class="collections" aria-label="List of terms, grouped by letter">
-			{% for group_name, entries in groups %}
-				<div class="collection" id="letter-{{ group_name }}">
-					<h3>{{ group_name }}</h3>
-					<ol>
-						{% for entry in entries %}
-							<li>
-								<a title="Definition of {{ entry.german_term }}" rel="tag" href="{{ entry.url }}">{{ entry.german_term }}</a>
-							</li>
-						{% endfor %}
-					</ol>
-				</div>
-			{% endfor %}
-		</section>
+		{% for group_name, entries in groups %}
+			<section class="section collection" id="letter-{{ group_name }}">
+				<h3>{{ group_name }}</h3>
+				<ol>
+					{% for entry in entries %}
+						<li>
+							<a title="Definition of {{ entry.german_term }}" rel="tag" href="{{ entry.url }}">{{ entry.german_term }}</a>
+						</li>
+					{% endfor %}
+				</ol>
+			</section>
+		{% endfor %}
 	</main>
 {% endblock %}

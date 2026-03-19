@@ -7,7 +7,6 @@ Date_created: 2018-09-28
 Related_guides:
     guides/haftpflichtversicherung.md
     guides/insurance.md
-    guides/mietendeckel-repealed.md
     guides/legal-insurance.md
 ---
 
