@@ -12,6 +12,18 @@ April 3 is Good Friday (*Karfreitag*) and April 6 is Easter Monday (*Ostermontag
 
 **[Public holidays in Germany ➞](/guides/public-holidays)**
 
+[![](/images/fruehling-im-tiergarten-erich-buettner.jpg "“Frühling im Tiergarten” by Erich Büttner")](/images/fruehling-im-tiergarten-erich-buettner.jpg)
+
+### Cherry blossom
+
+The cherry blossom has already begun. Berlin.de has a [map of cherry blossom spots](https://www.berlin.de/tourismus/insidertipps/5263242-2339440-kirschblueten-in-berlin.html). In 1990, Japanese television station TV Asahi donated 10,000 to celebrate German reunification.[^1] Many were planted where the Berlin wall once stood.
+
+### Bärlauch season
+
+Every year in April, you start to see wild garlic (*Bärlauch*) sprout in Berlin's parks. You can pick a small amount for personal use. It's great in an omelette, but can also be used in soups, pestos, herb butter and Spätzle.
+
+**[Picking and cooking with Bärlauch ➞](https://www.leniundhans.de/ratgeber/baerlauch/)** (in German)
+
 ## What's new on All About Berlin
 
 ### Immigration office wait times
@@ -65,3 +77,5 @@ On a recent train trip, I discovered the [Bahn app](https://bahnapp.com/). This 
 ## Interesting links
 
 - Someone created a website to [gamble fake money on real Deutsche Bahn delays](https://bahn.bet/). Users have already placed over 150,000 bets.
+
+[^1]: [Wikipedia](https://en.wikipedia.org/wiki/Sakura_Campaign)

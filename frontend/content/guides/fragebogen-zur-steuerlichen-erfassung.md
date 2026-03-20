@@ -596,7 +596,7 @@ If you have questions about this form, [ask a tax advisor](/guides/english-speak
 
 If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), tell your insurer that you are self-employed. You will pay them every month by [bank transfer](/glossary/SEPA-%C3%9Cberweisung). The cost will be based on your *estimated* income. It will be adjusted every year when you prove your real income.
 
-When you are self-employed, [private health insurance](/glossary/private%20Krankenversicherung) is often better and cheaper than [public](/glossary/gesetzliche%20Krankenversicherung). I switched, and I save around €600 per month. This is a complex decision. [Ask my insurance expert](/glossary/Makler) if it makes sense for you.
+When you are self-employed, [private health insurance](/glossary/private%20Krankenversicherung) is often better and cheaper than [public](/glossary/gesetzliche%20Krankenversicherung). I switched, and I save around €450 per month. This is a complex decision. [Ask my insurance expert](/glossary/Makler) if it makes sense for you.
 
 {% tool "health-insurance-calculator", mode="question" %}
 

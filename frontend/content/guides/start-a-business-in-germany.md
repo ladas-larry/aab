@@ -249,7 +249,7 @@ Health insurance for freelancers is twice as expensive, because your employer do
 
 If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), tell your insurer that you will be self-employed. Your insurance will cost a percentage of your *estimated* income. You must pay it by [bank transfer](/glossary/SEPA-Überweisung) every month.
 
-[Private health insurance](/glossary/private%20Krankenversicherung) could be a lot cheaper for you. I save around €600 per month. Use my [health insurance calculator](/tools/health-insurance-calculator) to compare costs, and [ask my insurance expert](/guides/german-health-insurance#ask-our-expert) to find the best option for you.
+[Private health insurance](/glossary/private%20Krankenversicherung) could be a lot cheaper for you. I save around €450 per month. Use my [health insurance calculator](/tools/health-insurance-calculator) to compare costs, and [ask my insurance expert](/guides/german-health-insurance#ask-our-expert) to find the best option for you.
 
 {% tool "health-insurance-calculator", initial_occupation="selfEmployed", static=True %}
 
