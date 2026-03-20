@@ -55,7 +55,7 @@ To become a permanent resident, you must also...
     You must have a stable, long-term income. If you are unemployed, if you are in your [probation period](/glossary/Probezeit), or if your work contract ends in the next 6 months, your application will get rejected.[^36]
 - [ ] **Have a Blue Card for 21 to 27 months**  
     27 months if you speak [[A1]] German, or 21 months if you speak [[B1]] German.[^10] This includes the time when you met the [Blue Card requirements](/guides/blue-card#blue-card-requirements), even if you had a different [residence permit](/glossary/Aufenthaltstitel).[^41]
-- [ ] **Speak [[A1]] or [[B1]] German**
+- [ ] **Speak [[A1]] or [[B1]] German**[^69]
 - [x] **Pay [pension insurance](/glossary/gesetzliche%20Rentenversicherung)**  
     You must pay 27 months of public pension insurance, or 21 months if you speak [[B1]] German. When you are employed, you do this automatically. See the [pension requirements](#pension-requirements).
 
@@ -317,7 +317,8 @@ These are the required documents **in Berlin**. In other cities, you need differ
 
 - [ ] **Passport**  
     When you [apply online](#apply-for-permanent-residence-online), include a colour scan of your passport. When you [go to your appointment](#go-to-your-appointment), bring your original passport. You get it back during the appointment; they do not keep it.[^70]
-- [ ] **Language certificate**
+- [ ] **Language certificate**  
+    You need a language certificate from an approved school (telc or Goethe). The required language level ([[A1]], [[A2]], [[B1]] or [[C1]]) depends on your situation. If you studied in German at a German university, you don't need a language certificate.[^67]
 - [ ] **Proof of integration**  
     You need a certificate from one of these courses:
     - **Citizenship test** (*Einbürgerungstest*)
@@ -512,7 +513,9 @@ An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocatio
 [^64]: [ArbeitNow](https://www.arbeitnow.com/blog/extending-residence-permit-in-berlin#:~:text=around%203%20weeks%20after%20the%20appointment) (2023), [§ 45c AufenthV](https://www.buzer.de/45c_AufenthV.htm)
 [^65]: [Adithya Srinivasan](https://www.arbeitnow.com/blog/extending-residence-permit-in-berlin) (July 2024)
 [^66]: Personal experience (July 2024)
+[^67]: [Berlin](https://service.berlin.de/dienstleistung/326556/#:~:text=%C3%BCber%20deutsche%20Sprachkenntnisse-,insbesondere%20sind%20folgende%20nachweise%20moglich%3A,-Sprachzertifikat%20mit%20einem) (March 2026), [Reddit](https://old.reddit.com/r/askberliners/comments/1ryvdme/applying_for_pr_after_being_on_a_blue_card_for_27/) (March 2026)
 [^68]: [§ 9 Abs. 3a AufenthG](https://www.buzer.de/9_AufenthG.htm), [§ 18c AufenthG](https://www.buzer.de/18c_AufenthG.htm)
+[^69]: [Berlin](https://service.berlin.de/dienstleistung/326556/) (March 2026)
 [^70]: Personal experience (September 2024)
 [^71]: [Berlin.de](https://www.berlin.de/einwanderung/en/residence/permanent/#DA-EU) (July 2024)
 [^72]: [§ 9 Abs. 3a AufenthG](https://www.buzer.de/9_AufenthG.htm)
