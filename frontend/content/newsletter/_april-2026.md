@@ -16,7 +16,7 @@ April 3 is Good Friday (*Karfreitag*) and April 6 is Easter Monday (*Ostermontag
 
 ### Cherry blossom
 
-The cherry blossom has already begun. VisitBerlin has a [list of cherry blossom spots](https://www.visitberlin.de/de/blog/die-fruehlings-map-fuer-berlin). In 1990, Japanese television station TV Asahi donated 10,000 to celebrate German reunification.[^1] Many were planted where the Berlin wall once stood.
+The cherry blossom has already begun. Berlin.de has a [map of cherry blossom spots](https://www.berlin.de/tourismus/insidertipps/5263242-2339440-kirschblueten-in-berlin.html). In 1990, Japanese television station TV Asahi donated 10,000 to celebrate German reunification.[^1] Many were planted where the Berlin wall once stood.
 
 ### Bärlauch season
 
