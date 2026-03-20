@@ -18,12 +18,9 @@ Most employees pay 35% to 50% of their income in taxes, health insurance and pen
 ### How to pay less [income tax](/glossary/Einkommensteuer)
 
 - **Make a [tax declaration](/glossary/Steuererklärung)**  
-    A tax declaration lets you deduct expenses from your income. This makes your taxable income smaller, so you pay less [income tax](/glossary/Einkommensteuer). Relocation costs, work-related expanses, pension payments, insurance and healthcare are [tax-deductible](/glossary/steuerlich%20absetzbar). Financial support for relatives can be tax-deductible in some situations. [Tax software](/guides/german-tax-software) is the cheapest way to make a tax declaration.
-- **Include all work-related deductions**  
-    Track and include expenses related to employment income: commuting, home office days, work equipment (laptop, monitor, headset), home office equipment (desk, chair), professional literature, training and education costs.
-    
-    Employees automatically get a €1,230 work-expense allowance, so only expenses above this amount reduce your tax further.
-
+    A tax declaration lets you deduct expenses from your income. This makes your taxable income smaller, so you pay less [income tax](/glossary/Einkommensteuer). Relocation costs, work-related expanses, pension payments, insurance and healthcare are [tax-deductible](/glossary/steuerlich%20absetzbar). Financial support for relatives is sometimes tax-deductible. [Tax software](/guides/german-tax-software) is the cheapest way to make a tax declaration.
+- **Deduct work-related expenses**  
+    Work expenses are [tax-deductible](/glossary/steuerlich%20absetzbar). For example, commutingcosts, home office days, education costs and work equipment (laptop, monitor, headset, home office furniture). If your work expenses are over €{{WERBUNGSKOSTEN_PAUSCHALE|cur}} per year, declare them to reduce your income tax.[^1]
 - **Save for retirement**  
     Most pension contributions are [tax-deductible](/glossary/steuerlich%20absetzbar). Contributing to your pension is a type of [tax deferral](https://en.wikipedia.org/wiki/Tax_deferral). It helps you pay less income tax over your lifetime.
 
@@ -108,6 +105,7 @@ Use my [health insurance recommendation tool](/tools/health-insurance-calculator
     If your internet contract expires soon, call the company and ask for a better price. They might give you a better or cheaper plan if you renew your contract. For example, Vodafone upgraded my internet from 100 Mbit/s to 300 Mbit/s for free.
 
 [^0]: [reddit.com/r/de](https://old.reddit.com/r/de/comments/i8myjh/krankenkassen_wechseln_wie_den_stromanbieter/g19fj98/), [reddit.com/r/de](https://old.reddit.com/r/de/comments/4zaemf/welchen_gas_und_stromanbieter_empfiehlt_de/)
+[^1]: This is the default allowance used to calculate your income tax. [§ 9a Abs. 1 EstG](https://www.buzer.de/9a_EStG.htm).
 [^2]: [test.de](https://www.test.de/Hausrat-und-Privathaftpflichtschutz-Was-taugt-die-neue-Kombiversicherung-von-Lemonade-5494627-0/#:~:text=lemonade%20bietet%20guns%C2%ADtigen%20schutz)
 [^3]: [reddit.com/r/germany](https://old.reddit.com/r/germany/comments/7lieb1/rechtsschutzversicherung/drp5rt0/)
 [^4]: [verbraucherzentrale.de](https://www.verbraucherzentrale.de/wissen/geld-versicherungen/weitere-versicherungen/private-haftpflichtversicherung-ein-absolutes-muss-fuer-jeden-13891#:~:text=meist%20ist%20es%20gunstiger%2C%20den%20versicherungsbeitrag%20einmal%20im%20jahr%20zu%20zahlen), [Finanztip](https://www.finanztip.de/kfz-versicherung/ratenzahlung/#c32512)

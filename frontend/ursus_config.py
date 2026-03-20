@@ -62,6 +62,7 @@ ctx["SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX"] = fail_on("2026-12-31", 2035
 ctx["SOLIDARITY_TAX_MILDERUNGSZONE_RATE"] = fail_on("2026-12-31", Decimal("0.119"))  # § 4 SolzG
 ctx["SOLIDARITY_TAX_MAX_RATE"] = fail_on("2026-12-31", Decimal("0.055"))  # § 4 SolzG
 
+ctx["WERBUNGSKOSTEN_PAUSCHALE"] = fail_on("2026-12-31", 1230)  # § 9a Abs. 1 EstG
 ctx["VORSORGEPAUSCHAL_MIN"] = fail_on("2026-12-31", 1900)  # § 39b Abs. 2.3.e EStG
 ctx["VORSORGEPAUSCHAL_MIN_TAX_CLASS_3"] = 3000  # ??
 ctx["ARBEITNEHMERPAUSCHALE"] = fail_on("2026-12-31", 1230)  # (€/y) - § 9a EStG
