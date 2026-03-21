@@ -141,7 +141,7 @@ To move heavy furniture, use a [Möbel Taxi](https://www.moebel-taxi.de/english/
 
 Most apartments come without light fixtures. You must buy your own lights and install them.
 
-A handyman (*Handwerker*) can install your lights. It costs €50 to €150.[^14] Find a *Handwerker* on [Kleinanzeigen](https://www.kleinanzeigen.de/s-berlin/handwerker/k0l3331), [TaskRabbit](https://www.taskrabbit.com/) or [Co-Tasker](https://www.co-tasker.com/). [Little Big Project](https://littlebigproject.de/) and [Driller Queens](https://www.drillerqueens.com/) are English-speaking options.
+A handyman (*Handwerker*) can install your lights. It costs €50 to €150.[^14] Find a *Handwerker* on [Kleinanzeigen](https://www.kleinanzeigen.de/s-berlin/handwerker/k0l3331), [TaskRabbit](https://www.taskrabbit.com/) or [Co-Tasker](https://www.co-tasker.com/). [Little Big Project](https://littlebigproject.de/) is an English-speaking option.
 
 ### Change your address
 
