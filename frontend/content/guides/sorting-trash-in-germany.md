@@ -85,7 +85,7 @@ On special days, you can bring furniture, mattresses and other big trash to spec
 ### Glass
 
 - **Glass ➞ [glass recycling bins](/glossary/Altglascontainer)**  
-    The metal and plastic caps go in the yellow bin.[^11] In Berlin, you don't need to clean glass containers.[^3]
+    The lids should go in the yellow bin, but you can leave metal lids on.[^11] In Berlin, you don't need to clean glass containers.[^3]
 - **[Pfand logo or label](/glossary/Pfand) ➞ [return it, get money back](/guides/pfand-bottles#where-to-return-bottles-in-germany)**  
     Most beer bottles have a *[[Pfand]]*. [More information here.](/guides/pfand-bottles)
 - ⚫ **Mirrors ➞ grey bin**[^12]
@@ -200,7 +200,7 @@ Cartridges and toners do not go in the yellow bin. Recycle them [where you recyc
 [^0]: [finanzfrage.net](https://www.finanzfrage.net/g/frage/ist-es-erlaubt-papiermuell-im-plastikbeutel-in-die-blaue-tonne-zu-schmeissen)
 [^1]: [bund-berlin.de](https://www.bund-berlin.de/themen/klima-ressourcen/abfall/bioabfaelle/)
 [^2]: [bsr.de](https://www.bsr.de/bioabfall-20009.php), [trenntstadt-berlin.de](https://www.trenntstadt-berlin.de/muelltrennung/biogut.html)
-[^3]: [bsr.de](https://www.bsr.de/die-berliner-stadtreinigung-in-englischer-sprache-26142.php#:~:text=jars%20and%20bottles%20do%20not%20need%20to%20be%20rinsed)
+[^3]: [bsr.de](https://www.bsr.de/berliner-stadtreinigung-in-englischer-sprache#:~:text=it%20is%20not%20necessary%20to%20rinse%20out%20jars%20and%20bottles%20first.) (March 2026)
 [^4]: [trenntstadt-berlin.de](https://www.trenntstadt-berlin.de/muelltrennung/glas.html)
 [^5]: [deutsche-handwerks-zeitung.de](https://www.deutsche-handwerks-zeitung.de/elektroschrott-166055/)
 [^6]: [berlin-recycling.de](https://www.berlin-recycling.de/wissen/muelltrennung/was-gehoert-in-welche-tonne/blaue-tonne), [trenntstadt-berlin.de](https://www.trenntstadt-berlin.de/muelltrennung/papier.html)
@@ -208,7 +208,7 @@ Cartridges and toners do not go in the yellow bin. Recycle them [where you recyc
 [^8]: [Reddit](https://www.reddit.com/r/Muelltrennung/comments/1akwz0t/brottüten/) (2024)
 [^9]: [berlin-recycling.de](https://www.berlin-recycling.de/wissen/muelltrennung/was-gehoert-in-welche-tonne/blaue-tonne)
 [^10]: [nordseemilch.com](https://www.nordseemilch.com/node/40), [bsr.de](https://www.bsr.de/wertstoffe-20075.php), [bsr.de](https://www.bsr.de/abfall-abc-20563.php)
-[^11]: [trenntstadt-berlin.de](https://www.trenntstadt-berlin.de/muelltrennung/glas.html), [bvse.de](https://www.bvse.de/recycling-glas/nachrichten-glasrecycling/6947-glasverpackungen-richtig-entsorgen-im-altglascontainer.html)
+[^11]: [trenntstadt-berlin.de](https://www.trenntstadt-berlin.de/muelltrennung/glas.html#:~:text=plastik-%20und%20metalldeckel%20landen%20aber%20bitte%20in%20der%20wertstofftonne.) (March 2026), [bvse.de](https://www.bvse.de/recycling-glas/nachrichten-glasrecycling/6947-glasverpackungen-richtig-entsorgen-im-altglascontainer.html)
 [^12]: [hausjournal.net](https://www.hausjournal.net/spiegel-entsorgen)
 [^13]: [bvse.de](https://www.bvse.de/recycling-glas/nachrichten-glasrecycling/6100-porzellan-keramik-steingut-gehoeren-nicht-in-den-altglascontainer.html)
 [^14]: [utopia.de](https://utopia.de/ratgeber/gluehbirnen-und-energiesparlampen-entsorgen-so-gehts/), [berlin-recycling.de](https://www.berlin-recycling.de/entsorgung/weitere-entsorgungen/haushalt/gluehbirnen-entsorgen)
