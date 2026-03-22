@@ -173,6 +173,8 @@ To find things to do in Berlin, check...
 
 To follow what's happening, check...
 
+- **[My monthly newsletter](/newsletter)**{{ RECOMMENDED }}
+- [Berlin Daily](https://berlindaily.org/)
 - [20percent.berlin](https://20percent.berlin/)
 - [Handpicked Berlin](https://handpickedberlin.com/)
 
