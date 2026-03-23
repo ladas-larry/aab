@@ -1,4 +1,5 @@
 import Eur from '/js/vue/components/eur.mjs';
+import ExpatHealthInsuranceOptions from '/js/vue/components/expat-health-insurance-options.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
 import IconBank from '/js/vue/components/icons/bank.mjs';
 import IconFamily from '/js/vue/components/icons/family.mjs';
@@ -17,6 +18,7 @@ export default {
 	mixins: [uniqueIdsMixin, healthInsuranceOptionsMixin],
 	components: {
 		Eur,
+		ExpatHealthInsuranceOptions,
 		Glossary,
 		IconBank,
 		IconFamily,
