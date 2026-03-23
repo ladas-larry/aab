@@ -71,7 +71,7 @@ All German residents need health insurance (*[[Krankenversicherung]]*). It pays 
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
-The best way to choose health insurance is to [ask my insurance broker](/guides/german-health-insurance#need-help). This is a free service.
+The best way to choose health insurance is to [ask my insurance broker](/guides/german-health-insurance#need-help). It's free.
 
 ## Legal insurance
 
