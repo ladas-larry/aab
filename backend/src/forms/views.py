@@ -1,4 +1,3 @@
-from django.conf import settings
 from django.core.exceptions import ValidationError as DjangoValidationError
 from forms.models import (
     CitizenshipFeedback,
@@ -18,7 +17,7 @@ from forms.serializers import (
     ResidencePermitFeedbackSerializer,
     TaxIdRequestFeedbackReminderSerializer,
 )
-from forms.utils import readable_date_range, readable_duration
+from forms.utils import readable_date_range, readable_duration, subscribe_to_newsletter
 from ipware import get_client_ip
 from rest_framework import mixins, permissions, viewsets
 from rest_framework.exceptions import ValidationError as DRFValidationError
@@ -27,7 +26,6 @@ from rest_framework.views import APIView, exception_handler as drf_exception_han
 from rest_framework.response import Response
 from typing import Any
 import logging
-import requests
 
 
 logger = logging.getLogger(__name__)
@@ -45,34 +43,9 @@ class NewsletterSignupView(APIView):
         if not email:
             return Response(status=400)
 
-        if not settings.BUTTONDOWN_API_KEY:
-            raise Exception("BUTTONDOWN_API_KEY is not set")
+        subscribe_to_newsletter(email, ip)
 
-        response = requests.post(
-            "https://api.buttondown.com/v1/subscribers",
-            headers={
-                "Authorization": f"Token {settings.BUTTONDOWN_API_KEY}",
-                "Content-Type": "application/json",
-            },
-            json={
-                "email_address": email,
-                "ip_address": ip,
-            },
-            timeout=10,
-        )
-
-        if response.ok:
-            logger.info(f"Newsletter subscriber added: {request.data['email']}")
-        else:
-            logger.error(
-                "Failed to add subscriber. Buttondown request returned status %s. %s"
-                % (response.status_code, response.json())
-            )
-
-        return Response(
-            response.json() if response.content else None,
-            status=response.status_code,
-        )
+        return Response(status=200)
 
 
 class MessagePermission(permissions.BasePermission):
@@ -88,7 +61,32 @@ class MessagePermission(permissions.BasePermission):
         return False
 
 
-class MessageViewSet(mixins.CreateModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet):
+class NewsletterSubscriptionMixin:
+    """
+    Mixin for viewsets that accept an optional `subscribe_to_newsletter` parameter.
+    When true, subscribes the submitted email address to the newsletter.
+    """
+
+    def _maybe_subscribe_to_newsletter(self, request, email):
+        if request.data.get("subscribe_to_newsletter") and email:
+            ip, _ = get_client_ip(request)
+            try:
+                subscribe_to_newsletter(email, ip)
+            except Exception:
+                logger.exception(f"Failed to subscribe {email} to newsletter")
+
+    def perform_create(self, serializer):
+        super().perform_create(serializer)
+        self._maybe_subscribe_to_newsletter(self.request, serializer.instance.email)
+
+    def perform_update(self, serializer):
+        super().perform_update(serializer)
+        self._maybe_subscribe_to_newsletter(self.request, serializer.instance.email)
+
+
+class MessageViewSet(
+    NewsletterSubscriptionMixin, mixins.CreateModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet
+):
     http_method_names = ["get", "post"]
     permission_classes = [MessagePermission]
 
@@ -100,7 +98,7 @@ class FeedbackPermission(permissions.BasePermission):
         return True
 
 
-class FeedbackViewSet(viewsets.ModelViewSet):
+class FeedbackViewSet(NewsletterSubscriptionMixin, viewsets.ModelViewSet):
     http_method_names = ["get", "post", "put", "delete"]
     permission_classes = [FeedbackPermission]
 

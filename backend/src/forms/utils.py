@@ -2,8 +2,12 @@ from django.conf import settings
 from django.core.exceptions import ValidationError
 from email_validator import validate_email as original_validate_email, EmailNotValidError
 from typing import List, Tuple
+import logging
 import random
 import requests
+
+
+logger = logging.getLogger(__name__)
 
 
 def random_key() -> str:
@@ -50,6 +54,31 @@ def validate_email(email: str) -> None:
         original_validate_email(email, check_deliverability=True)
     except EmailNotValidError as exc:
         raise ValidationError("Invalid email") from exc
+
+
+def subscribe_to_newsletter(email: str, ip: str | None = None):
+    """
+    Subscribe an email address to the newsletter via Buttondown API.
+    Raises an exception on failure.
+    """
+    if not settings.BUTTONDOWN_API_KEY:
+        raise Exception("BUTTONDOWN_API_KEY is not set")
+
+    response = requests.post(
+        "https://api.buttondown.com/v1/subscribers",
+        headers={
+            "Authorization": f"Token {settings.BUTTONDOWN_API_KEY}",
+            "Content-Type": "application/json",
+        },
+        json={
+            "email_address": email,
+            "ip_address": ip,
+        },
+        timeout=10,
+    )
+
+    response.raise_for_status()
+    logger.info(f"Newsletter subscriber added: {email}")
 
 
 def send_email(recipients: List[str], subject: str, body: str, reply_to: str | None = None):

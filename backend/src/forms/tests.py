@@ -15,6 +15,7 @@ from forms.models import (
 )
 from forms.utils import readable_date_range
 from rest_framework.test import APITestCase
+from unittest.mock import patch
 import unittest
 
 
@@ -25,6 +26,25 @@ def basic_auth_headers(username: str, password: str) -> dict[str, str]:
 class ScheduledMessageEndpointMixin:
     def test_create(self):
         response = self.client.post(self.endpoint, self.example_request, format="json")
+        self.assertEqual(response.status_code, 201, response.json())
+
+    @patch("forms.views.subscribe_to_newsletter")
+    def test_create_without_subscribe_to_newsletter(self, mock_subscribe):
+        response = self.client.post(self.endpoint, self.example_request, format="json")
+        self.assertEqual(response.status_code, 201, response.json())
+        mock_subscribe.assert_not_called()
+
+    @patch("forms.views.subscribe_to_newsletter")
+    def test_create_with_subscribe_to_newsletter(self, mock_subscribe):
+        request = {**self.example_request, "subscribe_to_newsletter": True}
+        response = self.client.post(self.endpoint, request, format="json")
+        self.assertEqual(response.status_code, 201, response.json())
+        mock_subscribe.assert_called_once_with(self.example_request["email"], mock_subscribe.call_args[0][1])
+
+    @patch("forms.views.subscribe_to_newsletter", side_effect=Exception("Buttondown error"))
+    def test_create_with_subscribe_to_newsletter_failure(self, mock_subscribe):
+        request = {**self.example_request, "subscribe_to_newsletter": True}
+        response = self.client.post(self.endpoint, request, format="json")
         self.assertEqual(response.status_code, 201, response.json())
 
     def test_list_unauthenticated_401(self):
@@ -70,6 +90,25 @@ class FeedbackEndpointMixin:
         self.assertEqual(response.status_code, 201, response.json())
         self.assertIn("modification_key", response.json())
 
+    @patch("forms.views.subscribe_to_newsletter")
+    def test_create_without_subscribe_to_newsletter(self, mock_subscribe):
+        response = self.client.post(self.endpoint, self.example_request, format="json")
+        self.assertEqual(response.status_code, 201, response.json())
+        mock_subscribe.assert_not_called()
+
+    @patch("forms.views.subscribe_to_newsletter")
+    def test_create_with_subscribe_to_newsletter(self, mock_subscribe):
+        request = {**self.example_request, "subscribe_to_newsletter": True}
+        response = self.client.post(self.endpoint, request, format="json")
+        self.assertEqual(response.status_code, 201, response.json())
+        mock_subscribe.assert_called_once_with(self.example_request["email"], mock_subscribe.call_args[0][1])
+
+    @patch("forms.views.subscribe_to_newsletter", side_effect=Exception("Buttondown error"))
+    def test_create_with_subscribe_to_newsletter_failure(self, mock_subscribe):
+        request = {**self.example_request, "subscribe_to_newsletter": True}
+        response = self.client.post(self.endpoint, request, format="json")
+        self.assertEqual(response.status_code, 201, response.json())
+
     def test_update(self):
         new_object = self.model.objects.create(**self.example_request)
         updated_request = copy(self.example_request)
@@ -79,6 +118,30 @@ class FeedbackEndpointMixin:
         self.assertEqual(
             self.model.objects.get(modification_key=new_object.modification_key).email, updated_request["email"]
         )
+
+    @patch("forms.views.subscribe_to_newsletter")
+    def test_update_without_subscribe_to_newsletter(self, mock_subscribe):
+        new_object = self.model.objects.create(**self.example_request)
+        updated_request = copy(self.example_request)
+        updated_request["email"] = "contact@allaboutberlin.com"
+        response = self.client.put(f"{self.endpoint}/{new_object.modification_key}", updated_request, format="json")
+        self.assertEqual(response.status_code, 200, response.json())
+        mock_subscribe.assert_not_called()
+
+    @patch("forms.views.subscribe_to_newsletter")
+    def test_update_with_subscribe_to_newsletter(self, mock_subscribe):
+        new_object = self.model.objects.create(**self.example_request)
+        updated_request = {**self.example_request, "subscribe_to_newsletter": True}
+        response = self.client.put(f"{self.endpoint}/{new_object.modification_key}", updated_request, format="json")
+        self.assertEqual(response.status_code, 200, response.json())
+        mock_subscribe.assert_called_once_with(self.example_request["email"], mock_subscribe.call_args[0][1])
+
+    @patch("forms.views.subscribe_to_newsletter", side_effect=Exception("Buttondown error"))
+    def test_update_with_subscribe_to_newsletter_failure(self, mock_subscribe):
+        new_object = self.model.objects.create(**self.example_request)
+        updated_request = {**self.example_request, "subscribe_to_newsletter": True}
+        response = self.client.put(f"{self.endpoint}/{new_object.modification_key}", updated_request, format="json")
+        self.assertEqual(response.status_code, 200, response.json())
 
     def test_list_200(self):
         # When authenticated, return full object including private data

@@ -101,7 +101,7 @@ frontend/scripts/add_review.py
 env = { "BUNDLE_JS" = "1" }
 run = """
 mise dev
-docker compose exec backend python3 manage.py test -b --parallel
+docker compose exec backend python3 manage.py test -b
 """
 
 [tasks.test-ui]
