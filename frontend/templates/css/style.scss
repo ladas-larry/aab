@@ -3359,6 +3359,11 @@ details{
     }
 }
 
+.newsletter-checkbox{
+    font-size: var(--f-s);
+    color: var(--c-text-light);
+}
+
 .newsletter-form{
     margin: var(--s-text-block) auto;
     display: grid;
@@ -3590,6 +3595,7 @@ details{
         display: grid;
         grid-template-columns: 1fr auto;
         gap: var(--s);
+        margin-bottom: var(--s);
 
         input{
             max-width: none;

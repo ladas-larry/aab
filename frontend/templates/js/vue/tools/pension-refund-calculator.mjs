@@ -1,3 +1,4 @@
+import Checkbox from '/js/vue/components/checkbox.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import CountryInput from '/js/vue/components/country-input.mjs';
 import DatePicker from '/js/vue/components/date-picker.mjs';
@@ -27,6 +28,7 @@ const { pensionRefundGermany, fundsback, germanyPensionRefund } = pensions.compa
 
 export default {
 	components: {
+		Checkbox,
 		Collapsible,
 		CountryInput,
 		DatePicker,
@@ -62,6 +64,7 @@ export default {
 			germanState: userDefaults.empty,
 			fullName: userDefaults.empty,
 			email: userDefaults.empty,
+			subscribeToNewsletter: false,
 			dateOfBirth: userDefaults.empty,
 			showRefundRequestForm: false,
 			yearOptions: Array.from({ length: ((new Date()).getFullYear() + 2 - 2000) + 1}, (_, i) => 2000 + i), // From 2000 to currentYear + 2
@@ -121,6 +124,7 @@ export default {
 							email: this.email,
 							refund_amount: Math.round(this.results.refundAmount),
 							delivery_date: this.eligibilityDate,
+							subscribe_to_newsletter: this.subscribeToNewsletter,
 						}),
 					}
 				);
@@ -146,6 +150,7 @@ export default {
 							email: this.email,
 							name: this.fullName,
 							partner: this.selectedPartner.key,
+							subscribe_to_newsletter: this.subscribeToNewsletter,
 						}),
 					},
 				);
@@ -398,6 +403,7 @@ export default {
 										Remind me in {{ monthsUntilEligible }}
 									</button>
 								</div>
+								<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to my <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 							</template>
 						</template>
 					</template>
@@ -484,6 +490,7 @@ export default {
 					<div class="form-group">
 						<label :for="uid('email')">Email address</label>
 						<email-input v-model="email" :id="uid('email')" required></email-input>
+						<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to my <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 					</div>
 					<div class="form-group">
 						<label :for="uid('date-of-birth')">Date of birth</label>

@@ -1,3 +1,4 @@
+import Checkbox from '/js/vue/components/checkbox.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import DatePicker from '/js/vue/components/date-picker.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
@@ -13,6 +14,7 @@ import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs';
 
 export default {
 	components: {
+		Checkbox,
 		Collapsible,
 		DatePicker,
 		EmailInput,
@@ -33,6 +35,7 @@ export default {
 			departments: citizenshipDepartments,
 			notes: '',
 			email: userDefaults.empty,
+			subscribeToNewsletter: false,
 
 			steps: {
 				application: {
@@ -162,6 +165,7 @@ export default {
 							first_response_date: (this.steps.response.completed ? this.steps.response.date : null),
 							notes: this.notes,
 							department: this.department,
+							subscribe_to_newsletter: this.subscribeToNewsletter,
 						}),
 					}
 				);
@@ -245,12 +249,12 @@ export default {
 				</template>
 			</template>
 			<template v-if="stage === 'email'">
-				<p><strong>Thank you for your feedback!</strong> It will help a lot of people.</p>
-				<p>Can you complete your feedback when you get your citizenship? I can remind you by email.</p>
+				<p><strong>Thank you!</strong> Please complete your feedback when you get your citizenship. I can remind you by email.</p>
 				<div class="form-group">
 					<label :for="uid('email')">Email address</label>
 					<email-input ref="emailInput" v-model="email" :id="uid('email')" required></email-input>
-					<span class="input-instructions">You will get a reminder in 2 months and in 6 months. Nothing else.</span>
+					<span v-if="!subscribeToNewsletter" class="input-instructions">You will get two email reminders, nothing else.</span>
+					<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to my <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 				</div>
 			</template>
 			<template v-if="stage === 'finish'">

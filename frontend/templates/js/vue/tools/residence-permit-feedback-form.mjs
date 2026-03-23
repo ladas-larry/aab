@@ -1,4 +1,5 @@
 import AgeInput from '/js/vue/components/age-input.mjs';
+import Checkbox from '/js/vue/components/checkbox.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import DatePicker from '/js/vue/components/date-picker.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
@@ -15,6 +16,7 @@ import { residencePermitTypes, residencePermitDepartments, oldResidencePermitDep
 export default {
 	components: {
 		AgeInput,
+		Checkbox,
 		Collapsible,
 		DatePicker,
 		EmailInput,
@@ -44,6 +46,7 @@ export default {
 
 			notes: '',
 			email: userDefaults.empty,
+			subscribeToNewsletter: false,
 
 			healthInsurance: null,
 			healthInsuranceName: null,
@@ -237,6 +240,7 @@ export default {
 							pick_up_date: (this.steps.pickup.completed ? this.steps.pickup.date : null),
 							residence_permit_type: this.residencePermitType,
 							validity_in_months: this.validityInMonths,
+							subscribe_to_newsletter: this.subscribeToNewsletter,
 						}),
 					}
 				);
@@ -381,12 +385,12 @@ export default {
 				</template>
 			</template>
 			<template v-if="stage === 'email'">
-				<p><strong>Thank you for your feedback!</strong> It will help a lot of people.</p>
-				<p>Can you complete your feedback when you get your {{ residencePermitName }}? I can remind you by email.</p>
+				<p><strong>Thank you!</strong> Please complete your feedback when you get your {{ residencePermitName }}. I can remind you by email.</p>
 				<div class="form-group">
 					<label :for="uid('email')">Email address</label>
 					<email-input ref="emailInput" v-model="email" :id="uid('email')" required></email-input>
-					<span class="input-instructions">You will get a reminder in 2 months and in 6 months. Nothing else.</span>
+					<span v-if="!subscribeToNewsletter" class="input-instructions">You will get two email reminders, nothing else.</span>
+					<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to my <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 				</div>
 			</template>
 			<template v-if="stage === 'finish'">

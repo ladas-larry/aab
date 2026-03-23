@@ -1,3 +1,4 @@
+import Checkbox from '/js/vue/components/checkbox.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import CountryInput from '/js/vue/components/country-input.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
@@ -14,6 +15,7 @@ import { validateForm } from '/js/utils/form.mjs';
 
 export default {
 	components: {
+		Checkbox,
 		Collapsible,
 		CountryInput,
 		IconDonate,
@@ -29,6 +31,7 @@ export default {
 		return {
 			isLoading: false,
 			email: userDefaults.empty,
+			subscribeToNewsletter: false,
 			fullName: userDefaults.empty,
 			question: '',
 			nationality: userDefaults.empty,
@@ -52,6 +55,7 @@ export default {
 							question: this.question,
 							nationality: this.nationality,
 							country_of_residence: this.countryOfResidence,
+							subscribe_to_newsletter: this.subscribeToNewsletter,
 						}),
 					}
 				);
@@ -111,6 +115,7 @@ export default {
 					Email address
 				</label>
 				<email-input v-model="email" :id="uid('email')" required></email-input>
+				<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to my <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 			</div>
 			<hr>
 			<div class="form-group">
