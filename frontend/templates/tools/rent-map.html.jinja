@@ -63,9 +63,9 @@
 								return {
 									type: "Feature",
 									properties: {
-										medianShort: formatCurrency(f.properties.median, includeCents=false, currency=null),
-										medianMedium: formatCurrency(f.properties.median, includeCents=false) + '/m²',
-										medianLong: f.id + '\n' + formatCurrency(f.properties.median, includeCents=true) + '/m²',
+										medianShort: formatCurrency(f.properties.median, false, null),
+										medianMedium: formatCurrency(f.properties.median, false) + '/m²',
+										medianLong: f.id + '\n' + formatCurrency(f.properties.median, true) + '/m²',
 									},
 									geometry: {
 										type: "Point",
