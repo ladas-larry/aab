@@ -38,7 +38,7 @@ class NewsletterSignupView(APIView):
 
     def post(self, request):
         email = request.data.get("email")
-        ip, _ = get_client_ip(request)
+        ip, _ = get_client_ip(request, proxy_count=1)
 
         if not email:
             return Response(status=400)
@@ -69,7 +69,7 @@ class NewsletterSubscriptionMixin:
 
     def _maybe_subscribe_to_newsletter(self, request, email):
         if request.data.get("subscribe_to_newsletter") and email:
-            ip, _ = get_client_ip(request)
+            ip, _ = get_client_ip(request, proxy_count=1)
             try:
                 subscribe_to_newsletter(email, ip)
             except Exception:
