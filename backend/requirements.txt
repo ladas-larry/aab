@@ -1,4 +1,3 @@
-django-ipware~=7.0.1
 django_countries~=8.2
 djangorestframework~=3.16
 django~=6.0

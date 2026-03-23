@@ -18,7 +18,6 @@ from forms.serializers import (
     TaxIdRequestFeedbackReminderSerializer,
 )
 from forms.utils import readable_date_range, readable_duration, subscribe_to_newsletter
-from ipware import get_client_ip
 from rest_framework import mixins, permissions, viewsets
 from rest_framework.exceptions import ValidationError as DRFValidationError
 from rest_framework.serializers import as_serializer_error
@@ -38,7 +37,7 @@ class NewsletterSignupView(APIView):
 
     def post(self, request):
         email = request.data.get("email")
-        ip, _ = get_client_ip(request, proxy_count=1)
+        ip = request.META.get("HTTP_X_REAL_IP")
 
         if not email:
             return Response(status=400)
@@ -69,7 +68,7 @@ class NewsletterSubscriptionMixin:
 
     def _maybe_subscribe_to_newsletter(self, request, email):
         if request.data.get("subscribe_to_newsletter") and email:
-            ip, _ = get_client_ip(request, proxy_count=1)
+            ip = request.META.get("HTTP_X_REAL_IP")
             try:
                 subscribe_to_newsletter(email, ip)
             except Exception:

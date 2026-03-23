@@ -55,10 +55,14 @@
 
     # Pass /api requests to the backend
     handle /api/* {
-        reverse_proxy backend:80
+        reverse_proxy backend:80 {
+            header_up X-Real-IP {remote_host}
+        }
     }
     handle /admin/* {
-        reverse_proxy backend:80
+        reverse_proxy backend:80 {
+            header_up X-Real-IP {remote_host}
+        }
     }
     handle_path /admin/static/* {
         root * /var/www/api/staticfiles
