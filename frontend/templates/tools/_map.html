@@ -87,12 +87,12 @@
 	function getPolygonBounds(coords, bounds=[[], []]){
 		for (var i = 0; i < coords.length; i++) {
 			if (Array.isArray(coords[i][0][0])){
-				bounds = getPolygonBounds(coords[i], bounds);
+				const bounds = getPolygonBounds(coords[i], bounds);
 			} else {
-				polygon = coords[i];
+				const polygon = coords[i];
 				for (var j = 0; j < polygon.length; j++) {
-					longitude = polygon[j][0];
-					latitude = polygon[j][1];
+					const longitude = polygon[j][0];
+					const latitude = polygon[j][1];
 					bounds[0][0] = bounds[0][0] < longitude ? bounds[0][0] : longitude;
 					bounds[1][0] = bounds[1][0] > longitude ? bounds[1][0] : longitude;
 					bounds[0][1] = bounds[0][1] < latitude ? bounds[0][1] : latitude;
