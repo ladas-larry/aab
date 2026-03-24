@@ -85,7 +85,7 @@ Hire a tax advisor when...
 - **You are in trouble**  
     If you have problems with the *[[Finanzamt]]*, and you don't know what to do. They can take care of all communications with the *Finanzamt*. They can quickly solve your problem.
 
-If you have a regular situation, you don't need a tax advisor. The *[[Finanzamt]]* already knows how much you earned from your job. You might not need to make a [tax declaration](/glossary/Steuererklärung). You can use [[ELSTER]] or [tax software](/guides/german-tax-software) to declare [tax-deductible](/glossary/steuerlich%20absetzbar) expenses.
+If you have a regular situation (employment income), you don't need a tax advisor. The *[[Finanzamt]]* already knows how much you earned from your job. You might not need to make a [tax declaration](/glossary/Steuererklärung). You can use [[ELSTER]] or [tax software](/guides/german-tax-software) to declare [tax-deductible](/glossary/steuerlich%20absetzbar) expenses.
 
 ## Cost of a tax advisor
 
@@ -125,15 +125,15 @@ They can help you file your [tax declaration](/glossary/Steuererklärung), but y
 
 ### Lohnsteuerhilfeverein
 
-A tax help union (*[[Lohnsteuerhilfeverein]]*) is a non-profit organisation that helps its members file their taxes. They are cheaper than tax advisors, but their competence varies a lot.[^2] Most of them are German-only, but some offer their service in English as well.
+A tax help union (*[[Lohnsteuerhilfeverein]]*) is a non-profit organisation that helps its members file their taxes. They are cheaper than tax advisors, but their competence varies a lot.[^2] Most of them speak only German and some offer their service in English.
 
 The membership costs €30 to €300 per year, depending on your income.[^4] Only employees can be members, not self-employed people.[^3]
 
 ### Hybrid tax adviser services
 
-Apps that offer tax adviser service, such apps Taxfix Expert Service. But your case might not be supported.[^6] 
-You might end up filing most of your data yourself anyway.
-Once you decide to use the app, it's alwyas much cheaper to do self-filing.
+Platforms like Zasta and Taxfix’s Expert Service combine tax software with access to a tax advisor. You enter most of the data yourself and upload your documents, and a tax advisor then reviews everything. This is a hybrid model of self-filing with additional validation, and not all cases are supported. [^6]
+
+It's usually cheaper than a traditional tax advisor, but it doesn't fully replace one. Waiting times can be noticeable during peak tax season (March to May).
 
 ### Freelancer cooperative
 
