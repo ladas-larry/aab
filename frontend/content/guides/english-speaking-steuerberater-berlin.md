@@ -125,7 +125,7 @@ They can help you file your [tax declaration](/glossary/Steuererklärung), but y
 
 ### Lohnsteuerhilfeverein
 
-A tax help union (*[[Lohnsteuerhilfeverein]]*) is a non-profit organisation that helps its members file their taxes. They are cheaper than tax advisors, but their competence varies a lot.[^2]
+A tax help union (*[[Lohnsteuerhilfeverein]]*) is a non-profit organisation that helps its members file their taxes. They are cheaper than tax advisors, but their competence varies a lot.[^2] Most of them are German-only, but some offer their service in English as well.
 
 The membership costs €30 to €300 per year, depending on your income.[^4] Only employees can be members, not self-employed people.[^3]
 
