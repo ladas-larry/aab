@@ -150,7 +150,7 @@ Use PDF files or photos. Don't use Word documents or other file formats. Put dat
 - [ ] **Appointment confirmation**  
     This document shows you where to go for your appointment. It also shows your waiting number (*Vorgangsnummer*). You must have this document to enter the *Ausländerbehörde*.
 - [ ] **Passport**  
-    The passport must still be valid. The freelance visa is usually a  a [plastic card](https://www.berlin.de/einwanderung/aufenthalt/elektronischer-aufenthaltstitel/), but it's *sometimes* a sticker in your passport.[^19]
+    The passport must still be valid. The freelance visa is usually a [plastic card](https://www.berlin.de/einwanderung/aufenthalt/elektronischer-aufenthaltstitel/), but it's *sometimes* a sticker in your passport.[^19]
 - [ ] **Current [residence permit](/glossary/Aufenthaltstitel)**  
     If you have a plastic residence permit, bring it. If your residence permit is in an older passport, bring the old passport and the new one.
 - [ ] **[QR code for biometric pictures](/guides/biometric-pictures-in-berlin)** (35 × 45 mm)  
