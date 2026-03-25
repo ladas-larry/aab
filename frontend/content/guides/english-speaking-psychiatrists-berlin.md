@@ -46,6 +46,20 @@ These directories help you find English-speaking psychiatrists:
 
 **[More resources and directories ➞](/guides/how-to-find-english-speaking-medical-professionals-in-berlin)**
 
+### For an ADHD diagnosis
+
+These Berlin psychiatrists speak English and diagnose people with ADHD:
+
+- [Charité Outpatient Center for Adult ADHD](https://psychiatrie.charite.de/en/department/ambulanzbereich/outpatient_center_for_adult_adhd/) - hard to get an appointment
+- [Dr. Yrsa Werzinger](https://www.patienten-praxis.com/psychiatrie/dr-med-yrsa-wertzinger-fachaerztin-fuer-psychiatrie/)[^1]
+- [Dr. Nikolaos Riga](https://www.dr-rigas.de/)[^3]
+- [Dr. Lazaros Giousmpasis](https://psychiater-praxis-berlin.de/)[^4] - no public health insurance
+- [Dr. Susanne Finke](https://privatpraxis-psychiatrie-berlin.de/) - no public health insurance
+
+**[Request a list of psychiatrists](https://www.adxs.org/en/page/304/request-addresses-of-doctors-therapists)** - ADxS.org {{ RECOMMENDED }}
+
+[Unofficial list of ADHD doctors ➞](https://docs.google.com/spreadsheets/d/1E52j1v6zl-NwkY2PQlYzx2yUve09UySyfG00fxGHa5U/edit#gid=0) - not updated
+
 ### Other resources
 
 **Your employer and your university** might give you access to psychotherapy. It could be easier than finding a therapist yourself.
@@ -66,4 +80,7 @@ These directories help you find English-speaking psychiatrists:
 
 It's hard. It's much harder if you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), because many psychiatrists prefer clients with [private health insurance](/glossary/private%20Krankenversicherung).
 
+[^1]: [Facebook](https://www.facebook.com/groups/1501180583530755/posts/2775481096100691/?comment_id=2818316808483786)
 [^2]: [psychologie-studieren.de](https://www.psychologie-studieren.de/berufe/unterschied-psychologe-psychotherapeut-psychiater/#psychotherapeut), [karriere.de](https://www.karriere.de/studium/unterschied-psychologe-psychotherapeut-psychiater/)
+[^3]: [Facebook](https://www.facebook.com/groups/1501180583530755/posts/2507204306261706/?comment_id=2659109251071210)
+[^4]: Personal experience, friend's experience (2026)

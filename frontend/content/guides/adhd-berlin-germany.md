@@ -1,105 +1,129 @@
 ---
-Title: Getting diagnosed with ADHD in Berlin and Germany
+Title: How to get diagnosed with ADHD in Germany
 Short_title: How to get diagnosed with ADHD
-Description: A detailed guide to diagnosing and treating adult ADHD in Germany
+Description: Explains how to find a psychiatrist, get diagnosed and get medicated for ADHD.
 Date_created: 2017-12-13
 ---
 
-This guide shows you how ADHD treatment usually works in Germany. It's based on my own experience, and updated with feedback from readers.
+This guide shows explains how to get treated for ADHD in Germany, step by step.
 
 {% tableOfContents %}
 
-## Health insurance coverage
+## 1. Find a psychiatrist
 
-**If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**, it covers the ADHD diagnosis, therapy and medication. There is only a €5 [deductible](/glossary/Selbstbeteiligung) for each prescription.[^0] You must find a psychiatrist that accepts public health insurance. They are harder to find.
-
-Public health insurance covers the cheapest treatment that works. Doctors will only try medication if it's necessary. They will start with the cheapest medication: Medikinet (Ritalin).
-
-You can get an diagnosis from a private psychiatrist. It's much faster, but you must pay for the diagnosis yourself. It costs around €200.[^8] Your insurer might reimburse you for the diagnosis. They will still pay for your ADHD medication.[^6]
-
-**If you have [private health insurance](/glossary/private%20Krankenversicherung)**, ask your insurer what is covered. Private health insurance usually covers the ADHD diagnosis, therapy and medication. It usually covers better ADHD medication like Elvanse (Vyvanse).
+Talk to a psychiatrist, not a psychotherapist. Psychotherapists can't prescribe medication. If you can, find a psychiatrist who specialises in ADHD.
 
 **[English-speaking psychiatrists in Berlin ➞](/guides/english-speaking-psychiatrists-berlin)**
 
-## Getting diagnosed for ADHD
+### With public health insurance
 
-To get diagnosed for ADHD, you must:
+It's really hard to find a psychiatrist who accepts [public health insurance](/glossary/gesetzliche%20Krankenversicherung). They are often booked for months, and rarely accept new patients.
 
-1. **[Find a psychiatrist](/guides/english-speaking-psychiatrists-berlin)**  
-    If you can, choose a psychiatrist that specialises in ADHD. See a psychiatrist, not a psychotherapist. Only psychiatrists can prescribe medication. Ask your health insurer to recommend a psychiatrist.
-2. **Book an appointment**  
-    This can be hard. Many psychiatrists don't accept new patients. If you have public health insurance, it's harder to find a psychiatrist.
-3. **Take an ADHD diagnosis test**  
-    Usually, the test is a simple interview. They ask you a few questions about your life. Some psychiatrists have more complicated tests.
+It's easier to find a private psychiatrist. You can get diagnosed faster and start medication sooner. The diagnosis costs around €200 and you must pay for it yourself.[^8] Your insurance might reimburse you, but it's not guaranteed. Your insurer will still pay for your ADHD medication.[^6]
 
-The hardest part is to find a psychiatrist and book an appointment. This is harder for people with ADHD.
+After you start medication, you don't need to see your psychiatrist all the time. Your *[[Hausarzt]]* can renew your ADHD medication prescription.
 
-### Finding a psychiatrist
+### With private health insurance
 
-These Berlin psychiatrists speak English and diagnose people with ADHD:
+With private health insurance, it's easier to find a psychiatrist. You can usually get an appointment within 1 month.
 
-- [Dr. Yrsa Werzinger](https://www.patienten-praxis.com/psychiatrie/dr-med-yrsa-wertzinger-fachaerztin-fuer-psychiatrie/)[^2]
-- [Dr. Nikolaos Riga](https://www.dr-rigas.de/)[^3]
-- [Charité Outpatient Center for Adult ADHD](https://psychiatrie.charite.de/en/department/ambulanzbereich/outpatient_center_for_adult_adhd/) - very hard to get an appointment
-- [Dr. Lazaros Giousmpasis](https://psychiater-praxis-berlin.de/)[^7] - no public health insurance
-- [Dr. Susanne Finke](https://privatpraxis-psychiatrie-berlin.de/) - no public health insurance
+## 2. Get diagnosed
 
-**[English-speaking psychiatrists in Berlin ➞](/guides/english-speaking-psychiatrists-berlin)**
+The first psychiatrist appointment is like an interview. They ask questions about to see if you have ADHD symptoms. They try to understand how these symptoms affects your life. They will see if you have ADHD, and decide how to treat it.[^2]
 
-Also try [this list of ADHD doctors](https://docs.google.com/spreadsheets/d/1E52j1v6zl-NwkY2PQlYzx2yUve09UySyfG00fxGHa5U/edit#gid=0). This is an unofficial list. It might not get updated.
+German doctors only prescribe medication when it's necessary. Your psychiatrist might try therapy and other approaches first. It's frustrating, but it's part of the process.
 
-## The ADHD treatment process
+Usually, you can get a prescription for ADHD medication on the first or second appointment.
 
-This is the process that I followed. Your experience could be different.
+## 3. Health check
 
-### Diagnosis
+Before you start medication, you might need a blood test (*Blutuntersuchung*). This is to see how the medication affects you later. It takes a few minutes, and you get the results a day or two later.
 
-During your first appointment, your psychiatrist will see if you have ADHD, and how it affects your life. They will decide if you need therapy or medication for it.
+[Use Doctolib](https://www.doctolib.de/blutuntersuchung-blutanalyse/berlin) to find a clinic for the blood test. Your *[[Hausarzt]]* can do it. You can usually get an appointment in a few days. Your health insurance pays for it.
 
-**Your psychiatrist will only prescribe ADHD medication if it's necessary.** German doctors are very careful about prescribing medication. They might want to try therapy and other cheaper methods first. Medication has side effects, so they try softer approaches first. You might find this frustrating, but you must be patient.
+You also need to check your blood pressure. You can monitor it yourself at home.
 
-They might measure your brain activity with an [Electroencephalogram](https://www.nhs.uk/conditions/electroencephalogram/) (EEG). Not all psychiatrists do it.
+## 4. Medication
 
-They might measure your blood pressure, and take a blood sample. This is to see how the medication affects you.
+During your first or second appointment, your psychiatrist gives you a prescription (*Rezept*) for ADHD medication. Bring it to any pharmacy (*Apotheke*) to get your medication. If they don't have your medication, they will order it, and you can pick it up 1 to 3 days later.
 
-### First week of medication
+![German prescription for ADHD medication](/images/adhd-meds-prescription-germany.jpg "Bring this prescription to a pharmacy")
 
-During your first or second visit, you will get a prescription (*Rezept*). Bring it to a pharmacy (*Apotheke*) to get your medication. If they don't have your medication, they will order it and contact you in 1 to 3 days. The medication costs you €5.[^0] Your [health insurance](/glossary/Krankenversicherung) pays the rest.
+At the *Apotheke*, you can sometimes choose between brand or generic medication. Generic medication is cheaper, and has the same effect.
 
-You will probably get a low dose of Medikinet (Ritalin); usually 5 to 10 mg. Your psychiatrist will teach you how to take the medicine and explain its side effects to you.
+### ADHD medication in Germany
 
-You should not feel a big difference yet. 5 to 10 mg is a very small dose of Medikinet or Ritalin. **You might experience nausea and and upset stomach** while your body adjusts to the medication. It felt like a mild hangover that lasted until lunch. I felt a bit of euphoria, like if I had a *really* strong coffee. If you don't feel any big improvements yet, it's normal. If you feel big improvements, don't get too excited. Your body is adjusting to the drug.
+These ADHD medications are usually prescribed in Germany:[^11]
 
-Keep a journal of how you feel. It helps your psychiatrist adjust your medication.
+- **Medikinet** (Methylphenidate)  
+    This is the default ADHD medication for adults.[^1] It's also called Ritalin, Kinecteen or Concerta.
+- **Vyvanse/Elvanse** (Lisdexamphetamine)  
+    Usually prescribed when *Medikinet* does not work.[^3] Some doctors now try Elvanse first.
+- **Strattera** (Atomoxetine)  
+    Sometimes prescribed to people who can't take stimulants, and people with addictive disorders.[^9]
 
-### Medication adjustments
+All those medications are covered by your public or private health insurance. If you have public health insurance, it covers the cheapest treatment that works. This is why they try Medikinet before Vyvanse.
 
-Every few weeks, you will see your psychiatrist to adjust your medication. They will listen to your feedback, and [titrate](https://en.wikipedia.org/wiki/Drug_titration) your medication. Give clear, specific feedback. A journal really helps for that.
+### Medication costs
 
-Usually, if you don't have any bad side effects, they will increase the dose, and schedule another appointment. A nurse might take your blood pressure again.
+If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), the medication costs you €5.[^0] Your insurance pays the rest. If you have [private health insurance](/glossary/gesetzliche%20Krankenversicherung), it usually covers the full cost.
 
-You might start to feel a slight improvement at this point. It might become easier to pay attention in lectures or meetings, and boring tasks might become less difficult once you get started. But medication does not work like magic. For example, it can help you focus really hard on the wrong task.
+### First medication
 
-If Medikinet does not work for you, tell your psychiatrist. You are not alone. They might suggest a different drug. It's also covered by your health insurance.
+You will probably start with a low dose of Medikinet (Ritalin); usually 5 to 10 mg. If you try Vivanse, you will get a 20 to 30 mg dose. Your psychiatrist will teach you how to take the medicine and explain its side effects to you.
 
-### Long term treatment
+During the first week, you might feel **nausea, an upset stomach and a loss of appetite**. This is normal. Your body is adjusting to the medication. For me, it felt like a mild hangover until lunch. I also felt a bit of anxiety and euphoria, like when I have a really strong coffee.
 
-After you adjust your medication dosage, you can get prescriptions from your family doctor (*[[Hausarzt]]*).[^4] It's easier to see a family doctor than a psychiatrist, because they have more free appointments.
+**Write everything down!** Keep a journal of how you feel. It helps your psychiatrist adjust your medication.
 
-## ADHD medication used in Germany
+If you don't feel any big improvements yet, it's normal. If you feel big improvements, don't get too excited. Your body is adjusting to the drug.
 
-**Medikinet** (Ritalin) is the most commonly prescribed ADHD medication. You can also get Elvanse (Vyvanse), Atomoxetine (Strattera) and other similar drugs, but you must usually start with Medikinet.[^5] Attentin is sometimes prescribed to children.[^1]
+## 5. Adjustments
 
-## Other resources
+Every few weeks, you will see your psychiatrist to adjust your medication. They will listen to your feedback, and [titrate](https://en.wikipedia.org/wiki/Drug_titration) your medication. Give clear, specific feedback. A journal really helps with that.
 
-[ADxS.org](https://www.adxs.org) is the best resource for people with ADHD in Germany. [Mental State Berlin](https://www.facebook.com/groups/1501180583530755) is a Facebook group about mental health in Berlin.
+Usually, if you don't have any bad side effects, they will increase the dose, and schedule another appointment. You might need to check your blood pressure.
+
+If your current medication does not work for you, tell your psychiatrist. You are not alone. They can try a different drug. It's also covered by your health insurance.
+
+## 6. Long-term treatment
+
+You usually get 30 to 90 pills per prescription. When the pills run out, you must go to the doctor and renew your prescription.
+
+You can renew your prescription at your *[[Hausarzt]]*.[^4] It's easier than going to your psychiatrist every time, because they have more free appointments.
+
+## Costs
+
+The cost of the diagnosis, therapy and medication are covered by your health insurance.
+
+**If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**, it covers the ADHD diagnosis, therapy and medication. There is a €5 [deductible](/glossary/Selbstbeteiligung) for each prescription, but the medication is free.[^0]
+
+Public health insurance covers the cheapest treatment that works.[^7] Doctors will only try medication if it's necessary. They might try therapy before medication. They might also try the cheapest medication first.
+
+**If you have [private health insurance](/glossary/private%20Krankenversicherung)**, ask your insurer what is covered. It usually covers the ADHD diagnosis, therapy and medication.
+
+If you pay out of pocket, the diagnosis costs around €200. The medication costs up to €3 per pill, and you usually take one pill per day.[^5]
+
+## Consequences
+
+Once you get diagnosed and medicated, it's almost impossible to switch to [private health insurance](/glossary/private%20Krankenversicherung). If you currently have public health insurance, it's not a problem. If you have expat health insurance, you will need to get public or private health insurance at some point. An ADHD diagnosis makes it *really* hard to get proper health insurance.
+
+## Need help?
+
+- **[ADxS.org](https://www.adxs.org/en)**{{ RECOMMENDED }}  
+    Website for ADHD in Germany. They have detailed information in English, and a German-language [forum](https://adhs-forum.adxs.org/).
+- **[Mental State Berlin](https://www.facebook.com/groups/1501180583530755)**  
+    Facebook group about mental health in Berlin.
+- [Full list of German ADHD communities](https://www.adhspedia.de/wiki/Liste_von_ADHS-Internetforen_und_Communitys)
 
 [^0]: [bundesgesundheitsministerium.de](https://www.bundesgesundheitsministerium.de/zuzahlung-und-erstattung-arzneimittel.html)
-[^1]: [bfarm.de](https://www.bfarm.de/SharedDocs/Downloads/DE/Arzneimittel/Pharmakovigilanz/Risikoinformationen/EducationMaterial/Anlagen/a-f/dexamfetamin-attentin-aerzte.pdf?__blob=publicationFile) (2017)
-[^2]: [Facebook](https://www.facebook.com/groups/1501180583530755/posts/2775481096100691/?comment_id=2818316808483786)
-[^3]: [Facebook](https://www.facebook.com/groups/1501180583530755/posts/2507204306261706/?comment_id=2659109251071210)
+[^1]: [adhs-erwachsene.net](https://adhs-erwachsene.net/medikamente/#:~:text=medikinet%20adult%20ist%20das%20meistverschriebene%20medikament%20bei%20adhs%20im%20erwachsenenalter) (March 2026), [adxs.org](https://www.adxs.org/en/page/231/choice-of-medication-for-adhd-or-adhd-with-comorbidity#content-21-order-of-priority-of-the-choice-of-medication) (March 2026)
+[^2]: [adhs-erwachsene.net](https://adhs-erwachsene.net/adhs-testung-erwachsene-testverfahren-lesen/) (March 2026)
+[^3]: [Reddit](https://old.reddit.com/r/askberliners/comments/124jitd/deleted_by_user/) (2023), [adxs.org](https://www.adxs.org/en/page/231/choice-of-medication-for-adhd-or-adhd-with-comorbidity#content-21-order-of-priority-of-the-choice-of-medication) (March 2026)
 [^4]: [reddit.com](https://old.reddit.com/r/ADHD/comments/vpd8vt/moving_to_germany_how_is_germany_with_managing/ieikpii/)
-[^5]: [reddit.com](https://old.reddit.com/r/askberliners/comments/124jitd/tk_insuranceprescribing_elvansevyvanse_adhd/), [ADxS](https://www.adxs.org/en/page/231/choice-of-medication-for-adhd-or-adhd-with-comorbidity#content-21-order-of-priority-of-the-choice-of-medication) (July 2025)
+[^5]: Personal experience (March 2026)
 [^6]: [Reddit](https://old.reddit.com/r/berlin/comments/1r9s2y2/why_is_it_so_hard_to_get_an_adhd_diagnosis_in/o6lxvws/?context=3) (February 2026), Seamus Wolf (March 2026)
-[^7]: Personal experience, friend's experience (2026)
+[^7]: [adxs.org](https://www.adxs.org/en/page/231/choice-of-medication-for-adhd-or-adhd-with-comorbidity#:~:text=must%20continue%20to%20adhere%20to%20the%20principle%20of%20cost-effectiveness.) (March 2026)
 [^8]: [Reddit](https://old.reddit.com/r/askberliners/comments/1rv7ek5/psychiatrist_for_adult_adhd/oaqov4x/) (March 2026)
+[^9]: Dr. Lazaros Giousmpasis (March 2026)
+[^11]: [adxs.org](https://www.adxs.org/en/page/532/approval-status-of-adhd-drugs) (March 2026), [adhspedia.de](https://www.adhspedia.de/wiki/Medikamente) (March 2026)
