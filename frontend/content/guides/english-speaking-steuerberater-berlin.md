@@ -75,7 +75,7 @@ To suggest a tax advisor, [fill this form](/suggest-business).
 Hire a tax advisor when...
 
 - **You have a complicated tax situation**  
-    For example, you have income from multiple countries, income from multiple sources (rental, foreign investments, stock options), or problems that tax software can't solve.
+    For example, you have income from multiple countries, income from multiple sources (rental, freelancing, investments, stock options), or problems that tax software can't solve.
 - **You want someone to take care of everything**  
     They can talk with the *[[Finanzamt]]*, and do all your taxes for you. You don't have to do anything. This makes your life much easier.
 - **You are [starting a business](/guides/start-a-business-in-germany)**  
