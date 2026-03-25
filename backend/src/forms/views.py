@@ -42,8 +42,12 @@ class NewsletterSignupView(APIView):
         if not email:
             return Response(status=400)
 
-        subscribe_to_newsletter(email, ip)
+        buttondown_response = subscribe_to_newsletter(email, ip)
 
+        if buttondown_response.status_code == 400:
+            return Response(buttondown_response.json(), status=400)
+
+        buttondown_response.raise_for_status()
         return Response(status=200)
 
 

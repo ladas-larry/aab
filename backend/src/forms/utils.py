@@ -77,8 +77,8 @@ def subscribe_to_newsletter(email: str, ip: str | None = None):
         timeout=10,
     )
 
-    response.raise_for_status()
     logger.info(f"Newsletter subscriber added: {email} (IP: {ip})")
+    return response
 
 
 def send_email(recipients: List[str], subject: str, body: str, reply_to: str | None = None):
