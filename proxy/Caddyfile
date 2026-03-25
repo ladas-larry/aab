@@ -55,14 +55,18 @@
 
     # Pass /api requests to the backend
     handle /api/* {
-        reverse_proxy backend:80 {
-            header_up X-Real-IP {remote_host}
-        }
+        @hasCfIp header CF-Connecting-IP *
+        request_header @hasCfIp X-Real-IP {header.CF-Connecting-IP}
+        @noCfIp not header CF-Connecting-IP *
+        request_header @noCfIp X-Real-IP {remote_host}
+        reverse_proxy backend:80
     }
     handle /admin/* {
-        reverse_proxy backend:80 {
-            header_up X-Real-IP {remote_host}
-        }
+        @hasCfIp2 header CF-Connecting-IP *
+        request_header @hasCfIp2 X-Real-IP {header.CF-Connecting-IP}
+        @noCfIp2 not header CF-Connecting-IP *
+        request_header @noCfIp2 X-Real-IP {remote_host}
+        reverse_proxy backend:80
     }
     handle_path /admin/static/* {
         root * /var/www/api/staticfiles
