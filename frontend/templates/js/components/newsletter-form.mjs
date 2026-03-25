@@ -32,10 +32,18 @@ export default function initializeNewsletterForm() {
 							pageSection: 'sidebar',
 							referrer: getReferrer(),
 						}});
+						form.innerHTML = "<span><strong>Subscribed!</strong> Check your email for a confirmation link. Click it to receive my newsletter.</span>";
+					} else {
+						response.json().then(data => {
+							if(data.code === 'email_already_exists'){
+								form.innerHTML = "<span><strong>Already subscribed!</strong> You are already on the list.</span>";
+							} else {
+								form.innerHTML = "<span><strong>Error!</strong> We could not sign you up. <a href='/newsletter' target='_blank'>Try again.</a></span>";
+							}
+						}).catch(() => {
+							form.innerHTML = "<span><strong>Error!</strong> We could not sign you up. <a href='/newsletter' target='_blank'>Try again.</a></span>";
+						});
 					}
-					form.innerHTML = response.ok ?
-						"<span><strong>Subscribed!</strong> Check your email for a confirmation link. Click it to receive my newsletter.</span>"
-						: "<span><strong>Error!</strong> We could not sign you up. <a href='/newsletter' target='_blank'>Try again.</a></span>";
 				});
 			});
 		});
