@@ -75,7 +75,7 @@ To suggest a tax advisor, [fill this form](/suggest-business).
 Hire a tax advisor when...
 
 - **You have a complicated tax situation**  
-    For example, you have income from multiple countries, income from multiple sources (rental, freelancing, investments, stock options), or problems that tax software can't solve.
+    For example, you have income from multiple countries, income from multiple sources (rental, investments, stock options), or problems that tax software can't solve.
 - **You want someone to take care of everything**  
     They can talk with the *[[Finanzamt]]*, and do all your taxes for you. You don't have to do anything. This makes your life much easier.
 - **You are [starting a business](/guides/start-a-business-in-germany)**  
@@ -131,7 +131,7 @@ The membership costs €30 to €300 per year, depending on your income.[^4] Onl
 
 ### Hybrid tax advisor services
 
-Platforms like Zasta and Taxfix’s Expert Service combine tax software with access to a tax advisor. You enter most of the data yourself and upload your documents, and a professional then reviews everything. It's a hybrid model of self-filing with additional validation, and not all cases are supported. [^6]
+Platforms like Zasta and Taxfix’s Expert Service combine tax software with access to a tax advisor. You enter most of the data yourself and upload your documents, and a professional then reviews everything. It's a hybrid model of self-filing with additional validation, but not all cases are supported. [^6]
 
 It's usually cheaper than a traditional tax advisor, but it doesn't fully replace one. Waiting times can be noticeable during peak tax season (March to May).
 
