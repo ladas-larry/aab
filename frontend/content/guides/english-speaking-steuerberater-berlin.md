@@ -75,7 +75,7 @@ To suggest a tax advisor, [fill this form](/suggest-business).
 Hire a tax advisor when...
 
 - **You have a complicated tax situation**  
-    For example, you have income from multiple countries, income from multiple sources (rental, investmens, stock options), or problems that tax software can't solve.
+    For example, you have income from multiple countries, income from multiple sources (rental, foreign investments, stock options), or problems that tax software can't solve.
 - **You want someone to take care of everything**  
     They can talk with the *[[Finanzamt]]*, and do all your taxes for you. You don't have to do anything. This makes your life much easier.
 - **You are [starting a business](/guides/start-a-business-in-germany)**  
@@ -109,9 +109,9 @@ Your tax advisor can be anywhere in Germany. It's easier if you look in other Ge
 
 ### Tax software
 
-In most situations using tax software will be suficient. Particulary if you have a full time job and regular [tax-deductible](/glossary/steuerlich%20absetzbar) expenses.
+In most situations using tax software will be enough. Particulary if you have just employment income and regular [tax-deductible](/glossary/steuerlich%20absetzbar) expenses.
 
-Using tax software cheaper and easier than finding a tax advisor. There are English-speaking options.
+Using tax software is cheaper and easier than finding a tax advisor. There are English-speaking options.
 
 **[List of German tax software ➞](/guides/german-tax-software)**
 
@@ -125,13 +125,13 @@ They can help you file your [tax declaration](/glossary/Steuererklärung), but y
 
 ### Lohnsteuerhilfeverein
 
-A tax help union (*[[Lohnsteuerhilfeverein]]*) is a non-profit organisation that helps its members file their taxes. They are cheaper than tax advisors, but their competence varies a lot.[^2] Most of them speak only German and some offer their service in English.
+A tax help union (*[[Lohnsteuerhilfeverein]]*) is a non-profit organisation that helps its members file their taxes. They are cheaper than tax advisors, but their competence varies a lot.[^2] Most of them speak only German and some speak English.
 
 The membership costs €30 to €300 per year, depending on your income.[^4] Only employees can be members, not self-employed people.[^3]
 
-### Hybrid tax adviser services
+### Hybrid tax advisor services
 
-Platforms like Zasta and Taxfix’s Expert Service combine tax software with access to a tax advisor. You enter most of the data yourself and upload your documents, and a tax advisor then reviews everything. This is a hybrid model of self-filing with additional validation, and not all cases are supported. [^6]
+Platforms like Zasta and Taxfix’s Expert Service combine tax software with access to a tax advisor. You enter most of the data yourself and upload your documents, and a professional then reviews everything. It's a hybrid model of self-filing with additional validation, and not all cases are supported. [^6]
 
 It's usually cheaper than a traditional tax advisor, but it doesn't fully replace one. Waiting times can be noticeable during peak tax season (March to May).
 
@@ -147,4 +147,4 @@ If you want the flexibility of a freelancer and the stability of a job, it's a g
 [^3]: [bubolz-bartsch.de](https://web.archive.org/web/20240804204416/https://bubolz-bartsch.de/lohnsteuerhilfeverein-oder-steuerberater-was-lohnt-sich-mehr/#:~:text=wen%20darf%20der%20lohnsteuerhilfeverein%20nicht%20beraten%3F) (August 2019)
 [^4]: [bubolz-bartsch.de](https://web.archive.org/web/20240804204416/https://bubolz-bartsch.de/lohnsteuerhilfeverein-oder-steuerberater-was-lohnt-sich-mehr/#:~:text=kosten%20bei%20einem%20steuerverein) (August 2019)
 [^5]: [reddit.com/r/finanzen](https://old.reddit.com/r/Finanzen/comments/scgrpu/steuerberater_als_freelancer/hu64wbv/)
-[^6]: [Taxfix](https://support.taxfix.de/hc/en-us/articles/27734287254557-Who-can-use-the-Expert-Service#h_01JWBJ5B04WRY1AWGSB0MT4DD8)
+[^6]: [Taxfix](https://support.taxfix.de/hc/en-us/articles/27734287254557-Who-can-use-the-Expert-Service#h_01JWBJ5B04WRY1AWGSB0MT4DD8) (March 2026)
