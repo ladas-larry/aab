@@ -31,11 +31,9 @@ I recommend [Feather's liability insurance](/out/feather-haftpflicht). It's what
 
 ### Professional liability insurance
 
-If you are self-employed, personal liability insurance does not cover your business activities. You need professional liability insurance (*Berufshaftpflichtversicherung*).
+Professional liability insurance (*Berufshaftpflichtversicherung*) covers your business activities. It protects you if you make a mistake and your client sues you. It's required for doctors, architects, lawyers and some other professions.[^0]
 
-It protects you if you make an expensive mistake, and your client sues you. It's required for doctors, architects, lawyers and some other professions.[^0]
-
-Employees don't need professional liability insurance. Your employer's insurance covers you at work.[^1]
+If you are an employee, you don't need professional liability insurance. Your employer is liable for your work.[^1]
 
 ### Dog liability insurance
 
