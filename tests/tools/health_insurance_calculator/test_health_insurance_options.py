@@ -33,7 +33,7 @@ def test_option_private_quote(page, test_screenshot):
         assert_stage(page, "privateOptions")
         test_screenshot(page, get_calculator(page))
 
-        page.get_by_role("button", name="Get insured").click()
+        page.get_by_role("button", name="Ask our expert").click()
         assert_stage(page, "askABroker")
         page.click("text=WhatsApp")
         page.get_by_label("Go back").click()
