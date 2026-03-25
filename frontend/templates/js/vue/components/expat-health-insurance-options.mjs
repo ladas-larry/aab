@@ -24,8 +24,8 @@ export default {
 		<div class="health-insurance-options">
 			<h2 v-if="!isExpatOnlyOption">Expat health insurance options</h2>
 			<p v-if="!isExpatOnlyOption">
-				These options are valid for a <glossary>National Visa</glossary> application.
-				<template v-if="occupation === 'selfEmployed'">They might not be accepted when you <a target="_blank" href="/guides/renew-german-freelance-visa">renew your freelance visa</a>.</template>
+				These options are valid for a first visa application.
+				<template v-if="occupation === 'selfEmployed'">You might need a better health insurance to <a target="_blank" href="/guides/renew-german-freelance-visa">renew your freelance visa</a>.</template>
 			</p>
 			<ul class="buttons list">
 				<li>

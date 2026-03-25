@@ -15,6 +15,7 @@ import IconProtection from '/js/vue/components/icons/protection.mjs';
 import IconStudent from '/js/vue/components/icons/student.mjs';
 import IconSupport from '/js/vue/components/icons/support.mjs';
 import IconWhatsapp from '/js/vue/components/icons/whatsapp.mjs';
+import LogoFeather from '/js/vue/components/icons/logo-feather.mjs';
 import HealthInsuranceOptions from '/js/vue/components/health-insurance-options.mjs';
 import IncomeInput from '/js/vue/components/income-input.mjs';
 import PublicHealthInsuranceOptions from '/js/vue/components/public-health-insurance-options.mjs';
@@ -51,6 +52,7 @@ export default {
 		IconSupport,
 		IconProtection,
 		IconWhatsapp,
+		LogoFeather,
 		HealthInsuranceOptions,
 		IncomeInput,
 		PublicHealthInsuranceOptions,
@@ -682,12 +684,30 @@ export default {
 				</ul>
 			</template>
 
+			<ul class="buttons list" v-if="stage === 'privateOptions'">
+				<li>
+					<button class="recommended" @click="selectOption('askABroker')" :aria-labelledby="uid('h-askOurExpertPrivate')">
+						<icon-support/>
+						<div>
+							<h3 :id="uid('h-askOurExpertPrivate')">Ask our expert</h3>
+							<p>Let our independent expert find the best option for you. It's free.</p>
+						</div>
+					</button>
+				</li>
+				<li>
+					<a href="/out/feather-private-direct" target="_blank" :aria-labelledby="uid('h-getInsuredDirectly')">
+						<logo-feather/>
+						<div>
+							<h3 :id="uid('h-getInsuredDirectly')">Get insured now</h3>
+							<p>Skip the consultation, and get insured with Feather.</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+
 			<div class="buttons bar" v-if="stage === 'options' || stage.endsWith('Options')">
 				<button aria-label="Go back" class="button" @click="stage === 'options' ? previousStage() : goToStage('options')">
 					<i class="icon left" aria-hidden="true"></i> <span :class="{'no-mobile': stage === 'privateOptions'}">Go back</span>
-				</button>
-				<button v-if="stage === 'privateOptions'" class="button primary" @click="selectOption('askABroker')">
-					Get insured <i class="icon right" aria-hidden="true"></i>
 				</button>
 			</div>
 
