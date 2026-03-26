@@ -485,7 +485,7 @@ If you speak German, you can [call or email the Künstlersozialkasse](https://ww
 
 ### Organisations for artists
 
-Many organisations offer **free** consultations, support and workshops for artists. Before you pay for an expert, check if you can get help for free.
+[Kreativ Kultur](https://www.kreativkultur.berlin/en/) offers free consultations, support and workshops for artists. They help artists get funding. Before you pay an expert, check if you can get help for free.
 
 **[List of organisations](https://www.kreativkultur.berlin/en/resource-center/beratungs-und-unterstutzungsangebote-fur-berliner/)** - Kreativ Kultur Berlin
 

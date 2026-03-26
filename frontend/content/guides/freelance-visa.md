@@ -357,11 +357,10 @@ If you plan to become a permanent resident, start making voluntary [public pensi
 
 ## Need help?
 
-An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can answer your questions.
-
-[Touring Artists](https://www.touring-artists.info/en/touring-artists/advice/our-helpdesk-service) helps artists immigrate and start a business. Their help is free. They speak English.
-
-[German freelance visa help](https://www.facebook.com/groups/germanfreelancevisa/) is a useful Facebook group. People help each other with their freelance visa application.
+- An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can answer your questions.
+- [German freelance visa help](https://www.facebook.com/groups/germanfreelancevisa/) is a useful Facebook group. People help each other with their freelance visa application.
+- [Kreative Kultur](https://www.kreativkultur.berlin/en/) helps artists get funding and run their business. They have free consultations and workshops.
+- [Touring Artists](https://www.touring-artists.info/en/touring-artists/advice/our-helpdesk-service) helps artists immigrate and start a business. Their help is free. They speak English.
 
 **[Where to ask immigration questions ➞](/guides/help#immigration-questions)**
 

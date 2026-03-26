@@ -140,6 +140,8 @@ Don't be afraid to use a lawyer. Your employer can't fire you or blacklist you b
     Use my [list of English-speaking tax advisors in Berlin](/guides/english-speaking-steuerberater-berlin).
 - **Business and immigration lawyer hotline** - [09008 529 366 11](tel:0900852936611)  
     Use this number to ask quick legal questions. You will talk to Alexander von Engelhardt, a business and immigration lawyer in Berlin. It costs €{{LEGAL_HOTLINE_COST_PER_MINUTE|cur}} per minute.
+- **[Kreativ Kultur](https://www.kreativkultur.berlin/en/)**  
+    Free help for artists. They offer free consultations, support and workshops, and help with getting funding.
 - [List of English-speaking lawyers in Berlin](/guides/english-speaking-lawyers-berlin)
 - [Berlin startups](https://www.facebook.com/groups/159595270791268/) - Facebook
 - [Berlin freelancers](https://www.facebook.com/groups/berlinfreelancers/) - Facebook
