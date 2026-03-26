@@ -468,7 +468,7 @@ You can stay in Germany after it expires if...
 
 - [ ] You have applied to renew or change your residence permit
 - [ ] and you sent a complete application before your visa or residence permit expired[^52]
-- [ ] and you are waiting for the *[[Ausländerbehörde]]*
+- [ ] and you are waiting for the *[[Ausländerbehörde]]*'s response
 
 **You can keep working or studying** while you wait. The conditions of your *current* National Visa or residence permit still apply. Some employers don't know that. [Check your *Zusatzblatt*](/guides/zusatzblatt) to know what you are allowed to do.
 
