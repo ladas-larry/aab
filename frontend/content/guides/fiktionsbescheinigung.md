@@ -7,7 +7,7 @@ Related_reviews:
     reviews/fiktionsbescheinigung/mirko-vorreuter.md
 ---
 
-This guide explains how the *Fiktionsbescheinigung* works, how to apply for a *Fiktionsbescheinigung*, and how to travel with an expired [residence permit](/glossary/Aufenthaltstitel).
+This guide explains how the *Fiktionsbescheinigung* works, how to apply for it, and how to travel with an expired [residence permit](/glossary/Aufenthaltstitel).
 
 {% tableOfContents %}
 
@@ -20,14 +20,14 @@ The *Fiktionsbescheinigung* **proves that your residence status is still valid**
 The *Fiktionsbescheinigung* proves that...[^0]
 
 - You can stay in Germany with an expired visa or residence permit
-- You can travel abroad and return to Germany with an expired residence permit
+- You can [travel abroad](#travel-with-a-fiktionsbescheinigung) and return to Germany with an expired residence permit
 - You can work, study or freelance while you wait for the [immigration office](/glossary/Ausländerbehörde)
 
 [![German Fiktionsbescheinigung](/images/fiktionsbescheinigung.jpg "A German Fiktionsbescheinigung")](/images/fiktionsbescheinigung.jpg)
 
 ## How to get a Fiktionsbescheinigung
 
-Ask the [[Ausländerbehörde]] for it...
+Ask the *[[Ausländerbehörde]]* for it...
 
 - **With your [residence permit](/glossary/Aufenthaltstitel) application**  
     Ask for a *Fiktionsbescheinigung* in your application message. Include proof of your travel plans.
