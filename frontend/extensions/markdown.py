@@ -191,3 +191,34 @@ class WrappedTableExtension(Extension):
     def extendMarkdown(self, md):
         if self.getConfig("wrapper_class"):
             md.treeprocessors.register(WrappedTableProcessor(self), "wrappedtable", 0)
+
+
+class CheckCrossListProcessor(Treeprocessor):
+    markers = {
+        "✓ ": "list-yes",
+        "✗ ": "list-no",
+    }
+
+    def run(self, root: ElementTree.Element) -> ElementTree.Element:
+        for li in root.iter(tag="li"):
+            text = li.text or ""
+            for marker, css_class in self.markers.items():
+                if text.startswith(marker):
+                    li.text = text.removeprefix(marker)
+                    css_classes = set(li.attrib.get("class", "").split())
+                    css_classes.add(css_class)
+                    li.attrib["class"] = " ".join(css_classes)
+                    break
+        return root
+
+
+class CheckCrossListExtension(Extension):
+    """
+    Adds CSS classes to list items starting with ✓ or ✗:
+
+    - ✓ Good thing  → <li class="list-yes">Good thing</li>
+    - ✗ Bad thing   → <li class="list-no">Bad thing</li>
+    """
+
+    def extendMarkdown(self, md):
+        md.treeprocessors.register(CheckCrossListProcessor(self), "check-cross-list", 100)

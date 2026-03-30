@@ -2342,28 +2342,28 @@ details{
             display: none; // Hide "/month" as soon as the columns get narrower
         }
     }
+}
 
-    :is(.pros, .cons) li{
-        padding-left: calc(var(--l-relative) + var(--s));
+:is(.pros, .cons) li, .list-yes, .list-no{
+    padding-left: calc(var(--l-relative) + var(--s));
 
-        &:before{
-            display: block;
-            content: '×';
-            background: var(--c-bg-error);
-            color: var(--c-text-error);
-            width: var(--m-relative);
-            height: var(--m-relative);
-            line-height: var(--m-relative);
-            border-radius: 50%;
-            text-align: center;
-            margin-top: calc((var(--m) * var(--line-height-label) - var(--m-relative)) / 2);
-        }
+    &:before{
+        display: block;
+        content: '×'!important;
+        background: var(--c-bg-error);
+        color: var(--c-text-error);
+        width: var(--m-relative);
+        height: var(--m-relative);
+        line-height: var(--m-relative);
+        border-radius: 50%;
+        text-align: center;
+        margin-top: calc((var(--m) * var(--line-height-label) - var(--m-relative)) / 2);
     }
-    .pros li:before{
-        color: #fff;
-        background: var(--c-highlight-green);
-        content: '✓';
-    }
+}
+.pros li:before, .list-yes:before{
+    color: #fff;
+    background: var(--c-highlight-green);
+    content: '✓'!important;
 }
 
 .collapsible{

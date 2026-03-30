@@ -73,15 +73,15 @@ The best way to choose health insurance is to [ask my insurance broker](/guides/
 
 ## Legal insurance
 
-Legal insurance (*[[Rechtsschutzversicherung]]*) gives you free access to a lawyer. If you have a problem with your landlord, your employer, the tax office or anyone else, you can call a lawyer. You can ask them questions, they can write letters for you, and they can go to court with you. Legal insurance will pay for it.
+Legal insurance (*Rechtsschutzversicherung*) covers the cost of hiring a lawyer and going to court. It helps you get legal advice and solve legal problems. It costs €{{LEGAL_INSURANCE_MIN_COST|cur}} to €{{LEGAL_INSURANCE_MAX_COST|cur}} per month.
 
-There is private legal insurance (for you), and professional legal insurance (for your business). Private legal insurance costs around €15 per month. Professional legal insurance is more expensive. The price depends on the type of business.
+There is private legal insurance (for you), and professional legal insurance (for your business). Professional legal insurance is more expensive. The price depends on the type of business.
 
-Around 46% of Germans have legal insurance.[^4] It's not as important as liability insurance, but it's good to have.
+Around 46% of Germans have legal insurance.[^4] It's not as important as liability insurance, but it's good to have. I recommend it for recent immigrants.
 
 If you don't speak German, [Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) offer legal insurance, and they speak English. Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare options.
 
-**[How legal insurance works ➞](/guides/legal-insurance)**
+**[How to choose legal insurance ➞](/guides/legal-insurance)**
 
 ## Disability insurance
 

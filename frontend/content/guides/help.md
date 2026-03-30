@@ -100,7 +100,7 @@ Use my lists of English-speaking professionals:
 - **Workers union** (*Gewerkschaft*)  
     If you are in a union, you can usually get free legal help, but only for work-related problems.[^4]
 - **Lawyer** (*Fachanwalt für Arbeitsrecht*)  
-    Hire a lawyer who specialises in employment law (*Arbeitsrecht*). They cost around €200 per hour. Use my [list of English-speaking lawyers in Berlin](/guides/english-speaking-lawyers-berlin). Your [legal insurance](/glossary/Rechtsschutzversicherung) might pay for it.
+    Hire a lawyer who specialises in employment law (*Arbeitsrecht*). They cost around €{{LAWYER_HOURLY_RATE|cur}} per hour. Use my [list of English-speaking lawyers in Berlin](/guides/english-speaking-lawyers-berlin). If you have [legal insurance](/glossary/Rechtsschutzversicherung), it usually pays for your lawyer.
 
 Don't be afraid to use a lawyer. Your employer can't fire you or blacklist you because you defend your rights. It will not affect your job search.[^7]
 

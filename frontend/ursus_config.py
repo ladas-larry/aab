@@ -423,6 +423,10 @@ ctx["DRIVING_PRACTICAL_EXAM_FEE"] = fail_on("2026-12-31", Decimal("130"))  # Dek
 
 ctx["LEGAL_HOTLINE_COST_PER_MINUTE"] = fail_on("2026-12-31", 3)  # https://www.vonengelhardt.com/en/helpnowen
 
+ctx["LEGAL_INSURANCE_MIN_COST"] = fail_on("2026-12-31", 15)
+ctx["LEGAL_INSURANCE_MAX_COST"] = fail_on("2026-12-31", 35)
+ctx["LAWYER_HOURLY_RATE"] = fail_on("2026-12-31", 200)
+
 # ==============================================================================
 # DATES
 # ==============================================================================
@@ -510,6 +514,7 @@ config.add_markdown_extension("extensions.markdown:ArrowLinkIconExtension")
 config.add_markdown_extension("extensions.markdown:CurrencyExtension")
 config.add_markdown_extension("extensions.markdown:HyphenatedTitleExtension")
 config.add_markdown_extension("extensions.markdown:TypographyExtension")
+config.add_markdown_extension("extensions.markdown:CheckCrossListExtension")
 
 config.renderers.extend(
     [

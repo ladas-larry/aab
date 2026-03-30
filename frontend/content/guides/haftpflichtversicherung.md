@@ -60,7 +60,7 @@ Liability insurance rarely covers...
 
 **Get insured before you have a problem.** Liability insurance only covers damage that happened *after* you got insured. If you get liability insurance just before you [move out](/guides/moving-out), it won't cover the damaged floors or the broken fridge. If you make a claim just a few weeks after getting insured, your insurer might be suspicious and ask for more proof.
 
-## Do I really need it?
+## Do you really need it?
 
 **Yes.** It's not mandatory, but it's really important. It's the most important insurance after [health insurance](/glossary/Krankenversicherung). 83% of German homes have it.[^16]
 
