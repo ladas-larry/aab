@@ -21,7 +21,7 @@ It's really hard to find a psychiatrist who accepts [public health insurance](/g
 
 It's easier to find a private psychiatrist. You can get diagnosed faster and start medication sooner. The diagnosis costs around €200 and you must pay for it yourself.[^8] Your insurance might reimburse you, but it's not guaranteed. Your insurer will still pay for your ADHD medication.[^6]
 
-After you start medication, you don't need to see your psychiatrist all the time. Your *[[Hausarzt]]* can renew your ADHD medication prescription.
+After you start medication, you don't need to see your psychiatrist all the time. Your *[[Hausarzt]]* can renew your ADHD medication prescription. Some clinics might refuse to do it.[^10]
 
 ### With private health insurance
 
@@ -90,7 +90,7 @@ If your current medication does not work for you, tell your psychiatrist. You ar
 
 You usually get 30 to 90 pills per prescription. When the pills run out, you must go to the doctor and renew your prescription.
 
-You can renew your prescription at your *[[Hausarzt]]*.[^4] It's easier than going to your psychiatrist every time, because they have more free appointments.
+You can renew your prescription at your *[[Hausarzt]]*.[^4] It's easier than going to your psychiatrist every time, because they have more free appointments. Some clinics might refuse to renew prescriptions.[^10]
 
 ## Costs
 
@@ -126,4 +126,5 @@ Once you get diagnosed and medicated, it's almost impossible to switch to [priva
 [^7]: [adxs.org](https://www.adxs.org/en/page/231/choice-of-medication-for-adhd-or-adhd-with-comorbidity#:~:text=must%20continue%20to%20adhere%20to%20the%20principle%20of%20cost-effectiveness.) (March 2026)
 [^8]: [Reddit](https://old.reddit.com/r/askberliners/comments/1rv7ek5/psychiatrist_for_adult_adhd/oaqov4x/) (March 2026)
 [^9]: Dr. Lazaros Giousmpasis (March 2026)
+[^10]: Reader feedback (March 2026)
 [^11]: [adxs.org](https://www.adxs.org/en/page/532/approval-status-of-adhd-drugs) (March 2026), [adhspedia.de](https://www.adhspedia.de/wiki/Medikamente) (March 2026)
