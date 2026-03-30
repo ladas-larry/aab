@@ -42,7 +42,7 @@ class NewsletterSignupView(APIView):
         if not email:
             return Response(status=400)
 
-        buttondown_response = subscribe_to_newsletter(email, ip)
+        buttondown_response = subscribe_to_newsletter(email, ip, source="NewsletterSignupView")
 
         if buttondown_response.status_code == 400:
             return Response(buttondown_response.json(), status=400)
@@ -74,7 +74,7 @@ class NewsletterSubscriptionMixin:
         if request.data.get("subscribe_to_newsletter") and email:
             ip = request.META.get("HTTP_X_REAL_IP")
             try:
-                subscribe_to_newsletter(email, ip)
+                subscribe_to_newsletter(email, ip, source=type(self).__name__)
             except Exception:
                 logger.exception(f"Failed to subscribe {email} to newsletter")
 

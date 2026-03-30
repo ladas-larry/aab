@@ -56,7 +56,7 @@ def validate_email(email: str) -> None:
         raise ValidationError("Invalid email") from exc
 
 
-def subscribe_to_newsletter(email: str, ip: str | None = None):
+def subscribe_to_newsletter(email: str, ip: str | None = None, source: str | None = None):
     """
     Subscribe an email address to the newsletter via Buttondown API.
     Raises an exception on failure.
@@ -77,7 +77,7 @@ def subscribe_to_newsletter(email: str, ip: str | None = None):
         timeout=10,
     )
 
-    logger.info(f"Newsletter subscriber added: {email} (IP: {ip})")
+    logger.info(f"Newsletter subscriber added: {email} (IP: {ip}, source: {source or 'None'})")
     return response
 
 
