@@ -190,7 +190,7 @@ If you don't speak German, [Feather](/out/feather-rechtsschutz) has legal insura
 [^18]: [clark.de](https://www.clark.de/rechtsschutzversicherung/selbstbeteiligung/#:~:text=du%20sparst%20etwa%20200%20%E2%82%AC%20im%20jahr) (March 2026)
 [^19]: [check24.de](https://www.check24.de/rechtsschutzversicherung/fragen/freie-anwaltswahl/)
 [^20]: [Feather](/out/feather-rechtsschutz) (March 2026), Seamus Wolf (March 2026), Check24 (March 2026), [Finanztip](https://www.finanztip.de/rechtsschutzversicherung/#c150867) (March 2026)
-[^21]: [fnp.de](https://www.fnp.de/ratgeber/geld/wenn-rechtsschutzversicherung-kunden-kuendigt-10458481.html), [reddit.com/r/AskAGerman](https://old.reddit.com/r/AskAGerman/comments/ph3wum/should_i_get_legal_insurance_to_protect_myself/)
+[^21]: [fnp.de](https://www.fnp.de/ratgeber/geld/wenn-rechtsschutzversicherung-kunden-kuendigt-10458481.html), [reddit.com/r/AskAGerman](https://old.reddit.com/r/AskAGerman/comments/ph3wum/should_i_get_legal_insurance_to_protect_myself/), [Seamus Wolf](https://horizon65.com/) (March 2026)
 [^23]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/90f3u3/can_anyone_recommend_good_rechtsschutzversicherung/e2rbzwa/)
 [^25]: [toytowngermany.com](https://web.archive.org/web/20240808111111/https://www.toytowngermany.com/forum/topic/360547-legal-insurance/#comment-3479765), [hausundgrund.de](https://www.hausundgrund.de/themen)
 [^26]: [Check24](https://www.check24.de/rechtsschutzversicherung/verkehrsrechtsschutz/#beispiele-leistungsumfang) (March 2026)
