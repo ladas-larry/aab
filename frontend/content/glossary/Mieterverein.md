@@ -17,7 +17,7 @@ A tenant association (*Mieterverein* or *Mieterschutzverein*) gives legal assist
 
 A Mieterverein can...
 
-- Check your lease
+- Check your lease and your [utility bills](/glossary/Nebenkostenabrechnung)
 - Help you deal with a bad landlord
 - [Lower your rent](/guides/housing-scams#the-rent-is-too-high)
 - Help you sublet your apartment
