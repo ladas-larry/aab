@@ -19,10 +19,10 @@ The German student visa (*Studentenvisum*) is a [residence permit](/glossary/Auf
 
 With a student visa, you can...
 
-- Live and work anywhere in Germany
-- Study in Germany
-- Work part time during your studies[^1]
-- Visit other [Schengen countries](/glossary/Schengen%20area) without a visa
+- ✓ Live and work anywhere in Germany
+- ✓ Study in Germany
+- ✓ Work part time during your studies[^1]
+- ✓ Visit other [Schengen countries](/glossary/Schengen%20area) without a visa
 
 Self-employment is [sometimes](/guides/residence-permit#for-self-employment) allowed.
 

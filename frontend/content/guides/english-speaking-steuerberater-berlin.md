@@ -50,11 +50,11 @@ Related_places:
 
 Tax advisors (*Steuerberater*) help you with your personal and business taxes. A tax advisor can:
 
-- Help you understand your taxes
-- File your [tax declaration](/glossary/Steuererklärung)
-- Help you [start a business](/guides/start-a-business-in-germany)
-- Prepare documents to [renew your freelance visa](/guides/renew-german-freelance-visa)
-- Take care of your business taxes ([VAT](/glossary/Umsatzsteuer), *[[Gewerbesteuer]]*, ...)
+- ✓ Help you understand your taxes
+- ✓ File your [tax declaration](/glossary/Steuererklärung)
+- ✓ Help you [start a business](/guides/start-a-business-in-germany)
+- ✓ Prepare documents to [renew your freelance visa](/guides/renew-german-freelance-visa)
+- ✓ Take care of your business taxes ([VAT](/glossary/Umsatzsteuer), *[[Gewerbesteuer]]*, ...)
 
 Tax advisors are legally liable for the advice they give. If they make a mistake, they pay for it.
 

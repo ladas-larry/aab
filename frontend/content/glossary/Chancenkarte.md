@@ -19,9 +19,9 @@ The opportunity card (*Chancenkarte*) is a [[National Visa]]. It allows you to c
 
 With an opportunity card, you can...
 
-- Come to Germany to look for a job
-- Stay in Germany for up to 12 months
-- Work for up to 20 hours per week[^1]
+- ✓ Come to Germany to look for a job
+- ✓ Stay in Germany for up to 12 months
+- ✓ Work for up to 20 hours per week[^1]
 
 You must apply for an opportunity card at the *[[Ausländerbehörde]]*, or at the German embassy or consulate in your home country. After you find a job, you must convert your opportunity card to a [work visa](/glossary/Work%20Visa) or a [[Blue Card]].
 

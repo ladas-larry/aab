@@ -15,15 +15,15 @@ Biometric photos must meet the [official requirements](https://www.personalauswe
 
 The *[[Bürgeramt]]* and the *[[Ausländerbehörde]]* only accept...[^2]
 
-- Photos from [registered photographers](#from-a-photographer), sent digitally
-- Photos from [registered photo kiosks](#at-a-dm-store), sent digitally
-- Photos from the photo kiosks at the *[[Bürgeramt]]* or *[[Ausländerbehörde]]*
+- ✓ Photos from [registered photographers](#from-a-photographer), sent digitally
+- ✓ Photos from [registered photo kiosks](#at-a-dm-store), sent digitally
+- ✓ Photos from the photo kiosks at the *[[Bürgeramt]]* or *[[Ausländerbehörde]]*
 
 They do not accept...
 
-- Printed photos
-- Photos that you have taken yourself
-- Photos from random photo kiosks
+- ✗ Printed photos
+- ✗ Photos that you have taken yourself
+- ✗ Photos from random photo kiosks
 
 This applies to photos for [residence permits](/glossary/Aufenthaltstitel), passports and [personal IDs](/glossary/Personalausweis). It does not apply to driving licence photos.[^10]
 

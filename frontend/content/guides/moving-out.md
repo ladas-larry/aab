@@ -99,17 +99,17 @@ Usually, you must return the apartment in the same state as when you moved in. Y
 
 Cosmetic repairs include:[^19]
 
-- Painting the walls and the ceilings
-- Repairing holes you made in the walls
-- Painting the floors
-- Painting the radiators and heating pipes
-- Painting the interior doors and frames
+- ✓ Painting the walls and the ceilings
+- ✓ Repairing holes you made in the walls
+- ✓ Painting the floors
+- ✓ Painting the radiators and heating pipes
+- ✓ Painting the interior doors and frames
 
 Cosmetic repairs do not include:[^33]
 
-- Replacing, sanding or sealing the parquet floors
-- Replacing the carpets
-- Repairing any damage that you have not caused[^20] (cracks in the ceilings and walls, crumbling plaster, damage from the previous tenant, etc.)
+- ✗ Replacing, sanding or sealing the parquet floors
+- ✗ Replacing the carpets
+- ✗ Repairing any damage that you have not caused[^20] (cracks in the ceilings and walls, crumbling plaster, damage from the previous tenant, etc.)
 
 Your can't be forced to make unnecessary repairs.[^21] You can't be forced to "repaint after 3 years" or "repaint when you leave". These clauses are not valid, and you can ignore them.[^22]
 

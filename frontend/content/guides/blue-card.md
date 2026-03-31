@@ -14,11 +14,11 @@ The EU Blue Card (*Blaue Karte*) is a [residence permit](/glossary/Aufenthaltsti
 
 With a Blue Card, you can...
 
-- Live and work anywhere in Germany
-- Bring your family to Germany[^14]
-- Visit other [Schengen countries](/glossary/Schengen%20area) without a visa[^13]
-- Become a [permanent resident](/glossary/Niederlassungserlaubnis) after 21 to 27 months[^10]
-- Become a citizen after 5 years
+- ✓ Live and work anywhere in Germany
+- ✓ Bring your family to Germany[^14]
+- ✓ Visit other [Schengen countries](/glossary/Schengen%20area) without a visa[^13]
+- ✓ Become a [permanent resident](/glossary/Niederlassungserlaubnis) after 21 to 27 months[^10]
+- ✓ Become a citizen after 5 years
 
 This guide explains how to apply for a [[Blue Card]] in Berlin or in your home country.
 

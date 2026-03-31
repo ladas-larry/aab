@@ -47,9 +47,9 @@ Your resignation letter can include:
 
 Your resignation letter should **not** include:
 
-- Why you quit your job[^6]
-- What you plan to do next
-- Feedback for your employer or your team
+- ✗ Why you quit your job[^6]
+- ✗ What you plan to do next
+- ✗ Feedback for your employer or your team
 
 ### Language of your resignation letter
 

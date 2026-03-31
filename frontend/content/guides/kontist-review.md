@@ -170,19 +170,19 @@ Kontist was supposed to make my bookkeeping easier, but **it makes too many erro
 
 ### The good
 
-- Banking works reliably
-- The web app and mobile apps are reliable
-- The Kontist Duo plan with Lexware Office is a good deal
-- The invoicing tool is basic, but good enough for some people
+- ✓ Banking works reliably
+- ✓ The web app and mobile apps are reliable
+- ✓ The Kontist Duo plan with Lexware Office is a good deal
+- ✓ The invoicing tool is basic, but good enough for some people
 
 ### The bad
 
-- Transaction fees are too high
-- The free account is not really free for most people
-- Auto-categorization does not work. The AI keeps making mistakes
-- Synchronisation issues with Lexware Office
-- The income tax estimation is not precise enough to be useful
-- The invoicing tool is very basic
+- ✗ Transaction fees are too high
+- ✗ The free account is not really free for most people
+- ✗ Auto-categorization does not work. The AI keeps making mistakes
+- ✗ Synchronisation issues with Lexware Office
+- ✗ The income tax estimation is not precise enough to be useful
+- ✗ The invoicing tool is very basic
 
 ### Don't trust what you read
 

@@ -19,16 +19,16 @@ For example, your employer saves 20% of your salary for 4 years. Then you take 1
 
 Benefits of a working time account:
 
-- **You keep your job, your salary and your benefits**  
+- ✓ **You keep your job, your salary and your benefits**  
     You keep your job. Your employer still pays your salary, half of your [health insurance](/glossary/Krankenversicherung), your [pension insurance](/glossary/gesetzliche%20Rentenversicherung) and your [unemployment insurance](/glossary/Arbeitslosenversicherung), so you save a lot of money. At the end of your sabbatical, you get your job back. You keep your salary and your seniority at this company.
-- **You keep your residence permit**  
+- ✓ **You keep your residence permit**  
     The [work visa](/glossary/Work%20Visa) and the [[Blue Card]] are tied to your job. You must keep your job to keep your residence permit. With the working time account, you keep your job, so that's not a problem.
-- **You pay less income tax**  
+- ✓ **You pay less income tax**  
     You pay less [income tax](/glossary/Einkommensteuer) on 5 × 80% of your salary than on 4 × 100% of your salary. If you have a €50,000 salary, you save around €5,200 in income tax. - [Calculate your income tax](/tools/tax-calculator).
 
 Disadvantages:
 
-- **It takes more time**  
+- ✗ **It takes more time**  
     You must wait before you take your sabbatical. For example, you might need to save for 4 years to take 1 year off. If you want to take a sabbatical soon, this does not work.
 
 ### How to start a working time account
@@ -52,14 +52,14 @@ In other situations, your employer can refuse to let you take unpaid leave.[^1]
 
 Benefits of unpaid leave:
 
-- **You keep your job**  
+- ✓ **You keep your job**  
     You can return to your job after your sabbatical. If you must keep your job to keep your [residence permit](/glossary/Aufenthaltstitel), this is important.
 
 Disadvantages:
 
-- **You lose your salary and benefits**  
+- ✗ **You lose your salary and benefits**  
     Your employer does not pay your salary or any benefits. After 1 month, you must pay for your own health insurance.[^2] You will pay the same tariff as unemployed people. [Calculate it yourself](/tools/health-insurance-calculator). If your spouse or your parents have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), they can cover you for free.[^3]
-- **You keep your job**  
+- ✗ **You keep your job**  
     You are still employed with the same company. You can't start a competing business or work for the competition.
 
 ### How to take unpaid leave
@@ -83,14 +83,14 @@ Your employer can't punish you for reducing your work hours. For example, if the
 
 Benefits of reduced hours:
 
-- **You keep your salary and benefits**  
+- ✓ **You keep your salary and benefits**  
     You still have a job, [health insurance](/glossary/Krankenversicherung), [unemployment insurance](/glossary/ALG%20I), a public pension, [vacations](/guides/vacation-days) and [sick leave](/guides/sick-leave).
 
 Disadvantages:
 
-- **You get paid less**  
+- ✗ **You get paid less**  
     For example, if you work 25% less, you also earn 25% less.[^11]
-- **It's not always reversible**  
+- ✗ **It's not always reversible**  
     If you reduce your hours, you can't always get them back later. Your employer can refuse to give you more work.[^10] If your company has over 45 employees, you can temporarily reduce your hours, and resume full-time work later. This is called *Brückenteilzeit*.
 
 To reduce your hours, you must...
@@ -107,11 +107,11 @@ If your employer does not help you take a sabbatical, you can quit your job.
 
 Disadvantages of quitting your job:
 
-- **You must pay for your own health insurance**  
-    Your employer does not pay for half of your health insurance. You pay the same tariff as unemployed people. [Calculate it yourself](/tools/health-insurance-calculator). If your spouse or your parents have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), they can cover you for free.
-- **You might lose your residence permit**  
-    The work visa and the Blue Card are tied to your job. After a few months without a job, you must [leave Germany](/guides/leaving-germany).
-- **You need a job when you return**  
+- ✗ **You must pay for your own health insurance**  
+    Your employer does not pay for half of your [health insurance](/glossary/Krankenversicherung). You pay the same tariff as unemployed people. [Calculate it yourself](/tools/health-insurance-calculator). If your spouse or your parents have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), they can cover you for free.
+- ✗ **You might lose your [residence permit](/glossary/Aufenthaltstitel)**  
+    The [work visa](/glossary/Work%20Visa) and the [[Blue Card]] require you to have a job. After a few months without a job, you must [leave Germany](/guides/leaving-germany). You can also switch to a [family reunion visa](/glossary/Family%20reunion%20visa). [Permanent residence](/glossary/Niederlassungserlaubnis) and EU citizenship don't require a job.
+- ✗ **You need a job when you return**  
     After your sabbatical, you can try to get your old job back, but it's not guaranteed to work. You might need to find a new job.
 
 **[How to quit your job in Germany ➞](/guides/losing-your-job)**

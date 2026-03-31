@@ -88,10 +88,10 @@ Meine TK allows you to submit or download documents online. You rarely need to s
 
 Techniker Krankenkasse is very good. It's the best-rated public health insurer in every comparison:
 
-- It was nominated ["Germany's best Krankenkasse"](https://www.tk.de/techniker/unternehmensseiten/unternehmen/ueber-die-tk/tk-deutschlands-beste-krankenkasse-2012454) for the last 13 years.
-- It ranked #1 in the [Deutsche Finanz-Service Institut test](https://www.finanzen.de/news/beste-krankenkasse-fuer-2019-neuer-test-prueft-qualitaet-von-40-kassen).
-- It also ranked #1 on [Testsieger-Berichte's test](https://www.testsieger-berichte.de/gesetzliche-krankenversicherung-test/).
-- It ranked #1 next to HEK on [Finanztip's report](https://www.finanztip.de/gkv/).
+- ✓ It was nominated ["Germany's best Krankenkasse"](https://www.tk.de/techniker/unternehmensseiten/unternehmen/ueber-die-tk/tk-deutschlands-beste-krankenkasse-2012454) for the last 13 years.
+- ✓ It ranked #1 in the [Deutsche Finanz-Service Institut test](https://www.finanzen.de/news/beste-krankenkasse-fuer-2019-neuer-test-prueft-qualitaet-von-40-kassen).
+- ✓ It also ranked #1 on [Testsieger-Berichte's test](https://www.testsieger-berichte.de/gesetzliche-krankenversicherung-test/).
+- ✓ It ranked #1 next to HEK on [Finanztip's report](https://www.finanztip.de/gkv/).
 
 I am not cherry-picking facts. Every article I have found ranks TK first. In 2019, [my insurance broker](/out/feather) also said that it's by far the best public option.
 
@@ -103,17 +103,17 @@ Techniker Krankenkasse is an excellent public health insurance company. I was a 
 
 **Positives:**
 
-- It just works. They pay for everything without asking questions.
-- They have very good customer service.
-- Most services are available online on their website and in their app.
-- Rated best public health insurer in many comparisons.
-- They can help you find a doctor appointment.
+- ✓ It just works. They pay for everything without asking questions.
+- ✓ They have very good customer service.
+- ✓ Most services are available online on their website and in their app.
+- ✓ Rated best public health insurer in many comparisons.
+- ✓ They can help you find a doctor appointment.
 
 **Negatives:**
 
-- English support is available, but not guaranteed. Big parts of the website are only in German. If you need English support, [Barmer](/out/barmer) is also an option.
-- Since 2021, their prices are a bit less competitive.
-- Private health insurance is a better choice in some situations.
+- ✗ English support is available, but not guaranteed. Big parts of the website are only in German. If you need English support, [Barmer](/out/barmer) is also an option.
+- ✗ Since 2021, their prices are a bit less competitive.
+- ✗ Private health insurance is a better choice in some situations.
 
 In 2021, I switched to private health insurance. I was still very happy with TK, but it was not the best option for my new situation. When you are self-employed, private health insurance sometimes makes more sense.
 

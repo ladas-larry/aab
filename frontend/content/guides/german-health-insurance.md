@@ -55,22 +55,22 @@ Public health insurance covers **all necessary healthcare**. It pays for the che
 
 Your insurance covers...
 
-- All necessary treatments, therapy and medical prescriptions
-- All [pre-existing conditions](/glossary/Vorerkrankung)
-- Your children and your unemployed spouse (*[[Familienversicherung]]*)
-- Long-term [sick leave](/guides/sick-leave)
-- Emergency healthcare in other [EU](/glossary/European%20Union) countries
-- Psychotherapy
-- Basic vaccinations[^7]
-- Cancer screenings
-- Necessary dental care (wisdom tooth removals, 2 dental check-ups per year)[^11]
+- ✓ All necessary treatments, therapy and medical prescriptions
+- ✓ All [pre-existing conditions](/glossary/Vorerkrankung)
+- ✓ Your children and your unemployed spouse (*[[Familienversicherung]]*)
+- ✓ Long-term [sick leave](/guides/sick-leave)
+- ✓ Emergency healthcare in other [EU](/glossary/European%20Union) countries
+- ✓ Psychotherapy
+- ✓ Basic vaccinations[^7]
+- ✓ Cancer screenings
+- ✓ Necessary dental care (wisdom tooth removals, 2 dental check-ups per year)[^11]
 
 It does not cover...
 
-- Glasses and contact lenses ([there are exceptions](/guides/eyeglasses#does-public-health-insurance-cover-glasses))
-- Travel vaccinations ([some insurers](https://www.krankenkassen.de/gesetzliche-krankenkassen/leistungen-gesetzliche-krankenkassen/reisemedizin/reiseimpfungen/) cover them)
-- Cosmetic treatments like removing a mole, tooth whitening, orthodontics, nicer tooth fillings[^1]
-- Alternative medicine like acupuncture and osteopathy
+- ✗ Glasses and contact lenses ([there are exceptions](/guides/eyeglasses#does-public-health-insurance-cover-glasses))
+- ✗ Travel vaccinations ([some insurers](https://www.krankenkassen.de/gesetzliche-krankenkassen/leistungen-gesetzliche-krankenkassen/reisemedizin/reiseimpfungen/) cover them)
+- ✗ Cosmetic treatments like removing a mole, tooth whitening, orthodontics, nicer tooth fillings[^1]
+- ✗ Alternative medicine like acupuncture and osteopathy
 
 To get better coverage, get [dental insurance](/glossary/Zahnzusatzversicherung) or supplementary health insurance, or [private health insurance](/glossary/private%20Krankenversicherung).
 
@@ -78,28 +78,28 @@ When you go to the doctor, you show your [insurance card](/glossary/Gesundheitsk
 
 ### Benefits of public health insurance
 
-- **The cost is proportional to your income**  
+- ✓ **The cost is proportional to your income**  
     If you earn less money, your insurance is cheaper. If you have an unstable income, if you [lose your job](/guides/losing-your-job), or if you retire, your insurance stays affordable. If you just [started your business](/guides/start-a-business-in-germany), choose public health insurance.[^27]
-- **It's cheap for students**  
+- ✓ **It's cheap for students**  
     Students under 30 years old pay around €{{GKV_COST_STUDENT|cur}} per month. If you are under 30 years old, public is usually the best option.[^59]
-- **It covers your family for free**  
+- ✓ **It covers your family for free**  
     Your insurance covers your children and your unemployed spouse [for free](#free-health-insurance). Private health insurance charges for each person you cover. If you have more than 2 children, public is usually cheaper than [private](/glossary/private%20Krankenversicherung).[^12]
-- **It's simple**  
+- ✓ **It's simple**  
     When you go to the doctor, you show your [insurance card](/glossary/Gesundheitskarte), and you get healthcare. You don't need to worry about coverage, [deductibles](/glossary/Selbstbeteiligung) or reimbursement. There is no paperwork and no surprises; it just works.
-- **The cost is not tied to your health**  
+- ✓ **The cost is not tied to your health**  
     If you have [pre-existing conditions](/glossary/Vorerkrankung), public is usually the cheapest option.[^28] Private health insurers usually reject you or charge more.
-- **It's the safest option**  
+- ✓ **It's the safest option**  
     Public health insurance is never a *bad* decision. Insurers have similar prices and coverage, so you can't choose wrong. If you change your mind, you can choose another public health insurer, or switch to private health.[^82] If you choose private health insurance, it's much harder to change your mind.[^20]
 
 ### Disadvantages of public health insurance
 
-- **High earners pay more**  
+- ✗ **High earners pay more**  
     The cost is proportional to your income. If you are young, healthy and well-paid, private health insurance is usually better *and* cheaper.[^58]
-- **Doctor appointments are harder to get**[^13]  
+- ✗ **Doctor appointments are harder to get**[^13]  
     It can take weeks or months to see a specialist. Psychotherapists, psychiatrists, gynaecologists, paediatricians and urologists that accept public health insurance are hard to find. If you want to see a doctor quickly, choose private health insurance.
-- **Special treatments are not covered**  
+- ✗ **Special treatments are not covered**  
     It covers the cheapest treatment that works.[^43] To get better treatments and better coverage, choose private health insurance.[^81]
-- **It's not available to everyone**  
+- ✗ **It's not available to everyone**  
     If you are self-employed or a student over 30, you can't get public health insurance. You must get [private](/glossary/private%20Krankenversicherung) or [expat](/glossary/Expat%20health%20insurance) health insurance instead. There are [some exceptions](/guides/german-health-insurance/for-freelancers).
 
 ### Best public health insurance
@@ -142,28 +142,28 @@ The cost of private health insurance is [tax-deductible](/glossary/steuerlich%20
 
 ### Benefits of private health insurance
 
-- **It's better and cheaper for high earners**[^19]  
+- ✓ **It's better and cheaper for high earners**[^19]  
     If you are young, healthy and well-paid, private is usually better *and* cheaper than public. I save around €450 per month.{{fail_on('2027-03-31')}}
-- **Easier doctor appointments**  
+- ✓ **Easier doctor appointments**  
     You can see a doctor faster. You get an appointment with a specialist in days instead of weeks. Try it yourself! Go on [Doctolib](https://www.doctolib.de/), and try to find a doctor appointment with public and with private health insurance.
-- **Better treatments**  
+- ✓ **Better treatments**  
     Private clinics usually have better service. Doctors take the time to listen to you.[^25] They also prescribe the best treatment instead of trying cheaper options first.
-- **You choose your coverage**  
+- ✓ **You choose your coverage**  
     You can pay more to get the best coverage, or pay less to save money. If you are young and healthy, you can get really cheap health insurance.
-- **You pay less when you don't use it**  
+- ✓ **You pay less when you don't use it**  
     Many private health insurers have a no-claims bonus. If you don't use your health insurance, you get money back every year. If you never get sick, you can save a lot of money. In 2025, I got €956 back.{{ fail_on('2026-09-30')}}
 
 ### Disadvantages of private health insurance
 
-- **If your income changes, the cost stays the same**  
+- ✗ **If your income changes, the cost stays the same**  
     If you [lose your job](/guides/losing-your-job), if you go on parental leave, if your business fails or if you retire, your health insurance does not get cheaper. You can be stuck with expensive health insurance. Public health insurance is safer, because the cost is proportional to your income.
-- **It makes you avoid seeing a doctor**  
+- ✗ **It makes you avoid seeing a doctor**  
     If you have a [deductible](/glossary/Selbstbeteiligung), you pay for most healthcare yourself. You might ignore a small problem because it costs €70 to see a doctor. You also get a yearly refund if you don't use your insurance. It makes you avoid healthcare to save money.
-- **You pay, then get reimbursed**  
+- ✗ **You pay, then get reimbursed**  
     When you go to the doctor, you pay for the treatment, and your insurance pays you back later. It's more effort and more paperwork. You need enough money to pay the doctor. You must also check if your insurance covers your treatment, or you will not get reimbursed.[^40] Doctors often prescribe unnecessary treatments to private patients. For big, expensive treatments, the insurance company pays the doctor directly.
-- **You can be stuck with private**  
+- ✗ **You can be stuck with private**  
     If you choose private, it's hard to change your mind.[^20] It's really hard to switch to public health insurance, or to another private insurance. You can be stuck with expensive private health insurance. Always [ask an expert](#need-help) before you choosing private; it's a very serious decision.
-- **They reject people**  
+- ✗ **They reject people**  
     If you have a [pre-existing condition](/glossary/Vorerkrankung), insurers usually reject you.[^75] They reject people because of psychotherapy, severe asthma, diabetes, obesity and many other things. They usually reject you if you are self-employed and your income is below €{{PKV_MIN_INCOME|cur}} per year.[^49] After you join, they can't kick you out.
 
 ### What private insurance covers
@@ -207,15 +207,15 @@ Only choose expat health insurance if...
 
 ### Disadvantages of expat health insurance
 
-- **It's not always accepted**  
+- ✗ **It's not always accepted**  
     It's valid for a [[Schengen visa]] or a [[National Visa]] application.[^5] It's rarely valid to change or renew a [residence permit](/glossary/Aufenthaltstitel).[^29]
-- **The coverage is limited**  
+- ✗ **The coverage is limited**  
     It does not cover [pre-existing health conditions](/glossary/Vorerkrankung). It rarely covers psychotherapy, dentist visits, health check-ups and preventative treatments.[^26] There are high [deductibles](/glossary/Selbstbeteiligung) for some treatments. There are limits on the cost of some treatments.
-- **You pay, then get reimbursed**  
+- ✗ **You pay, then get reimbursed**  
     When you go to the doctor, you pay for the treatment, and your insurance pays you back later. It's more effort and more paperwork. You need enough money to pay the doctor. You must also check if your insurance covers your treatment, or you will not get reimbursed.
-- **It's temporary**  
+- ✗ **It's temporary**  
     You can rarely use it for more than 5 years.[^22] When it expires, you must get public or private health insurance. If you have developed [health problems](/glossary/Vorerkrankung) during that time, it can be impossible to find another health insurance.
-- **It gets very expensive**  
+- ✗ **It gets very expensive**  
     The price increases every year. There is no limit on the price increases. In the long term, public and private health insurance are cheaper.[^10]
 
 ### Best expat health insurance

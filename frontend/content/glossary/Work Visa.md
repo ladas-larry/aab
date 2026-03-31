@@ -23,10 +23,10 @@ The German work visa (*Aufenthaltserlaubnis zur Aufnahme einer Beschäftigung*) 
 
 With a work visa, you can...
 
-- Live and work anywhere in Germany
-- Bring your family to Germany
-- Visit other [Schengen countries](/glossary/Schengen%20area) without a visa
-- Become a [permanent resident](/glossary/Niederlassungserlaubnis) after 2 to 3 years
+- ✓ Live and work anywhere in Germany
+- ✓ Bring your family to Germany
+- ✓ Visit other [Schengen countries](/glossary/Schengen%20area) without a visa
+- ✓ Become a [permanent resident](/glossary/Niederlassungserlaubnis) after 2 to 3 years
 
 The work visa is similar to a [[Blue Card]], but the requirements are different.
 

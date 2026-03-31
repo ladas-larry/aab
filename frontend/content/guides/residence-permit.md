@@ -11,11 +11,11 @@ You might need a residence permit (*[[Aufenthaltstitel]]*) to live, work and stu
 
 With a residence permit, you can...
 
-- Live anywhere in Germany
-- Bring your family to Germany
-- Visit other [Schengen countries](/glossary/Schengen%20area) without a visa
-- Become a [permanent resident](/glossary/Niederlassungserlaubnis) after 21 to 60 months
-- Become a citizen after 5 years
+- ✓ Live anywhere in Germany
+- ✓ Bring your family to Germany
+- ✓ Visit other [Schengen countries](/glossary/Schengen%20area) without a visa
+- ✓ Become a [permanent resident](/glossary/Niederlassungserlaubnis) after 21 to 60 months
+- ✓ Become a citizen after 5 years
 
 {% tableOfContents %}
 

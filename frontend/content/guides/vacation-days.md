@@ -48,9 +48,9 @@ If you take a long vacation, tell your employer a long time in advance. If you o
 
 Your employer can refuse to let you take vacations if...[^7]
 
-- **The timing causes serious problems**  
+- ✗ **The timing causes serious problems**  
     For example, if you take vacations during the busiest period of the year.
-- **Another employee has priority**  
+- ✗ **Another employee has priority**  
     For example, parents need to take vacations at the same time as their children, so they have priority during school holidays.[^8]
 
 ## Public holidays

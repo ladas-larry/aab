@@ -75,11 +75,11 @@ Some employers hire employees, but treat them like freelancers. This is called f
 
 Generally, you are not self-employed if...
 
-- You only have one client for a long time.
-- You are integrated in your client's business. You have a company email, company business cards, a uniform, etc.
-- You always work at the same location. You can't choose where you work.
-- You have a fixed schedule and a fixed salary.
-- You do not use your own equipment.
+- ✗ You only have one client for a long time.
+- ✗ You are integrated in your client's business. You have a company email, company business cards, a uniform, etc.
+- ✗ You always work at the same location. You can't choose where you work.
+- ✗ You have a fixed schedule and a fixed salary.
+- ✗ You do not use your own equipment.
 
 Pseudo self-employment is a bad deal for you. You have no job security. You get no paid [sick leave](/guides/sick-leave), no public pension and no unemployment benefits. You will not get a [freelance visa](/glossary/Freelance%20visa) for fake self-employment.
 

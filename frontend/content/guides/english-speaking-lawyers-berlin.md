@@ -80,7 +80,7 @@ This is a list of lawyers who speak English in Berlin.
 ## Alternatives to a lawyer
 
 - **Legal insurance**  
-    Your [legal insurance](/guides/legal-insurance) might have a legal hotline.
+    Your [legal insurance](/glossary/Rechtsschutzversicherung) might have a free legal hotline.
 - **Business and immigration hotline**  
     Call [09008 529 366 11](tel:0900852936611) to talk to Alexander von Engelhardt, a business and immigration lawyer. It costs €{{LEGAL_HOTLINE_COST_PER_MINUTE|cur}} per minute.
 - **Your university**  

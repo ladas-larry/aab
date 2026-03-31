@@ -14,8 +14,8 @@ When you [deregister your address](/glossary/Abmeldung), you get a deregistratio
 
 You can use this document to...
 
-- Confirm that you have left Germany
-- Cancel your health insurance
+- Confirm that you have [left Germany](/guides/leaving-germany)
+- Cancel your [health insurance](/glossary/Krankenversicherung)
 - Cancel internet, phone, electricity, gas and gym contracts
 
 ![Example Abmeldebescheinigung](/images/abmeldebescheinigung-berlin.jpg "Example Abmeldebescheinigung issued in Berlin")

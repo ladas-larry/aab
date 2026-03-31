@@ -23,18 +23,18 @@ During quiet hours, you can't make noise that disturbs your neighbours.
 
 You can't...
 
-- do house renovations
-- mow your lawn
-- use the vacuum cleaner
-- throw a party
-- play loud music
+- ✗ do house renovations
+- ✗ mow your lawn
+- ✗ use the vacuum cleaner
+- ✗ throw a party
+- ✗ play loud music
 
 But there are exceptions to quiet hours:
 
-- children can play, laugh and cry during the day[^1]
-- church bells can ring[^2]
-- public events can take place if they have permission from the city
-- you can use your washing machine during the day
+- ✓ children can play, laugh and cry during the day[^1]
+- ✓ church bells can ring[^2]
+- ✓ public events can take place if they have permission from the city
+- ✓ you can use your washing machine during the day
 
 ## How to file a noise complaint
 

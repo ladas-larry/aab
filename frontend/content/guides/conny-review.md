@@ -90,17 +90,17 @@ Conny does what it says. They lower your rent for a fee. Conny might be much mor
 
 The good parts:
 
-- They take care of everything
-- You only pay if it works
-- You know the costs in advance
-- It works
+- ✓ They take care of everything
+- ✓ You only pay if it works
+- ✓ You know the costs in advance
+- ✓ It works
 
 The bad parts:
 
-- The fee is really high; there are [cheaper options](#conny-alternatives)
-- It can take a long time
-- They are hard to contact
-- It can make your landlord angry
+- ✗ The fee is really high; there are [cheaper options](#conny-alternatives)
+- ✗ It can take a long time
+- ✗ They are hard to contact
+- ✗ It can make your landlord angry
 
 In general, **I don't recommend Conny**. Their service works, but their fee is extremely high. [Visit their website](/out/conny-mietpreisbremse), [get a quote](/out/conny-mietpreisbremse-calculator), and decide if it's worth it for you. Most of the time, you should join a *[[Mieterverein]]* instead.
 

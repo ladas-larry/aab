@@ -19,15 +19,15 @@ This guide explains the current laws about cannabis in Germany.
 
 **What** you can possess:
 
-- You can have up to **25 grams on you**, and **50 grams at home**.[^12]
-- You can grow up to **3 plants at home**. 3 plants per person, not per household. You can't sell the cannabis that you grow.[^6]
-- You can't give the cannabis you grow to other people, not even for free.[^10]
+- ✓ You can have up to **25 grams on you**, and **50 grams at home**.[^12]
+- ✓ You can grow up to **3 plants at home**. 3 plants per person, not per household. You can't sell the cannabis that you grow.[^6]
+- ✗ You can't give the cannabis you grow to other people, not even for free.[^10]
 
 **Where** you can smoke:
 
-- You can't smoke around people who are under 18 years old.[^7]
-- You can't smoke in pedestrian zones between 7:00 and 20:00.[^9]
-- You can't smoke within sight of schools, kindergartens, playgrounds, sports facilities and cannabis clubs.[^9] You can smoke if you are out of sight of the entrances, or more than 100 metres away.
+- ✗ You can't smoke around people who are under 18 years old.[^7]
+- ✗ You can't smoke in pedestrian zones between 7:00 and 20:00.[^9]
+- ✗ You can't smoke within sight of schools, kindergartens, playgrounds, sports facilities and cannabis clubs.[^9] You can smoke if you are out of sight of the entrances, or more than 100 metres away.
 
 There is currently **no way to buy weed**. There are no cannabis stores. You must grow it yourself or join a [cannabis club](#cannabis-clubs).
 

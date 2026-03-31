@@ -318,11 +318,11 @@ In Germany, tipping is optional. In general, people tip up to 10% for good servi
 
 ### Things you should not do
 
-- **Do not walk on the bike paths**  
+- ✗ **Do not walk on the bike paths**  
     The bicycle path is usually a 1 meter wide red brick path on the sidewalk. If you walk on the bike path, cyclists will ring their bell, shout at you or even bump into you.
-- **Do not put your glass bottles in the trash**  
+- ✗ **Do not put your glass bottles in the trash**  
     People collect empty bottles and [return them for money](/guides/pfand-bottles). Don't make people search for bottles in the trash. Put your empty bottles next to the bin. In some parks, bottle collectors (*Flaschensammler*) will walk around and ask for your empty bottles.
-- **Do not joke about Nazis and the war**  
+- ✗ **Do not joke about Nazis and the war**  
     You probably shouldn't joke about this. It's not funny, and it's not original.
 
 ## Stay safe

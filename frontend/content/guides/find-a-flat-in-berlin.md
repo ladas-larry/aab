@@ -267,38 +267,38 @@ Landlords want **stability**. They want quiet tenants who pay rent on time.
 
 In order, they prefer...[^32]
 
-- Couples without children 👍 👍 👍
-- Single people without children 👍 👍
-- Families with children 👍
-- Retirees 👎
-- Students 👎 👎
-- Single parents 👎 👎
-- [Shared apartments](/glossary/WG) 👎 👎 👎
+- ✓ Couples without children 👍 👍 👍
+- ✓ Single people without children 👍 👍
+- ✓ Families with children 👍
+- ✗ Retirees 👎
+- ✗ Students 👎 👎
+- ✗ Single parents 👎 👎
+- ✗ [Shared apartments](/glossary/WG) 👎 👎 👎
 
 Landlords prefer...
 
-- **A good income**  
+- ✓ **A good income**  
     Your rent should be 20% to 35% of your monthly [net income](/glossary/Netto%20income).[^34] Two incomes are better than one. If your income is too low, they think that you won't pay the rent. If your income is too high, they think that you won't stay long.
-- **A stable job**  
+- ✓ **A stable job**  
     If you are in your [probation period](/glossary/Probezeit), it's a little harder to find an apartment.[^36] If you are self-employed, it's much harder.[^17] If you are unemployed, it's impossible.
-- **A good first impression**  
+- ✓ **A good first impression**  
     Be nice and pleasant. Your personality matters a lot.[^29]
-- **A stable right of residence**  
+- ✓ **A stable right of residence**  
     You must have a long-term right to live in Germany. If you have a [[National Visa]], it's harder to find an apartment. If you have a [[Schengen visa]] or no visa, it's *much* harder. If you are a recent immigrant, you can get a [short-term furnished apartment](#short-term-and-furnished-apartments) or a room in a [[WG]].
-- **German speakers**  
+- ✓ **German speakers**  
     If you speak German, it's easier for the landlord. Write in German. Use [Deepl](https://www.deepl.com/translator) or [ChatGPT](https://chat.openai.com/) to translate your messages.
-- **Titles**  
+- ✓ **Titles**  
     Landlords prefer doctors and professors.[^10] Use your title (*Dr* or *Prof*) when you write to the landlord.
 
 Landlords often avoid...
 
-- **Recent immigrants**  
+- ✗ **Recent immigrants**  
     They are more likely to lose their job, lose their residence permit or move away. Discrimination also happens.[^9] Some landlords *prefer* immigrants because they pay more and don't know their rights.[^25]
-- **People who know their rights**  
+- ✗ **People who know their rights**  
     Landlords avoid people who know the rules, like lawyers and government employees.[^24]
-- Parents[^29]
-- Students
-- [Dog owners](/guides/dog-ownership#finding-an-apartment-with-a-dog)
+- ✗ Parents[^29]
+- ✗ Students
+- ✗ [Dog owners](/guides/dog-ownership#finding-an-apartment-with-a-dog)
 
 ## 4. Visit the apartment
 

@@ -18,15 +18,15 @@ German permanent residence (*PR*, *permanent settlement permit* or *Niederlassun
 
 It's better than a [residence permit](/glossary/Aufenthaltstitel) because...
 
-- It's permanent. You don't need to renew it.
-- It's flexible. It's not tied to your income or occupation.
-- It's more trusted. It's easier to [rent an apartment](/guides/find-a-flat-in-berlin) or get a mortgage.
+- ✓ It's permanent. You don't need to renew it.
+- ✓ It's flexible. It's not tied to your income or occupation.
+- ✓ It's more trusted. It's easier to [rent an apartment](/guides/find-a-flat-in-berlin) or get a mortgage.
 
 It's not as good as German citizenship because...[^1]
 
-- You can't vote in elections.
-- If you [leave Germany](/guides/leaving-germany) for a long time, you lose it.
-- You can still get deported.
+- ✗ You can't vote in elections.
+- ✗ If you [leave Germany](/guides/leaving-germany) for a long time, you lose it.
+- ✗ You can still get deported.
 
 **[How to apply for permanent residence ➞](/guides/permanent-residence)**
 

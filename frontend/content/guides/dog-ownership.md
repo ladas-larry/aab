@@ -77,16 +77,16 @@ You must get dog liability insurance (*[[Hundehaftpflichtversicherung]]*).
 
 This insurance covers you if your dog...
 
-- Harms a person, or another dog
-- Gets another dog pregnant
-- Damages another person's things
-- Damages the apartment you rent
+- ✓ Harms a person, or another dog
+- ✓ Gets another dog pregnant
+- ✓ Damages another person's things
+- ✓ Damages the apartment you rent
 
 It does not cover you if your dog...
 
-- Gets sick
-- Bites a member of your family
-- Damages your own property
+- ✗ Gets sick
+- ✗ Bites a member of your family
+- ✗ Damages your own property
 
 Compare prices with [Tarifcheck](/out/tarifcheck-dogs). If you don't speak German, [Feather](/out/feather-dogs) and [Getsafe](/out/getsafe-dogs) the only English-speaking options.
 

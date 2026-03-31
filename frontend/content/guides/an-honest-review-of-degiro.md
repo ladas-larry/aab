@@ -71,17 +71,17 @@ You can't trade US options on Degiro. If you need this, use [Interactive Brokers
 
 The good:
 
-- It's easy to open an account
-- The fees are low
-- It's easy to use
-- The platform is in English
+- ✓ It's easy to open an account
+- ✓ The fees are low
+- ✓ It's easy to use
+- ✓ The platform is in English
 
 The bad:
 
-- It's impossible to track portfolio performance over time
-- You can't buy US stock options[^5]
-- Most documents are only in German
-- The fees are not as competitive as before
+- ✗ It's impossible to track portfolio performance over time
+- ✗ You can't buy US stock options[^5]
+- ✗ Most documents are only in German
+- ✗ The fees are not as competitive as before
 
 Degiro is fine, but in 2025, there are better options. Online banks like [N26](/out/n26) make passive investing much easier. For serious traders, [Interactive Brokers](https://www.interactivebrokers.com/en/home.php) is much better. There is no good reason to choose Degiro anymore. It's good, but the competition is better.
 

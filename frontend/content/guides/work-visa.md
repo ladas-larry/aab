@@ -12,11 +12,11 @@ The German [work visa](/glossary/Work%20Visa) is a [residence permit](/glossary/
 
 With a work visa, you can...
 
-- Live and work anywhere in Germany
-- Bring your family to Germany[^14]
-- Visit other [Schengen countries](/glossary/Schengen%20area) without a visa[^13]
-- Become a [permanent resident](/glossary/Niederlassungserlaubnis) after 2 to 3 years[^10]
-- Become a citizen after 5 years
+- ✓ Live and work anywhere in Germany
+- ✓ Bring your family to Germany[^14]
+- ✓ Visit other [Schengen countries](/glossary/Schengen%20area) without a visa[^13]
+- ✓ Become a [permanent resident](/glossary/Niederlassungserlaubnis) after 2 to 3 years[^10]
+- ✓ Become a citizen after 5 years
 
 This guide explains how to apply for a [work visa](/glossary/Work%20Visa) in Berlin or in your home country.
 

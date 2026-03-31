@@ -59,15 +59,15 @@ When you [leave Germany](/guides/leaving-germany), [cancel your subscription](#h
 
 You can...[^0]
 
-- Use local public transit in all of Germany: the [[S-Bahn]], the [[U-Bahn]], trams, buses, ferries and regional trains (RE)
-- Bring a dog for free in Berlin zones A, B and C
+- ✓ Use local public transit in all of Germany: the [[S-Bahn]], the [[U-Bahn]], trams, buses, ferries and regional trains (RE)
+- ✓ Bring a dog for free in Berlin zones A, B and C
 
 You can't...
 
-- Use intercity trains (IC, EC and ICE) or private buses and trains
-- Bring other people with you for free
-- Bring a bicycle with you for free
-- Let someone else use your ticket
+- ✗ Use intercity trains (IC, EC and ICE) or private buses and trains
+- ✗ Bring other people with you for free
+- ✗ Bring a bicycle with you for free
+- ✗ Let someone else use your ticket
 
 ## Deutschland Ticket alternatives
 

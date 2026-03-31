@@ -19,10 +19,10 @@ When you open your first bank account, choose an expat-friendly bank like [N26](
 
 An expat-friendly bank...
 
-- Speaks English and other languages
-- Lets you open an account quickly
-- Accepts foreign passports and documents
-- Does not require a [residence permit](/glossary/Aufenthaltstitel), a [registration certificate](/glossary/Anmeldebestätigung) or a [tax ID](/glossary/Steueridentifikationsnummer).
+- ✓ Speaks English and other languages
+- ✓ Lets you open an account quickly
+- ✓ Accepts foreign passports and documents
+- ✓ Does not require a [residence permit](/glossary/Aufenthaltstitel), a [registration certificate](/glossary/Anmeldebestätigung) or a [tax ID](/glossary/Steueridentifikationsnummer).
 
 ### [N26](/out/n26)
 
@@ -54,21 +54,21 @@ Wise speaks English, Chinese, French, German, Hungarian, Indonesian, Italian, Ja
 
 These banks are **not expat-friendly**:
 
-- **[C24](/out/c24)**  
+- ✗ **[C24](/out/c24)**  
     It's an excellent bank, but they [accept fewer passports](https://hilfe.c24.de/hc/de/articles/360011531579-Wer-kann-ein-Konto-beantragen), they required a [registered address](/glossary/Anmeldung), and they might require a residence permit.[^1] They only speak German. They don't accept US citizens.[^5]
-- **[Revolut](/out/revolut)**  
+- ✗ **[Revolut](/out/revolut)**  
     You need a [tax ID](/glossary/Steueridentifikationsnummer) to open an account.[^11] You only get it after you [register your address](/glossary/Anmeldung) for the first time.
-- **[Sparkasse](/out/sparkasse)**  
+- ✗ **[Sparkasse](/out/sparkasse)**  
     If you want a traditional bank with physical branches, this is the best option. They accept Russians, Iranians, Syrians and citizens of other sanctioned countries.[^2] You need a [registered address](/glossary/Anmeldung) and a [residence permit](/glossary/Aufenthaltstitel).[^13] Basic online banking is in English, everything else is in German.
-- **[Deutsche Bank](/out/deutsche-bank)**  
+- ✗ **[Deutsche Bank](/out/deutsche-bank)**  
     It takes too long to open an account.[^10] They mostly speak German. Online banking, customer service and some documents are in English.[^7] You might need a [residence permit](/glossary/Aufenthaltstitel).[^54]
-- **[Commerzbank](/out/commerzbank)**  
+- ✗ **[Commerzbank](/out/commerzbank)**  
     It takes too long to open an account.[^9] You need a [registration certificate](/glossary/Anmeldebestätigung) and a [residence permit](/glossary/Aufenthaltstitel) that's valid for at least 6 months.[^6] Basic online banking is in English, everything else is in German.
-- **[ING](/out/ing)**  
+- ✗ **[ING](/out/ing)**  
     It's a good bank, but you need EU citizenship or German [permanent residence](/glossary/Niederlassungserlaubnis) to open an account.[^15] They only speak German.
-- **[DKB](/out/dkb)**  
+- ✗ **[DKB](/out/dkb)**  
     It's a good bank, but you need EU citizenship or German [permanent residence](/glossary/Niederlassungserlaubnis) to open an account.[^14] They only speak German.
-- **[comdirect](/out/comdirect)**  
+- ✗ **[comdirect](/out/comdirect)**  
     You need an *[[Anmeldung]]*, or you must follow [extra steps](https://banks-germany.com/open-comdirect-bank-account-for-non-residents/). They only speak German.
 
 ## English-speaking banks
@@ -187,11 +187,11 @@ You don't need a German bank. You can use a bank in any EU country. Your money i
 
 There are a few differences:
 
-- **Foreign [[IBAN]]**  
+- ✗ **Foreign [[IBAN]]**  
     IBAN discrimination is illegal, but it still happens.[^45] Some businesses refuse foreign bank account numbers ([[IBAN]]). If your IBAN does not start with "DE", you might get an error. If you can, choose a bank that gives you a German IBAN.
-- **No [[Girocard]]**  
+- ✗ **No [[Girocard]]**  
     Girocards are a common payment method in Germany. Only German banks give you a Girocard. Many small businesses only accept cash and Girocards, no Visa or Mastercard. It's rarely a problem; you can just pay with cash. I have no Girocard since 2016, and I never had a problem.
-- **No [[Schufa]] record**  
+- ✗ **No [[Schufa]] record**  
     Usually, opening a bank account is a good way to get your first Schufa record. Non-German banks don't create a Schufa record.
 
 ## Blocked account for students
@@ -207,7 +207,7 @@ You can open a blocked account with...
 - [Sparkasse](/out/sparkasse), but only at some branches[^41]
 - [Kotak Mahindra Bank](https://www.kotak.com/en/digital-banking/insta-services/send-money-abroad/kotak-german-blocked-account-sperrkonto.html) in India[^43]{{ fail_on('2027-12-31') }}
 - [Fintiba](/out/fintiba) was acquired by Expatrio in 2025[^29]
-- [Coracle](/out/coracle) was acquired by Expatrio in 2024[^29]
+- [Coracle](/out/coracle) was acquired by Expatrio in 2024.[^29] They don't accept new customers.{{ fail_on('2026-12-31') }}
 
 Some [blocked accounts](/glossary/Sperrkonto) include [health insurance for your visa application](/guides/german-health-insurance/for-a-visa-application).
 
@@ -238,10 +238,10 @@ None of these banks give you a [[Girocard]]. If you need one, [C24](/out/c24) is
 [^13]: [Twitter](https://twitter.com/sasaraber/status/1504429265445703681), [Screenshot](/images/Screenshot-2022-04-21-at-10.57.38.png)
 [^14]: [Reddit](https://old.reddit.com/r/germany/comments/qdr746/card_requirements_and_details_in_germany_eg_dkb/), [community.finanztip.de](https://community.finanztip.de/thema/80-erfahrungen-mit-der-dkb/?pageNo=3), [wer-weiss-was.de](https://www.wer-weiss-was.de/t/dkb-lehnt-kunden-ab/6515086), [kontofinder.de](https://www.kontofinder.de/ratgeber/girokonto-fuer-auslaender/), [Reddit](https://old.reddit.com/r/germany/comments/la6nrx/deutsche_bank_vs_dkb_vs_n26/), reader feedback (July 2025)
 [^15]: [Reddit](https://old.reddit.com/r/germany/comments/qilicq/deleted_by_user/), [Twitter](https://twitter.com/cyrill_7/status/1502574559630958592), [Twitter](https://twitter.com/baykara__/status/1425369761504968706)
-[^16]: Tobias Arnold from bunq (February 2025){{ fail_on('2026-03-31') }}
+[^16]: Tobias Arnold from bunq (February 2025){{ fail_on('2026-04-30') }}
 [^17]: [Reddit](https://old.reddit.com/r/germany/comments/18puh8o/about_blocked_account/) (2024)
 [^18]: [1822direkt.de](https://www.1822direkt.de/girokonto/leistungen-konditionen/)
-[^19]: Tobias Arnold from bunq (February 2025){{ fail_on('2026-03-31') }}
+[^19]: Tobias Arnold from bunq (February 2025){{ fail_on('2026-04-30') }}
 [^20]: [comdirect.de](https://www.comdirect.de/cms/ueberuns/de/presse/neues-mobiles-girokonto-von-comdirect.html)
 [^21]: [commerzbank.de](https://www.commerzbank.de/portal/media/efw-dokumente/preis_leistungsverzeichnis.pdf)
 [^22]: [§ 13 BAföG](https://www.buzer.de/13_BAfoG.htm) and [§ 13a BAföG](https://www.buzer.de/13a_BAfoG.htm), [VAB A2.3.5](/out/vab) (October 2025)

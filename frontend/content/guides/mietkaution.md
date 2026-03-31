@@ -82,22 +82,22 @@ The landlord must let you make the repairs yourself. You can also pay someone el
 
 Your landlord can use your deposit to...
 
-- **Repair things that you broke**  
+- ✓ **Repair things that you broke**  
     For example holes in the wall or broken bathroom tiles. You only pay for the real cost of the repairs. The landlord must give you a detailed invoice for the repairs.[^11]
-- **Pay your debts**  
+- ✓ **Pay your debts**  
     For example if you leave without paying your rent or your *[[Nebenkosten]]*.[^9]
-- **Replace missing keys**  
+- ✓ **Replace missing keys**  
     If you [lost your apartment keys](/guides/lost-keys). You only pay for the cost of replacing the keys. The landlord might replace all the locks in the building, but [this is rarely necessary](/guides/lost-keys#do-i-need-to-pay-to-replace-the-locks), and you rarely have to pay for it.
 
 Your landlord can't use your deposit to...
 
-- **Punish you**  
+- ✗ **Punish you**  
     You only pay for the real cost of repairs. Your landlord can't make you pay a fine or a convenience fee.
-- **Repair normal wear and tear**[^8]  
+- ✗ **Repair normal wear and tear**[^8]  
     Walls, wallpapers, floors and furniture get old and wear out. There will be scratches and scuff marks. This is normal and expected. You do not have to pay for this. [You don't always need to repaint the apartment](/guides/moving-out#repaint-the-apartment).
-- **Repair damage that is not your fault**  
+- ✗ **Repair damage that is not your fault**  
     You should not pay for damage that was already there when you [moved in](/guides/moving-in), or damage that you did not cause.[^14]
-- **Repair damage that is not in the [[Übergabeprotokoll]]**  
+- ✗ **Repair damage that is not in the [[Übergabeprotokoll]]**  
     If it's not in the *Übergabeprotokoll* you signed, don't pay for it.[^16] This is why you should always sign an *Übergabeprotokoll*.
 
 **If you have [liability insurance](/glossary/Haftpflichtversicherung)**, it covers most of those repairs, so you can get your whole *Kaution* back.[^15] Everyone should [get liability insurance](/guides/haftpflichtversicherung). [Household insurance](/glossary/Hausratversicherung) covers damage to appliances. [Pet liability insurance](/glossary/Hundehaftpflichtversicherung) pays for damage caused by your cat or dog.

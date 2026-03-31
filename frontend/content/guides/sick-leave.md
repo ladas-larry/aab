@@ -71,12 +71,12 @@ After 6 weeks, your employer stops paying you. Instead, you get *[[Krankengeld]]
 
 You do not get *Krankengeld* if...
 
-- You have [private health insurance](/glossary/private%20Krankenversicherung) (you need *[[Krankentagegeld]]*insurance)
-- You have [expat health insurance](/glossary/Expat%20health%20insurance)
-- You have a [minijob](/glossary/Minijob)
-- You have [free health insurance](/guides/german-health-insurance#free-health-insurance) (*[[Familienversicherung]]*)
-- You have student health insurance[^26]
-- You are self-employed (you must pay a little more for it)[^27]
+- ✗ You have [private health insurance](/glossary/private%20Krankenversicherung) (you need *[[Krankentagegeld]]*insurance)
+- ✗ You have [expat health insurance](/glossary/Expat%20health%20insurance)
+- ✗ You have a [minijob](/glossary/Minijob)
+- ✗ You have [free health insurance](/guides/german-health-insurance#free-health-insurance) (*[[Familienversicherung]]*)
+- ✗ You have student health insurance[^26]
+- ✗ You are self-employed (you must pay a little more for it)[^27]
 
 ### After that
 

@@ -11,10 +11,10 @@ This guide explains the difference between tax advisors (*[[Steuerberater]]*) an
 
 ## Summary
 
-- Tax advisor (*[[Steuerberater]]*) is a protected title in Germany. Bookkeeper (*[[Buchhalter]]*) is not.
-- Tax advisors can submit tax declarations and financial statements in your name. Bookkeepers can fill the papers, but you must submit them yourself.
-- Tax advisors are liable for their mistakes, bookkeepers are not.
-- Tax advisors are more expensive than bookkeepers.
+- ✓ Tax advisor (*[[Steuerberater]]*) is a protected title in Germany. Bookkeeper (*[[Buchhalter]]*) is not.
+- ✓ Tax advisors can submit tax declarations and financial statements in your name. Bookkeepers can fill the papers, but you must submit them yourself.
+- ✓ Tax advisors are liable for their mistakes, bookkeepers are not.
+- ✗ Tax advisors are more expensive than bookkeepers.
 
 ## Steuerberater (tax advisor)
 
@@ -36,7 +36,7 @@ Bookkeepers can't submit your tax declarations or financial statements. They can
 
 ## How to find a tax advisor or bookkeeper?
 
-**[List of English-speaking accountants ➞](/guides/english-speaking-steuerberater-berlin)**
+**[English-speaking accountants in Berlin ➞](/guides/english-speaking-steuerberater-berlin)**
 
 **[List of German tax software ➞](/guides/german-tax-software)**
 

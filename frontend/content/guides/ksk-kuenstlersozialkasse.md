@@ -25,28 +25,28 @@ When you are a KSK member, **they pay half of your [health insurance](/glossary/
 
 ### Advantages
 
-- **They pay half of your health insurance**  
+- ✓ **They pay half of your health insurance**  
     Normally, freelancers pay [€{{GKV_MIN_COST_SELF_PAY|cur}} to €{{GKV_MAX_COST_SELF_PAY|cur}} per month](/tools/health-insurance-calculator) for [public health insurance](/glossary/gesetzliche%20Krankenversicherung). If you are in the KSK, you pay 50% less. You get the same coverage.
-- **They pay half of your public pension insurance**  
+- ✓ **They pay half of your public pension insurance**  
     [Public pension insurance](/glossary/gesetzliche%20Krankenversicherung) is optional for most freelancers, so you probably don't pay for it. If you join the KSK, it's required, but the KSK pays half of it. You get a public pension for half the price.
-- **It lets you get [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
+- ✓ **It lets you get [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
     Some freelancers are stuck with [private health insurance](/glossary/private%20Krankenversicherung), or bad [expat health insurance](/glossary/Expat%20health%20insurance). When you join the KSK, you can switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung). It's often the best option for you.
-- **It helps you get [permanent residence](/glossary/Niederlassungserlaubnis)**  
+- ✓ **It helps you get [permanent residence](/glossary/Niederlassungserlaubnis)**  
     Before you apply for [permanent residence](/glossary/Niederlassungserlaubnis), you must pay [public pension insurance](/glossary/gesetzliche%20Krankenversicherung) for 60 months. The KSK makes public pension insurance more affordable for freelancers.
-- **You get more things for the same price**  
+- ✓ **You get more things for the same price**  
     If you earn less than €{{GKV_MAX_INCOME|cur}} per year, your [net income](/glossary/Netto%20income) stays the same. If you earn more, [you pay a little more](/guides/ksk-kuenstlersozialkasse#how-much-does-it-cost), but it's still a really good deal.
 
 ### Disadvantages
 
-- **There is a lot of paperwork**  
+- ✗ **There is a lot of paperwork**  
     The KSK application process is a bit hard. It takes a few months to get accepted. If you don't speak German, you might need a translator.
-- **They reject a lot of people**  
+- ✗ **They reject a lot of people**  
     You might need to try multiple times, and still get rejected. Some people give up. Others sue the KSK to get accepted.
-- **You can't always keep your private health insurance**  
+- ✗ **You can't always keep your private health insurance**  
     With the KSK, if you earn less than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, you must switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung). Most of the time, it's a good thing, but you might prefer to keep your private health insurance. [More information here.](/guides/ksk-kuenstlersozialkasse#can-i-have-private-health-insurance-with-the-ksk)
-- **It can limit your options**  
+- ✗ **It can limit your options**  
     If you have other sources of income, [it can be complicated](/guides/ksk-kuenstlersozialkasse#can-i-have-another-source-of-income-while-in-the-ksk). You can't earn more than €{{MINIJOB_MAX_INCOME|cur}} per month from other freelance activities. You might need to refuse some contracts to stay in the KSK. You can still have a side job and stay in the KSK.
-- **Backpayments**  
+- ✗ **Backpayments**  
     When the KSK accepts you, your membership starts on the date you applied. You must pay health insurance and pension insurance for the time you waited. If they take 5 months to accept you, you must pay KSK contributions for those 5 months. These backpayments can be very expensive. [More information about KSK backpayments.](/guides/ksk-kuenstlersozialkasse#backpayments)
 
 ### How much does it cost?
@@ -69,25 +69,25 @@ If you earn more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, 
 
 **Freelance artists, publicists and some freelance teachers**. This includes...
 
-- **Performance artists**  
+- ✓ **Performance artists**  
     Actors, comedians, magicians, dancers and many more.
-- **Visual artists**  
+- ✓ **Visual artists**  
     Photographers, video editors, dancers, painters, graphic designers, web designers, game designers, UX designers,[^1] illustrators and many more.
     - **Photographers** are sometimes accepted. Artistic and press photographers are accepted, but wedding and portrait photographers are not always accepted.[^2] You must sell artistic work, not technical work.[^3]
     - **Tattoo artists** are almost always rejected.[^4]
     - **Web designers** must prove that they do design, not programming or maintenance.[^5] Designing websites is art, so it's accepted. Programming and maintenance is technical work, so it's not accepted.
     - **Fashion designers** can't sell their own clothes.[^6] Designing clothes is art, so it's accepted. Making clothes is manual craft, so it's not accepted.
-- **Musicians**  
+- ✓ **Musicians**  
     This includes singers, DJs,[^7] audio designers, voice actors, and many more. Your music must be the focus of the event. For example, wedding musicians are not accepted.
     - **DJs** must prove that they create art.[^8] Making music is art, so it's accepted. Playing someone else's music is technical work, so it's not accepted.
     - **Orchestra musicians** are rarely accepted, because they are rarely self-employed.
     - **Wedding singers** sometimes get rejected, because their music is not the focus of the event. Some get accepted. You never know.
-- **Publicists**  
+- ✓ **Publicists**  
     This includes writers, journalists, bloggers,[^9] authors, reporters, copywriters, copy editors, YouTubers,[^10] influencers, some translators, and many more. You must work in an artistic or journalistic context. It must require some creativity. Working on artistic texts is art, so it's accepted. Working on scientific texts is journalism, so it's accepted. In general, if you get credit for your work, it's probably artistic or journalistic enough.
     - **Translators** are not always accepted. Verbatim translations are not creative enough,[^11] so they are rejected.
     - **Publishers** are rarely accepted, because they are distributors, not artists or publicists. They don't create their own texts.
     - **Curators** are not always accepted. They must make money from their own content (books, catalogues), not from administrative tasks.
-- **Teachers**  
+- ✓ **Teachers**  
     This includes art, design, writing and music teachers. You must teach other people to become professional artists or publicists.[^12] You can't only teach refugees or old people, because that's social work.[^13]
     - **Dance teachers** are only covered if they teach dance as art, not as entertainment, sport or therapy.[^14]
 
@@ -95,9 +95,9 @@ If you earn more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, 
 
 The KSK does not accept...
 
-- **Programmers**  
+- ✗ **Programmers**  
     Software developers, web developers and other IT workers can't join the KSK, because it's technical work, not art.[^12] Bloggers and web designers can join the KSK, because they are publicists.
-- **Artisans**  
+- ✗ **Artisans**  
     If the biggest part of your job is to *make* things - even things that you design yourself - you are probably an artisan. The KSK might reject your application. The KSK often rejects photographers, tattoo artists and fashion designers because of this.[^15]
 
 For some professions, it's harder to apply. You need really strong proof that you are an artist, not an artisan or a technical worker. In that situation, I recommend to hire an expert to help you.

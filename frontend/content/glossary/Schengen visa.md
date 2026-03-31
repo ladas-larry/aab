@@ -16,14 +16,14 @@ The Schengen visa (also called tourist visa, short stay visa or Category C visa)
 
 With a Schengen visa, you can:
 
-- Visit Germany for up to 90 days in a 180 days period
-- Visit other countries in the [[Schengen area]]
+- ✓ Visit Germany for up to 90 days in a 180 days period
+- ✓ Visit other countries in the [[Schengen area]]
 
 With a Schengen visa, you can't:
 
-- [Work](/guides/find-a-job-in-berlin) or study in Germany[^3]
-- Convert your Schengen visa to a [residence permit](/glossary/Aufenthaltstitel) (with rare exceptions)[^1]
-- Extend your visa to stay longer (with rare exceptions)[^2]
+- ✗ [Work](/guides/find-a-job-in-berlin) or study in Germany[^3]
+- ✗ Convert your Schengen visa to a [residence permit](/glossary/Aufenthaltstitel) (with rare exceptions)[^1]
+- ✗ Extend your visa to stay longer (with rare exceptions)[^2]
 
 People from [some countries](https://www.auswaertiges-amt.de/en/einreiseundaufenthalt/-/231148) can enter Germany without a visa. They don't need a Schengen visa because they have visa-free entry.
 
