@@ -74,13 +74,13 @@ The waiting period can be shorter for certain problems (traffic accidents, taxes
 
 ### Deductible
 
-Most legal insurances have a [deductible](/glossary/Selbstbeteiligung) of €100 to €500. There are insurances with no deductibles, but they are much more expensive.[^18]
+Most legal insurances have a [deductible](/glossary/Selbstbeteiligung) of €150 to €500 per case.[^22] There are insurances with no deductibles, but they are much more expensive.[^18]
 
-The deductible can be lower for first consultations, and higher for hiring a lawyer or going to court. It can also be higher in the first year, and lower after that.
+Some insurances have no deductible for initial phone consultations.[^16] Others have a higher deductible in the first year, and a lower deductible after that.[^28] If you win in court, the other side might have to pay your legal costs, including your deductible.[^24]
 
 ### Fair use
 
-If you use your legal insurance too much, they can end your contract.[^15] For example, if you make 2 expensive claims in 1 year, they will cover those claims, then stop insuring you.
+If you use your legal insurance too much, they can end your contract.[^15] For example, if you make 2 expensive claims in 1 year, they might cover those claims, then stop insuring you. They will not abandon you in the middle of a claim.
 
 ## Cost of legal insurance
 
@@ -144,7 +144,7 @@ My independent insurance expert recommends **ARAG's legal insurance**.[^49]
 
 If you don't speak German, [Feather](/out/feather-rechtsschutz) has legal insurance with their own English-speaking support. [Getsafe](/out/getsafe-rechtsschutz) sells the same insurance, but I do not recommend them.[^41]
 
-[Tarifcheck](/out/tarifcheck-rechtsschutz) lets you compare legal insurances.
+Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare legal insurances.
 
 ## Other options
 
@@ -164,9 +164,9 @@ If you don't speak German, [Feather](/out/feather-rechtsschutz) has legal insura
 1. **Contact your insurer**  
     Ask your insurance company for a cover note (*[[Deckungszusage]]*). This confirms that the insurance will cover your legal costs. You can request it yourself, or your lawyer can do it for you. The insurance company has 2 weeks to give it to you. Your insurance might refuse to cover you if they think you can't win, but that rarely happens.[^46] This is why you should ask for a *Deckungszusage* before you see a lawyer.
 2. **Choose a lawyer**  
-    You can always choose the lawyer.[^2] Your insurance can also recommend a lawyer. Sometimes, if you choose the recommended lawyer, you pay a lower deductible (*[[Selbstbeteiligung]]*).[^19]
+    You can always choose the lawyer.[^2] Your insurance can also recommend a lawyer. Sometimes, if you choose the recommended lawyer, you pay a lower [deductible](/glossary/Selbstbeteiligung).[^19]
 3. **Get a first consultation**  
-    Talk to a lawyer. During the first consultation (*Erstberatung*), your lawyer will listen to you, and tell you what you can do next.
+    Talk to a lawyer. During the first consultation (*Erstberatung*), your lawyer will listen to you, and tell you what you can do next. Usually, there is no [deductible](/glossary/Selbstbeteiligung) for the first consultation.[^16]
 4. **Solve the problem**  
     Now, you know your options, and you know that your insurance covers the cost. You can do what you need to do, and solve your legal problem.
 
@@ -186,15 +186,19 @@ If you don't speak German, [Feather](/out/feather-rechtsschutz) has legal insura
 [^13]: [versicherungenmitkopf.de \(archived\)](https://web.archive.org/web/20210917003713/https://versicherungenmitkopf.de/legal-insurance-germany?lang=en)
 [^14]: [Jean-Baptiste Abel](https://jba.legal) (February 2026), reader feedback (January 2026)
 [^15]: [verbraucherzentrale.de](https://www.verbraucherzentrale.de/wissen/geld-versicherungen/weitere-versicherungen/versicherungsvertrag-kuendigen-wann-das-klappt-und-wie-sie-vorgehen-5442), [fnp.de](https://www.fnp.de/ratgeber/geld/wenn-rechtsschutzversicherung-kunden-kuendigt-10458481.html), [clark.de](https://www.clark.de/rechtsschutzversicherung/gekuendigt/)
+[^16]: [Verivox](https://www.verivox.de/rechtsschutzversicherung/ratgeber/rechtsschutzversicherung-wie-hoch-sollte-die-selbstbeteiligung-sein-1118159/#:~:text=viele%20versicherer%20bieten%20daher%20an%2C%20dass%20fur%20die%20erstberatung%20beim%20anwalt%20keine%20selbstbeteiligung%20angerechnet%20wird.%20) (March 2026), [Roland](https://www.roland-rechtsschutz.de/rechtsschutzversicherung-ohne-selbstbeteiligung/#:~:text=einer%20ersten%20telefonischen%20rechtsberatung%20) (March 2026)
 [^17]: [augsburger-allgemeine.de](https://www.augsburger-allgemeine.de/themenwelten/wirtschaft/Police-oder-Mieterverein-Rechtsschutz-fuer-Mieter-id5396231.html), [verbraucherzentrale.de](https://www.verbraucherzentrale.de/wissen/geld-versicherungen/weitere-versicherungen/rechtsschutzversicherung-ueberfluessig-oder-sinnvoll-32194), [clark.de](https://www.clark.de/rechtsschutzversicherung/privater-rechtsschutz/#Welche-Wartezeiten-sind-in-privaten-Rechtsschutzversicherungen-g%C3%A4ngig?)
 [^18]: [clark.de](https://www.clark.de/rechtsschutzversicherung/selbstbeteiligung/#:~:text=du%20sparst%20etwa%20200%20%E2%82%AC%20im%20jahr) (March 2026)
-[^19]: [check24.de](https://www.check24.de/rechtsschutzversicherung/fragen/freie-anwaltswahl/)
+[^19]: [check24.de](https://www.check24.de/rechtsschutzversicherung/fragen/freie-anwaltswahl/), Feather (March 2026)
 [^20]: [Feather](/out/feather-rechtsschutz) (March 2026), Seamus Wolf (March 2026), Check24 (March 2026), [Finanztip](https://www.finanztip.de/rechtsschutzversicherung/#c150867) (March 2026)
 [^21]: [fnp.de](https://www.fnp.de/ratgeber/geld/wenn-rechtsschutzversicherung-kunden-kuendigt-10458481.html), [reddit.com/r/AskAGerman](https://old.reddit.com/r/AskAGerman/comments/ph3wum/should_i_get_legal_insurance_to_protect_myself/), [Seamus Wolf](https://horizon65.com/) (March 2026)
+[^22]: [Clark](https://www.clark.de/rechtsschutzversicherung/selbstbeteiligung/#:~:text=in%20der%20regel%20pro%20versicherungsfall) (March 2026)
 [^23]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/90f3u3/can_anyone_recommend_good_rechtsschutzversicherung/e2rbzwa/)
+[^24]: [Clark](https://www.clark.de/rechtsschutzversicherung/selbstbeteiligung/#:~:text=entscheidet%20das%20gericht%20zu%20deinen%20gunsten) (March 2026)
 [^25]: [toytowngermany.com](https://web.archive.org/web/20240808111111/https://www.toytowngermany.com/forum/topic/360547-legal-insurance/#comment-3479765), [hausundgrund.de](https://www.hausundgrund.de/themen)
 [^26]: [Check24](https://www.check24.de/rechtsschutzversicherung/verkehrsrechtsschutz/#beispiele-leistungsumfang) (March 2026)
 [^27]: [clark.de](https://www.clark.de/rechtsschutzversicherung/verkehrsrechtsschutz/#Was-beinhaltet-die-Verkehrsrechtsschutzversicherung-nicht?), [luko.eu](https://de.luko.eu/service/tipps/privathaftpflicht-fahrrad/)
+[^28]: [Roland](https://www.roland-rechtsschutz.de/rechtsschutzversicherung-ohne-selbstbeteiligung/#:~:text=variable%20selbstbeteiligung) (March 2026)
 [^30]: [clark.de](https://www.clark.de/rechtsschutzversicherung/ohne-wartezeit/#Kann-ich-eine-Rechtsschutzversicherung-abschlie%C3%9Fen,-die-sofort-in-Kraft-tritt?)
 [^31]: [clark.de](https://www.clark.de/rechtsschutzversicherung/ohne-wartezeit/#:~:text=hier%20eine%20ubersicht%20haufiger%20rechtsschutzfalle%20und%20der%20wartezeitregelung%3A%20) (March 2026)
 [^34]: [check24.de](https://www.check24.de/rechtsschutzversicherung/fragen/welche-selbstbeteiligung-sinnvoll/)
