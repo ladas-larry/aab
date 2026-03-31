@@ -15,13 +15,13 @@ This guide explains what liability insurance covers, why it's important, and how
 
 It covers **accidents that are your fault**. It pays to fix the damage that you caused. This includes...[^1]
 
-- **Damage to other people's property**  
+- ✓ **Damage to other people's property**  
     For example, if your scratch someone's car with your bicycle, or if you send someone a virus that breaks their computer.[^2] Your insurance will pay for the repairs and the legal fees.
-- **Injuries to other people**  
+- ✓ **Injuries to other people**  
     For example, if you trip someone and they break their leg. Your insurance covers the legal fees, medical costs and lost wages. If you play sports, this is really important.
-- **Damage to the apartment your rent**  
+- ✓ **Damage to the apartment your rent**  
     It covers damage to the doors, floors, kitchen and walls, but not to your own things. For example, if your washing machine breaks, floods the apartment, and destroys the wooden floors, your insurance will pay for the repairs. It covers many apartment repairs when you [move out](/guides/moving-out), and helps you [get your deposit back](/guides/mietkaution).
-- **Damage caused by your spouse and children**  
+- ✓ **Damage caused by your spouse and children**  
     Liability insurance covers your family. It covers your children until they finish their studies.[^4] It rarely covers children under 7 years old.[^3]
 
 Liability insurance *sometimes* covers...
@@ -39,23 +39,23 @@ Liability insurance *sometimes* covers...
 
 Liability insurance rarely covers...
 
-- **Damage to your own things**  
+- ✗ **Damage to your own things**  
     The things you have in your apartment are not covered by the liability insurance. To insure them, get [home contents insurance](/glossary/Hausratversicherung).[^11] Liability insurance covers damage to an apartment you that you rent, but not to an apartment that you own. It covers damage to your neighbours' apartments.
-- **Damage caused by children under 7 years old**  
+- ✗ **Damage caused by children under 7 years old**  
     Your young children are not covered by most liability insurances.[^3] You must pay more for this. Your children over 6 years old are covered by your liability insurance until they finish their studies.[^4]
-- **Damage or injuries caused by your pets**  
+- ✗ **Damage or injuries caused by your pets**  
     It covers cats and small pets, but not dogs. If you have a dog, you need [dog liability insurance](/glossary/Hundehaftpflichtversicherung). It's mandatory in Berlin, Brandenburg, Hamburg, Lower Saxony and Thuringia.
-- **Car accidents**  
+- ✗ **Car accidents**  
     Your liability insurance covers damage someone's car when you are *not* driving. When you are driving, your [car insurance](/guides/car-insurance-germany) covers damage to other people and other cars.
-- **Work accidents**  
+- ✗ **Work accidents**  
     If you are an employee, your employer is liable for your work accidents. Their liability insurance covers you.
-- **Business activities**  
+- ✗ **Business activities**  
     If you are self-employed, you need [professional liability insurance](#professional-liability-insurance) for your work.
-- **Legal disputes**  
+- ✗ **Legal disputes**  
     If *you* want to sue someone, your liability insurance won't protect you. For this, you need [legal insurance](/glossary/Rechtsschutzversicherung).
-- **Piracy and copyright infringement**  
+- ✗ **Piracy and copyright infringement**  
     If you get in trouble for [illegally downloading movies](/guides/pirating-streaming-movies-in-germany), your liability insurance will not cover you.[^12]
-- **Locksmiths**  
+- ✗ **Locksmiths**  
     If you lock yourself out of your apartment, and you call a locksmith to open the door, your liability insurance does not cover the cost.[^32] [Home contents insurance](/glossary/Hausratversicherung) sometimes covers locksmiths.
 
 **Get insured before you have a problem.** Liability insurance only covers damage that happened *after* you got insured. If you get liability insurance just before you [move out](/guides/moving-out), it won't cover the damaged floors or the broken fridge. If you make a claim just a few weeks after getting insured, your insurer might be suspicious and ask for more proof.
