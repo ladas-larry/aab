@@ -110,6 +110,21 @@ Second line.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
+**Yes-no lists:**
+
+- ✓ Yes
+    - ✓ Yes
+    - ✗ No
+    - Neutral
+- ✗ No
+    - ✓ Yes
+    - ✗ No
+    - Neutral
+- Neutral
+    - ✓ Yes
+    - ✗ No
+    - Neutral
+
 **Unordered list:**
 
 - Item one
