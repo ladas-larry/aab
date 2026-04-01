@@ -21,7 +21,7 @@ English-speaking options:
     The most comprehensive tax software in English. Handles cross-border taxation and other edge cases.[^1]
 - **[Wundertax](/out/wundertax)**  
     More suited for EU immigrants. It supports more immigration-related deductions and types of income.
-- **[Taxfix](/out/taxfix)**  
+- [Taxfix](/out/taxfix)  
     Basic tax app for simple situations.[^2]
 
 Basic tax software is easier to use, but it does not handle complex tax cases. For example, it might not handle foreign income, investment income, self-employment income, complex tax deductions and other edge cases.
@@ -33,7 +33,7 @@ Only use basic tax software like [Taxfix](/out/taxfix) if...
 - and you have no foreign income 
 - and you are not sending financial support to relatives
 
-Many Germans use [WISO Steuer](/out/wiso) for their tax return.[^3] It's only in German, but it handles many cross-border and foreign income scenarios.
+Many Germans use **[WISO Steuer](/out/wiso)** for their tax return.[^3] It's only in German, but it handles many cross-border and foreign income scenarios.
 
 You can also file your taxes yourself in [[ELSTER]]. It's mostly in German, but many questions have English AI translations.
 
